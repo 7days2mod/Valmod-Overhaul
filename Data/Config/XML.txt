@@ -1,0 +1,972 @@
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+To Whom It May Concern:
+
+This file is a courtesy to modders, prefab builders, or anyone else incorrigibly curious and snooping around the XML config files.
+
+This information comes with no guarantees whatsoever.
+Tags and properties are added and removed in every major update and what they do or in which cases can change as well.
+
+Keeping all that information in "their" files started to become awkward because of the amount of notes so this file was added.
+
+Gazz.
+
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Property:  IsDeveloper  (mostly blocks.xml + items.xml)
+
+<property name="IsDeveloper" value="true" />
+
+There is a "Developer" button on the creative menu.
+
+By default it is off.
+When it is off you do not see any blocks / items that have this flag set.
+
+These blocks or items are ones you SHOULD NOT USE unless you know exactly what you are doing.
+
+In most cases these are master blocks / items that provide default values for "real" blocks and items that are extended from them.
+
+The flag itself is not inherited by "Extends" so all child blocks / items remain visible.
+
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: BLOCKS.XML
+
+The block naming convention for "basic" blocks (with interchangeable textures) is
+[material|look|texture] [shape] [extra properties if needed]
+
+[Materials]: Generally speaking, the texture. If you search for "concreteTrimBlock" because you need that look, having "Trim" as an extra property after the shape might not be helpful.
+
+[Shape]: keeping it non-technical if possible.
+
+block - basic full meter square.
+half - value="Half"
+quarter - value="Quarter"
+eighth - value="Eighth" 
+pyramid - value="Pyramid"
+sheet - one side of a block, a billboard
+sheet2 - value="shantyWall01Sheet2" - "shantyWall04Sheet2"
+sheet3 - value="curtain"
+sheet4 - value="HousingDecor/Boarded_windows" or other custom models
+CTRSheet - like windows or glass panes
+ramp - the basic 45 degree triangle shapes
+stairs25 - value="StairsFilled" / "StairsFilledVerticalUV" 25 cm steps
+stairs50 - value="StairsQuarterFilled" 50 cm steps
+stairsBoard - value="Stairs"
+pole - value="Pole"
+poleSupportCtr - value="pole_diagonal_centered"
+poleSupport - value="pole_diagonal"
+poleSupport2 - value="pole_diagonal_2"
+crossCtr - value="pole_diagonal_centered_cross"
+cross - value="pole_diagonal_cross"
+plate - value="Plate"
+CTRPlate - value="PlateCentered"
+TRN - value="Terrain" 
+wedge - value="Wedged60Full"
+wedgeTip - value="Wedged60Tip"
+curb - sidewalk  value="Curb"
+CNRCurb - value="Curb_Corner"
+pillar100 - value="Pole1m" 100 cm version
+pillar50 - 50 cm version
+CNRFull - value="WedgedCornerFull" corner with a full (square) base for outside pyramid roofs
+CNRRamp -  value="WedgedCorner" corner with a half (triangle) base for outside pyramid roofs
+CNRInside - value="WedgedInnerFull"  concave shape for roofs
+CNRRound - value="corner_round1m"
+gable - value="Gable" small triangle tip for roofs
+support  - value="Branch", 45° angled beam
+
+Example
+
+awningRedBlock
+rebarFrameRamp
+rConcreteCNRFull
+rConcretePlate
+curtainBottomSheet01
+sandTRN
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+NOTE: This plan was implemented only partially (tree, cnt) - maybe some day... or another system will be used.
+I'll leave it in for future reference. Gazz
+
+Many blocks like "scrapIronPile" have unique models / shapes.
+For these I would use 
+MDL [type|category] [Name]
+
+
+
+[Type]:
+
+cnt - container, typically loot;  (I would call block-based containers like "CntWeaponsBlock")
+      I would also mislabel the damage 2 car so it stays with the others.
+      Useful filters and a useful list >> strict adherence to rules.
+      Also containers that downgrade into loot containers. "cntSupplyCrateShamway"
+fnt - furniture. Desks, chairs, potted plants
+elt - electrical things like control panels that we don't have a clear purpose for, yet
+lgt - all lights, including wall torches and candles
+tree - trees, grass, shrubbery, cactus
+plt - all other plants, shrubberiers, farming crops, or blocks that fulfil the purpose of a plant even if its just a pickup.
+wrk - workstation of any kind
+trp - traps, spikes, mines that DO something 
+sgn - signs
+dst - destroyed or damaged... something.
+prt - particle effects like snowstorm
+drw - doors, hatches, windows
+otr - other
+
+This allows you to filter by categories, such as "find me all trees". It doesn't break the full text search.
+
+Example
+
+MDLdrwSteelDoor1_v1
+MDLfntSchooldesk
+MDLcntCooler 
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Use of "Extends" in blocks.xml:
+
+This can be tricky so pay attention. =)
+
+"Extend" copies upgrade and downgrade blocks/properties.
+As you can see in the file you can mix and match, keeping the upgrade material and amount thereof but overwriting the target block.
+
+
+For repairs you cannot un-extend a material.
+
+If you extend a wooden door that is repaired with wood, then use that to make a metal door...
+the metal door will require the wood in addition to the metal repair materials you assign.
+
+
+Blocks using extends now do give the resources from the parent's destroy event.
+If a block is using extends, but has its own destroy event, it will use that one instead.
+
+
+<block id="1456" name="cntCar03Red">
+
+	<drop event="Fall" name="cntCar03BlueDamage1" count="0" prob="0" stick_chance="1" />
+	<drop event="Fall" name="cntCar03WhiteDamage1" count="1" prob="1.0" stick_chance="1" />
+
+Without "unextending" that *specific* property the drop would be a cntCar03BlueDamage1 if that's the fall event of the parent block.
+
+
+Extend should be the first entry in a block / item.
+The file is read sequentially and if you put 
+	<property name="Shape" value="WedgedCornerFull" />
+above the extend it reads that line and THEN reads all the properties from
+the parent block - including the shape.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+<property name="CanMobsSpawnOn" value="true" />
+
+The default value for a block is now FALSE.
+
+Static spawners in prefabs / POI completely ignore this flag.
+
+
+A placed bedroll ("your" bedroll, not any that exists) works like a claim stone.
+It blocks zombie spawns in a rectangular area of 31x31 meters from bedrock to sky.
+(that's 15 + 1 + 15m)
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+
+count="min,max" specifies the min/max count, prob="x" specifies if ANY are dropped with this probability.
+This is only applied to the very last destroy event on a block.
+It cannot be used on a harvest event as here the total amount has to be fixed.
+
+
+<drop event="Destroy" name="[recipe]" />
+half of the ingredients of the first recipe for this item/block are awarded.
+Currently it's always half and you cannot specify a factor.
+Also if you specify a [recipe] you cannot/should not specify other items for this drop event.
+
+
+Without a destroy event the block will always "drop self".
+You can use this to make road signs or anything else collectible.
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Looping fall events.
+
+<drop event="Fall" name="destroyedStone" count="1" prob="0.1"  stick_chance="1" />
+
+If a falling block decides to "stick" on top of a block with
+	<property name="StabilitySupport" value="false" />
+it will fall again.
+
+Then it will stick on top of the same block again.
+Then... do you see a pattern there?
+
+Either completely avoid blocks falling "as themselves" or assign a stick chance <1 so it would eventually give up and poof.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+You can change the crafting skill of blocks.
+Look at the land mines.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Collision masks
+
+	<property name="Collide" value="melee,bullet,rocket" />
+	<property name="Collide" value="meleeweapons,bullets,rockets" />
+
+These are functionally identical. Only the start of the string is checked.
+
+
+Personal preference:
+
+<block id="385" name="metalTrussingBlock">
+	<property name="Collide" value="movement,melee,rocket" /> <!-- -rocket -->
+
+In *my* opinion you should be allowed to shoot arrows through those if bullets fit.
+If you agree you can remove all occurrences of this with one search&replace.
+
+Keep in mind that this also allows rockets to pass so
+it *can* be a problem depending on your server settings and rules.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Selective "Extends"
+
+For blocks/items.xml you need to use this syntax:
+<property name="Extends" param1="<excluded defs>" />
+
+
+for entityclasses.xml like this:
+<.... ignore="<excluded defs>" ... >
+
+Excluded defs are properties like "Downgrade" or "FuelValue" (comma delimited)
+so you can better tailor an extended block to your needs.
+
+We cannot exclude the drop definitions so far
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Butcher tools are currently not supported in blocks.
+Maybe later. Not a priority.
+
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="1" prob=".4" />
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Disassembling (wrench)
+
+	<drop event="Destroy" name="barbedFence" count="1" tool_category="Disassemble" />
+	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
+
+Both harvest and destroy events can be limited to only fire if the correct tool is used.
+
+This does not disable ungated events. They fire as well.
+
+
+Note that you do NOT get the "disassemble" animation with just a destroy event.
+You need to do it this way:
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+	<drop event="Destroy" name="workbench" count="1" tool_category="Disassemble" />
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: LOOT.XML
+
+
+How random loot generation works now:
+
+A loot container defines a list of items and/or lootgroups, a count, and a size configuration.
+
+The size configuration is the strict limit on the what the container can hold, and this limit can be reached even if
+your container specifies a much smaller count value.
+
+The loot containers count value specified how many if the items in the containers loot list should be selected randomly.
+NOTE: that the same item could be chosen more than one time.
+
+If the chosen item is an item then the item is spawned into the conatiner according to its count.
+
+However if the chosen item is a lootgroup then a lootgroup is spawned into the container.
+
+Loot Groups:
+
+NOTE: if a lootgroup says count="all" then all subitems will be spawned.
+
+A lootgroup functions identically to a container in its spawning logic. A lootgroup has a count like a container does.
+The count value specifies how many items out of the lootgroup should be spawned each time the lootgroup is spawend. This
+can lead to multiplicitive behaviour if it is setup that way for example:
+
+<lootgroup name="group1" count="2" level="25,50">
+	...
+</lootgroup>
+
+<lootcontainer id="1" count="2" size="4,4">
+	<item group="group1" count="2">
+</lootcontainer>
+
+The above example would spawn the contents of group1 8 times. Here's why:
+The container is told to spawn 2 items, since there's only 1 item in the container it will choose group1
+2 times. Each time group1 is chosen, the container <item group="group1" count="2"> line specifies that
+the contents of group1 should be spawned 2 times. So on the first iteration of the container group1 is spawned
+2 times, and then again on the second iteration.
+
+The group1 lootgroup specifies that each time it is spawned (recall 4 times in the example) that is should
+select 2 items from its list.
+
+So the above example would spawn 8 items into the container.
+
+NOTE: it is safe to specify groups and counts that exceed the containers capacity. If the containers space
+is exceeded excess items will not be spawned, and items will automatically stack to fill the container.
+
+<item name="smallEngine" quality="1,200"/>
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: ITEMS.XML
+
+
+Material types
+	material="wood|metal|organic|bullet" 
+	
+	These *are* defined in materials.xml. If you need a new "scrapable" material it must be defined as such in materials.xml + recipes.xml.
+
+
+
+Hold types are in misc.xml
+
+
+
+UMA Slots
+
+EquipSlot: 	This defines protection values and general placement.
+	Head, Eyes, Face, Chest, Hands, Legs, Feet
+
+Layer: This defines the index of the mesh that will be placed.
+	0 = base mesh layer, where the nude underwear model resides. any item put on with a layer of 0 will remove the mesh already in that Equipment slot.
+	1 = First overlay layer, this will lay over top of anything on layer 0 in the same EquipSlot.
+	2 = Second overlay layer, this will lay over top of anything on layer 0 or layer 1 in the same EquipSlot
+
+UISlot:		This defines the slot in the character screen that this clothing belongs to and any slots that may need disabled.
+Headgear, Eyewear, Face, Shirt, Jacket, ChestArmor, Gloves, Backpack, Pants, Footwear, LegArmor
+
+:UI Slot mutex:
+	Sometimes one item will cover another slot and we do not want to allow usage of that slot until the covering clothing/armor is removed.
+	This can be done by prepending an 'x' to the UISlot name.
+
+Welding mask example
+<item id="000" name="weldingMask" material="metal" stacknumber="1" mesh_file="Items/Clothing/Head/prefabWeldingMask" hold_type="21" repair_tools="scrapMetal">
+	<property name="EquipSlot" value="Head"/>
+	<property name="Degradation" value="100" param1="true" />
+	<property class="Armor">
+        <property name="Melee" value="0.3"/> <!-- legacy names! -->
+        <property name="Bullet" value="0.2"/>
+        <property name="Puncture" value="0.2"/>
+        <property name="Blunt" value="0.25"/>
+        <property name="Explosive" value="0.1" />
+	<property name="Group" value="Clothing" />
+	<property class="UMA">
+		<property name="Mesh" value="armor_leather_helmet" />
+		<property name="Overlay" value="armor_leather_helmet" />
+		<property name="Layer" value="1" />
+		<property name="UISlot" value="Headgear, xFace, xEyewear" />
+	</property>
+</item>
+
+
+
+
+WEAPON PARTS EXAMPLE
+Below is an example of the values that need to be added to a weapon to give it parts. Part list should coincide with recipe.
+All parts must be filled in or the weapon will not work, period.
+<item id="40" name="pistol">
+        <property class="Parts">
+            <property name="Stock" value="partsPistol_grip" />
+            <property name="Receiver" value="partsPistol_receiver" />
+            <property name="Pump" value="partsPistol_parts" />
+            <property name="Barrel" value="partsPistol_barrel" />
+        </property>
+</item>
+
+
+PART ATTRIBUTE EXAMPLES
+Below is an example of the properties that must be added (or set) for parts to work correctly.
+	StackNumber: This must be 1 so we can use degradation.
+	Degradation: Any default value, the weapon quality system will change this later, it just has to be set.
+	Attributes: These currently will interpolate from,to (based on quality from worst to best) for each of the below attribute types.
+	Atttributes/Damage: 			min,max damage as value.
+	Atttributes/Accuracy: 		1 being worse accuracy (full offset multiplier) to 0 being best accuracy (0 offset) eg value="1,0" is correct, value="0,1" is wrong
+	Atttributes/FalloffRange: 	ray cast range in meters min,max
+	Atttributes/Degradation: 		points each part is degraded per shot
+
+<item id="212" name="partsPistol_parts">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
+	<property name="PartType" value="Pump" />
+	<property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="30,600" />
+	</property>
+</item>
+<item id="213" name="partsPistol_barrel">
+	<property name="Extends" value="partsMaster" />
+	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
+	<property name="PartType" value="Barrel" />
+	<property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="EntityDamage" value="5, 40" />
+		<property name="BlockDamage" value="1,3" />
+		<property name="Accuracy" value="1, 0.01" />
+		<property name="DegradationMax" value="30,600" />
+	</property>
+</item>
+
+   
+ARMOR ATTRIBUTE EXAMPLE
+	Removal of the Armor class in the item is completely optional, it's reverse compatible like the others. If no Armor class or values it'll only read Attributes and any missing ones will have a default value of 0 percent protection.
+	Each range for armor is a percentage value. 1 being full protection but the armor will take the damage as degradation instead. So higher protection means faster degradation which balances it out.
+	DegradationMin is the minimum percentage degradation that the armor can be taken down to.
+	
+	leatherBoots currently have been swapped to the scaling attribute system as an example.
+	
+	<property class="Attributes">
+		<property name="MeleeProtection" value="0.1, 0.5" /> 
+		<property name="BulletProtection" value="0.1, 0.3" />
+		<property name="PunctureProtection" value="0.1, 0.3" />
+		<property name="BluntProtection" value="0.15, 0.35" />
+		<property name="ExplosiveProtection" value="0.05,0.15" />
+		<property name="DegradationMin" value="0.1,0.5" />
+	</property>
+	
+WEAPON ATTACHABLES
+	Add the following property to a item to define it as a weapon attachable:
+	<property name="IsWeaponAttachment" value="true" />
+
+
+
+
+
+Action Experience
+<property name="ActionExp" value="1" />   (default value = 1)
+<property name="ActionExpBonusMultiplier" value="2" />   (default value = 2)
+
+	These go under an action, woodenClub is an example. That will handle actions.
+	On kill or destroy events the multiplier is applied.
+
+And for the repair and upgrade actions, each swing for repair or upgrade will give ActionExp amount
+of skill/playerExp, the action bonus multiplier is applied when fully upgading a block to it's next level.
+
+
+
+In the case of a recipe book, when first learned the multiplier is applied and after then
+only the action exp is applied but it's applied for EACH item in the book.
+Also, you only get "reading XP" for items that have a
+	<property name="ActionSkillGroup" value="Science"/>
+defined.
+You get XP to THIS group, not the crafting group of the item.
+
+
+Now, as for crafting skill exp,
+add these to anywhere inside an item that will be used as an ingredient, it's like the old ones but renamed for clarity's sake.
+
+	<property name="CraftingIngredientExp" value="4" />   (default value = 1)
+	<property name="CraftingIngredientTime" value="4" />   (default value = 1)
+
+Then the recipe skill gain and craft time will be calculated internally
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Unlocking a recipe:
+
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="gunRocketLauncher,rocket,rocketCasing,rocketTip" />
+		<property name="ActionExp" value="50"/>
+	</property>
+
+
+Instead of unlocking a list of recipes you can now learn / unlock a list of skills and perks.
+1 point or level per book and skill.
+
+	<property class="Action1">
+		<property name="Class" value="GainSkill" />
+		<property name="Skills_to_gain" value="Treasure Hunter,Blunt Weapons" />
+	</property>
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Note that item IDs CAN be moved around without icons, descriptions, or any references to them breaking.
+All but one.  "handPlayer" must remain on ID 70. Because.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+All items have a "Stacknumber" and tags for batch-modding:   (you're welcome)
+ <!-- STK ammo -->
+ <!-- STK book -->
+ <!-- STK explosives -->
+ <!-- STK food -->
+ <!-- STK drink -->
+ <!-- STK loot -->
+ <!-- STK medical -->
+ <!-- STK repairKit -->
+ <!-- STK resource -->
+ <!-- STK torch -->
+
+	Replace (using regex)
+	value=".*?" /> <!-- STK resource -->
+	with	
+	value="675" /> <!-- STK resource -->
+
+	and you have adjusted everything that is used for crafting and does
+	nothing useful (like healing or eating) beyond that.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Buffs / Items / Critical hits / Melee :
+
+This is a bit tricky.
+
+A BUFF can have a property 
+	critical="true"
+
+That means that in addition to the (items) "Buff_chance" listed,
+the buff DOES NOT FIRE if it fails
+the SECONDARY roll against (items) "CritChance".
+
+"CritChance" listed is the base chance and can fluctuate up and down a bit depending on your current stamina.
+	
+So with
+"Buff_chance" and "CritChance" both at 0.3
+you have an average chance of about 0.09 to ACTUALLY apply the buff.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Items can be excluded from underwater use.
+
+	<property name="UsableUnderwater" value="false" />
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+If an item adds a buff and this buff has no
+name_key
+assigned, neither the buff nor it's proc chance are listed on the item.
+
+This is useful to trigger random food effects, rarely getting an infection from
+a dirty needle on a blood draw kit... use the nasty side of your imagination.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+"Stacknumber"
+
+If an item has 
+
+	<property class="Attributes">
+	</property>
+
+or
+	<property class="Parts">
+	</property>
+
+it's Stacknumber = 1 and does not need to be defined.
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Balancing, tool / weapon balance
+
+
+General balancing rule for tools: Iron should be 2x as good as stone, and steel 1.5x as good as iron. Steel to have great durability.
+
+
+Weapons: 
+In general, the low end damage of a weapon will be 40% of the max damage.
+For "newbie" weapons, the low end damage may be higher because these weapons are supposed to be replaced "soon" anyway.
+
+
+
+Armor:
+In general, the low end armor will be 40% of the max armor.
+
+Maxed out armor skills will ADD 20% on top of item armor values. They no longer multiply the armor value.
+If accumulated armor values + skill buff exceeds 100% the player becomes invulnerable.
+Don't do that. Unless you want to. Then go nuts.
+
+Important point on armor balancing:
+The Mark 1 zombie does 10 damage.  If your armor = 0.08 it reduces this damage by INT(0.08 * 10) or in other words 0 damage.
+
+Skills *can* multiply armor skills but this is a terrible idea because light armor will always suck and if you push the values, leather will be OP.
+I switched to adding flat protection from skill which is much easier to balance and let me make clothing or hide armor *work* as armor.
+
+Light armor at high QL and skill can actually be decent protection now which may just be useful in a snow biome.
+Heavy armor (+ max skill, +rare armor at max QL) can get up to 95% melee protection.
+Getting that is not realistic so hey... keep making those first aid kits.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+How armor worked in A13:
+To be honest ahh... not too well.
+
+If equipment slots are empty but you *are* wearing a full suit of armor, hits can go through without impacting armor.
+If you wear armor (or anything), the AVERAGE protection value of all "connected" slots
+(chest armor, overcoat, shirt) applies. Wearing a shirt kind of halves the value of your iron chest armor. Because of reasons.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+How armor works in A14 (or A15 if it's not done in time! No promises!):
+
+Major redesign here that cost a lot of brain juice. And tinkering with graphs and mockups.
+And conferences. And maybe I should just tell you how it works. ;)
+
+Several slots like head or chest have multiple UI slots attached but are still only one hit location.
+For the Head hit location you got  Head + Face + Eyes slots.
+
+These used to be a horrible PITA for balancing because if you stack all those values you either
+shoot balancing straight to lala-land or have to adjust armor to seriously screwy values.
+So we did it right.
+You can now mod any armor/cloth item in any slot and it will be used / degraded based on it's
+stats and protection value by the system. This clear up 95% of the armor modding/balancing headaches.
+
+
+For the Head hit location you got  Head + Face + Eyes slots.
+If you are hit in the head the armor value to protect you against that hit is the *highest* armor value in *any* of these 3 slots.
+In most cases this will obviously be the helmet but if it breaks or you wear none at all, your bandana may be "the" armor value for the head hit location.
+In the early game that means that cloth items may actually *do something*. If not much.
+
+For the chest this actually makes more sense because your looted leather coat *could* be better protection than your cloth or plant fiber armor.
+The system simply pulls the highest protection value from all "connected" slots and uses that.
+
+
+Ranged hits:
+Ranged hits are applied per location. Someone shoots you in the head, *a* head slot is going to take the degradation hit.
+The choice is made like above. If you wear a plant fiber hat and a bandana, there's about an equal chance for either to take the durability hit.
+If you wear a "real" helmet it's almost always going to take the durability hit due to it's higher protection value.
+The protection value that "counts" is still the highest of either. No stacking.
+
+
+Melee / explosive hits:
+The protection value average on the character page actually means something! (Bet you didn't see that coming!)
+
+This is your protection value against *all* melee hits. You can not just skip leg or boot slots "because you never get hit there".
+That would bring down your average.
+
+The armor value that "counts" in each of the 5 hit locations is calculated like above.
+Highest value in a connected slot is "it". In the chest slot that will typically be your chest
+armor because armor pieces have much higher protection than generic clothing.
+
+The average is then taken of the highest value in those 5 locations.
+
+The armor degradation from melee / explosive hits is applied to a completely random item,
+*weighed* by each item's protection value.
+If you wear iron armor and some cloth items, the iron armor is almost always going to take the hit...
+until it is busted up so much that your cloth armor has a noticeable protection value in comparison.
+(it is set up like loot probabilities)
+However, no matter what you wear, every slot always has a chance to be picked.
+
+
+Do include Kinyajuu in your evening prayers because there was no way in hell I could have done this without him.
+We cooked up the design and got it approved against the evil forces of cumulative armor protection.
+It was a hard fight but it was a worthy cause.
+Now balancing armor values is all rainbows and unicorns. Seriously.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+(Weapon) Degradation rate:
+Every hit/shot costs this much durability to a weapon or part.
+On the high end of the range you must add +1 to the value you *want* because the durability is an integer.
+
+<property name="DegradationRate" value="4,1" />
+Durability is an integer. With the exception of a single QL, the DegradationRate turns into something like 3.97... and is rounded down to 3.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+A14:
+Durability for firearms and motor tools has been increased roughly x10.
+
+As a result it is now possible to largely balance durability (how many shots until broken) and
+cost (how many repairKits for a full repair) independently! (how cool is that?)
+
+A weapon with 4 parts and 6000 durability each can cost 6000 points or 3 repair kits to fully repair.
+
+If I want this weapon to break after 350 shots:
+	<property name="DegradationRate" value="17,17" />
+
+If I want this weapon to break after 520 shots:
+	<property name="DegradationRate" value="11,11" />
+
+In both cases the repair cost remains constant. That is a Big Deal for balancing.
+
+
+You will also see 
+	<property name="DegradationRate" value="16,34" />
+Degradation is actually HIGHER at higher quality levels.
+
+Now you have a choice. Use a low quality bargain-bin gun that is cheaper to maintain... or use the
+high-tech-chrome-plated-with-cherries-on-top version and deal with the maintenance cost.
+I'm evil like that.
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: RECIPES.XML
+
+Use of "Extends" is not supported for recipes.
+
+
+<recipe name="wroughtIronFenceSheet" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
+<recipe name="gunAK47" count="1" scrapable="False" craft_area="assembly">
+
+Usable craft areas ( = block name of the crafting station) and tools:
+
+forge		[anvil | calipers | toolAndDieSet]
+campfire	[cookingPot | cookingGrill | beaker]
+cementMixer
+backpack ?
+
+assembly (weapon screen)
+
+Note that (almost) all recipes have been changed to only output 1 unit.
+This is because the UI still does not tell you how many units would be
+produced and it was easier to just juggle the recipes.
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: PROGRESSION.XML
+
+
+FORMAT OF PASSIVE SKILL RANGES:
+
+Good:
+	<multiply skill_level="1,5" value="1,1.04" />
+	<multiply skill_level="5,11" value="1.04,1.07" />
+	<multiply skill_level="11,19" value="1.07,1.1" />
+Bad:
+	<multiply skill_level="1,5" value="1,1.04" />
+	<multiply skill_level="6,11" value="1.05,1.07" />
+	<multiply skill_level="12,19" value="1.08,1.1" />
+
+Do NOT "skip" any skill levels. The code does not like it. You want to make the code happy.
+Unhappy code may want to use you as reactor shielding.
+
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: BUFFS.XML
+
+General info:
+Buffs are not executed by "going down the list". Their order in the XML is irrelevant.
+
+Buffs do stuff all the time in an order that is complex and depends on a lot of things.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+A "BuffsWhenWalkedOn" with a normal duration will flicker on/off as it is reapplied because such a buff DOES end.
+To have a proper display without tooltip spam you need to make the DISPLAYED buff work without a duration.
+
+How not to do it:
+<buff id="sleeping" stack="discard" name_key="sleeping" duration="1" description_key="sleepingDesc" tooltip_key="sleepingTooltip" icon="ui_game_symbol_map_bed">
+	<modify id="0" stat="health" amount="1" rate="30" />
+</buff>	
+
+See how it works in the A14 buffs.xml.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Drowning buffs used to be "half hardcoded". They no longer are.
+
+If you enter water, "cannotBreath" is cast.
+If you leave water, "freshAir" is cast.
+
+What happens inbetween can now be altered.
+
+TBH, I don't *quite* trust this, yet. If you manage to break this in a reproducible fashion, speak up! =)
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Custom variables:
+
+buffif="myVar lequal 0" 
+A variable needs to CHANGE for such a condition to trigger.
+
+All by itself this never triggers unless something else changes the variable.
+
+If you want to start any processes on player characters you need to trigger this off a variable that
+you know will change such as
+buffif="coretemp lequal 300"
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+FYI:  actions="damage()"
+is currently bugged and does not affect zombies.
+I reworded the remaining buffs that should affect them to use "modify" instead.
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: BIOMES.XML
+
+
+Ore distribution:
+
+The terrain blending shader can only blend 3 textures so if you add more than 3 types it ends up having hard lines and looks horrible.
+This is the technical reason why ores are so strictly limited per biome.
+
+The gameplay reason is to promote some travel instead of staying in one spot all game long, looting the same town over and over.
+
+Ergo: It's stone + iron + something PER LAYER.
+
+You can still stagger different layers with different ores / distributions.
+If you make layers varied, small and plentiful you will get more seam lines where 4+ textures interact. Your choice.
+
+Another possibility is to generate subbiomes that look the same on the surface but have a different layer setup.
+This may or may not become a feature.
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Icons for blocks and items:
+
+If there is a 	<property name="CustomIcon" value="blah" />
+neither the icon nor a placeholder space are baked into the icon atlas.
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Armor values:
+
+I used these templates to assign armor values to "other stuff".
+
+
+	<property class="Attributes"> <!-- clothGeneric -->
+		<property name="ConcussiveProtection" value="0.065,0.13" />
+		<property name="PunctureProtection"   value="0.065,0.13" />
+		<property name="FireProtection"       value="0.12,0.2" />
+		<property name="RadiationProtection"  value="0.06,0.1" />
+		<property name="DegradationMax"       value="72,180" />
+	</property>
+
+	<property class="Attributes"> <!-- plantFiberClothes -->
+		<property name="ConcussiveProtection" value="0.09,0.15" />
+		<property name="PunctureProtection"   value="0.09,0.15" />
+		<property name="FireProtection"       value="0.12,0.2" />
+		<property name="RadiationProtection"  value="0.06,0.1" />
+		<property name="DegradationMax"       value="72,180" />
+	</property>
+
+	<property class="Attributes"> <!-- clothWarm -->
+		<property name="ConcussiveProtection" value="0.08,0.2" />
+		<property name="PunctureProtection"   value="0.08,0.2" />
+		<property name="FireProtection"       value="0.12,0.2" />
+		<property name="RadiationProtection"  value="0.06,0.1" />
+		<property name="DegradationMax"       value="80,200" />
+	</property>
+
+
+	<property class="Attributes"> <!-- clothArmor -->
+		<property name="ConcussiveProtection" value="0.125,0.25" />
+		<property name="PunctureProtection"   value="0.125,0.25" />
+		<property name="FireProtection"       value="0.1,0.2" />
+		<property name="RadiationProtection"  value="0.075,0.15" />
+		<property name="DegradationMax"       value="100,250" />
+	</property>
+
+	<property class="Attributes"> <!-- hideArmor -->
+		<property name="ConcussiveProtection" value="0.07,0.35" />
+		<property name="PunctureProtection"   value="0.06,0.3" />
+		<property name="FireProtection"       value="0.04,0.2" />
+		<property name="RadiationProtection"  value="0.04,0.2" />
+		<property name="DegradationMax"       value="140,350" />
+	</property>
+
+	<property class="Attributes"> <!-- leatherArmor -->
+		<property name="ConcussiveProtection" value="0.152,0.38" />
+		<property name="PunctureProtection"   value="0.12,0.3" />
+		<property name="FireProtection"       value="0.12,0.3" />
+		<property name="RadiationProtection"  value="0.08,0.2" />
+		<property name="DegradationMax"       value="180,450" />
+	</property>
+
+	<property class="Attributes"> <!-- scrapArmor -->
+		<property name="ConcussiveProtection" value="0.228,0.57" />
+		<property name="PunctureProtection"   value="0.18,0.45" />
+		<property name="FireProtection"       value="0.16,0.4" />
+		<property name="RadiationProtection"  value="0.12,0.3" />
+		<property name="DegradationMax"       value="240,600" />
+	</property>
+
+	<property class="Attributes"> <!-- ironArmor -->
+		<property name="ConcussiveProtection" value="0.26,0.65" />
+		<property name="PunctureProtection"   value="0.24,0.6" />
+		<property name="FireProtection"       value="0.2,0.5" />
+		<property name="RadiationProtection"  value="0.16,0.4" />
+		<property name="DegradationMax"       value="320,800" />
+	</property>
+
+	<property class="Attributes"> <!-- militaryArmor -->
+		<property name="ConcussiveProtection" value="0.28,0.7" />
+		<property name="PunctureProtection"   value="0.3,0.75" />
+		<property name="FireProtection"       value="0.08,0.2" />
+		<property name="RadiationProtection"  value="0.12,0.3" />
+		<property name="DegradationMax"       value="280,700" />
+	</property>
+
+	<property class="Attributes"> <!-- hazMatArmor -->
+		<property name="ConcussiveProtection" value="0.08,0.2" />
+		<property name="PunctureProtection"   value="0.1,0.25" />
+		<property name="FireProtection"       value="0.04,0.1" />
+		<property name="RadiationProtection"  value="0.32,0.8" />
+		<property name="DegradationMax"       value="160,400" />
+	</property>
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+A15 stuff
+
+Weeeell, you may occasionally see the odd "A15" comment here and there.
+Some things just did not get done in time. It's real life's way to show you the finger.
+If you choose to "mod in" those totally-absolutely-not-QA-approved features or not is up to you.
+They may destroy your game or blow up planet Earth. I'm not saying it's likely but...
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------

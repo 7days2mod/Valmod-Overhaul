@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iteminfo>
+
+   <!-- For items with weapon hold type=="X" we have a ray cast delay of Y -->
+    <animation>
+        <hold_type id="0" newmodel="false" ray_cast="0.16"  unholster="0.2" />        <!-- 0 hand player -->
+        <hold_type id="1" newmodel="false" ray_cast="0.16" holster=".5" unholster="0.2" two_handed="true" />        <!-- 1 pistol -->
+        <hold_type id="2" newmodel="false" ray_cast="0.40" holster=".5" unholster="0.2" />        <!-- 2 clubs -->
+        <hold_type id="3" newmodel="false" ray_cast="1.00" holster=".5" unholster="0.2" />        <!-- 3 jars -->
+        <hold_type id="4" newmodel="false" ray_cast="0.64" holster=".5" unholster="0.2" two_handed="true" />        <!-- 4 hoe -->
+        <hold_type id="5" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />           <!-- 5 shotgun -->
+        <hold_type id="6" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />           <!-- 6 mp5 -->
+        <hold_type id="7" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />           <!-- 7 blocks -->
+        <hold_type id="8" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" />           <!-- 8 not used -->
+        <hold_type id="9" newmodel="false" ray_cast="0.4" ray_cast_moving="0.86" holster=".5" unholster="0.2" />         <!-- 9 hand zombie -->
+        <hold_type id="10" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />          <!-- 10 rocket launcher -->
+        <hold_type id="11" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />          <!-- 11 sniper rifle -->
+        <hold_type id="12" newmodel="false" ray_cast="0.46" holster=".5" unholster="0.2" />       <!--12  torch  -->
+        <hold_type id="13" newmodel="false" ray_cast="0.5" holster=".5" unholster="0.2" />        <!-- 13 flashlight  -->
+        <hold_type id="14" newmodel="false" ray_cast="2.0" holster=".5" unholster="0.2" />        <!-- 14 canned food and yucca fruit-->
+        <hold_type id="15" newmodel="false" ray_cast="2.0" holster=".5" unholster="0.2" />        <!-- 15 corn and potato -->
+        <hold_type id="16" newmodel="false" ray_cast="0.20" holster=".5" unholster="0.2" />       <!-- 16 first aid, pill bottles stick -->
+        <hold_type id="17" newmodel="false" ray_cast="0.4" holster=".5" unholster="0.2" two_handed="true" />        <!-- 17 fireaxe -->
+        <hold_type id="18" newmodel="false" ray_cast="0.5" holster=".5" unholster="0.2" two_handed="true" />        <!-- 18 shovel and auger blade -->
+        <hold_type id="19" newmodel="false" ray_cast="0.5" holster=".5" unholster="0.2" two_handed="true" />        <!-- 19 chainsaw -->
+        <hold_type id="20" newmodel="false" ray_cast="0.5" holster=".5" unholster="0.2" two_handed="true" />        <!-- 20 auger -->
+        <hold_type id="21" newmodel="false" ray_cast="0.5" holster=".5" unholster="0.2" />        <!-- 21 flat hand hold -->
+        <hold_type id="22" newmodel="false" ray_cast="0.5" holster=".5" unholster="0.2" />        <!-- 22 sham -->
+        <hold_type id="23" newmodel="false" ray_cast="2.0" holster=".5" unholster="0.2" />        <!-- 23 stews, bowl -->
+        <hold_type id="24" newmodel="false" ray_cast="0.3" holster=".5" unholster="0.2" />        <!-- 24 hand zombie 02 crawler -->
+        <hold_type id="25" newmodel="false" ray_cast="0.4" holster=".5" unholster="0.2" />        <!-- 25 pipe bomb -->
+        <hold_type id="26" newmodel="false" ray_cast="0.3" holster=".5" unholster="0.2" two_handed="true" />        <!-- 26 crossbow -->
+        <hold_type id="27" newmodel="false" ray_cast="0.8" holster=".5" unholster="0.2" two_handed="true" />        <!-- 27 wooden bow -->
+        <hold_type id="28" newmodel="false" ray_cast="0.8" holster=".5" unholster="0.2" />        <!-- 28 hornet stinger -->
+        <hold_type id="29" newmodel="false" ray_cast="0.3" holster=".5" unholster="0.2" />        <!-- wrench -->
+        <hold_type id="30" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />          <!-- hunting rifle -->
+        <hold_type id="31" newmodel="false" ray_cast="2.0" holster=".5" unholster="0.2" />        <!-- parcel -->
+        <hold_type id="32" newmodel="false" ray_cast="0.2" holster=".5" unholster="0.2" />        <!-- stone axe -->
+        <hold_type id="33" newmodel="false" ray_cast="0.75" holster=".5" unholster="0.2" two_handed="true" />       <!-- sledgehammer -->
+        <hold_type id="34" newmodel="false" ray_cast="0.75" holster=".5" unholster="0.2" />       <!-- bucket -->
+        <hold_type id="35" newmodel="false" ray_cast="0.3" holster=".5" unholster="0.2" />        <!-- dog -->
+        <hold_type id="36" newmodel="false" ray_cast="0.43" holster=".5" unholster="0.2" />       <!-- knife -->
+        <hold_type id="37" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />          <!-- nailgun -->
+        <hold_type id="38" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" />          <!-- cobblestones -->
+        <hold_type id="39" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />          <!-- blunderbuss -->
+        <hold_type id="40" newmodel="false" ray_cast="0.4" holster=".5" unholster="0.2" />       <!-- rock small -->
+        <hold_type id="44" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />          <!-- magnum -->
+        <hold_type id="45" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" />          <!-- sack -->
+        <hold_type id="46" newmodel="false" ray_cast="0.5" holster=".5" unholster="0.2" />         <!-- bear hand -->
+		<hold_type id="47" newmodel="false" ray_cast="0.1" holster=".5" unholster="0.2" />         <!-- machete -->
+		<hold_type id="48" newmodel="false" ray_cast="0" holster=".5" unholster="0.2" two_handed="true" />         <!-- ak47 -->
+		<hold_type id="49" newmodel="false" ray_cast="1.00" holster=".5" unholster="0.2" />        <!-- candle -->
+    </animation>
+    <!-- 
+         Add noisy sounds here 
+         A range of about 40 is max! 
+         Time is the time in seconds the noise is valid.
+         With prio you specify that this sound has prio over other sounds (prio 1 is most important)
+		 Please name the sound EXACTLY like you reference it in items.xml, because there is a string comparison done in the game.
+         The only exceptions to this rule are sounds that are in the folders 'Misc', 'ImpactSurface', 'ThrowImpact' and 'DestroyBlock'. 
+		 Please add these sounds WITHOUT any folder name.
+		 
+		 NOTE: optional parameter muffled_when_crouched=<0-1> (default is 1) sound travel distance will be multiplied by muffled scale
+		 NOTE: optional parameter hordemeter_player_only="true/false" (default is true) true means the sound will contribute to the meter even if emitted by the a non-player entity (grenades and bombs are not the player entity).
+		 NOTE: optional parameter player_only="true/false" (default is true) false means the sound will be heard by AI even if emitted by a non-player entity.
+		 
+     -->
+	 
+   
+	
+    <smell>
+        <!-- range is max travel distance of smell in meters
+		     strength is a relative indicator of how strong a smell is compared to other smells
+			 speed is how fast the smell travels in meters per second
+			 
+			 belt_range/belt_strength indicate values when the item is on players belt
+			 
+			 Joel's smell design: Raw meats smell the most, then charred, then grilled and boiled smell the least. Carbs generally do not attract zombies much so foods
+			 like corn bread, blueberry pie even though to humans can smell a lot, they do not attract zombies like meat does.
+	    -->
+        <smell name="testSmell" range="15" strength="1" speed="45" duration="5" belt_range="45" belt_strength="2" />
+        <smell name="smallSmell" range="1" strength="1" speed="2" duration="5" belt_range="5" belt_strength="2" />
+        <smell name="mediumSmell" range="5" strength="2" speed="5" duration="10" belt_range="15" belt_strength="2" heat_map_strength="0.01" heat_map_time="120" />
+        <smell name="largeSmell" range="10" strength="3" speed="10" duration="10" belt_range="30" belt_strength="3" heat_map_strength="0.02" heat_map_time="120" />
+        <smell name="exLargeSmell" range="20" strength="4" speed="15" duration="15" belt_range="60" belt_strength="4" heat_map_strength="0.4" heat_map_time="120" />
+        <smell name="fart" range="15" strength="5" speed="15" duration="10" belt_range="10" belt_strength="5" />
+    </smell>	
+</iteminfo>	

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Weather survival tuning values-->
+<weathersurvival>
+
+	<!-- Degrees per second in which heat the player generates from melee actions dissapates -->
+	<property name="GeneratedHeatDecayRate" value="2"/>
+	<!-- How much the player heats when doing melee actions that consume stamina. -->
+	<property name="DegreesPerPointOfStaminaUsed" value="0.25"/>
+	<!-- Maximum amount of heat that the player can generate from melee actions -->
+	<property name="MaxGeneratedHeat" value="10"/>
+	<!-- From 0-1 how much do you have to be surrounded before being considered "inside" -->
+	<property name="EnclosureDetectionThreshold" value="0.15"/>
+	<!-- How quickly in second it takes you to become fully soaked from rainfall -->
+	<property name="RainfallSoakRate" value="60"/>
+	<!-- How quickly in second it takes you to become fully soaked from snowfall -->
+	<property name="SnowfallSoakRate" value="600"/>
+	<!-- If players core temp is below this value they will not dry off. -->
+	<property name="DryTempCutoff" value="40"/>
+	<!-- Per degree over DryTempCutoff how many percent per-second to dry (1=100%) -->
+	<property name="DryPercentPerSecondPerDegree" value="0.00020833"/>
+	<!-- Max percent per second the player can dry off  (1=100%) -->
+	<property name="MaxDryPercentPerSecond" value="0.1"/>
+	<!-- How many degrees per second your core temp changes when you are dry. -->
+	<property name="CoreTempChangeRateWhenDry" value="0.05"/>
+	<!-- How many degrees per second your core temp changes when you are wet. -->
+	<property name="CoreTempChangeRateWhenWet" value="0.5"/>
+	<!-- How much to multiply the change rate when player temperature is going to a positive. -->
+	<property name="PositiveTempChangeRateMultiplier" value="2"/>
+	<!-- If player core temp is below this, heating effects are applied at the PositiveTempChangeRateMultiplier rate. -->
+	<property name="ColdTempChangeThreshhold" value="45"/>
+	<!-- If player core temp is above this, cooling effects are applied at the PositiveTempChangeRateMultiplier rate. -->
+	<property name="HotTempChangeThreshhold" value="90"/>
+	<!-- How much change you feel in the outside air temperature when you are 100% wet. -->
+	<property name="OutsideTempChangeWhenSoaked" value="-15"/>
+	<!-- Base temperature when you are wet. -->
+	<property name="BaseOutsideTempChangeWhenWet" value="0"/>
+	<!-- How much change you feel in the outside air temperature when wet and 100% windy. -->
+	<property name="WindyOutsideTempChangeWhenWet" value="-10"/>
+	<!-- How much change you feel in the outside air temperature when dry and 100% windy. -->
+	<property name="WindyOutsideTempChangeWhenDry" value="-3"/>
+	<!-- How much direct sunlight warms you. -->
+	<property name="OutsideTempChangeWhenInSun" value="10"/>
+	<!-- How much 100% cloud cover can affect how much the sun warms you. -->
+	<property name="OutsideTempChangeWhenInSunCloudScale" value="0.5"/>
+	<!-- How much the temp changes when you run. -->
+	<property name="OutsideTempShiftWhenRunning" value="5"/>
+	<!-- How much the temp changes when you walk. -->
+	<property name="OutsideTempShiftWhenWalking" value="2"/>
+	<!-- How much the temp changes when you are idle. -->
+	<property name="OutsideTempShiftWhenIdle" value="0"/>
+
+	<TemperatureHeight height="0" addDegrees="10"/>
+	<TemperatureHeight height="12" addDegrees="8"/>
+	<TemperatureHeight height="24" addDegrees="6"/>
+	<TemperatureHeight height="36" addDegrees="4"/>
+	<TemperatureHeight height="48" addDegrees="2"/>
+	<TemperatureHeight height="60" addDegrees="0"/>
+	<TemperatureHeight height="68" addDegrees="-1"/>
+	<TemperatureHeight height="76" addDegrees="-2"/>
+	<TemperatureHeight height="84" addDegrees="-3"/>
+	<TemperatureHeight height="92" addDegrees="-4"/>
+	<TemperatureHeight height="100" addDegrees="-5"/>
+	<TemperatureHeight height="106" addDegrees="-6"/>
+	<TemperatureHeight height="118" addDegrees="-8"/>
+	<TemperatureHeight height="130" addDegrees="-10"/>
+	<TemperatureHeight height="133" addDegrees="-12"/>
+	<TemperatureHeight height="137" addDegrees="-14"/>
+	<TemperatureHeight height="142" addDegrees="-17"/>
+	<TemperatureHeight height="147" addDegrees="-20"/>
+	<TemperatureHeight height="153" addDegrees="-23"/>
+	<TemperatureHeight height="158" addDegrees="-26"/>
+	<TemperatureHeight height="163" addDegrees="-29"/>
+	<TemperatureHeight height="168" addDegrees="-32"/>
+	<TemperatureHeight height="174" addDegrees="-35"/>
+	<TemperatureHeight height="179" addDegrees="-38"/>
+	<TemperatureHeight height="184" addDegrees="-41"/>
+	<TemperatureHeight height="189" addDegrees="-44"/>
+	<TemperatureHeight height="195" addDegrees="-47"/>
+	<TemperatureHeight height="200" addDegrees="-50"/>
+</weathersurvival>

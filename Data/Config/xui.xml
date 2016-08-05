@@ -1,0 +1,250 @@
+<xui>
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
+	
+		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+		</window_group>
+		
+		<window_group name="character" controller="XUiC_CharacterSheetWindowGroup">
+			<window name="CharacterFrameWindow"/>
+			<window name="buffInfoPanel"/>
+			<window name="PlayerStatsWindow" />
+			<window name="ActiveBuffsWindow" />
+		</window_group>		
+		
+		<window_group name="workstation_campfire" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_forge" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="workstation_cementMixer" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsCementMixer" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>		
+		
+		<window_group name="workstation_workbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsWorkbench" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>				
+		
+		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
+			<window name="windowLooting"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="creative" controller="XUiC_CreativeWindowGroup">
+			<window name="windowCreative" />
+		</window_group>
+		
+		<window_group name="backpack">	
+			<window name="itemInfoPanel"/>
+			<window name="emptyInfoPanel" />
+			<window name="windowBackpack"/>
+		</window_group>
+		
+		<window_group name="dragAndDrop">
+			<window name="dragAndDropItemStack" />
+		</window_group>
+		
+		<window_group name="compass">
+<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 1 of 2 -->
+  <!-- On the below line select the compass you want to use - 7DTD Default = windowCompass - RELXIX HUD = windowCompassRELXIX -->
+			<window name="windowCompassRELXIX" />  <!-- windowCompassRELXIX (RELXIX HUD) or windowCompass (7DTD Default) -->
+  <!-- NOTE: You should also restore the default styles.xml if using the default compass else it will still be wider (only changes in styles.xml) -->
+<!-- Add windows to 2 window groups in this file - If using the default compass you may want to delete the next 2 lines -->
+			<window name="mapStatsHUD" />  	<!-- Window that displays Day & Time, Air Temp, Wind Speed, Current Elevation - Delete this line to remove these items -->
+		<!--	<window name="mapCoordsHUD" />-->	<!-- Window that displays Player Coordinates and Bedroll Coordinates - Delete this line to remove these items -->
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 1 of 2 -->
+		</window_group>
+		
+		<window_group name="toolTip">
+			<window name="toolTip" />
+			<window name="popupMenu" />
+		</window_group>
+		
+		<window_group name="tipWindow">
+			<window name="windowTip" />
+		</window_group>
+		
+		<window_group name="questOffer">
+			<window name="windowQuestOffer" />
+		</window_group>
+		
+		<window_group name="timer">
+			<window name="windowTimer"/>
+		</window_group>
+		
+		<window_group name="toolbelt">
+			<window name="windowToolbelt" anchor="CenterBottom" />
+			<window name="HUDLeftStatBars" anchor="LeftBottom" />
+			<window name="HUDRightStatBars" anchor="RightBottom" />
+<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 2 of 2 -->
+			<window name="windowToolbeltNumbersHUD" />	<!-- Window that displays Numbers on the tool belt for each slot  - Delete this line to remove these items -->
+			<window name="playerXPHUD" />	<!-- Window that displays XP bar and level  - Delete this line to remove these items -->
+			<window name="playerStatsHUD" />	<!-- Window that displays Player Temp, Hunger % and Thirst %  - Delete this line to remove these items -->
+			<window name="playerStatsBarsHUD" />	<!-- Window that displays Bars behind Player Temp, Hunger % and Thirst %  - Delete this line to remove these items -->
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 2 of 2 -->
+			<window name="windowQuestTracker" anchor="RightTop" />
+		</window_group>
+		
+		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
+			<window name="windowVehicle"/>
+			<window name="windowNonPagingHeader" />
+			<window name="windowVehicleStats" />
+			<window name="windowVehicleStorage" />
+		</window_group>
+		
+		<window_group name="windowpaging">
+			<window name="windowPagingHeader" anchor="CenterTop"/>
+		</window_group>
+
+		<window_group name="map">
+			<window name="mapTrackingPopup" />			<!-- keep this on top -->			
+			<window name="mapAreaSetWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaChooseWaypoint" />		<!-- keep this on top -->
+			<window name="mapAreaEnterWaypointName" />	<!-- keep this on top -->
+			<window name="mapArea" />
+			<window name="mapTracking" />
+			<window name="mapInvites" />
+		</window_group>
+		
+		<window_group name="players">
+			<window name="players" />
+		</window_group>
+		
+		<window_group name="assemble" controller="XUiC_AssembleWindowGroup">
+			<window name="windowAssemble" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="radial">
+			<window name="windowRadial"/>
+		</window_group>
+		
+		<window_group name="skills" controller="XUiC_SkillWindowGroup">
+			<window name="windowSkillList"/>
+			<window name="windowSkillInfo"/>
+			<!-- <window name="windowSkillStats"/> -->
+		</window_group>
+		
+		<window_group name="quests" controller="XUiC_QuestWindowGroup">
+			<window name="windowQuestList" />
+			<window name="windowQuestDescription" />
+			<window name="windowQuestObjectives" />
+			<window name="windowQuestRewards" />
+		</window_group>
+		
+		<window_group name="profiles">
+			<window name="windowArchetypePreview"/>
+		</window_group>
+		
+		<window_group name="archetypes" controller="XUiC_ArchetypesWindowGroup" stack_panel_y_offset="332">
+			<window name="windowArchetypePreview2"/>
+			<window name="windowSliders"/>
+		</window_group>
+
+		<window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_dyeStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_studyDesk" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationArmory" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+			<window name="windowToolsArmory" />
+		</window_group>
+		<window_group name="workstation_Brewery" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_oilRefiner" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationMerchant" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationDecor" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsDecorWorkbench" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_workstationChemistry" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsChemistry" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<window_group name="workstation_simpleForge" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsForge" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</ruleset>
+</xui>

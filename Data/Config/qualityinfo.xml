@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qualityinfo>
+  <!--Broken Grey-->
+	<quality key="0" color="808080"/>
+  <!--Faulty Brown-->
+	<quality key="1" color="9C8867"/>
+  <!--Poor Orange-->
+	<quality key="2" color="CF7F29"/>
+  <!--Good Yellow-->
+	<quality key="3" color="A2A41B"/>
+  <!--Fine Green-->
+	<quality key="4" color="42C234"/>
+  <!--Great Blue-->
+	<quality key="5" color="315DCE"/>
+  <!--Flawless Magenta-->
+	<quality key="6" color="A42ACC"/>
+</qualityinfo>

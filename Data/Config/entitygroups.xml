@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<entitygroups>
+
+    <entitygroup name="ZombiesAll">
+        <entity name="zombieBoe" prob="0.1" />
+        <entity name="zombieJoe" prob="0.1" />
+        <entity name="zombieSteve" prob="0.05" />
+        <entity name="zombieMoe" prob="0.1" />
+        <entity name="zombieYo" prob="0.1" />
+		<entity name="zombieArlene" prob="0.1" />
+		<entity name="zombieDarlene" prob="0.1" />
+		<entity name="zombieMarlene" prob="0.1" />
+		<entity name="zombieNurse" prob="0.1" />
+		<entity name="zombieSteveCrawler" prob="0.05" />
+		<entity name="Bloated Walker" prob="0.07"/>
+		<entity name="Scorched Rusher" prob="0.03"/>
+    </entitygroup>
+
+    <entitygroup name="ZombiesAll2">
+        <entity name="zombieBoe" />
+        <entity name="zombieJoe" />
+        <entity name="zombieSteve" />
+        <entity name="zombieMoe" />
+        <entity name="zombieYo" />
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />
+		<entity name="zombieSteveCrawler" />
+		<entity name="Feral Ravager" prob="0.02"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+		<entity name="Scorched Rusher" prob="0.006"/>
+    </entitygroup>
+	
+    <entitygroup name="ZombiesNight">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe"/>
+        <entity name="zombieJoe" />
+        <entity name="zombieSteve" />
+        <entity name="zombieMoe" />
+        <entity name="zombieYo" />
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />
+		<entity name="hornet" prob="0.05" />
+		<entity name="zombiedog" prob="0.05" />
+		<entity name="zombieSteveCrawler" />
+		<entity name="Feral Ravager" prob="0.02"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+    </entitygroup>
+	
+    <entitygroup name="ZombiesNight2">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe"/>
+        <entity name="zombieJoe" />
+        <entity name="zombieSteve" />
+        <entity name="zombieMoe" />
+        <entity name="zombieYo" />
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />
+		<entity name="hornet" prob="0.05" />
+		<entity name="zombiedog" prob="0.05" />
+		<entity name="zombieSteveCrawler" />
+		<entity name="Feral Ravager" prob="0.02"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+    </entitygroup>
+
+    <entitygroup name="ZombiesBurning">
+		<entity name="burntzombie" />
+		<entity name="Scorched Rusher" prob="0.02"/>
+		<entity name="Burning Boss" prob="0.01" />
+		<entity name="hornet" prob="0.05" />
+		<entity name="zombiedog" prob="0.05" />
+		<entity name="Burnt Crawler" />
+		<entity name="Burnt Spider" />
+    </entitygroup>
+	
+    <entitygroup name="ZombiesUnique">
+		<entity name="Scorched Rusher" />
+		<entity name="Burnt Crawler" />
+		<entity name="Burnt Spider" />
+		<entity name="Feral Spider" />
+		<entity name="Feral Ravager" />
+		<entity name="Bloated Walker" />
+    </entitygroup>
+    
+    <entitygroup name="ZombiesWasteland">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe" />
+        <entity name="zombieJoe" />
+        <entity name="zombieSteve" />
+        <entity name="zombieMoe" />
+        <entity name="zombieYo" />
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />		
+		<entity name="hornet" />
+		<entity name="zombiedog" />
+		<entity name="zombieSteveCrawler" />
+		<entity name="fatzombiecop" />
+		<entity name="burntzombie" />			
+		<!--<entity name="zombieFemaleHazmat" prob="0.02" /> removed because of uma zombie bug	-->
+		<entity name="Feral Ravager" prob="0.02"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+		<entity name="Scorched Rusher" prob="0.02"/>
+    </entitygroup>	
+    
+    <entitygroup name="ZombiesWastelandNight">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe" />
+        <entity name="zombieJoe" />
+        <entity name="zombieSteve" />
+        <entity name="zombieMoe" />
+        <entity name="zombieYo" />
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />		
+		<entity name="hornet" />
+		<entity name="zombiedog" />
+		<entity name="zombieSteveCrawler" />
+		<entity name="fatzombiecop" />
+		<entity name="burntzombie" />
+		<entity name="zombieBear" />
+		<entity name="zombieferal" />
+		<!-- <entity name="zombieFemaleHazmat" prob="0.02" /> -->
+		<entity name="Feral Ravager" prob="0.02"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+    </entitygroup>	
+    
+    <entitygroup name="ZombiesWastelandNight2">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe" prob="0.05"/>
+        <entity name="zombieJoe" prob="0.05"/>
+        <entity name="zombieSteve" prob="0.05"/>
+        <entity name="zombieMoe" prob="0.05"/>
+        <entity name="zombieYo" prob="0.05"/>
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />		
+		<entity name="hornet" prob="0.15"/>
+		<entity name="zombiedog" prob="0.15"/>
+		<entity name="zombieSteveCrawler" prob="0.05"/>
+		<entity name="fatzombiecop" prob="0.15"/>
+		<entity name="burntzombie" prob="0.07"/>
+		<entity name="zombieBear" prob="0.1"/>
+		<entity name="zombieferal" prob="0.1"/>
+		<entity name="Feral Ravager" prob="0.02"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+		<entity name="Feral Spider" prob="0.06"/>
+		<entity name="Scorched Rusher" prob="0.03"/>
+    </entitygroup>	   
+
+    <entitygroup name="ZombiesWastelandNight3">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe" prob="0.05"/>
+        <entity name="zombieJoe" prob="0.05"/>
+        <entity name="zombieSteve" prob="0.05"/>
+        <entity name="zombieMoe" prob="0.05"/>
+        <entity name="zombieYo" prob="0.05"/>
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />		
+		<entity name="hornet" prob="0.15"/>
+		<entity name="zombiedog" prob="0.15"/>
+		<entity name="zombieSteveCrawler" prob="0.05"/>
+		<entity name="fatzombiecop" prob="0.15"/>
+		<entity name="burntzombie" prob="0.07"/>
+		<entity name="zombieBear" prob="0.1"/>
+		<entity name="zombieferal" prob="0.1"/>
+		<entity name="Feral Ravager" prob="0.02"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+		<entity name="Feral Spider" prob="0.06"/>
+		<entity name="Scorched Rusher" prob="0.03"/>
+		<entity name="Zombie Gorilla Boss" prob="0.1"/>
+    </entitygroup>	
+	
+    <entitygroup name="ZombiesHoard">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe" prob="0.1"/>
+        <entity name="zombieJoe" prob="0.1"/>
+        <entity name="zombieSteve" prob="0.1"/>
+        <entity name="zombieMoe" prob="0.1"/>
+        <entity name="zombieYo" prob="0.1"/>
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />		
+		<entity name="fatzombiecop" prob="0.05"/>
+		<entity name="hornet" prob="0.05"/>
+		<entity name="zombiedog" prob="0.05"/>
+		<entity name="zombieBear" prob="0.05"/>
+		<entity name="zombieSteveCrawler" prob="0.1"/>
+		<entity name="Feral Ravager" prob="0.01"/>
+		<entity name="Bloated Walker" prob="0.06"/>
+		<entity name="Scorched Rusher" prob="0.003"/>
+    </entitygroup>
+
+	<entitygroup name="ZombieScouts">
+		<entity name="zombieScreamer" />
+	</entitygroup>
+
+  <entitygroup name="ZombiesCrawlers">
+    <entity name="zombieSteveCrawler" prob="1"/>
+  </entitygroup>
+
+  <entitygroup name="ZombiesBurntForest">
+    <entity name="burntzombie" prob="0.2"/>
+    <entity name="Burnt Spider" prob="0.05"/>
+    <entity name="zombiedog" prob="0.01"/>
+    <entity name="Burnt Crawler" prob="0.01"/>
+	<entity name="Scorched Rusher" prob="0.03"/>
+  </entitygroup>
+    
+    <entitygroup name="SnowZombies">
+        <entity name="snowzombie" prob="1"/>
+    </entitygroup>    		
+	
+    <entitygroup name="ZombiesBoss">
+		<entity name="fatzombiecop" prob="0.7"/>
+		<entity name="Burning Boss" prob="0.3"/>
+    </entitygroup>	
+	
+    <entitygroup name="ZombiesFeral">
+		<entity name="zombieferal" />
+		<entity name="Zombie Gorilla Boss" prob="0.3"/>
+    </entitygroup>
+
+  <entitygroup name="ZombiesCave">
+    <entity name="animalBear" prob="0.1"/>
+    <entity name="zombieSteveCrawler" prob="0.05"/>
+    <entity name="zombieJoe" prob="0.05"/>
+    <entity name="zombieSteve" prob="0.05"/>
+    <entity name="zombieMoe" prob="0.05"/>
+    <entity name="zombieYo" prob="0.05"/>
+    <entity name="zombieferal" prob="0.01"/>
+    <entity name="Feral Ravager" prob="0.02"/>
+  </entitygroup>
+
+    <entitygroup name="AnimalsSmall">
+        <entity name="animalRabbit" />
+		<entity name="animalChicken" />
+    </entitygroup>
+    
+    <entitygroup name="AnimalsFarm">
+        <entity name="animalPig" />
+		<entity name="animalChicken" />
+    </entitygroup>
+	
+    <entitygroup name="AnimalsBig">
+        <entity name="animalStag" />
+    </entitygroup>   
+    
+    <entitygroup name="AnimalsAll" >        
+    	<entity name="animalRabbit" prob="0.35"/>
+		<entity name="animalChicken" prob="0.35"/>
+        <entity name="animalStag" prob="0.15"/>
+        <entity name="animalPig" prob="0.14"/>
+        <entity name="animalBear" prob="0.01" />
+    </entitygroup>    
+	
+    <entitygroup name="HornetGroup">
+        <entity name="hornet" />
+    </entitygroup>	
+	
+    <entitygroup name="ZombieDogGroup">
+        <entity name="zombiedog" />
+    </entitygroup>	
+
+    <entitygroup name="SupplyCrates_General">
+		<entity name="sc_General" />		
+    </entitygroup>	
+</entitygroups>
