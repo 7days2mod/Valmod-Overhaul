@@ -7766,6 +7766,7 @@ kind of free
 	<property name="Extends" value="woodMaster" />
 	<property name="Shape" value="Pole" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodPole" /> </property>
+	<drop event="Destroy" name="nail" count="0" prob="1" />
 </block>
 
 <block id="989" name="woodPainted1Pole">

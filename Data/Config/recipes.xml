@@ -1658,7 +1658,7 @@ tooltip?
 <recipe name="rScrapIronPlateMine" count="1" scrapable="True" craft_area="workbench">
 	<ingredient name="gunPowder" count="3"/>
 	<ingredient name="ductTape" count="1"/>
-	<ingredient name="scrapIron" count="3"/>
+	<ingredient name="scrapIron" count="16"/>
 </recipe>
 
 <recipe name="railingOldWoodSheet" count="1" scrapable="False" craft_area="workstationDecor" craft_tool="handSaw">
