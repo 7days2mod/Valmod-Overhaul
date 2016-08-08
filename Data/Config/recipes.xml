@@ -2511,28 +2511,28 @@ tooltip?
 <recipe name="crudeNail" count="2" scrapable="False" craft_area="workbench">
         <ingredient name="scrapIron" count="1"/>
 </recipe>
-<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1">
+<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0">
         <ingredient name="crudeNail" count="6"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
-<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1">
+<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0">
         <ingredient name="nail" count="4"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
-<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1">
+<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0">
         <ingredient name="glue" count="5"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 
-<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_area="workbench">
+<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0" craft_area="workbench">
         <ingredient name="crudeNail" count="6"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
-<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_area="workbench">
+<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0" craft_area="workbench">
         <ingredient name="nail" count="4"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
-<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_area="workbench">
+<recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0" craft_area="workbench">
         <ingredient name="glue" count="5"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
