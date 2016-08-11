@@ -2667,6 +2667,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DegradationMax" value="3000,6000" />
 	</property>
 	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </item>
 
 <item id="261" name="partsChainsaw_parts">
