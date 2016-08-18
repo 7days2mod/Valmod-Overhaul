@@ -1363,7 +1363,6 @@
 		
 		<recipe name="scrapBoots" unlock_level="2"/>
 		<recipe name="scrapLegArmor" unlock_level="2"/>
-		<recipe name="gunPowder" unlock_level="2"/>
 		<recipe name="scrapChestArmor" unlock_level="2"/>
 		<recipe name="scrapHelmet" unlock_level="2"/>
 		<recipe name="scrapGloves" unlock_level="2"/>
