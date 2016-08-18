@@ -1889,7 +1889,6 @@
 	<item group="questChallenge"/>
 	<item name="calipers" prob="0.075"/> <!-- = 5% -->
 	<item name="toolAndDieSet" prob="0.075"/>
-	<item name="bloodDrawKit" prob="0.03"/>
 </lootcontainer>
 
 <!-- Coffin -->
