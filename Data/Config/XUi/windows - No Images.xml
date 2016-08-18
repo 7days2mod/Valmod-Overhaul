@@ -1450,9 +1450,9 @@
 				
 				
 			</rect>
-			<rect depth="1" pos="0,-234" width="600" height="197">
+			<rect depth="1" pos="0,-234" width="600" height="497">
 				<sprite depth="1" name="background" color="[darkGrey]" type="sliced"/> 
-				<sprite depth="3" pos="0,1" width="603" height="198" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" pos="0,1" width="603" height="498" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
 				<rect name="tableHeader" pos="0,0" width="600" height="43">
 					<sprite depth="1" name="background" color="[lightGrey]" type="sliced"/> 
 					<rect depth="1" width="303" height="40">
@@ -1468,14 +1468,25 @@
 						<label depth="1" pos="50,-10" upper_case="true" text="NEXT LVL REQUIREMENTS" text_key="xuiNextLevelRequirements" height="34" width="300" />
 					</rect>
 				</rect>
-				<grid rows="5" cols="1" pos="6,-46" width="300" cell_width="147" cell_height="28" controller="SkillAttributeList">
+				<grid rows="15" cols="1" pos="6,-46" width="300" cell_width="147" cell_height="28" controller="SkillAttributeList">
+					<skill_attribute/>
+					<skill_attribute />
+					<skill_attribute />
+					<skill_attribute />
+					<skill_attribute />
+					<skill_attribute/>
+					<skill_attribute />
+					<skill_attribute />
+					<skill_attribute />
+					<skill_attribute />
 					<skill_attribute/>
 					<skill_attribute />
 					<skill_attribute />
 					<skill_attribute />
 					<skill_attribute />
 				</grid>
-				<grid rows="4" cols="1" pos="300,-46" width="300" cell_width="147" cell_height="42" controller="SkillRequirementList">
+				<grid rows="5" cols="1" pos="300,-46" width="300" cell_width="147" cell_height="42" controller="SkillRequirementList">
+					<skill_requirement />
 					<skill_requirement />
 					<skill_requirement />
 					<skill_requirement />
