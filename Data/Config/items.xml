@@ -10301,7 +10301,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="CustomIcon" value="woodenBow" />
 		<property name="DescriptionKey" value="lokiBowDesc"/>
 		<property class="Attributes">
-			<property name="DegradationMax" value="200,800" />
+			<property name="DegradationMax" value="400,900" />
 		</property>
 	</item>
 <item id="1977" name="carpenterKit">
