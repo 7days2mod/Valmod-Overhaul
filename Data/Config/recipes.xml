@@ -1583,7 +1583,7 @@ tooltip?
 	<ingredient name="shortMetalPipe" count="4"/>
 </recipe>
 
-<recipe name="nail" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
+<recipe name="nail" count="2" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
 	<ingredient name="unit_iron" count="1"/>
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
@@ -2505,35 +2505,35 @@ tooltip?
 <recipe name="fiberPulp" count="1" scrapable="False" craft_area="campfire" craft_tool="bowlWater">
 	<ingredient name="yuccaFibers" count="20"/>
 </recipe>
-<recipe name="crudeNail" count="2" scrapable="False">
+<recipe name="crudeNail" count="4" scrapable="False">
         <ingredient name="scrapIron" count="1"/>
 </recipe>
-<recipe name="crudeNail" count="2" scrapable="False" craft_area="workbench">
+<recipe name="crudeNail" count="4" scrapable="False" craft_area="workbench">
         <ingredient name="scrapIron" count="1"/>
 </recipe>
 <recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0">
-        <ingredient name="crudeNail" count="6"/>
+        <ingredient name="crudeNail" count="4"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 <recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0">
-        <ingredient name="nail" count="4"/>
+        <ingredient name="nail" count="2"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 <recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0">
-        <ingredient name="glue" count="5"/>
+        <ingredient name="glue" count="3"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 
 <recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0" craft_area="workbench">
-        <ingredient name="crudeNail" count="6"/>
+        <ingredient name="crudeNail" count="4"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 <recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0" craft_area="workbench">
-        <ingredient name="nail" count="4"/>
+        <ingredient name="nail" count="2"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 <recipe name="carpenterKit" count="1" scrapable="False" craft_time="0.1" craft_exp_gain="0" craft_area="workbench">
-        <ingredient name="glue" count="5"/>
+        <ingredient name="glue" count="3"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 
@@ -4901,7 +4901,7 @@ tooltip?
 	<ingredient name="unit_iron" count="20"/>
 	<ingredient name="unit_clay" count="5"/>
 </recipe>
-<recipe name="nail" count="1" scrapable="False" craft_area="simpleForge" craft_tool="anvil" material_based="true">
+<recipe name="nail" count="2" scrapable="False" craft_area="simpleForge" craft_tool="anvil" material_based="true">
 	<ingredient name="unit_iron" count="1"/>
 	<ingredient name="unit_clay" count="1"/>
 </recipe>

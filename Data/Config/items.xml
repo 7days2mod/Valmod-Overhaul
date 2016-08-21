@@ -7349,7 +7349,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 </item>
 
 	<!-- Valmod Starts -->
-	<item id="1599" name="Valmod Version 3.27">
+	<item id="1599" name="Valmod Version 3.28">
 		<property name="CustomIcon" value="Bounty_Hat" />
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="HoldType" value="21" />
