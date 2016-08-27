@@ -1028,31 +1028,31 @@ repeatable="true" category_key="challenge" offer="You've dismantled some ammo fo
 </quest>
 
 <quest id="9mmDismantle30" name="Dismantle 9MM Bullets" subtitle="Dismantle 9MM Bullets" description="Dismantle your ammo to get their raw components." icon="misc_crafting" repeatable="true" category_key="challenge" offer="You've dismantled some ammo for its raw materials." difficulty="easy">
-<reward type="Item" id="bulletCasing" value="30" />
+<reward type="Item" id="9mmBulletCasing" value="30" />
 <reward type="Item" id="gunPowder" value="30" />
 <reward type="Item" id="bulletTip" value="30" />
 </quest>
 <quest id="10mmDismantle30" name="Dismantle 10MM Bullets" subtitle="Dismantle 10MM Bullets" description="Dismantle your ammo to get their raw components." icon="misc_crafting" 
 repeatable="true" category_key="challenge" offer="You've dismantled some ammo for its raw materials." difficulty="easy">
-<reward type="Item" id="bulletCasing" value="30" />
+<reward type="Item" id="10mmBulletCasing" value="30" />
 <reward type="Item" id="gunPowder" value="60" />
 <reward type="Item" id="bulletTip" value="30" />
 </quest>
 <quest id="44MagDismantle30" name="Dismantle 44Mag Bullets" subtitle="Dismantle 44Mag Bullets" description="Dismantle your ammo to get their raw components." icon="misc_crafting" 
 repeatable="true" category_key="challenge" offer="You've dismantled some ammo for its raw materials." difficulty="easy">
-<reward type="Item" id="bulletCasing" value="30" />
+<reward type="Item" id="44MagBulletCasing" value="30" />
 <reward type="Item" id="gunPowder" value="90" />
 <reward type="Item" id="bulletTip" value="30" />
 </quest>
 <quest id="762mmDismantle30" name="Dismantle 762MM Bullets" subtitle="Dismantle 762MM Bullets" description="Dismantle your ammo to get their raw components." icon="misc_crafting" 
 repeatable="true" category_key="challenge" offer="You've dismantled some ammo for its raw materials." difficulty="easy">
-<reward type="Item" id="bulletCasing" value="30" />
+<reward type="Item" id="762mmBulletCasing" value="30" />
 <reward type="Item" id="gunPowder" value="90" />
 <reward type="Item" id="bulletTip" value="30" />
 </quest>
 <quest id="ShotgunShellDismantle30" name="Dismantle Shotgun Shells" subtitle="Dismantle Shotgun Shells" description="Dismantle your ammo to get their raw components." icon="misc_crafting" 
 repeatable="true" category_key="challenge" offer="You've dismantled some ammo for its raw materials." difficulty="easy">
-<reward type="Item" id="paper" value="30" />
+<reward type="Item" id="shotgunShellCasing" value="30" />
 <reward type="Item" id="gunPowder" value="30" />
 <reward type="Item" id="buckshot" value="30" />
 </quest>
