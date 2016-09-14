@@ -1200,7 +1200,7 @@
 		<recipe name="workstationOven" unlock_level="1"/>
 	</perk>
 
-	<perk name="Lockpicks" icon="run" description_key="Learn how to make lockpicks to unlock gun safes." title_key="Safecracker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Lockpicks" icon="run" description_key="Learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<recipe name="Lockpick" unlock_level="1"/>
 	</perk>
 
@@ -1392,7 +1392,7 @@
 		<recipe name="glassBusinessBlock" unlock_level="1"/>
 	</perk>
 
-	<perk name="Security" icon="misc_crafting" description_key="Learn how to craft secure crates and doors." title_key="Security Measures" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+	<perk name="Security" icon="misc_crafting" description_key="Learn how to craft secure crates and doors. Doors are crafted in the workbench." title_key="Security Measures" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 		<recipe name="gearMechanism" unlock_level="1"/>
 		<recipe name="Remote" unlock_level="1"/>
 		<recipe name="ironDoor1_v1" unlock_level="1"/>

@@ -220,7 +220,7 @@
 		repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
 		
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="snowZombie" value="3" />
+		<objective type="ZombieKill" id="snowzombie" value="3" />
 		
 		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
 			<requirement type="Holding" id="fireaxeIron" />
@@ -691,7 +691,7 @@
 	</quest>
 
 	<quest id="challenge_lightthemup" name="Light'Em Up" subtitle="Kill 30 zombies with a burning club." description="Light up a wooden club in a campfire and use it to kill 30 zombies." icon="ui_game_symbol_club" 
-		repeatable="true" category_key="challenge" offer="Kill 30 zombies with a burning club." difficulty="Medium">
+		repeatable="true" category_key="challenge" offer="Kill 30 zombies with a burning club. You can craft a burning club by right-clicking a campfire with a wooden club." difficulty="Medium">
 		<action type="TrackQuest" />
 		<requirement type="Holding" id="clubBurning" />
 		<objective type="ZombieKill" value="30" />

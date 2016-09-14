@@ -774,7 +774,7 @@ cottonSeedDesc,items,Item,,Cotton seeds can be planted in dirt to grow cotton.,,
 crushedSand,items,Item,,Crushed Sand,,
 crushedSandDesc,items,Item,,Crushed sand is a core resource that can be smelted in the forge to make glass and used to craft items.,,
 doorKnob,items,Item,,Brass Doorknob,,
-doorKnobDesc,items,Item,,Brass objects can be scrapped into scrap brass in your backpack or smelted in a forge as a core resource.,,
+doorKnobDesc,items,Item,,Brass objects can be scrapped into scrap brass in your backpack or smelted in a forge as a core resource. Used to repair a door with a broken lock.,,
 emptyJar,items,Item,,Glass Jar,,
 emptyJarDesc,items,Item,,An empty glass jar can be filled at water sources using the secondary action or used in other recipes. Left-click on a working sink to get clean water.,,
 feather,items,Item,,Feather,,
@@ -1304,7 +1304,7 @@ clubIronDesc,items,Item Melee,,"Like a wooden club, but more durable and does mo
 clubSpiked,items,Item Melee,,Spiked Club,,
 clubSpikedDesc,items,Item Melee,,A badass club with sharp spikes. Added chance for bleeding.,,
 clubWood,items,Item Melee,,Wooden Club,,
-clubWoodDesc,items,Item Melee,,A wooden club. Good for breaking knees and skulls.,,
+clubWoodDesc,items,Item Melee,,A wooden club. Good for breaking knees and skulls. Can turn into a burning club by right-clicking a campfire.,,
 tazasStoneaxe,items,Item Melee,,Taza's Stone Axe,,
 tazasStoneaxeDesc,items,Item Melee,,"Taza's stone axe is a rare, powerful, ancient Indian artifact. The Apache believed those who wielded it were invincible in battle.",,
 q_basicSurvival,items,Item Quest Note,,Basic Survival Quest Note,,
@@ -3185,7 +3185,7 @@ fuelLogDesc,items,Item,,This log is coated with special chemicals to prolong its
 
 snowHarvested,blocks,Block,,Harvested Snow,,
 
-LockpickDesc,items,Item,,"Can be used to crack into safes.",,
+LockpickDesc,items,Item,,"Can be used to crack into safes. Note: Doesn't work on doors.",,
 recipebookLockpick,items,Item Book,,Lockpicking,,
 recipebookLockpickDesc,items,Item Book,,"This book teaches you how to create and use lockpicks for safecracking.",,
 
@@ -3237,7 +3237,7 @@ legendarySledgehammerDesc,items,Item Tool,,This sledgehammer has been through ju
 legendaryHuntingKnife,items,Item Melee,,Legendary Butcher Knife,,
 legendaryHuntingKnifeDesc,items,Item Melee,,"This blade has had a long and dark history of finding its way into many individuals even before the outbreak.",,
 legendaryWrench,items,Item Melee,,Legendary Wrench,,
-legendaryWrenchDesc,items,Item Melee,,"The name Freeman is caved into the handle. You have a feeling this wrench has been used very unconventionally if the blood stains are any indication",,
+legendaryWrenchDesc,items,Item Melee,,"The name Freeman is carved into the handle. You have a feeling this wrench has been used very unconventionally if the blood stains are any indication",,
 legendaryChainsaw,items,Item Tool,,Legendary Chainsaw,,
 legendaryChainsawDesc,items,Item Tool,,"The remains of flesh hanging from the chain make it clear what this chainsaw was used for. The disturbing thing is that the flesh looks too fresh to be from the undead.",,
 

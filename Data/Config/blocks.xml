@@ -7054,6 +7054,7 @@ kind of free
 <block id="885" name="treePlant02"> <!-- pottedPlant -->
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="Material" value="wood" />
+	<property name="MaxDamage" value="50" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -13397,7 +13398,7 @@ kind of free
 		<property name="Material" value="wood_weak" />
 		<property name="Texture" value="346,345,341,345,262,345" />
 		<property name="LootList" value="130" />
-		<drop event="Destroy" name="Working_Oven" count="1" />
+		<drop event="Destroy" name="workstationOven" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
 		<property name="HeatMapStrength" value="1"/>
 		<property name="HeatMapTime" value="1200"/>
