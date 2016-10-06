@@ -300,65 +300,84 @@
 	<!--PAGING WINDOW ICONS-->
 	<style name="paging.window.icon.crafting" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
-		<style_entry name="pos" value="76,-21"/>
+		<style_entry name="pos" value="31,-21"/>
 		<style_entry name="depth" value="3"/>
-		<style_entry name="name" value="crafting"/>
+		<style_entry name="name" value="Crafting"/>
 		<style_entry name="sprite" value="ui_game_symbol_hammer"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
 		<style_entry name="tooltip" value="CRAFTING" />
+		<style_entry name="tooltip_key" value="xuiCrafting" />
 		<style_entry name="hoverscale" value="1.25" />
 		<style_entry name="pivot" value="center" />
 	</style>
 	
 	<style name="paging.window.icon.character" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
-		<style_entry name="pos" value="121,-21"/>
+		<style_entry name="pos" value="76,-21"/>
 		<style_entry name="depth" value="3"/>
-		<style_entry name="name" value="character"/>
+		<style_entry name="name" value="Character"/>
 		<style_entry name="sprite" value="ui_game_symbol_character"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
 		<style_entry name="tooltip" value="CHARACTER" />
+		<style_entry name="tooltip_key" value="xuiCharacter" />
 		<style_entry name="hoverscale" value="1.25" />
 		<style_entry name="pivot" value="center" />
 	</style>
 	
 	<style name="paging.window.icon.map" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
-		<style_entry name="pos" value="171,-21"/>
+		<style_entry name="pos" value="126,-21"/>
 		<style_entry name="depth" value="3"/>
-		<style_entry name="name" value="map"/>
+		<style_entry name="name" value="Map"/>
 		<style_entry name="sprite" value="ui_game_symbol_map"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
 		<style_entry name="tooltip" value="MAP" />
+		<style_entry name="tooltip_key" value="xuiMap" />
 		<style_entry name="hoverscale" value="1.25" />
 		<style_entry name="pivot" value="center" />
 	</style>
 	
 	<style name="paging.window.icon.skills" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
-		<style_entry name="pos" value="426,-21"/>
+		<style_entry name="pos" value="171,-21"/>
 		<style_entry name="depth" value="3"/>
-		<style_entry name="name" value="skills"/>
+		<style_entry name="name" value="Skills"/>
 		<style_entry name="sprite" value="ui_game_symbol_skills"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
 		<style_entry name="tooltip" value="SKILLS" />
+		<style_entry name="tooltip_key" value="xuiSkills" />
 		<style_entry name="hoverscale" value="1.25" />
 		<style_entry name="pivot" value="center" />
 	</style>
 	
 	<style name="paging.window.icon.quests" type="button">
 		<style_entry name="sound" value="[paging_click]"/>
-		<style_entry name="pos" value="476,-21"/>
+		<style_entry name="pos" value="426,-21"/>
 		<style_entry name="depth" value="3"/>
-		<style_entry name="name" value="quests"/>
+		<style_entry name="name" value="Quests"/>
 		<style_entry name="sprite" value="ui_game_symbol_quest"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
 		<style_entry name="tooltip" value="QUESTS" />
+		<style_entry name="tooltip_key" value="xuiQuests" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.journal" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="476,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Journal"/>
+		<style_entry name="sprite" value="ui_game_symbol_pen"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="JOURNAL" />
+		<style_entry name="tooltip_key" value="xuiJournal" />
 		<style_entry name="hoverscale" value="1.25" />
 		<style_entry name="pivot" value="center" />
 	</style>
@@ -367,11 +386,12 @@
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="526,-21"/>
 		<style_entry name="depth" value="3"/>
-		<style_entry name="name" value="players"/>
+		<style_entry name="name" value="Players"/>
 		<style_entry name="sprite" value="ui_game_symbol_players"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
 		<style_entry name="tooltip" value="PLAYERS" />
+		<style_entry name="tooltip_key" value="xuiPlayers" />
 		<style_entry name="hoverscale" value="1.25" />
 		<style_entry name="pivot" value="center" />
 	</style>
@@ -380,11 +400,12 @@
 		<style_entry name="sound" value="[paging_click]"/>
 		<style_entry name="pos" value="576,-21"/>
 		<style_entry name="depth" value="3"/>
-		<style_entry name="name" value="creative"/>
+		<style_entry name="name" value="Creative"/>
 		<style_entry name="sprite" value="ui_game_symbol_lightbulb"/>
 		<style_entry name="width" value="32"/>
 		<style_entry name="height" value="32"/>
 		<style_entry name="tooltip" value="CREATIVE" />
+		<style_entry name="tooltip_key" value="xuiCreative" />
 		<style_entry name="hoverscale" value="1.25" />
 		<style_entry name="pivot" value="center" />
 	</style>
@@ -409,7 +430,7 @@
 		<style_entry name="sprite" value="ui_game_header_insert"/>
 		<style_entry name="type" value="sliced"/>
 		<style_entry name="pivot" value="center"/>
-		<style_entry name="size" value="200,38"/>
+		<style_entry name="size" value="250,38"/>
 		<style_entry name="pos" value="200,-21"/>
 		<style_entry name="color" value="[black]"/>
 	</style>

@@ -3,7 +3,7 @@
 	<world ruleset="vanilla" />
 	
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.6" generation_distance="10000">
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.6" generation_distance="10000" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" prob="0.05"/>
 			
 			<cell_rule name="lowDensity" prob="1"/>
@@ -161,7 +161,8 @@
 			<prefab rule="bookStores" max_count="1" prob="0.9"/>
 			<prefab rule="groceryStores" max_count="1" prob="0.9"/>
 			<prefab rule="banks" max_count="1" prob="0.9"/>
-					
+			<prefab rule="bars" max_count="1" prob="0.9"/>
+			<prefab rule="funeral_homes" max_count="1" prob="0.9"/>					
 			<prefab rule="middleClassHousing"/>
 			<prefab rule="countryHousing"/>
 			<prefab rule="townBuildings"/>
@@ -170,9 +171,11 @@
 		<prefab_rule name="wildernessPOIs">
 			<path_material value="gravel" /> 
 			<path_radius value="2" />
+			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="20"/>	
 			<prefab rule="abandoned_houses" prob="0.20"/>				
 			<prefab name="indian_burial_grounds_01" prob="0.05"/>			
 			<prefab rule="militaryCamps" prob="0.1"/>
+			<prefab rule="wildernessMisc" prob="0.1"/>
 			<prefab rule="waterPOIs" prob="0.1"/>
 			<prefab rule="countryHousing" prob="0.3"/>
 			<prefab rule="campsites" prob="0.15"/>
@@ -196,6 +199,7 @@
 			<prefab rule="apartments" />
 			<prefab rule="gasStations" max_count="1"/>
 			<prefab rule="diners" max_count="1"/>
+			<prefab rule="hotels" max_count="1"/>
 			<prefab rule="carlots" max_count="1"/>		
 		</prefab_rule>
 		
@@ -206,23 +210,28 @@
 			<prefab rule="bookStores" max_count="2"/>
 			<prefab rule="groceryStores" max_count="2"/>
 			<prefab rule="banks" max_count="1"/>
-			<prefab rule="settlements" max_count="1"/>					
+			<prefab rule="bars" max_count="1"/>
+			<prefab rule="funeral_homes" max_count="1" />	
+			<prefab rule="bandit_settlements" max_count="1"/>					
 		</prefab_rule>
 		
 		<prefab_rule name="ruralSmall">
 			<prefab rule="gasStations" min_count="1" max_count="1" prob="20"/>
 			<prefab rule="diners" max_count="1"/>
+			<prefab rule="bars" max_count="1"/>
 			<prefab rule="abandoned_houses"/>
 		</prefab_rule>
 		
 		<prefab_rule name="ruralLarge">
 			<prefab rule="gasStations" min_count="1" max_count="1"/>
-			<prefab name="utility_waterworks_01" max_count="1"/>
-			<prefab name="utility_electric_co_01" />
+			<prefab rule="hotels" max_count="1"/>
+			<prefab rule="hotels_big" max_count="1"/>
+			<prefab rule="autoparts_big" max_count="1"/>
 			<prefab rule="factories" max_count="2"/>
 			<prefab name="school_01" max_count="1"/>
 			<prefab rule="diners" max_count="1"/>
 			<prefab rule="carlots" max_count="1"/>
+			<prefab rule="bars" max_count="1"/>
 		</prefab_rule>
 		
 		<prefab_rule name="townBuildings">
@@ -233,6 +242,8 @@
 			<prefab rule="gunStores" max_count="1"/>
 			<prefab rule="pharmacies" max_count="1"/>
 			<prefab rule="banks" max_count="1"/>
+			<prefab rule="bars" max_count="1"/>
+			<prefab rule="funeral_homes" max_count="1"/>	
 			<prefab rule="hardwareStores" max_count="1"/>
 			<prefab rule="bookStores" max_count="1"/>
 			<prefab rule="groceryStores" max_count="1"/>
@@ -240,10 +251,12 @@
 			<prefab rule="oldWest" max_count="4"/>
 			<prefab rule="countryHousing" max_count="8"/>
 			<prefab name="bombshelter_lg_01" max_count="1"/>
+			<prefab name="bombshelter_md_01" max_count="1"/>
 			<prefab rule="vacant_lots" prob="0.1"/>			
 			<prefab rule="businessBrick" max_count="2"/>
 			<prefab rule="businessTan" max_count="2"/>			
 			<prefab rule="gasStations" min_count="1" max_count="1" prob="20"/>
+			<prefab rule="hotels" min_count="1" max_count="1" prob="20"/>
 			<prefab rule="diners" max_count="1"/>
 			<prefab name="water_tower_02" min_count="1" max_count="1"/>
 			<prefab rule="abandoned_houses" max_count="5"/>
@@ -251,8 +264,9 @@
 			<prefab rule="middleClassHousing"/>
 			<prefab rule="upperClassHousing"/>			
 			<prefab rule="burntHousing"/>
-			<prefab rule="settlements" max_count="1"/>
+			<prefab rule="bandit_settlements" max_count="1"/>
 			<prefab rule="carlots" max_count="1"/>
+			<prefab rule="entertainment" max_count="1"/>
 			<prefab rule="signsAndLights" prob="0.1"/>
 		</prefab_rule>
 
@@ -282,6 +296,7 @@
 			<prefab name="housetanpyramid2"/>
 			<prefab name="housewhitepyramid1"/>
 			<prefab name="housewhitepyramid2"/>
+			<prefab name="trailer_park_01" />
 		</prefab_rule>
 
 		<prefab_rule name="middleClassHousing">
@@ -340,6 +355,8 @@
 		
 		<prefab_rule name="entertainment">
 			<prefab name="theater_01"  max_count="1"/>
+			<prefab name="bar_theater_01"  max_count="1"/>
+			<prefab name="skate_park_01"  max_count="1"/>
 		</prefab_rule>
 		
 		<prefab_rule name="apartments">
@@ -350,8 +367,11 @@
 		<prefab_rule name="governmentOffices">
 			<prefab name="mp_waste_bldg_governer_08" max_count="1"/>
 			<prefab name="police_station1" max_count="1"/>
+			<prefab name="prison_01" max_count="1"/>
 			<prefab name="utility_waterworks_01" max_count="1"/>
 			<prefab name="utility_electric_co_01" />
+			<prefab name="utility_refinery_01" max_count="1"/>
+			<prefab name="installation_red_mesa" max_count="1" />
 		</prefab_rule>
 		
 		<prefab_rule name="parking">
@@ -389,8 +409,25 @@
 			<prefab name="store_bank_lg_01" />
 		</prefab_rule>
 		
-		<prefab_rule name="settlements">
+		<prefab_rule name="bars">
+			<prefab name="bar_stripclub_01" />
+			<prefab name="bar_sm_01" />
+		</prefab_rule>
+		
+		<prefab_rule name="funeral_homes">
+			<prefab name="funeral_home_01" />
+		</prefab_rule>
+		
+		<prefab_rule name="bandit_settlements">
 			<prefab name="settlement_01" />
+		</prefab_rule>
+		
+		<prefab_rule name="trader_settlements">
+			<prefab name="settlement_trader_01" />
+			<prefab name="settlement_trader_02" />
+			<prefab name="settlement_trader_03" />
+			<prefab name="settlement_trader_04" />
+			<prefab name="settlement_trader_05" />
 		</prefab_rule>
 		
 		<prefab_rule name="cityBlocks">
@@ -468,11 +505,28 @@
 			<prefab name="carlot_02"/>
 		</prefab_rule>
 		
+		<prefab_rule name="hotels">
+			<prefab name="hotel_roadside_01"/>
+			<prefab name="hotel_roadside_02"/>
+			<prefab name="hotel_ostrich"/>
+		</prefab_rule>
+		
+		<prefab_rule name="hotels_big">
+			<prefab name="hotel_new_01"/>
+		</prefab_rule>
+		
+		<prefab_rule name="autoparts_big">
+			<prefab name="store_autoparts_01"/>
+		</prefab_rule>
+		
 		<prefab_rule name="factories">
 			<prefab name="factory_lg_01" />
 			<prefab name="factory_lg_02" />
 			<prefab name="utility_waterworks_01" />
 			<prefab name="utility_electric_co_01" />
+			<prefab name="utility_refinery_01" />
+			<prefab name="prison_01" />
+			<prefab name="installation_red_mesa" />
 		</prefab_rule>
 		
 		<prefab_rule name="rural">
@@ -484,6 +538,9 @@
 			<prefab name="utility_celltower_02" />
 			<prefab name="cemetery_01" />
 			<prefab name="cemetery_02" />
+			<prefab name="prison_01" />
+			<prefab name="installation_red_mesa" />
+			<prefab name="trailer_park_01" />
 		</prefab_rule>
 		
 		<prefab_rule name="barnsAndSheds">
@@ -494,9 +551,8 @@
 			<prefab name="farm_shed2" />
 			<prefab name="farm_shed3" />
 			<prefab name="farm_shed4" />
-			
 			<prefab name="bombshelter_lg_01" />
-			
+			<prefab name="bombshelter_md_01" />		
 			<prefab name="oldwest_stables" />
 		</prefab_rule>
 		
@@ -546,6 +602,8 @@
 			<prefab name="utility_celltower_02" />
 			<prefab name="cemetery_01" />
 			<prefab name="cemetery_02" />
+			<prefab name="bar_stripclub_01" />
+			<prefab name="trailer_park_01" />
 		</prefab_rule>
 		
 		<prefab_rule name="abandoned_houses">
@@ -568,22 +626,6 @@
 		
 		
 	</prefab_rules>
-	
-	<biome_spawn_rules>
-		<biome_spawn_rule name="pine_forest"/>
-		<biome_spawn_rule name="desert"/>
-		<biome_spawn_rule name="wasteland" />
-		<biome_spawn_rule name="burnt_forest"/>
-		<biome_spawn_rule name="forest"/>
-		<biome_spawn_rule name="plains"/>
-
-		<!--
-		<biome_spawn_rule name="snow"/>
-		<biome_spawn_rule name="wasteland" />
-		<biome_spawn_rule name="wasteland_hub"/>
-		<biome_spawn_rule name="radiated"/>
-		<biome_spawn_rule name="water"/>-->
-	</biome_spawn_rules>
 	
 	<hub_layouts>
 		<hub_layout name="customHubTest">
@@ -616,4 +658,183 @@
 			<lot min_x_y="-135, -135" size="128,128" rotation_to_road="1" align="north_east"/>
 		</hub_layout>
 	</hub_layouts>
+	
+<!--
+	GENERATOR MODULE TYPES
+	    AbsoluteOutput
+        Add
+        BiasOutput
+        Blend
+        ClampOutput
+        CurveOutput
+        DisplaceInput
+        ExponentialOutput
+        InvertInput
+        InvertOutput
+        LargerOutput
+        Multiply
+        Power
+        RotateInput
+        ScaleBiasOutput
+        ScaleInput
+        ScaleOutput
+        Select
+        SmallerOutput
+        Terrace
+        TranslateInput
+        Billow
+        Checkerboard
+        Constant
+        FastBillow
+        FastNoise
+        FastNoiseBasis
+        FastRidgedMultifractal
+        FastTurbulence
+        GradientNoiseBasis
+        RidgedMultifractal
+        Turbulence
+        Voronoi
+	
+-->
+
+	<terrain_generators>
+		<terrain_generator name="vanilla" use_old_final="false">
+			<module name="fastContinents" type="FastNoise">
+				<property name="frequency" value="0.5"/>
+			</module>
+			<module name="fastLowlands" type="FastBillow" no_seed="true">
+				<property name="frequency" value="0.1"/>
+			</module>
+			<module name="fastLowlandsScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="fastLowlands"/>
+				<property name="scale" value="0.2"/>
+				<property name="bias" value="0.5"/>
+			</module>
+			<module name="fastMountainsBase" type="FastRidgedMultifractal">
+				<property name="frequency" value="0.005"/>
+			</module>
+			<module name="fastMountainsScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="fastMountainsBase"/>
+				<property name="scale" value="1.1"/>
+				<property name="bias" value="0.5"/>
+			</module>
+			<module name="fastMountains" type="FastTurbulence">
+				<property name="sourceModule" value="fastMountainsScaled"/>
+				<property name="power" value="100"/>
+				<property name="frequency" value="0.5"/>
+				<property name="roughness" value="5"/>
+			</module>
+			<module name="fastLandFilter" type="FastNoise" seed_additive="1">
+				<property name="frequency" value="0.5"/>
+			</module>
+			<module name="fastLand" type="Select">
+				<property name="controlModule" value="fastLandFilter"/>
+				<property name="sourceModule1" value="fastLowlandsScaled"/>
+				<property name="sourceModule2" value="fastMountains"/>
+				<property name="bounds" value="0,1000"/>
+				<property name="edgeFalloff" value="16"/>
+			</module>
+			<module name="fastOceanBase" type="FastBillow">
+				<property name="frequency" value="1"/>
+			</module>
+			<module name="fastOcean" type="ScaleOutput">
+				<property name="sourceModule" value="fastOceanBase"/>
+				<property name="scale" value="0.1"/>
+			</module>
+			<module name="fastFinal" type="Select">
+				<property name="controlModule" value="fastContinents"/>
+				<property name="sourceModule1" value="fastOcean"/>
+				<property name="sourceModule2" value="fastLand"/>
+				<property name="bounds" value="0, 1"/>
+				<property name="edgeFalloff" value="0.5"/>
+			</module>
+			<module name="scaleBiasOutput" type="ScaleBiasOutput">
+				<property name="sourceModule" value="fastFinal"/>
+				<property name="scale" value="180"/>
+				<property name="bias" value="-1"/>
+			</module>
+			<module name="clampOutput" type="ClampOutput">
+				<property name="sourceModule" value="scaleBiasOutput"/>
+				<property name="bounds" value="-28,190"/>
+			</module>
+			
+			<output module="clampOutput"/>
+		</terrain_generator>
+	
+	</terrain_generators>
+	
+	<biome_generators>
+		<biome_generator name="vanilla">
+			<module name="voronoi" type="Voronoi">
+				<property name="frequency" value="0.0008"/>
+				<property name="displacement" value="0.5"/>
+			</module>
+			<module name="biasOutput" type="BiasOutput">
+				<property name="sourceModule" value="voronoi"/>
+				<property name="bias" value="0.5"/>
+			</module>
+			
+			<module name="biomeDither" type="FastTurbulence">
+				<property name="sourceModule" value="biasOutput"/>
+				<property name="frequency" value="0.25"/>
+				<property name="power" value="8"/>
+				<property name="roughness" value="5"/>
+			</module>
+			
+			<module name="biomeJiggle" type="FastTurbulence">
+				<property name="sourceModule" value="biomeDither"/>
+				<property name="frequency" value="0.0016"/>
+				<property name="power" value="400"/>
+				<property name="roughness" value="1"/>
+			</module>
+			
+			<module name="clampOutput" type="ClampOutput">
+				<property name="sourceModule" value="biomeJiggle"/>
+				<property name="bounds" value="0,1"/>
+			</module>
+			
+			<output module="clampOutput"/>
+		</biome_generator>
+	</biome_generators>
+	
+	<biome_spawn_rules>
+		<biome_spawn_rule name="pine_forest">
+			<biome_generator range="0,0.1"/>
+			<terrain_generator range="170,189"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="desert">
+			<biome_generator range="0.1,0.3"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="burnt_forest">
+			<biome_generator range="0.3,0.4"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0.4,0.6"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="snow">
+			<biome_generator range="0.6,0.7"/>
+			<terrain_generator range="190,255"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="wasteland">
+			<biome_generator range="0.7,0.8"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="plains">
+			<biome_generator range="0.8,1"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="radiated">
+			<distance_from_center range="10000,20000"/>
+		</biome_spawn_rule>
+		
+		<biome_spawn_rule name="water">
+			<terrain_generator range="-31,-1"/>
+		</biome_spawn_rule>
+		
+	</biome_spawn_rules>
 </rwgmixer>

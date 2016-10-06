@@ -51,7 +51,18 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
 		</window_group>				
+
+		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowToolsChemistry" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
 		
 		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
 			<window name="windowLooting"/>
@@ -160,6 +171,11 @@
 			<window name="windowQuestRewards" />
 		</window_group>
 		
+		<window_group name="journal" controller="XUiC_JournalWindowGroup">
+			<window name="windowJournalList" />
+			<window name="windowJournalEntryDescription" />
+		</window_group>
+		
 		<window_group name="profiles">
 			<window name="windowArchetypePreview"/>
 		</window_group>
@@ -167,6 +183,21 @@
 		<window_group name="archetypes" controller="XUiC_ArchetypesWindowGroup" stack_panel_y_offset="332">
 			<window name="windowArchetypePreview2"/>
 			<window name="windowSliders"/>
+			<window name="windowColorPicker"/>
+		</window_group>
+		
+		<window_group name="trader" controller="XUiC_TraderWindowGroup">
+			<window name="windowTrader"/>
+			<window name="windowNonPagingHeader" />
+			<window name="serviceInfoPanel"/>
+		</window_group>
+		
+		<window_group name="sign">
+			<window name="windowSignEdit" />
+		</window_group>
+
+		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
+			<window name="windowRWGPreview" />
 		</window_group>
 
 		<window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">
@@ -184,13 +215,6 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_studyDesk" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList"/>
-			<window name="craftingInfoPanel"/>
-			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
 		<window_group name="workstation_workstationArmory" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
@@ -199,20 +223,7 @@
 			<window name="windowNonPagingHeader" />
 			<window name="windowToolsArmory" />
 		</window_group>
-		<window_group name="workstation_Brewery" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList"/>
-			<window name="craftingInfoPanel"/>
-			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
-		<window_group name="workstation_oilRefiner" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList"/>
-			<window name="craftingInfoPanel"/>
-			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
+
 		<window_group name="workstation_workstationMerchant" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
@@ -225,14 +236,6 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
-		<window_group name="workstation_workstationChemistry" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList"/>
-			<window name="craftingInfoPanel"/>
-			<window name="windowCraftingQueue"/>
-			<window name="windowToolsChemistry" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>

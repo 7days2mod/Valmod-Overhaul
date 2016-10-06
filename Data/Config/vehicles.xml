@@ -26,10 +26,10 @@
 			<property name="transform" value="Origin/handlebar_joint"/>
 			<property name="steer_rotate_min" value="Origin/handlebar_joint/rotateMin"/>
 			<property name="steer_rotate_max" value="Origin/handlebar_joint/rotateMax"/>
-			<property name="left_hand_ik_position" value="-0.29, 0.3633, -0.1"/>
-			<property name="right_hand_ik_position" value="0.29, 0.42, -0.1"/>
-			<property name="left_hand_ik_rotation" value="-20.729, -26.734, -12.410"/>
-			<property name="right_hand_ik_rotation" value="20.729, 26.734, 12.410"/>
+			<property name="left_hand_ik_position" value="-0.3205, 0.4422, -0.0433"/>
+			<property name="right_hand_ik_position" value="0.3205, 0.4422, -0.0433"/>
+			<property name="left_hand_ik_rotation" value="62.50001, -26.92984, -12.41"/>
+			<property name="right_hand_ik_rotation" value="52.90001, 8.37004, 6.400046"/>
 			<property name="part_damage_reduction" value="0.25"/>
 			<property name="parent_part" value="chassis"/>
 		</property>

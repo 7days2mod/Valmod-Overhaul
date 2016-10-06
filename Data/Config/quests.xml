@@ -32,7 +32,7 @@
 		
 		<objective type="FetchKeep" id="yuccaFibers" value="2" />
 		<objective type="FetchKeep" id="wood" value="2" />
-		<objective type="FetchKeep" id="rockSmall" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="5" />
 	
 		<objective type="Craft" id="stoneAxe" value="1" />
 <!--		<reward type="Quest" id="quest_BasicSurvival2" />-->
@@ -65,7 +65,7 @@
 
 	<!-- Basic Survival 4 - Craft a Wooden Club /> -->	
 	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_club" category_key="Quest">
-		<objective type="FetchKeep" id="wood" value="5" />
+		<objective type="FetchKeep" id="wood" value="10" />
 		<objective type="Craft" id="clubWood" value="1" />
 		
 		<reward type="Quest" id="quest_BasicSurvival5" />
@@ -73,7 +73,7 @@
 
 	<!-- Basic Survival 5 - Craft Bow & Arrows /> -->		
 	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_archery" category_key="Quest">
-		<objective type="FetchKeep" id="wood" value="8" />
+		<objective type="FetchKeep" id="wood" value="14" />
 		<objective type="FetchKeep" id="yuccaFibers" value="3" />
 		<objective type="FetchKeep" id="feather" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="2" />
@@ -85,7 +85,7 @@
 
 	<!-- Basic Survival 6 - Start a Base /> -->	
 	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_map_house" category_key="Quest">
-		<objective type="FetchKeep" id="wood" value="60" />
+		<objective type="FetchKeep" id="wood" value="45" />
 		<objective type="Craft" id="woodFrameBlock" value="3" />
 		<objective type="BlockPlace" id="woodFrameBlock" value="3" />
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="3" />
@@ -110,8 +110,15 @@
 		
 		<reward type="SkillPoints" value="1" />
 		<reward type="ShowTip" value="tutorialTipQuest03" stage="aftercomplete" />
+		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
     </quest>
+
+	<!-- White River Citizen 1 - Journey to Settlement -->
+	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="Quest">
+		<objective type="Goto" id="trader" value="5" />
 	
+		<reward type="SkillPoints" value="1" />
+    </quest>
 	
 	
 	<!-- CHALLENGES -->
@@ -366,7 +373,7 @@
 	<quest id="challenge_miner1" group_name_key="quest_miner" name="Miner Quest 1/3" subtitle="Mining Challenge 1" description="Bust some rocks" icon="ui_game_symbol_forge" 
 		repeatable="false" category_key="challenge" offer="So we hear you want to be a miner.  A real miner knows how to bust some rocks.  Go break some boulders and show us you can handle the job." difficulty="easy">
 		<objective type="FetchKeep" id="rockSmall" value="150" />
-		<objective type="FetchKeep" id="scrapIron" value="50" />
+		<objective type="FetchKeep" id="ironFragment" value="50" />
 		<reward type="Skill" id="Mining Tools" value="1" />
 		<reward type="Item" id="dynamite" value="5" />
 		<reward type="Quest" id="challenge_miner2" />
@@ -375,12 +382,12 @@
 		<quest id="challenge_miner2" group_name_key="quest_miner" name="Miner Quest 2/3" subtitle="Mining Challenge 2" description="Keep breaking those rocks" icon="ui_game_symbol_forge" 
 		repeatable="false" category_key="challenge" offer="You did ok breaking those rocks, now lets see how well you can find ore buried in the ground.  That TNT should help you get started." difficulty="medium">
 		<objective type="FetchKeep" id="rockSmall" value="300" />
-		<objective type="FetchKeep" id="scrapIron" value="150" />
+		<objective type="FetchKeep" id="ironFragment" value="150" />
 		<objective type="FetchKeep" id="scrapLead" value="100" />
 		<objective type="FetchKeep" id="coal" value="100" />
 		<objective type="FetchKeep" id="potassiumNitratePowder" value="100" />
 		<reward type="Skill" id="Mining Tools" value="2" />
-		<reward type="Item" id="clawHammer" value="300" />
+		<reward type="Item" id="pickaxeIron" value="300" />
 		
 		<reward type="Quest" id="challenge_miner3" />
 	</quest>
@@ -568,7 +575,7 @@
 			<requirement type="Holding" id="crossbowRepeater" />
 		</requirement>
 		<objective type="ZombieKill" value="25" />
-		<reward type="Item" id="crossbowBolt" value="35" />
+		<reward type="Item" id="ironCrossbowBolt" value="35" />
 		<reward type="Skill" id="Archery" value="1" />
 		<reward type="Skill" id="Fletching" value="1" />
 		<reward type="Quest" id="challenge_survivor2" />
@@ -585,7 +592,7 @@
 		
 		<reward type="Skill" id="Archery" value="3" />
 		<reward type="Skill" id="Fletching" value="3" />
-		<reward type="Item" id="crossbowBolt" value="70" />
+		<reward type="Item" id="ironCrossbowBolt" value="70" />
 		<reward type="Quest" id="challenge_survivor3" />
 	</quest>
 	
@@ -849,7 +856,7 @@
 	</quest>
 <quest id="merchantBolts" name="Merchant Order - Crossbow Bolts" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
 		repeatable="true" category_key="challenge" offer="" difficulty="easy">
-		<reward type="Item" id="crossbowBolt" value="50" />
+		<reward type="Item" id="ironCrossbowBolt" value="50" />
 	</quest>
 
 	<!-- Guns -->
@@ -902,15 +909,15 @@
 		repeatable="true" category_key="challenge" offer="" difficulty="easy">
 		<reward type="Item" id="wrench" value="200" />
 	</quest>
-<quest id="merchantGascan" name="Merchant Order - Wrench" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+<quest id="merchantGascan" name="Merchant Order - Gascan" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
 		repeatable="true" category_key="challenge" offer="" difficulty="easy">
 		<reward type="Item" id="gasCan" value="100" />
 	</quest>
-<quest id="merchantFirstAid" name="Merchant Order - Wrench" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+<quest id="merchantFirstAid" name="Merchant Order - First Aid" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
 		repeatable="true" category_key="challenge" offer="" difficulty="easy">
 		<reward type="Item" id="firstAidKit" value="1" />
 	</quest>
-<quest id="merchantAntibiotics" name="Merchant Order - Wrench" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
+<quest id="merchantAntibiotics" name="Merchant Order - Antibiotics" subtitle="" description="You've recieved a delivery from the traveling merchant." icon="ui_game_symbol_treasure" 
 		repeatable="true" category_key="challenge" offer="" difficulty="easy">
 		<reward type="Item" id="antibiotics" value="1" />
 	</quest>
@@ -951,7 +958,7 @@ repeatable="false" category_key="challenge" offer="maniacpowder" difficulty="eas
 <objective type="Fetch" id="potassiumNitratePowder" value="1" />
 <objective type="Fetch" id="painkillers" value="1" />
 <objective type="Fetch" id="mushrooms" value="1" />
-<objective type="Fetch" id="goldenrod" value="1" />
+<objective type="Fetch" id="goldenrodPlant" value="1" />
 <reward type="Item" id="maniacPowder" value="1" />
 <reward type="Skill" id="Medicine" value="1" />
 </quest>
@@ -1023,7 +1030,7 @@ repeatable="true" category_key="challenge" offer="You've dismantled some ammo fo
 <quest id="ShotgunShellDismantle" name="Dismantle Shotgun Shells" subtitle="Dismantle Shotgun Shells" description="Dismantle your ammo to get their raw components." icon="misc_crafting" 
 repeatable="true" category_key="challenge" offer="You've dismantled some ammo for its raw materials." difficulty="easy">
 <reward type="Item" id="shotgunShellCasing" value="10" />
-<reward type="Item" id="gunPowder" value="10" />
+<reward type="Item" id="gunPowder" value="20" />
 <reward type="Item" id="buckshot" value="10" />
 </quest>
 
@@ -1053,7 +1060,7 @@ repeatable="true" category_key="challenge" offer="You've dismantled some ammo fo
 <quest id="ShotgunShellDismantle30" name="Dismantle Shotgun Shells" subtitle="Dismantle Shotgun Shells" description="Dismantle your ammo to get their raw components." icon="misc_crafting" 
 repeatable="true" category_key="challenge" offer="You've dismantled some ammo for its raw materials." difficulty="easy">
 <reward type="Item" id="shotgunShellCasing" value="30" />
-<reward type="Item" id="gunPowder" value="30" />
+<reward type="Item" id="gunPowder" value="60" />
 <reward type="Item" id="buckshot" value="30" />
 </quest>
 <!-- Ammo Box -->
@@ -1133,7 +1140,7 @@ repeatable="false" category_key="challenge" offer="Gunman have experience with h
 	<reward type="Skill" id="Gun Smithing" value="10" />
 	<reward type="Skill" id="9mm Round Crafting" value="1" />
 	<reward type="Skill" id="Pistols" value="20" />
-	<reward type="Skill" id="Bartering" value="10" />
+	<reward type="Skill" id="Barter" value="10" />
 </quest>
 <quest id="perkMedic" name="Medic Skills" subtitle="Medic Skills" description="This teaches you the skills of the class." icon="misc_crafting" 
 repeatable="false" category_key="challenge" offer="The field medic has previous military training on the field and knows how to handle a handgun and an injury." difficulty="easy">
@@ -1149,7 +1156,7 @@ repeatable="false" category_key="challenge" offer="The Bruiser has experience in
 	<reward type="Skill" id="Blunt Weapons" value="10" />
 	<reward type="Skill" id="Blade Weapons" value="5" />
 
-	<reward type="Skill" id="Unarmed" value="15" />
+<!--	<reward type="Skill" id="Unarmed" value="15" /> -->
 	<reward type="Skill" id="Shotguns" value="10" />
 	<reward type="Skill" id="Athletics" value="10" />
 	<reward type="Skill" id="Improvised Armor" value="1" />

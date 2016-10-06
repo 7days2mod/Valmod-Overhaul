@@ -1,0 +1,25 @@
+<npc>
+	
+	<npc_info
+		id="traitorjoel"
+		name="Traitor Joel"
+		name_key="npc_traitorJoel"
+		faction="whiteriver"
+		greeting_type="nearby"
+		trader_id="1" dialog_id="newbieGuy_1" />
+	
+	<npc_info
+		id="traderric"
+		name="Traitor Joel"
+		name_key="npc_traderRekt"
+		faction="whiteriver"
+		greeting_type="nearby"
+		trader_id="2" dialog_id="medstudent1" />	
+
+	<npc_info
+		id="traderTest"
+		faction="whiteriver"
+		greeting_type="nearby"
+		trader_id="99" dialog_id="medstudent1" />	
+		
+</npc>

@@ -31,7 +31,7 @@
 	<!-- If player core temp is above this, cooling effects are applied at the PositiveTempChangeRateMultiplier rate. -->
 	<property name="HotTempChangeThreshhold" value="90"/>
 	<!-- How much change you feel in the outside air temperature when you are 100% wet. -->
-	<property name="OutsideTempChangeWhenSoaked" value="-15"/>
+	<property name="OutsideTempChangeWhenSoaked" value="-30"/>
 	<!-- Base temperature when you are wet. -->
 	<property name="BaseOutsideTempChangeWhenWet" value="0"/>
 	<!-- How much change you feel in the outside air temperature when wet and 100% windy. -->

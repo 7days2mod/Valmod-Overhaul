@@ -33,6 +33,10 @@ In most cases these are master blocks / items that provide default values for "r
 The flag itself is not inherited by "Extends" so all child blocks / items remain visible.
 
 
+Extended items do NOT inherit auto-calculated weight.
+Only items with actual recipes have it.
+That's why cowboy boots (loot only but extending leather boots) did not scrap.
+
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
@@ -284,6 +288,252 @@ You need to do it this way:
 	<drop event="Destroy" name="workbench" count="1" tool_category="Disassemble" />
 
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Farming / Harvest yield of farmed crops.
+
+This only affects block class "CropsGrown".
+
+The "fertile_level" (defined in materials.xml) of the block that the plant is growing on can affect the harvest yield.
+
+To use that you add 
+	<property name="CropsGrown.BonusHarvestDivisor" value="5.0" />    (float, default=VeryLargeNumber)
+
+to the to-be-harvested block.
+This will generate bonus items when the plant is harvested.
+
+The number of additional harvest items is
+
+= ( "fertile_level" of the block directly below ) / ( CropsGrown.BonusHarvestDivisor )
+
+So for a fertile_level of 5 and a BonusHarvestDivisor of 1.2 you get +4 harvest items.
+Now if you were to make some fertiliser and further increase the fertile level of the dirt...
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+PlantGrowing.IsRandom growth timers
+
+All the coders tell me that using "random" for the timer is much cheaper in CPU terms so that would be a good thing for a farm that can have thousands of plants.
+
+Unfortunately it was a bit short on the max duration so couldn't actually be used for anything.
+Now, when using PlantGrowing.IsRandom the max value for PlantGrowing.GrowthRate has been increased to 63.
+
+At the setting of 63 I timed that to be 43 - 106 minutes.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Trees growing to variable sizes depending on the soil.
+
+Any plant/block using
+<property name="PlantGrowing.
+
+to upgrade will check the 
+
+<property name="PlantGrowing.FertileLevel" value="xxx" />
+of the TARGET block first.
+
+If this  PlantGrowing.FertileLevel  is higher than the  fertile_level  of the block directly below then the upgrade will not occur.
+Score one for biome diversity. =)
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Support and multiblocks
+
+(A15) On destruction, blocks with "MultiBlockDim" are properly cleaned up, leaving no invisible support blocks in mid-air. (Sorry! =)
+
+	<property name="UpwardsCount" value="8" />
+is obsolete.
+It's function is/was to create an invisible "supporting" block in mid-air over objects like trees so you could build on top of them.
+This is now solved better with MultiBlockDim.
+It may or may not continue to work. Try it first...
+
+
+Multiblocks and  <property name="StabilitySupport" value="false" />
+
+If the multiblock's Y dimension is >1 it will self destruct.
+
+
+In general, multiblocks can not have a horizontal dimension >7.
+Lead programmer said so and he knows things.
+He added a special exception for vertical dimension (trees).
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Upgrade and hit sounds
+
+When you upgrade a block then the tool plays a sound on every hit.
+This sound is from the material value of the upgrade RESOURCE.
+
+<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
+This sound is played once when the upgrade is taking effect.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Attributes:
+
+	"count"
+	"event"
+	"id"
+	"name"
+	"prob"
+	"stick_chance"
+	"tool_category"
+
+Keys:
+	"ActionSkillGroup"
+	"ActiveRadiusEffects"
+	"BigDecorationRadius"
+	"BuffsWhenWalkedOn"
+	"CanDecorateOnSlopes"
+	"CanMobsSpawnOn"
+	"CanPickup"
+	"CanPlayersSpawnOn"
+	"Class"
+	"Collide"
+	"Count"
+	"CraftComponentExpValue"
+	"CraftComponentTimeValue"
+	"CraftingSkillGroup"
+	"CustomIcon"
+	"Density"
+	"DescriptionKey"
+	"DestroyExpValue"
+	"DowngradeBlock"
+	"EconomicValue"
+	"EconomicBundleSize"
+	"Extends"
+	"FallDamage"
+	"FuelValue"
+	"Group"
+	"HeatMapFrequency"
+	"HeatMapStrength"
+	"HeatMapTime"
+	"IndexName"
+	"IsDeveloper"
+	"IsPlant"
+	"IsTerrainDecoration"
+	"LPHardnessScale"
+	"Light"
+	"LightOpacity"
+	"LootExpValue"
+	"Map.Color"
+	"Map.Color2"
+	"Map.ElevMinMax"
+	"Map.Specular"
+	"MaxDamage"
+	"Mesh"
+	"MovementFactor"
+	"MultiBlockDim"
+	"MultiBlockLayer"
+	"PickupSource"
+	"PickupTarget"
+	"Place"
+	"PlaceAltBlockValue"
+	"PlaceExpValue"
+	"PlacementWireframe"
+	"RepairItems"
+	"RotationAllowed"
+	"Shape"
+	"ShapeMinBB"
+	"ShowModelOnFall"
+	"SiblingBlock"
+	"SmallDecorationRadius"
+	"StabilitySupport"
+	"Stacknumber"
+	"Tag"
+	"Texture"
+	"UpgradeBlock.ToBlock"
+	"UpgradeExpValue"
+	"Weight"
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+<property name="EconomicValue" value="xxx" />  (integer)
+
+"EconomicBundleSize" :
+Was put in because the coder did not want a float there. =)
+A trader will trade this many items as the smallest bundle. You won't be able to sell a single small rock.
+The "EconomicValue" applies to the bundle.
+
+
+The price of an assembled item (gun) is equal to the sum of it's parts.
+
+First step was to figure out *some* rules to get some consistency into this and not having to reinvent the wheel for every item.
+
+Rarity of the resource.
+In my latest game I have some 500 brass scrap and just the excavation for my base's walls got me about 100000 small rocks.
+I'm trying to figure out a base value for "how long does it take to acquire this resource".
+
+Forge required.
+Resource value x 1.2
+
+Common tool required. Cooking pot or grill - essentially free with a forge so does not stack with that bonus.
+Resource value x 1.2
+
+Rare tool required. Calipers, beaker...
+Resource value x 1.5
+
+Farming required. Not hard but time-consuming.
+Resource value x 1.33
+
+Skill / perk / recipe / special scavenging or disassembling required.
+There it gets muddy.
+Im thinking _up to_ x1.5 based on uhh... best guess?
+
+Can only be found: x5
+
+
+For a start I assigned these values in Duke Coins:
+
+5 brassScrap
+.5 paper
+.005 rockSmall
+.005 crushedSand
+.002 clay / dirtFragment
+.05 unitIron
+.2 unitLead
+1 unitBrass
+.25 ironScrap
+.6 forgedIron
+1.6 forgedSteel
+1 leadScrap
+.005 yuccaFibers
+.4 coal
+.4 potassiumNitratePowder
+1.5 bulletCasing
+.24 bulletTip
+1.6 gunPowder
+.48 buckshot
+.0072 cement
+.25 cloth
+3.5 ductTape
+.3 emptyJar
+1.5 bottledWater
+1.5 femur
+24 for 100 gasCan
+1 animalFat
+1.5 bioFuel
+1.2 tallow
+2.4 grainAlcohol
+.1 feather
+1 rawMeat
+1 egg
+.1 corn / potato / blueberry / goldenrod / cotton
+.5 mushrooms
+1 animalHide
+1.1 leather
+5 oil
+.11 ironArrowHead
+.37 steelArrowHead
+12 spring
+12 headlight
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
@@ -336,12 +586,71 @@ is exceeded excess items will not be spawned, and items will automatically stack
 
 <item name="smallEngine" quality="1,200"/>
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Optional attributes of a lootcontainer:
+"buff"
+"buff_chance"
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
 File: ITEMS.XML
 
+Keys:
+	"Active"
+	"Armor"
+	"Candrop"
+	"Canhold"
+	"Class"
+	"Concussive"
+	"Degradation"
+	"DegradationBreaksAfter"
+	"DegradationFloor"
+	"DropMeshfile"
+	"EconomicValue"
+	"EconomicBundleSize"
+	"Extends"
+	"HandMeshfile"
+	"HoldType"
+	"ImageEffectOnActive"
+	"Material"
+	"Meshfile"
+	"Pos"
+	"Preview"
+	"Puncture"
+	"RepairAmount"
+	"RepairTime"
+	"RepairTools"
+	"Rot"
+	"Stacknumber"
+	"Zoom"
+
+Attributes:
+	"belt_range"
+	"belt_strength"
+	"duration"
+	"heat_map_strength"
+	"heat_map_time"
+	"holster"
+	"hordemeter"
+	"hordemeter_player_only"
+	"id"
+	"muffled_when_crouched"
+	"name"
+	"newmodel"
+	"player_only"
+	"prio"
+	"range"
+	"ray_cast"
+	"ray_cast_moving"
+	"speed"
+	"strength"
+	"time"
+	"two_handed"
+	"unholster"
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
 
 Material types
 	material="wood|metal|organic|bullet" 
@@ -464,8 +773,8 @@ WEAPON ATTACHABLES
 
 
 Action Experience
-<property name="ActionExp" value="1" />   (default value = 1)
-<property name="ActionExpBonusMultiplier" value="2" />   (default value = 2)
+<property name="ActionExp" value="1" />			(default value = 2)
+<property name="ActionExpBonusMultiplier" value="2" />	(default value = 10)
 
 	These go under an action, woodenClub is an example. That will handle actions.
 	On kill or destroy events the multiplier is applied.
@@ -491,6 +800,34 @@ add these to anywhere inside an item that will be used as an ingredient, it's li
 
 Then the recipe skill gain and craft time will be calculated internally
 
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Weather survival / temperature rebalance
+
+Wetness is ONLY affected by the coat and hat slot.
+
+All heavy armor has 0 temperature insulation.
+
+All light armor has a max of +2 (hide), making it useful wearing furry armor in a snow biome while not making it a liability outside.
+
+Face and eye slot items offer a little damage protection but have zero effect on temperature or wetness.
+
+The majority of the temperature mod is on the coat slot items.
+It's too warm? Take off that puffer coat.
+
+General clothing items like pants and shirts warm you from +1 to +5. HazMat 6.
+
+Some clothing items that cool you are t-shirts (-5) or cowboy hats (-10).
+The poncho is -20. Because Clint Eastwood looked good in it.
+ 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Food healing balance when eating food
+
+Healing = ( Food + Food * Wellness ) / 2
+
+Food poisoning counts as -1 wellness so 17 food with 100% Food Poisoning is 0 healing.
 
 - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -592,6 +929,32 @@ or
 
 it's Stacknumber = 1 and does not need to be defined.
 
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+Zombie limb dismemberment
+-------------------------
+This is work in progress.  15.1.  Or later.
+
+A zombie limb has no defined hit points.
+A zombie only has one hit point pool and DAMAGE to a limb is tracked.
+The only hit point values that go into the formula are the zombie's max HP and accumulated damage to specific limbs.
+
+I collated and translated that into pseudocode... mostly so I'd have something compact to reference. =)
+
+
+private float GetDamageFraction(float _damage) { return _damage / zombie.GetMaxHealth() ;}
+
+
+GetDamageOverlimit = Max(0, GetDamageFraction(bodyDamage.RightLowerLeg + _damage)- ec.LowerLegDismemberThreshold)
+
+baseChance = ec.LowerLegDismemberBaseChance + (GetDamageOverlimit * ec.LowerLegDismemberBonusChance);
+
+totalChance = canDismember ? (baseChance + _weaponBase + (_damage * _weaponBonus)) : 0f;
+
+
+totalChance is the actual chance for limb dismemberment.
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
@@ -734,6 +1097,38 @@ high-tech-chrome-plated-with-cherries-on-top version and deal with the maintenan
 I'm evil like that.
 
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Ballistic weapons with bullet drop.
+
+Experimented with and while it works technically it was canned due to... circumstances.
+
+<item id="153" name="762mmBullet">
+	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab" />
+	<property name="Material" value="brass" />
+	<property name="HoldType" value="21" />
+	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
+	<property name="EconomicValue" value="200" />
+	<property name="Group" value="Ammo/Weapons" />
+	<property class="Action1">
+		<property name="Class" value="Projectile" />
+		<property name="Explosion.ParticleIndex" value="0" />
+		<property name="Velocity" value="700" />
+		<property name="FlyTime" value="0" />
+		<property name="LifeTime" value="3" />
+	</property>
+</item>
+
+By entering roughly the real muzzle velocity of a weapon you get a decent starting point.
+This was for a bullet drop of roughly 1 head at 100m.
+Not using that because the headshot mod then needs to be on the projectile and if I don't want to redo the balancing
+it means splitting the ammo types into .308 / 7.62x51 / 7.62x39... for even more inventory clutter.
+
+Note that a simple raycast gun ("Class" value="Ranged") can actually use a ("Class" value="Projectile") as ammo so you could
+have the sniper rifle have bullet drop but handwave it on the shorter-ranged AK where the recoil makes it largely irrelevant.
+
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
@@ -779,6 +1174,24 @@ Bad:
 Do NOT "skip" any skill levels. The code does not like it. You want to make the code happy.
 Unhappy code may want to use you as reactor shielding.
 
+
+
+Repair balancing
+
+Known A15.0 bug:
+Repairing simple items like clubs does not work the same way as repairing assembled items like firearms.
+
+Club at QL 600:
+no skills: 100 QL loss, max skills: 100 QL loss and no loss at QL 119 and below.
+QL is multiplied.
+
+Assembled items:
+no skills: 30 QL loss, max skills: 2 QL loss at every QL
+QL repair loss is strictly subtracted from the QL.
+
+Temporary workaround: Set all assembled items to "Gun smithing" and fudge the numbers to work out.
+
+Don't bother reporting that this is actually the case...
 
 
 ---------------------------------------------------------------------
@@ -836,6 +1249,19 @@ buffif="coretemp lequal 300"
 FYI:  actions="damage()"
 is currently bugged and does not affect zombies.
 I reworded the remaining buffs that should affect them to use "modify" instead.
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Auto-gender player sounds on buffs are working... again!
+
+<buff id="autogendertest" duration="1" castsound="Player_*painlg1"/>
+
+The game translates that into
+	Player_Male/player1painlg1
+	Player_Female/player2painlg1
+as needed.
+
+The sound still has to be assigned in sounds.xml.
 
 
 ---------------------------------------------------------------------
@@ -968,5 +1394,44 @@ Some things just did not get done in time. It's real life's way to show you the 
 If you choose to "mod in" those totally-absolutely-not-QA-approved features or not is up to you.
 They may destroy your game or blow up planet Earth. I'm not saying it's likely but...
 
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: SOUNDS.XML
+
+Sound Data Node
+	"AudioSourceName"
+	"ClipName"
+	"Loop"
+	"NetworkAudioSourceName"
+	"audioclip"
+	"audiosource"
+	"crouchnoisescale"
+	"heat_map_strength"
+	"heat_map_time"
+	"hordemeter"
+	"ignoredistancecheck"
+	"immediate"
+	"localcrouchvolumescale"
+	"maxentities"
+	"maxrepeatrate"
+	"maxvoices"
+	"muffled_when_crouched"
+	"networkaudiosource"
+	"noise"
+	"noisescale"
+	"player_only"
+	"prio"
+	"range"
+	"time"
+
+Attributes:
+	"crouchVolume"
+	"localCrouchVolume"
+	"localVolume"
+	"maxvoices"
+	"priority"
+	"rate"
+	"volume"
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
