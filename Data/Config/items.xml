@@ -14012,7 +14012,7 @@ which does not exist, yet. -->
 			<property name="Pos" value="0,-0.05" />
 			<property name="Rot" value="90,45,0" />
 		</property>
-	<property name="EconomicValue" value="30" />
+		<property name="EconomicValue" value="30" />
 	</item>
 	<item id="2507" name="paperRack">
 		<property name="DescriptionKey" value="paperRackDesc"/>
