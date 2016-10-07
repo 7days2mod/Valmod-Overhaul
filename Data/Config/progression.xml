@@ -1450,7 +1450,6 @@
 	
 	<perk name="Forge" icon="mining" description_key="Learn how to craft a forge, essential for many recipes." title_key="Forge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="crafting">
 		<recipe name="forge" unlock_level="1"/>
-		<recipe name="simpleForge" unlock_level="1"/>
 		<recipe name="bellows" unlock_level="1"/>
 	</perk>
 	
