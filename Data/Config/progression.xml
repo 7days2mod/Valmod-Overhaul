@@ -1415,7 +1415,8 @@
 		<recipe name="glassBusinessBlock" unlock_level="1"/>
 	</perk>
 
-	<perk name="Security" icon="misc_crafting" description_key="Learn how to craft secure storage containers, safes and doors. Doors are crafted in the workbench and various containers are found in the Artisan Decor Station. Also teaches the components needed for drawbridges." title_key="Security Measures" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+	<perk name="Security" icon="misc_crafting" description_key="Learn how to craft secure storage containers, safes and doors. Iron Doors are crafted in the workbench and various containers are found in the Artisan Decor Station. Also teaches the components needed for drawbridges." title_key="Security Measures" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<recipe name="secureDoorWooden" unlock_level="5"/>
 		<recipe name="gearMechanism" unlock_level="1"/>
 		<recipe name="Remote" unlock_level="1"/>
 		<recipe name="ironDoor1_v1" unlock_level="1"/>

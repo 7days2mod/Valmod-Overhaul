@@ -2146,7 +2146,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="10"/>
 </recipe>
 
-<recipe name="secureDoorWooden" count="1" craft_area="workbench">
+<recipe name="secureDoorWooden" count="1" >
 	<ingredient name="wood" count="10"/>
 </recipe>
 
@@ -2467,11 +2467,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="workbench" count="1">
-	<ingredient name="forgedIron" count="10"/>
+	<ingredient name="scrapIron" count="50"/>
 	<ingredient name="mechanicalParts" count="2"/>
-	<ingredient name="wrench" count="1"/>
+	<ingredient name="nail" count="10"/>
 	<ingredient name="clawHammer" count="1"/>
-	<ingredient name="wood" count="50"/>
+	<ingredient name="wood" count="300"/>
 </recipe>
 
 <recipe name="wrench" count="1" craft_area="workbench">
