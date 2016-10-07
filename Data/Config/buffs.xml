@@ -571,11 +571,11 @@ snowberryPlant feeds you for 90 sec. -->
 <buff id="peculiarTaste" duration="20" type="sickness" icon="ui_game_symbol_food_poisoning" name_key="peculiarTaste" description_key="peculiarTasteDesc" tooltip_key="peculiarTasteTooltip" causes="mysteryMeat">
 	<modify id="0" stat="stamina" amount="-5" rate="1"/>
 </buff>	 
-<buff id="speedBoost" duration="180" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="speedBoostTooltip" icon="ui_game_symbol_run">
+<buff id="speedBoost" duration="120" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="speedBoostTooltip" icon="ui_game_symbol_run">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.01"/>
 <modify id="1" stat="speedmodifier" modifyValue="1.3"/>
 </buff>
-<buff id="energyDrink" duration="60" type="staminaup" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="You have wings!" icon="ui_game_symbol_run">
+<buff id="energyDrink" duration="40" type="staminaup" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="You have wings!" icon="ui_game_symbol_run">
 <modify id="0" stat="speedmodifier" modifyMaxValue="2.01"/>
 <modify id="0" stat="stamina" amount="2" rate="1"/>
 <modify id="1" stat="speedmodifier" modifyValue="1.2"/>
