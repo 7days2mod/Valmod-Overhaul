@@ -7913,7 +7913,7 @@ kind of free
 	<property name="Collide" value="melee" />
 	<property name="Texture" value="529" />
 	<drop event="Harvest" name="corn" count="1" />
-	<property name="CropsGrown.BonusHarvestDivisor" value="99999" />
+	<property name="CropsGrown.BonusHarvestDivisor" value="8" />
 </block>
 
 <block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
@@ -12016,7 +12016,7 @@ kind of free
 		<property name="RadiusBlocks" value="5" /> <!-- damage radius for blocks -->
 		<property name="BlockDamage" value="5000" /> <!-- damage for blocks in the center of the explosion -->
 		<property name="RadiusEntities" value="5" /> <!-- damage radius for entities -->
-		<property name="EntityDamage" value="100" /> <!-- damage for entities in the center of the explosion -->
+		<property name="EntityDamage" value="70" /> <!-- damage for entities in the center of the explosion -->
 	</property>
 </block>
 

@@ -2117,7 +2117,7 @@ canEmptyDesc,items,Item,KgNone,An empty can which you can scrap or fill with wat
 carBattery,items,Item,KgNone,Lead Car Battery,Batterie de voiture en plomb,Bleibatterie für Autos,,Batería de coche de plomo
 carBatteryDesc,items,Item,KgNone,"Car batteries can be used in vehicles, scrapped for lead in your backpack or smelted at the forge for lead.","Les batteries de voiture peuvent être utilisées sur les véhicules, recyclées en plomb dans votre sac à dos ou fondues dans la forge pour obtenir du plomb.","Autobatterien können für Fahrzeuge benutzt, für Blei im Rucksack zerlegt oder in der Schmiede eingeschmolzen werden.",,"Las baterías de coche se pueden usar en vehículos, despedazar para tener plomo en tu mochila o fundir en la fragua para obtener plomo."
 casinoCoin,items,Item,KgNone,Duke's Casino Token,Jeton du Duke's Casino,Jeton aus Dukes Kasino,,Ficha del casino de Duke
-casinoCoinDesc,items,Item,KgNone,A Duke's casino coin. After the epidemic and war it became the main currency for trading in Navezgane. Can be used in the Merchant Delivery Station.,"Une pièce du Duke's Casino. Après l'épidémie et la guerre, ces pièces sont devenues la monnaie principale de Navezgane.",Ein Jeton aus Dukes Kasino. Nach der Seuche und dem Krieg wurden diese Jetons zur Hauptwährung in Navezgane.,,Una moneda del casino de Duke. Se convirtió en la moneda principal para comerciar en Navezgane tras la epidemia y la guerra.
+casinoCoinDesc,items,Item,KgNone,A Duke's casino coin. After the epidemic and war it became the main currency for trading in Navezgane.,"Une pièce du Duke's Casino. Après l'épidémie et la guerre, ces pièces sont devenues la monnaie principale de Navezgane.",Ein Jeton aus Dukes Kasino. Nach der Seuche und dem Krieg wurden diese Jetons zur Hauptwährung in Navezgane.,,Una moneda del casino de Duke. Se convirtió en la moneda principal para comerciar en Navezgane tras la epidemia y la guerra.
 cement,items,Item,KgNone,Cement,Ciment,Zement,,Cemento
 cementDesc,items,Item,EnChanged,Cement can be used to craft flagstone and concrete. Making concrete requires the 'concrete' perk and a cement mixer.,"Après avoir acheté l'avantage du béton, le ciment sert à fabriquer de la dalle et du béton.",Zement kann benutzt werden um Steinplatten zu fertigen. Für Beton brauchst du auch die Fertigkeit „Beton“ und einen Zementmischer.,,Se puede usar el cemento para fabricar baldosas. También puedes producir hormigón una vez que hayas comprado el beneficio de hormigón.
 clayLump,items,Item,KgNone,Lump of Clay,Morceau d'argile,Lehmklumpen,,Terrón de arcilla
@@ -4643,7 +4643,7 @@ recipebookSecurity2Desc,items,Item Book,,"This book teaches you how to create ge
 schematicOven,items,Item Book,,Oven Schematic,,
 schematicOvenDesc,items,Item Book,,This book teaches you how to craft a working oven.,,
 sprayPaint,items,Item,,Spray Paint,,
-sprayPaintDesc,items,Item,,This can be useful at a Dye Station for coloring metallic armors.,,
+sprayPaintDesc,items,Item,,This can be used with Decor Steel to change appearances.,,
 assortedDyes,items,Item,,Assorted Dyes,,
 assortedDyesDesc,items,Item,,This can be useful at a Dye Station for coloring fabric armors.,,
 

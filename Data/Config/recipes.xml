@@ -1239,13 +1239,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bellows" count="1"/>
 	<ingredient name="shortMetalPipe" count="1"/>
 </recipe>
-
+<!-- Valmod Temp Remove for performance
 <recipe name="simpleForge" count="1">
 	<ingredient name="rockSmall" count="35"/>
 	<ingredient name="clayLump" count="35"/>
 	<ingredient name="bellows" count="1"/>
 	<ingredient name="shortMetalPipe" count="1"/>
 </recipe>
+-->
 
 <recipe name="forgedIron" count="1" craft_area="forge" material_based="true">
 	<ingredient name="unit_iron" count="10"/>
@@ -2956,7 +2957,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="moldyBread" count="2" >
         <ingredient name="shamSandwich" count="1" />
     </recipe>
-    <recipe name="moldyBread" count="2" >
+    <recipe name="moldyBread" count="4" >
         <ingredient name="moleSandwich" count="1" />
     </recipe>
 	<recipe name="fuelLog" count="1" craft_area="chemistryStation" craft_time="10">
@@ -3470,6 +3471,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 
 	<!-- Dye Station -->
+<!-- Valmod Temp Remove for Performance
 	<recipe name="sprayPaint" count="1" craft_area="dyeStation">
         <ingredient name="scrapIron" count="10"/>
     </recipe>
@@ -4345,15 +4347,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="sprayPaint" count="5"/>
 		<ingredient name="steelGloves" count="1"/>
     </recipe>
-
+-->
 		<!-- Workstations Mod -->
     <recipe name="workstationDecor" count="1" >
         <ingredient name="wood" count="30"/>
     </recipe>
+<!-- Valmod Temp Remove for Performance
     <recipe name="workstationMerchant" count="1" >
         <ingredient name="wood" count="10"/>
         <ingredient name="scrapIron" count="5"/>
-    </recipe>
+    </recipe> -->
     <recipe name="workstationArmory" count="1" >
         <ingredient name="wood" count="50"/>
         <ingredient name="scrapIron" count="10"/>
@@ -4877,9 +4880,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 	<!-- Merchant Mod -->
-<!--<recipe name="survivorNotes" count="1" craft_area="workstationMerchant" craft_time="1300">
+<!-- Valmod Temp Remove for Performance
+<recipe name="survivorNotes" count="1" craft_area="workstationMerchant" craft_time="1300">
 	<ingredient name="casinoCoin" count="30"/>
-</recipe> -->
+</recipe>
 <recipe name="casinoCoin" count="10" craft_area="workstationMerchant" craft_time="1300">
 	<ingredient name="survivorNotes" count="1"/>
 </recipe>
@@ -5144,9 +5148,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 <recipe name="merchantOrderWrench" count="1" craft_area="workstationMerchant" craft_time="1300">
 	<ingredient name="casinoCoin" count="240"/>
-</recipe>
+</recipe> -->
 
 <!-- Simple Forge -->
+<!-- Valmod Temp Remove for Performance
 <recipe name="clayLump" count="1" craft_area="simpleForge" material_based="true" craft_time = "1" craft_exp_gain="0">
 	<ingredient name="unit_clay" count="5"/>
 </recipe>
@@ -5252,5 +5257,5 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="anvil" count="1" craft_area="simpleForge" material_based="true">
 	<ingredient name="unit_iron" count="200"/>
 	<ingredient name="unit_clay" count="20"/>
-</recipe>
+</recipe> -->
 </recipes>

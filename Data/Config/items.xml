@@ -9036,7 +9036,7 @@ which does not exist, yet. -->
     </item>
 
 	<!-- Valmod Starts -->
-	<item id="1599" name="Valmod Version 3.4">
+	<item id="1599" name="Valmod Version 3.5">
 		<property name="CustomIcon" value="Bounty_Hat" />
 		<property name="Meshfile" value="Items/Misc/paper" />
 		<property name="HoldType" value="21" />
