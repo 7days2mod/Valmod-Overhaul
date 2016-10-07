@@ -13854,6 +13854,7 @@ kind of free
 
 <block id="541" name="decorSteel">
 	<property name="Extends" value="steelMaster" />
+	<property name="CustomIcon" value="steelBlock" />
 	<property name="DescriptionKey" value="decorSteelDesc"/>
 	<property name="Texture" value="241" />
 	<property name="DowngradeBlock" value="rConcreteBlock" />
