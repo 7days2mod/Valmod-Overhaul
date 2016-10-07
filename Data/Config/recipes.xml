@@ -3410,11 +3410,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="1"  />
 	<ingredient name="yuccaFibers" count="3"/>
 	</recipe>
-	<recipe name="combatAxe" count="1" >
+	<recipe name="combatAxe" count="1" craft_area="workbench">
 	<ingredient name="forgedSteel" count="25"/>
 	<ingredient name="wood" count="20"/>
 	</recipe>
-    <recipe name="machete" count="1" >
+    <recipe name="machete" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="wood" count="20"/>
     </recipe>	
