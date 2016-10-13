@@ -10076,6 +10076,7 @@ kind of free
 	<property name="Extends" value="houseFrontDoor1_v1" />
 	<property name="Model" value="Entities/Doors/house_frontDoor2_v1Prefab" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="houseFrontDoor2_v2" /> </property>
+	<property name="DowngradeBlock" value="Broken Door" />
 </block>
 
 <block id="1227" name="houseFrontDoor2_v2">

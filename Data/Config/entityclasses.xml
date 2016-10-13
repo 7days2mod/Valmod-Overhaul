@@ -346,7 +346,7 @@
 
 <entity_class name="snowzombie" extends="zombie01">
 	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll" />
-	<property name="LootListOnDeath" value="85" />
+	<property name="LootListOnDeath" value="89" />
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />

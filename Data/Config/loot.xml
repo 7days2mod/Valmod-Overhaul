@@ -1344,7 +1344,7 @@
 
 <lootgroup name="huntingGoodsAmmo">
 	<item name="gunPowder" count="20,50"/>
-	<item group="ammoCasings" count="3,5"/>
+	<item group="ammoCasings" count="1,2"/>
 	<item name="bulletTip" count="20,50"/>
 	<item name="steelArrowHead"/>
 </lootgroup>
@@ -1364,7 +1364,7 @@
 	<item name="flashlight02"/>
 	<item name="huntingKnife"/>
 	<item name="gunPowder" count="20,50"/>
-	<item group="ammoCasings" count="3,5"/>
+	<item group="ammoCasings" count="1,2"/>
 	<item name="bulletTip" count="20,50"/>
 	<item name="steelArrowHead"/>
 	<item name="cookingGrill"/>
