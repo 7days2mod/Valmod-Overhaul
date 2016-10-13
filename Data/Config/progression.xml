@@ -1324,7 +1324,7 @@
 	</perk>
 	
 	<perk name="Chemistry" icon="science" description_key="Learn how to craft chemicals and other recipes like the chemistry station, gas, glue, oil, and fuel logs." title_key="Chemistry Training" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
-		<recipe name="workstationChemistry" unlock_level="1"/>
+		<recipe name="chemistryStation" unlock_level="1"/>
 		<recipe name="gasCan" unlock_level="1"/>
 		<recipe name="glue" unlock_level="1"/>
 		<recipe name="oil" unlock_level="1"/>
