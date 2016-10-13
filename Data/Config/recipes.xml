@@ -2948,8 +2948,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="Syringe" count="1" craft_area="forge" material_based="true" craft_exp_gain="0">
 	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
-<recipe name="Lockpick" count="1" >
-	<ingredient name="scrapIron" count="3"/>
+<recipe name="Lockpick" count="1" craft_time="20">
+	<ingredient name="scrapIron" count="5"/>
 </recipe>
 <recipe name="charcoalChips" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="wood" count="3"/>

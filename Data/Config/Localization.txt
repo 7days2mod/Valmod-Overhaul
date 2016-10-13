@@ -4439,7 +4439,7 @@ steelToeBootsDesc,items,Item Clothes,,Not very comfortable but they do save you 
 
 HelmetLightDesc,items,Item Clothes,,This helmet has a flashlight taped to its side to double as a headlamp.,,
 ironHelmetLight,items,Item Clothes,,Iron Helmet (Light),,
-militaryHelmetLight,items,Item Clothes,,Kevlar Helmet (Light),,
+militaryHelmetLight,items,Item Clothes,,Military Helmet (Light),,
 swatHelmetLight,items,Item Clothes,,Swat Helmet (Light),,
 scrapHelmetLight,items,Item Clothes,,Scrap Helmet (Light),,
 steelHelmetLight,items,Item Clothes,,Steel Helmet (Light),,
