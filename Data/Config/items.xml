@@ -7856,7 +7856,6 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="1" />
 	<property name="EconomicBundleSize" value="10" />
 	<property name="Group" value="Resources" />
-	<property name="SellableToTrader" value="false" />
 </item>
 <!--
 <item id="1329" name="book">
