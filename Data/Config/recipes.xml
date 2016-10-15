@@ -2697,12 +2697,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     </recipe>
 	<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot" >
 	<ingredient name="bowlWater" count="1" />
-    <ingredient name="potato" count="1" />
-    <ingredient name="corn" count="1" />
-	<ingredient name="Leek" count="1"/>
-  </recipe>
-	<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot" >
-	<ingredient name="bowlWater" count="1" />
     <ingredient name="assortedVegetables" count="6" />
   </recipe>
 <recipe name="biscuit" count="1" craft_area="campfire" craft_tool="bowlWater">
@@ -2752,9 +2746,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
 
 		<!-- Expanded Farming Mod --> 
-	<recipe name="seedLeek" count="1" >
-        <ingredient name="Leek" count="1" />
-    </recipe>
 	<recipe name="seedWheat" count="1" >
         <ingredient name="Wheat" count="1" />
     </recipe>
@@ -2773,9 +2764,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="seedPack" count="1" />
     </recipe>
     <recipe name="chrysanthemumSeed" count="1" >
-        <ingredient name="seedPack" count="1" />
-    </recipe>
-	<recipe name="seedLeek" count="1" >
         <ingredient name="seedPack" count="1" />
     </recipe>
 	<recipe name="seedWheat" count="1" >

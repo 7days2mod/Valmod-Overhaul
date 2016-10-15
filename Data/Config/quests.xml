@@ -992,7 +992,7 @@ repeatable="false" category_key="challenge" offer="zombie smoke beacon" difficul
 <reward type="Quest" id="challenge_Loki4" />
 </quest>
 
-<quest id="challenge_Loki4" name="Loki's Hints 4/4" subtitle="Feast after Famine" description="Good food is hard to come by, in today's world. But with a little effort you can prepare healthy and tasty meals. First cut up some vegetables (corn, potatos and leeks), by 'scrapping' them . . ." icon="ui_game_symbol_campfire" 
+<quest id="challenge_Loki4" name="Loki's Hints 4/4" subtitle="Feast after Famine" description="Good food is hard to come by, in today's world. But with a little effort you can prepare healthy and tasty meals. First cut up some vegetables (corn and potatos), by 'scrapping' them . . ." icon="ui_game_symbol_campfire" 
 repeatable="false" category_key="challenge" offer="" difficulty="easy">
 <objective type="FetchKeep" id="assortedVegetables" value="4" />
 <objective type="FetchKeep" id="rawMeat" value="1" />

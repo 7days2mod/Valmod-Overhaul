@@ -15333,7 +15333,7 @@ kind of free
 		<property name="IsRandom" value="false" />
 	</property>
 	</block>
-	<block id="2031" name="seedLeek">
+	<block id="2031" name="seedLeek">	<property name="IsDeveloper" value="true" />
     <property name="Class" value="PlantGrowing" />
     <property name="Material" value="plants" />
     <property name="Shape" value="BillboardPlant" />
@@ -15350,7 +15350,7 @@ kind of free
 	<property name="Group" value="Food/Cooking" />
 	<property name="MaxDamage" value="2" />
   </block>
-	<block id="2032" name="LeekPlant">
+	<block id="2032" name="LeekPlant">	<property name="IsDeveloper" value="true" />
 	<property name="Class" value="CropsGrown" />
     <property name="Material" value="leaves" />
 	<property name="StabilitySupport" value="false" />
