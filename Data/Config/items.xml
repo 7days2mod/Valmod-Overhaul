@@ -1942,7 +1942,7 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="17" />
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true" />
-		<property name="EntityDamage" value="7,13" />
+		<property name="EntityDamage" value="4,10" />
 		<property name="BlockDamage" value="5.4,13.5" />
 	</property>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
