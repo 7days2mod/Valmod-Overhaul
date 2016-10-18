@@ -51,6 +51,24 @@
 			<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
 		</panel>
 	</recipe_search>
+<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 -->
+	<in_rwg_previewname>
+		<panel depth="1" controller="TextInput" pos="22,-2" width="580" height="30" value="SEARCH"
+			active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" 
+			character_limit="99" validation="none" backgroundcolor="[black]">
+			<sprite depth="0" name="background" color="[black]" type="sliced"/>
+			<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
+		</panel>
+	</in_rwg_previewname>
+	<in_rwg_previewsize>
+		<panel depth="1" controller="TextInput" pos="22,-2" width="70" height="30" value="SEARCH"
+			active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" 
+			character_limit="1" validation="integer" backgroundcolor="[black]">
+			<sprite depth="0" name="background" color="[black]" type="sliced"/>
+			<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
+		</panel>
+	</in_rwg_previewsize>
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 -->
 	
 	<skill_search>
 		<panel depth="3" controller="TextInput" pos="22,-7" width="120" height="30" value="SEARCH"

@@ -197,7 +197,10 @@
 		</window_group>
 
 		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
-			<window name="windowRWGPreview" />
+<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 : pt 3 of 3 -->
+  <!-- On the below line select the RWG Preview Window Layout you want to use - 7DTD Default = windowRWGPreview - RELXIX HUD = windowRWGPreviewer -->
+			<window name="windowRWGPreviewer" />  <!-- windowRWGPreviewer (RELXIX HUD) or windowRWGPreview (7DTD Default) -->
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 : pt 3 of 3 -->
 		</window_group>
 
 		<window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">

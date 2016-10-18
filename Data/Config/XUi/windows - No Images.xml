@@ -197,7 +197,60 @@
 			</panel>
 		</panel>
 	</window>
-<!-- END_MOD: Red Eagle LXIX's Custom HUD : A15(b78) : v0.13 -->
+  <!-- RWG Previewer replacement window -->
+	<window name="windowRWGPreviewer" width="920" height="722" panel="Center">
+		<panel name="header" pos="-85,-20" height="43" width="920" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+			<label style="header.name" text="RANDOM GEN WORLD PREVIEWER" />
+			<button depth="1" name="close" width="24" height="24" defaultcolor="[white]" hoversprite="ui_game_symbol_x" hovercolor="[red]" pos="885, -12" sprite="ui_game_symbol_x" hoverscale="1.0"/>
+		</panel>
+		<panel pos="-85,-66" size="920,716" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="hover, scroll, drag" controller="WorldGenerationPreviewWindow">
+			<label depth="104" name="Startup" text="Please press refresh or press Enter on either Seed or Size" pos="420, -336" size="920, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
+			<label depth="104" name="Startup2" text="Generation of the data may take up to 2 minutes" pos="420, -366" size="920, 50" justify="center" font_size="28" color="[white]" pivot="center"/>
+			<texture depth="105" pos="6,-7" name="worldPreview" material="Materials/Transparent Colored" size="908,703" globalopacity="false"/>
+			<button depth="106" name="reload" pos="880,-724" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
+			<panel depth="104" pos="3,-725" size="914,36" backgroundcolor="[darkGrey]" >
+			<rect depth="106" pos="0,0">
+				<in_rwg_previewname name="seedInput" tooltip="Seed"/>
+				<label depth="108" text="Seed" pos="608, -3" name="TextContent" font_size="28" color="[white]"/>
+			</rect>
+			<rect depth="106" pos="670,0">
+				<in_rwg_previewsize name="worldSizeInput" tooltip="Size (1-5)"/>
+				<label depth="108" text="Size (1-5)" pos="98, -3" name="TextContent" font_size="28" color="[white]"/>
+			</rect>
+			</panel>
+		</panel>
+		<panel pos="840,-66" size="140,310" depth="2" backgroundcolor="[darkGrey]">
+	  <!-- ff0000 = radiated, ffffff = snow, 00ff00 = plains, 008d00 = forest, 004000 = pine forest, ffe477 = desert, ba00ff = burned forest, ffa800 = wasteland -->
+			<panel pos="4,-4" size="132,30" depth="4" backgroundcolor="[black]">
+				<label depth="108" upper_case="true" text="    LEGEND    " pos="4, -1" name="TextContent" font_size="28" color="[white]"/>
+			</panel>
+			<panel pos="4,-38" size="132,30" depth="4" backgroundcolor="255,0,0">
+				<label depth="108" upper_case="false" text=" Radiated" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+			<panel pos="4,-72" size="132,30" depth="4" backgroundcolor="255,255,255">
+				<label depth="108" upper_case="false" text=" Snow" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+			<panel pos="4,-106" size="132,30" depth="4" backgroundcolor="0,255,0">
+				<label depth="108" upper_case="false" text=" Plains" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+			<panel pos="4,-140" size="132,30" depth="4" backgroundcolor="0,141,0">
+				<label depth="108" upper_case="false" text=" Forest" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+			<panel pos="4,-174" size="132,30" depth="4" backgroundcolor="00,64,00">
+				<label depth="108" upper_case="false" text=" Pine Forest" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+			<panel pos="4,-208" size="132,30" depth="4" backgroundcolor="255,228,119">
+				<label depth="108" upper_case="false" text=" Desert" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+			<panel pos="4,-242" size="132,30" depth="4" backgroundcolor="186,0,255">
+				<label depth="108" upper_case="false" text=" Burned Forest" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+			<panel pos="4,-276" size="132,30" depth="4" backgroundcolor="255,168,0">
+				<label depth="108" upper_case="false" text=" Wasteland" pos="4, -1" name="TextContent" font_size="28" color="[black]"/>
+			</panel>
+		</panel>
+	</window>
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 -->
 	
 	<window name="windowCraftingList"  width="397" height="688" controller="CraftingListInfo" panel="Left">
 		
