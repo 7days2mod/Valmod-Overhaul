@@ -7912,8 +7912,10 @@ kind of free
 	<property name="MultiBlockDim" value="1,4,1" />
 	<property name="Collide" value="melee" />
 	<property name="Texture" value="529" />
-	<drop event="Harvest" name="corn" count="1" />
 	<property name="CropsGrown.BonusHarvestDivisor" value="8" />
+	<drop event="Destroy" name="corn" count="0" prob="1" />
+	<drop event="Harvest" name="corn" count="1" tool_category="Pluck" />
+	<property name="DowngradeBlock" value="plantedCorn1" />
 </block>
 
 <block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
