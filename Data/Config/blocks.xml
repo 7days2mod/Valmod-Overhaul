@@ -4515,7 +4515,9 @@ kind of free
 <block id="529" name="plantedHop3Harvest">
 	<property name="Extends" value="cropsHarvestableMaster" />
 	<property name="Texture" value="449" />
-	<drop event="Harvest" name="hopsFlower" count="1" />
+	<drop event="Destroy" name="hopsFlower" count="0" prob="1" />
+	<drop event="Harvest" name="hopsFlower" count="1" tool_category="Pluck" />
+	<property name="DowngradeBlock" value="plantedHop1" />
 </block>
 
 <block id="530" name="plantedMushroom1">
