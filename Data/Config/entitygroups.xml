@@ -15,6 +15,8 @@
 		<entity name="zombieSteveCrawler" prob="0.05" />
 		<entity name="Bloated Walker" prob="0.07"/>
 		<entity name="Scorched Rusher" prob="0.03"/>
+		
+
     </entitygroup>
 
     <entitygroup name="ZombiesAll2">
@@ -31,6 +33,8 @@
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
 		<entity name="Scorched Rusher" prob="0.006"/>
+		
+
     </entitygroup>
 	
     <entitygroup name="ZombiesNight">
@@ -49,6 +53,8 @@
 		<entity name="zombieSteveCrawler" />
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
+		
+
     </entitygroup>
 	
     <entitygroup name="ZombiesNight2">
@@ -67,6 +73,9 @@
 		<entity name="zombieSteveCrawler" />
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
+		
+
+        <entity name="ZombieTrucker" />
     </entitygroup>
 
     <entitygroup name="ZombiesBurning">
@@ -77,14 +86,15 @@
 		<entity name="zombiedog" prob="0.05" />
 		<entity name="Burnt Crawler" />
 		<entity name="Burnt Spider" />
+		<entity name="ZombieCharred" />
     </entitygroup>
 	
     <entitygroup name="ZombiesUnique">
 		<entity name="Scorched Rusher" />
-		<entity name="Burnt Crawler" />
+		<entity name="ZombieCharred" />
 		<entity name="Burnt Spider" />
-		<entity name="Feral Spider" />
 		<entity name="Feral Ravager" />
+		<entity name="ZombieRavager" />
 		<entity name="Bloated Walker" />
     </entitygroup>
     
@@ -108,6 +118,9 @@
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
 		<entity name="Scorched Rusher" prob="0.02"/>
+		
+
+        <entity name="ZombieTrucker" />
     </entitygroup>	
     
     <entitygroup name="ZombiesWastelandNight">
@@ -131,6 +144,9 @@
 		<!-- <entity name="zombieFemaleHazmat" prob="0.02" /> -->
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
+		
+
+        <entity name="ZombieTrucker" />
     </entitygroup>	
 	<entitygroup name="ZombiesWastelandNightNoBears">
 		<!-- 
@@ -152,11 +168,13 @@
 		<entity name="zombieSteveCrawler" />
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
-
 		<entity name="zombieferal" />
 		<!-- <entity name="zombieFemaleHazmat" prob="0.02" /> -->
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
+		
+
+        <entity name="ZombieTrucker" />
 	</entitygroup>
     <entitygroup name="ZombiesWastelandNight2">
 		<entity name="spiderzombie"/>
@@ -178,8 +196,10 @@
 		<entity name="zombieferal" prob="0.1"/>
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
-		<entity name="Feral Spider" prob="0.06"/>
 		<entity name="Scorched Rusher" prob="0.03"/>
+		
+
+        <entity name="ZombieTrucker" />
     </entitygroup>	   
 	<entitygroup name="ZombiesWastelandNight2NoBears">
 		<!-- 
@@ -201,10 +221,12 @@
 		<entity name="zombieSteveCrawler" prob="0.05"/>
 		<entity name="fatzombiecop" prob="0.15"/>
 		<entity name="burntzombie" prob="0.07"/>
-
 		<entity name="zombieferal" prob="0.1"/>
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
+		
+
+        <entity name="ZombieTrucker" />
 	</entitygroup>
     <entitygroup name="ZombiesWastelandNight3">
 		<entity name="spiderzombie"/>
@@ -225,9 +247,9 @@
 		<entity name="zombieferal" prob="0.1"/>
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
-		<entity name="Feral Spider" prob="0.06"/>
-		<entity name="Scorched Rusher" prob="0.03"/>
-		<entity name="Zombie Gorilla Boss" prob="0.1"/>
+		<entity name="ZombieRavager" prob="0.06"/>
+		<entity name="ZombieTrucker" prob="0.03"/>
+		<entity name="ZombieBrute" prob="0.1"/>
     </entitygroup>	
 	
     <entitygroup name="ZombiesHoard">
@@ -249,6 +271,7 @@
 		<entity name="Feral Ravager" prob="0.01"/>
 		<entity name="Bloated Walker" prob="0.06"/>
 		<entity name="Scorched Rusher" prob="0.003"/>
+		
     </entitygroup>
 
 	<entitygroup name="ZombieScouts">
@@ -260,32 +283,34 @@
   </entitygroup>
 
   <entitygroup name="ZombiesBurntForest">
-    <entity name="burntzombie" prob="0.2"/>
+    <entity name="burntzombie" prob="0.7"/>
     <entity name="Burnt Spider" prob="0.05"/>
-    <entity name="Burnt Crawler" prob="0.01"/>
-	<entity name="Scorched Rusher" prob="0.03"/>
+    <entity name="Burnt Crawler" prob="0.1"/>
+	<entity name="Scorched Rusher" prob="0.05"/>
+	<entity name="ZombieCharred" prob="0.1"/>
   </entitygroup>
     
     <entitygroup name="SnowZombies">
         <entity name="snowzombie" prob="1"/>
+		<entity name="ZombieLumberjack" />
     </entitygroup>    		
 	
     <entitygroup name="ZombiesBoss">
-		<entity name="fatzombiecop" prob="0.7"/>
+		<entity name="fatzombiecop" prob="0.6"/>
 		<entity name="Burning Boss" prob="0.3"/>
+		<entity name="ZombieTrucker" prob="0.1"/>
     </entitygroup>	
 	
     <entitygroup name="ZombiesFeral">
 		<entity name="zombieferal" />
-		<entity name="Zombie Gorilla Boss" prob="0.3"/>
+		<entity name="ZombieBrute" prob="0.3"/>
     </entitygroup>
 
   <entitygroup name="ZombiesCave">
     <entity name="animalBear" prob="0.2"/>
     <entity name="zombieSteveCrawler" prob="0.1"/>
-    <entity name="zombieJoe" prob="0.1"/>
+    <entity name="ZombieMiner" prob="0.2"/>
     <entity name="zombieSteve" prob="0.1"/>
-    <entity name="zombieMoe" prob="0.1"/>
     <entity name="zombieYo" prob="0.1"/>
     <entity name="zombieferal" prob="0.05"/>
     <entity name="Feral Ravager" prob="0.05"/>
@@ -367,6 +392,7 @@
 		<entity name="zombieSteve" prob="0.01" />
 		<entity name="zombieYo" prob="0.01" />
 		<entity name="zombieNurse" prob="0.01" />
+		<entity name="ZombieTrucker" prob="0.01" />
 	</entitygroup>		
 
 	<entitygroup name="ZombieUtilityWorkerGroup">
@@ -385,6 +411,8 @@
 		<entity name="zombieBoe" />
 		<entity name="zombieMoe" />
 		<entity name="zombiedog" />
+
+        
 	</entitygroup>	
 
 	<entitygroup name="ZombieBikerBarGroup"> <!-- The Boobie Trap -->
@@ -395,6 +423,8 @@
 		<entity name="ZombieSkateboarder" />
 		<entity name="zombieBoe" />
 		<entity name="zombieMoe" />
+		<entity name="ZombieTrucker" />
+		
 	</entitygroup>	
 	
 	<entitygroup name="BanditGroup">
@@ -407,6 +437,40 @@
 		<entity name="sc_General" />		
     </entitygroup>	
 	
+    <entitygroup name="SchoolGroup">
+		<entity name="ZombieCheerleader"/>
+    </entitygroup>
+	
+    <entitygroup name="GraveYard">
+        <entity name="zombieBoe" />
+		<entity name="zombieYo" />
+        <entity name="zombieSteve" />
+		<entity name="spiderzombie"/>
+
+		
+		
+		<entity name="ZombieRaveReaper" />
+    </entitygroup>
+	
+    <entitygroup name="BookstoreGroup">
+        <entity name="zombieArlene" />
+    </entitygroup>
+	
+    <entitygroup name="JasonGroup">
+		<entity name="zombieBoe" prob="0.9"/>
+		<entity name="ZombieJason" prob="0.1"/>
+    </entitygroup>
+
+    <entitygroup name="BruteBoss">
+		<entity name="zombieBoe" prob="0.85"/>
+		<entity name="ZombieBrute" prob="0.15"/>
+    </entitygroup>
+	
+    <entitygroup name="RoamingBossGroup">
+		<entity name="ZombieJason" prob="0.3"/>
+		<entity name="ZombieBrute" prob="0.7"/>
+    </entitygroup>
+
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<entitygroup name="hordeStageGS1">
 		<entity name="zombieBoe"/>
@@ -2827,6 +2891,7 @@
 		<entity name="zombieJoe"/>
 		<entity name="zombieMarlene"/>
 		<entity name="ZombieFootballPlayer"/>
+		<entity name="ZombieBrute" prob="0.2"/>
 	</entitygroup>		
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  end: auto generated horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 </entitygroups>

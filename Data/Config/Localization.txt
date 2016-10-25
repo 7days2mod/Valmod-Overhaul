@@ -1,4 +1,4 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish
 adobeGroupDesc,blocks,Block,KgNone,In desert regions adobe is easy to make and it requires no special tools.,"Dans les régions désertes, l'adobe est simple à fabriquer. Vous n'avez besoin d'aucun outil en particulier.",Adobe ist in Wüstenregionen einfach herzustellen und es erfordert keine besonderen Werkzeuge.,,"En regiones desérticas, el adobe es fácil de hacer. Además, no se necesitan herramientas especiales."
 adobePeachBlock,blocks,Block,KgNone,Adobe Peach Block,Bloc d'adobe pêche,Pfirsich-Adobe – Block,,Bloque de adobe color melocotón
 adobePeachCNRFull,blocks,Block,KgNone,Adobe Peach Full Corner,Angle complet en adobe pêche,Pfirsich-Adobe – Komplette Ecke,,Esquina de adobe color melocotón
@@ -728,7 +728,7 @@ sandbagCornerDMG1,blocks,Block,KgNone,Sandbag Corner DMG1,Angle de sac de sable 
 sandbagEnd,blocks,Block,KgNone,Sandbag End,Extrémité de sac de sable,Sandsäcke – Ende,,Extremo de bolsa de arena
 sandbagEnd2,blocks,Block,KgNone,Sandbag End2,Extrémité de sac de sable 2,Sandsack – Ende 2,,Extremo 2 de bolsa de arena
 sandbagsBlock,blocks,Block,KgNone,Sandbags,Sacs de sable,Sandsäcke,,Bolsas de arena
-sandbagsGroupDesc,blocks,Block,KgNone,Sandbags are not very sturdy but can be put down quickly and provide decent protection from bullets.,"Les sacs de sable ne sont pas très robustes, mais ils s'installent rapidement et protègent assez bien des balles.","Sandsäcke sind nicht sehr robust, können aber schnell platziert werden und bieten ganz guten Schutz gegen Kugeln.",,"Las bolsas de arena no son muy robustas, pero se pueden colocar rápido y brindan buena protección contra las balas."
+sandbagsGroupDesc,blocks,Block,KgNone,Sandbags are not very sturdy but can be put down quickly and provide decent protection from bullets. Can upgrade further with cobblestones.,"Les sacs de sable ne sont pas très robustes, mais ils s'installent rapidement et protègent assez bien des balles.","Sandsäcke sind nicht sehr robust, können aber schnell platziert werden und bieten ganz guten Schutz gegen Kugeln.",,"Las bolsas de arena no son muy robustas, pero se pueden colocar rápido y brindan buena protección contra las balas."
 schoolDesk,blocks,Block,KgNone,School Desk,Table d'école,Schultisch,,Escritorio escolar
 scrapFrameGroupDesc,blocks,Block,EnChanged,Used for bases. Upgrade & repair with iron and construction tool. Upgrade more with concrete mix & forged steel.,,Wird für Basen verwendet. Kann mit Eisen und Bauwerkzeugen aufgewertet und repariert werden. Kann mit Betonmischung und geschmiedetem Stahl weiter aufgewertet werden.,,
 scrapHatch_v1,blocks,Block,KgNone,Scrap Iron Hatch,Trappe en ferraille,Alteisenklappe,,Escotilla de chatarra de hierro
@@ -1406,7 +1406,7 @@ cementMixerDesc,blocks,Workstation,KgNone,A cement mixer needs a solid foundatio
 chemistryStation,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,Chemistry Station,,Chemietisch,,
 chemistryStationDesc,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,With the proper equipment you can work far more efficiently than on a campfire.,,Mit der richtigen Ausrüstung kannst du effektiver arbeiten als mit einem Messbecher am Lagerfeuer.,,
 forge,blocks,Workstation,KgNone,Forge,Forge,Schmiede,,Fragua
-forgeDesc,blocks,Workstation,KgNone,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, calipers or tool and die set.","Sert à faire fondre des métaux pour en faire des outils ou des armes. Déverrouillez d'autres compositions en ajoutant une enclume, un pied à coulisse ou un lot de matrices et d'outils.","Dient zum Einschmelzen von Metallen für Werkzeuge und Waffen. Schalte mehr Rezepte frei, indem du einen Amboss, einen Messschieber oder eine Werkzeugkiste hinzufügst.",,"Se usa para fundir metales y convertirlos en herramientas y armas. Añade un yunque, calibradores o herramientas y un juego de ajuste para desbloquear más recetas."
+forgeDesc,blocks,Workstation,KgNone,"Used to smelt metals into tools and weapons. Learn this recipe by leveling Blacksmithing. Unlock more recipes by adding an anvil, calipers or tool and die set.","Sert à faire fondre des métaux pour en faire des outils ou des armes. Déverrouillez d'autres compositions en ajoutant une enclume, un pied à coulisse ou un lot de matrices et d'outils.","Dient zum Einschmelzen von Metallen für Werkzeuge und Waffen. Schalte mehr Rezepte frei, indem du einen Amboss, einen Messschieber oder eine Werkzeugkiste hinzufügst.",,"Se usa para fundir metales y convertirlos en herramientas y armas. Añade un yunque, calibradores o herramientas y un juego de ajuste para desbloquear más recetas."
 workbench,blocks,Workstation,KgNone,Workbench,Établi,Werkbank,,Mesa de trabajo
 workbenchDesc,blocks,Workstation,KgNone,A workbench lets you craft items just like you do in your backpack.,Un établi vous permet de fabriquer des objets comme vous le faites dans votre sac à dos.,Mit einer Werkbank kannst du genauso wie in deinem Rucksack Gegenstände fertigen.,,"Una mesa de trabajo te permite fabricar objetos, igual que en la mochila."
 alcoholPoisoning,buffs,Buff,KgNone,Inebriated,Ébriété,Berauscht,,Embriaguez
@@ -1635,8 +1635,8 @@ playersBackpack,entityclasses,Entity Info,KgNone,{0}'s backpack,Sac à dos de {0
 9mmBulletDesc,items,Ammo,KgNone,A 9mm round used as firearm ammunition. Can be crafted once you've purchased the perk.,Une cartouche de calibre 9 mm servant de munition pour arme à feu. Peut être fabriquée après l'achat de l'avantage correspondant.,"Eine 9 mm Patrone, die als Munition für Schusswaffen dient. Kann gefertigt werden, nachdem du die Fertigkeit erworben hast.",,Balas de 9mm usadas como munición de arma de fuego. Puedes fabricarlas una vez que hayas comprado el beneficio.
 arrow,items,Ammo,KgNone,Arrow,Flèche,Pfeil,,Flecha
 arrowDesc,items,Ammo,KgNone,Ammunition for a bow. Hold reload to use alternate ammo.,Munition d'un arc. Maintenez le bouton de rechargement enfoncé pour utiliser un autre type de munition.,"Munition für einen Bogen. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,Munición para el arco. Mantén presionado recargar para usar munición alternativa.
-blunderbussAmmoDesc,items,Ammo,EnChanged,Blunderbuss ammo can be made with paper and gun powder plus small rocks.,,"Munition für die Donnerbüchse kann mit Papier, Schießpulver und kleinen Steinen gefertigt werden.",,
-blunderbussAmmoDesc,items,Ammo,KgNone,Blunderbuss ammo can be made with paper and gun powder plus scrap iron or small rocks.,"La munition de tromblon peut être fabriquée avec du papier et de la poudre à canon, associés à de la ferraille ou des petits cailloux.","Munition für die Donnerbüchse kann mit Papier, Schießpulver und Alteisen (oder kleinen Steinen) gefertigt werden.",,"La munición de trabuco se puede fabricar con papel y pólvora, además de chatarra de hierro o pequeñas rocas."
+blunderbussAmmo,items,Ammo,KgNone,Blunderbuss Ammo,Munition de tromblon,Donnerbüchsenmunition,,Munición de trabuco
+blunderbussAmmoDesc,items,Ammo,KgNone,Blunderbuss ammo can be made with paper and gun powder plus small rocks.,"La munition de tromblon peut être fabriquée avec du papier et de la poudre à canon, associés à de la ferraille ou des petits cailloux.","Munition für die Donnerbüchse kann mit Papier, Schießpulver und Alteisen (oder kleinen Steinen) gefertigt werden.",,"La munición de trabuco se puede fabricar con papel y pólvora, además de chatarra de hierro o pequeñas rocas."
 buckshot,items,Ammo,KgNone,Buckshot,Chevrotine,Grober Schrot,,Perdigón
 buckshotDesc,items,Ammo,KgNone,Buckshot used to make shotgun ammo can be crafted at a forge with clay and lead after buying the shotgun shell perk.,La chevrotine utilisée pour créer des munitions de fusil à pompe peut être fabriquée à la forge avec de l'argile et du plomb une fois que vous avez acheté l'avantage de cartouches de fusil à pompe.,"Nach dem Kauf der Eigenschaft „Flintenmunition“ erfährst du, wie grober Schrot, der für die Fertigung von Schrotflintenmunition nötig ist, in der Schmiede mit Lehm und Blei gefertigt wird.",,"Una vez que hayas comprado el beneficio de cartuchos de escopeta, podrás fabricar perdigones como munición para escopetas a partir de arcilla y plomo en la fragua."
 crossbowBolt,items,Ammo,KgNone,Crossbow Bolt,Carreau d'arbalète,Armbrustbolzen,,Saeta para ballesta
@@ -2157,9 +2157,9 @@ fishingWeightDesc,items,Item,KgNone,Lead objects can be scrapped into scrap lead
 flashlight02,items,Item,KgNone,Flashlight,Lampe de poche,Taschenlampe,,Linterna
 flashlight02Desc,items,Item,KgNone,A flashlight can be used for a light source by toggling on your light source action. It can also be attached to most guns.,La lampe de poche peut être utilisée comme source de lumière en activant l'action associée. Vous pouvez également l'attacher à la plupart des armes à feu.,"Die Taschenlampe ist eine Lichtquelle, die mit der Lichtquellen-Aktion an- und ausgeschaltet werden kann. Sie kann auch an den meisten Waffen angebracht werden.",,Usa la acción de fuente de luz para utilizar la linterna como fuente de luz. También se puede fijar a la mayoría de las pistolas.
 forgedIron,items,Item,KgNone,Forged Iron,Fer forgé,Geschmiedetes Eisen,,Hierro forjado
-forgedIronDesc,items,Item,KgNone,"Can be crafted at the forge and be used to craft, repair and upgrade a variety of things. Unlock with the Metal Smithing perk.","Peut être fabriqué à la forge et peut servir à fabriquer, réparer et améliorer un tas de choses.","Kann in der Schmiede geschmiedet werden, um eine Reihe von Dingen zu fertigen, zu reparieren und aufzuwerten.",,"Se puede producir en la fragua y usar para fabricar, reparar y mejorar ciertos objetos."
+forgedIronDesc,items,Item,KgNone,"Can be crafted at the forge and be used to craft, repair and upgrade a variety of things. Unlock by leveling blacksmithing.","Peut être fabriqué à la forge et peut servir à fabriquer, réparer et améliorer un tas de choses.","Kann in der Schmiede geschmiedet werden, um eine Reihe von Dingen zu fertigen, zu reparieren und aufzuwerten.",,"Se puede producir en la fragua y usar para fabricar, reparar y mejorar ciertos objetos."
 forgedSteel,items,Item,KgNone,Forged Steel,Acier forgé,Geschmiedeter Stahl,,Acero forjado
-forgedSteelDesc,items,Item,KgNone,Can be crafted at the forge after buying level 2 Metal Smithing perk and can be used to make some of the strongest items.,Peut être fabriqué à la forge après avoir acheté l'avantage de l'acier et peut servir à fabriquer des objets très solides.,"Kann in der Schmiede gefertigt werden, nachdem die Fertigkeit „Stahl“ erworben wurde. Kann benutzt werden, um einige der stärksten Gegenstände zu fertigen.",,Se puede producir en la fragua tras comprar el beneficio del metal y se puede usar para elaborar algunos de los objetos más resistentes.
+forgedSteelDesc,items,Item,KgNone,Can be crafted at the forge after leveling high in blacksmithing and can be used to make some of the strongest items.,Peut être fabriqué à la forge après avoir acheté l'avantage de l'acier et peut servir à fabriquer des objets très solides.,"Kann in der Schmiede gefertigt werden, nachdem die Fertigkeit „Stahl“ erworben wurde. Kann benutzt werden, um einige der stärksten Gegenstände zu fertigen.",,Se puede producir en la fragua tras comprar el beneficio del metal y se puede usar para elaborar algunos de los objetos más resistentes.
 gasCan,items,Item,KgNone,Gas Can,Bidon d'essence,Benzinkanister,,Bidón de gas
 gasCanDesc,items,Item,KgNone,A can of gas. Can be used to fuel powered tools and vehicles. Crafted in lots of 100.,Un bidon d'essence. Peut servir à alimenter certains outils et véhicules. Se fabrique en lots de 100.,"Ein Benzinkanister. Kann benutzt werden, um Werkzeuge und Fahrzeuge anzutreiben, die mit Benzin laufen. Wird in 100er Einheiten gefertigt.",,Un bidón de gas. Se puede usar para hacer funcionar herramientas que necesitan energía y vehículos. Se fabrica en lotes de 100.
 glue,items,Item,KgNone,Glue,Colle,Kleber,,Pegamento
@@ -4557,7 +4557,7 @@ animalFeedDesc,items,Item Food,,Animal feed is used in crafting animal snares an
 maniacPowder,items,Item Food,,Maniac Powder,,
 maniacPowderDesc,items,Item Food,,A dangerous drug that can temporarily make you a fearless killing machine.,,
 
-RemoteDesc,items,Item Tool,,These are used to toggle hidden doors or bridges.,,
+RemoteDesc,items,Item Tool,,These are used to toggle hidden doors by clicking on them.,,
 
 survivorNotes,items,Item Tool,,Survivor Notes,,
 survivorNotesDesc,items,Item Tool,,Gather enough of these to craft skill books at the Study Desk.,,
@@ -4583,7 +4583,7 @@ ClingwrapDesc,items,Item Food,,You can turn clingwrap into strips to seal up raw
 stripsClingwrap,items,Item Food,,Clingwrap Strips,,
 stripsClingwrapDesc,items,Item Food,,You can use these to seal up raw meat to preserve it and mask the smell.,,
 sealedMeat,items,Item Food,,Sealed Meat,,
-SealedMeatDesc,items,Item Food,,This raw meat has been sealed with clingfilm to preserve it and mask the smell.,,
+sealedMeatDesc,items,Item Food,,This raw meat has been sealed with clingfilm to preserve it and mask the smell.,,
 
 gearMechanism,items,Item Tool,,Gear Mechanism,,
 gearMechanismDesc,items,Item Tool,,"These gears are required for making hidden doors, bridges, vaults and safes.",,
@@ -4595,7 +4595,7 @@ electricToolkitDesc,items,Item Tool,,This toolkit is used in the Decor Artisan S
 improvisedWeaponsSchematic,items,Item Book,,Improvised Weapons,,
 improvisedWeaponsSchematicDesc,items,Item Book,,"This schematic teaches you how ot make clubs, shivs and the blunderbuss.",,
 recipebookMasonry,items,Item Book,,Masonry,,
-recipebookMasonryDesc,items,Item Book,,"This book teaches you how to craft blocks made out of cobblestone, stone and brick. Also teaches cement mixer.",,
+recipebookMasonryDesc,items,Item Book,,"Reading book will raise your skill in Masonry so that you may eventually learn how to craft cobblestone, brick and cement.",,
 recipebookJunk,items,Item Book,,Junk Salvage,,
 recipebookJunkDesc,items,Item Book,,This book teaches you how to scrap iron brass and lead. Written by Mr. Sanford.,,
 recipebookArchery,items,Item Book,,Archery for Beginners,,
@@ -4604,8 +4604,6 @@ recipebookTraps,items,Item Book,,Improvised Traps,,
 recipebookTrapsDesc,items,Item Book,,This book teaches you how to make trap spikes to defend your base.,,
 recipebookCarpentery,items,Item Book,,Handyman Carpentry,,
 recipebookCarpenteryDesc,items,Item Book,,This book teaches you how to craft wooden blocks.,,
-recipebookSecurity,items,Item Book,,Security Measures,,
-recipebookSecurityDesc,items,Item Book,,"This book teaches you how to create gear mechanisms, steel doors, storage containers and remotes for bridges and hidden doors.",,
 recipebookExplosives,items,Item Book,,Explosives 101,,
 recipebookExplosivesDesc,items,Item Book,,This book teaches you how to make explosive traps and gunpowder.,,
 recipebookGlass,items,Item Book,,Glassworking 101,,
@@ -4614,7 +4612,7 @@ recipebookMetal,items,Item Book,,Metal Working 101,,
 recipebookMetalDesc,items,Item Book,,This book teaches you how to craft blocks made out of metal and iron.,,
 
 recipebookPottery,items,Item Book,,Pottery,,
-recipebookPotteryDesc,items,Item Book,,This book will teach you how to make clay bowls and plates.,,
+recipebookPotteryDesc,items,Item Book,,This book examines the various uses of clay.,,
 schematicFireaxe,items,Item Book,,Fireaxe Schematic,,
 schematicFireaxeDesc,items,Item Book,,This schematic teaches you how to craft a fireaxe.,,
 schematicPickaxe,items,Item Book,,Pickaxe Schematic,,
@@ -4622,13 +4620,13 @@ schematicPickaxeDesc,items,Item Book,,This schematic teaches you how to craft an
 schematicGardenTools,items,Item Book,,Garden Tools Schematic,,
 schematicGardenToolsDesc,items,Item Book,,"This schematic teaches you how to craft a shovel, hoe and weed cleaver.",,
 skillbookMedical,items,Item Book,,Dr. Health MD,,
-skillbookMedicalDesc,items,Item Book,,"This medical book will teach you how to make various medical items.",,
+skillbookMedicalDesc,items,Item Book,,"This medical book has a few missing pages but if you study enough of them you're sure you can learn some handy health remedies.",,
 recipebookAnimalTraps,items,Item Book,,Animal Trapping,,
-recipebookAnimalTrapsDesc,items,Item Book,,This book teaches you how to make animal snares and chicken coops.,,
+recipebookAnimalTrapsDesc,items,Item Book,,This book adds to your animal trapping skill which will eventually let you how to make animal snares and chicken coops.,,
 recipebookElectronics,items,Item Book,,Tesla Electronics,,
 recipebookElectronicsDesc,items,Item Book,,This book teaches you how to craft working electrical lights in the Decor Artisan Station.,,
 skillbookChemistry,items,Item Book,,Chemistry 101,,
-skillbookChemistryDesc,items,Item Book,,"Bill Fry the Chemistry Guy teaches you how to mix basic chemicals to make interesting things. Its a pop-up book too!".,,
+skillbookChemistryDesc,items,Item Book,,"Bill Fry the Chemistry Guy teaches you how to mix basic chemicals to make interesting things. Its a pop-up book too! Reading raises your science and chemistry skill.",,
 schematicAnimalHide,items,Item Book,,Animal Hide Schematic,,
 schematicAnimalHideDesc,items,Item Book,,This schematic teaches you how to craft armor out of animal hide.,,
 schematicOilRefiner,items,Item Book,,Oil Refiner Schematic,,
@@ -4637,11 +4635,11 @@ schematicForge,items,Item Book,,Forge Schematic,,
 schematicForgeDesc,items,Item Book,,This schematic teaches you how to craft a Forge.,,
 
 recipebookSinks,items,Item Book,,Plumbing 101,,
-recipebookSinksDesc,items,Item Book,,This book teaches you how to craft working sinks.,,
+recipebookSinksDesc,items,Item Book,,This book adds to your knowledge of plumbing. If you learn enough you will be able to craft or repair sinks for clean water.,,
 recipebookSecurity2,items,Item Book,,Security Measures,,
 recipebookSecurity2Desc,items,Item Book,,"This book teaches you how to create gear mechanisms for hidden doors and bridges.",,
-schematicOven,items,Item Book,,Oven Schematic,,
-schematicOvenDesc,items,Item Book,,This book teaches you how to craft a working oven.,,
+recipebookOven,items,Item Book,,Oven Schematic,,
+recipebookOvenDesc,items,Item Book,,These schematics can add to your knowledge of oven repair so that you may eventually be able to craft or repair working ovens.,,
 sprayPaint,items,Item,,Spray Paint,,
 sprayPaintDesc,items,Item,,This can be used with Decor Steel to change appearances.,,
 assortedDyes,items,Item,,Assorted Dyes,,
@@ -4892,7 +4890,7 @@ steelLegsBlack,items,Item Clothes,,Steel Leg Armor (Black),,
 steelBootsBlack,items,Item Clothes,,Steel Boots (Black),,
 steelGlovesBlack,items,Item Clothes,,Steel Gloves (Black),,
 sewingKit,items,Item,,Sewing Kit,,
-sewingKitDesc,items,Item,,This is used at the Armory to tailor cloth armors.,,
+sewingKitDesc,items,Item,,This is used at the Armory to tailor cloth armors. To craft it you need to level Tailoring.,,
 tanningRack,items,Item,,Tanning Rack,,
 tanningRackDesc,items,Item,,This is used at the Armory to craft hide and leather armor.,,
 weldingTorch,items,Item,,Welding Torch,,
@@ -5059,6 +5057,53 @@ challengeSurvivorJournal,items,Zombie Challenge Note,,Survivor Journal Page,,
 challengeSurvivorJournalDesc,items,Zombie Challenge Note,,"This is a a torn page from a survivor's journal. If you had more maybe it could lead you to something.",,
 challengeLockpick,items,Zombie Challenge Note,,Breaking and Entering,,
 challengeLockpickDesc,items,Zombie Challenge Note,,"A challenge to test your lockpicking skill.",,
+challengeJock,items,Zombie Challenge Note,,Challenge - Jock,,
+challengeReaper,items,Zombie Challenge Note,,Challenge - Reaper,,
+challengeWalmart,items,Zombie Challenge Note,,Challenge - Walmart Shopers,,
+challengeWedding,items,Zombie Challenge Note,,Challenge - Wedding Vow,,
+challengeWallet,items,Zombie Challenge Note,,Challenge - Fancy Wallet,,
+challengeBooks,items,Zombie Challenge Note,,Challenge - Old Novels,,
+challengeChildsHappiness,items,Zombie Challenge Note,,Challenge - Child's Happiness,,
+challengeToilet,items,Zombie Challenge Note,,Challenge - Clean Wipe,,
+challengeWalkman,items,Zombie Challenge Note,,Challenge - Radio Head,,
+challengeCondoms,items,Zombie Challenge Note,,Challenge - Planned Parenthood,,
+challengeBaseball,items,Zombie Challenge Note,,Challenge - Baseball Slugger,,
+challengeCards,items,Zombie Challenge Note,,Challenge - Texas Holdem,,
+challengeCigarettes,items,Zombie Challenge Note,,Challenge - Cancerous Addiction,,
+challengeArtist,items,Zombie Challenge Note,,Challenge - Misunderstood Artist,,
+challengeSoap,items,Zombie Challenge Note,,Challenge - Cleanliness Equals Godliness,,
+challengeBong,items,Zombie Challenge Note,,Challenge - Up in Smoke,,
+
+questItemRing,items,Item,,[Q] Diamond Wedding Ring,,
+questItemRingDesc,items,Item,,[Quest Item] This is a brilliant and beautiful diamond ring and the only proof of a love that once was.,,
+questItemRing2,items,Item,,[Q] Wedding Band,,
+questItemRing2Desc,items,Item,,[Quest Item] This plain wedding band is all the remains of a once commited relationship.,,
+questItemWallet,items,Item,,[Q] Gatorskin Wallet,,
+questItemWalletDesc,items,Item,,[Quest Item] This gatorskin wallet was made to impress. Too bad all it holds is expires coupons.,,
+questItemBook,items,Item,,[Q] Classic Literature,,
+questItemBookDesc,items,Item,,"[Quest Item] This is a very old novel of writen tales. Too bad you don't have the time to really sit down and read through this - it'd take days!",,
+questItemTeddy,items,Item,,[Q] Teddy Bear,,
+questItemTeddyDesc,items,Item,,"[Quest Item] A stuffed teddy bear. A little dirty and roughed up but only cosmetic scars. It'd make a decent gift for a child.",,
+questItemToiletPaper,items,Item,,[Q] Toilet Paper,,
+questItemToiletPaperDesc,items,Item,,[Quest Item] An amazingly soft roll of untouched toilet paper, still in its wrapper.,,
+questItemGameboy,items,Item,,[Q] Gameboy,,
+questItemGameboyDesc,items,Item,,"[Quest Item] An old handheld video game system. Batteries are dead but the game cartridge is still inside! This would make a good gift for a child." ,,
+questItemWalkman,items,Item,,[Q] Walkman Cassette Player,,
+questItemWalkmanDesc,items,Item,,"[Quest Item] An old walkman audio cassette player. No batteries or tape to be found but someone might like it.",,
+questItemCondoms,items,Item,,[Q] Condoms,,
+questItemCondomsDesc,items,Item,,"[Quest Item] An unopened box of condoms. You don't yet have use for them yourself but someone might pay a good price for them.",,
+questItemBaseball,items,Item,,[Q] Autographed Baseball,,
+questItemBaseballDesc,items,Item,,"[Quest Item] This baseball has someone's signature writen on it. You're not sure who or if they were once someone important, but it might mean something to someone.",,
+questItemCards,items,Item,,[Q] Playing Cards,,
+questItemCardsDesc,items,Item,,"[Quest Item] An unsealed pack of playing cards. This is sure to make someone happy.",,
+questItemCigarettes,items,Item,,[Q] Carton of Cigarettes,,
+questItemCigarettesDesc,items,Item,,"[Quest Item] An unopened carton of cigarettes. They're extremely addicting and bad for your health. Someone out there might pay a high price for them, though...",,
+questItemArtSupplies,items,Item,,[Q] Art Supplies,,
+questItemArtSuppliesDesc,items,Item,,"[Quest Item] This set of art supplies is in surprisingly good shape. Someone might like these...",,
+questItemColoringBook,items,Item,,[Q] Coloring Book,,
+questItemColoringBookDesc,items,Item,,"[Quest Item] A coloring book with only a few of the pages already used. This would make a good gift for a child.",,
+questItemBong,items,Item,,[Q] Bong,,
+questItemBongDesc,items,Item,,"[Quest Item] Shocking this is in pretty good condition, though it shows clear signs that it recieved rigorous use. Used for tobacco paraphernalia. Someone might like this..",,
 
 fuelLog,items,Item,,Fuel Log,,
 fuelLogDesc,items,Item,,This log is coated with special chemicals to prolong its burn time.,,
@@ -5066,11 +5111,11 @@ fuelLogDesc,items,Item,,This log is coated with special chemicals to prolong its
 snowHarvested,blocks,Block,,Harvested Snow,,
 
 LockpickDesc,items,Item,,"Can be used to crack into safes. Note: Doesn't work on doors.",,
-recipebookLockpick,items,Item Book,,Lockpicking,,
-recipebookLockpickDesc,items,Item Book,,"This book teaches you how to create and use lockpicks for safecracking.",,
+skillbookLockpick,items,Item Book,,Lockpicking,,
+skillbookLockpickDesc,items,Item Book,,"This book adds to your lockpicking skill which will eventually let you craft lockpicks that can crack into locked safes.",,
 
 
-classHunterDesc,blocks,Block Building,,"Hunter's start off with an Bow and hide armor. Recipes: Hunting Knife, Traps, Animal Traps, Animal Hide Armor, Wooden Bow.",,
+classHunterDesc,blocks,Block Building,,"Hunter's start off with a rifle and knowledge in rifles, traps and leatherworking.",,
 
 classHunterDesc2,blocks,Block Building,,"Hunter's start off with a bow and skills in leather tanning, archery, animal traps and a hunting knife.",,
 
@@ -5083,23 +5128,23 @@ classBuilderDesc2,blocks,Block Building,,"Builder's start off with a supply of w
 
 classRiflemanDesc,blocks,Block Building,,"The Rifleman starts off with a bolt rifle. He has superior skill in rifles.",,
 
-classVeteranDesc,blocks,Block Building,,"The Veteran starts off with army clothes and an Assault Rifle. Recipes: Assault Rifle, Explosives",,
+classVeteranDesc,blocks,Block Building,,"The Veteran starts off with army clothes and a SMG.",,
 
 classVeteranDesc2,blocks,Block Building,,"The Veteran starts off with army clothes and an Assault Rifle. Has superior skill in rifles and gun smithing.",,
 
 classBruiserDesc,blocks,Block Building,,"The Bruiser starts off with a spiked club and a sawed off shotgun. Skilled with melee weapons and shotguns for up-close encounters.",,
 
-classGunmanDesc,blocks,Block Building,,"The Gunman starts off with a 44Magnum. Skilled in gun smithing, pistols and bartering.",,
+classGunmanDesc,blocks,Block Building,,"The Gunman starts off with a 44Magnum and skill in pistols.",,
 
-classMinerDesc,blocks,Block Building,,"The Miner starts off with an pickaxe and pistol. Skilled in masonry, mining tools, forge and explosives.",,
+classMinerDesc,blocks,Block Building,,"The Miner starts off with an pickaxe and pistol. Skilled in masonry, mining tools and blacksmithing.",,
 
 classMinerDesc2,blocks,Block Building,,"The Miner starts off with a pickaxe and pistol. Skilled in mining tools, armor smithing and auger.",,
 
-classSurvivorDesc,blocks,Block Building,,"The survivor starts off with a crossbow and more food supplies. Skilled in archery, lockpicks and tool smithing.",,
+classSurvivorDesc,blocks,Block Building,,"The survivor starts off with a crossbow and more food supplies. Skilled in archery, scavenging and tool smithing.",,
 
 classSurvivorDesc2,blocks,Block Building,,"The survivor starts off with an iron crossbow and more food supplies. Skilled in archery, lockpicks, scavenging and tool smithing.",,
 
-classMedicDesc,blocks,Block Building,,"The medic starts off with extra medical supplies and a pistol. Skilled in medicine, science and chemistry.",,
+classMedicDesc,blocks,Block Building,,"The medic starts off with extra medical supplies and a pistol. Skilled in medicine and science.",,
 classMedicDesc2,blocks,Block Building,,"The medic starts off with extra medical supplies and a pistol. Skilled in medicine, science and first aid.",,
 
 clubBurning,items,Item Melee,,Burning Club,,
@@ -5136,7 +5181,7 @@ MasterArcher,progression,Skill,,Master Archer,,
 archerDesc,progression,Skill,,"Learn how to craft an iron bow, iron crossbow and crossbow repeater.",,
 
 fletching,progression,Skill,,Fletching,,
-fletchingDesc,progression,Skill,,"Level this by crafting arrows and bolts to speed up your crafting.",,
+fletchingDesc,progression,Skill,,"Level 3 unlocks arrows. Level 20 unlocks iron arrows/bolts. Level 30 unlocks steel arrows/bolts. Level 50 unlocks flaming arrows and explosive bolts. Level this by crafting arrows and bolts to speed up your crafting.",,
 
 expGainDesc,items,Item,,Read this to gain a skill point in the relevant category.,,
 expWeaponSmithing,items,Item,,Experience - Weapon Smithing,,
@@ -5308,6 +5353,8 @@ peculiarTasteDesc,buffs,Buff,,"You're not sure what you just ate but it didn't t
 peculiarTasteTooltip,buffs,Buff,,A peculiar taste...,,
 mysteryMeat,items,Item,,Mystery Meat,,
 mysteryMeatDesc,items,Item,,"It doesn't smell terrible but you don't know how much faith you should put in Hotrod.",,
+mysteryMeatCrafted,items,Item,,Mystery Meat,,
+mysteryMeatCraftedDesc,items,Item,,"It's an aquired taste...",,
 
 bagChips,items,Item,,Bag of Chips,,
 bagChipsDesc,items,Item,,"A bag of crispy salted potato chips.",,
@@ -5448,6 +5495,38 @@ skillbookShotguns,items,Item Book,,Evil Dead,,
 skillbookShotgunsDesc,items,Item Book,,"Learn from the best.",,
 skillbookGunSmith,items,Item Book,,Gun Maintenance,,
 skillbookGunSmithDesc,items,Item Book,,"This magazine explains some of the basics of proper gun cleaning and repair.",,
+skillbookSniper,items,Item Book,,"Sniper: Long Range",,
+skillbookSniperDesc,items,Item Book,,"A book on long-range combat, authored by Garrus Vakarian.",,
+skillbookSMG,items,Item Book,,"Tommy: The Mafia Story",,
+skillbookSMGDesc,items,Item Book,,"A fascinating tale of mafia gangsters and an iconic submachine gun.",,
+skillbookAssaultRifle,items,Item Book,,"AK47: Oiled Barrels",,
+skillbookAssaultRifleDesc,items,Item Book,,"Reads more like a romance than anything else, but still has some useful information. Comes with a discount coupon!",,
+skillbookRocket,items,Item Book,,"Rocket Launcher Schematics",,
+skillbookRocketDesc,items,Item Book,,"These schematics are torn and difficult to make out but they seem to explain how to assemble a rocket launcher.",,
+skillbookCrossbow,items,Item Book,,"Crossbow Book",,
+skillbookCrossbowDesc,items,Item Book,,"These book explains the history and origin of the medieval crossbow.",,
+chainsawSchematicDesc2,items,Book,KgNone,"Pages from chainsaw manual. Most are covered in oil or torn but if you'll eventually be able to assemble a chainsaw.",Apprenez à assembler et réparer les tronçonneuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Kettensägen zusammengesetzt und repariert werden.",,Lee este esquema para aprender a armar y reparar motosierras.
+augerSchematicDesc2,items,Book,KgNone,"Pages from an auger manual. Most are illegible but if you read enough you'll eventually be able to assemble an auger.",Apprenez à assembler et réparer les foreuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Erdbohrer zusammengesetzt und repariert werden.",,Lee este esquema para aprender a reparar y armar taladros.
+recipebookNailgun,items,Item Book,,"Nailgun Schematics",,
+recipebookNailgunDesc,items,Item Book,,"Pages from an nailgun manual. Most are illegible but if you read enough you'll eventually be able to assemble a nailgun.",,
+minibikesForDumbshitsDesc2,items,Book,KgNone,"Pages from an minibike manual. Most are illegible from oil stains but if you read enough you'll learn something. Maybe.",Même les demeurés finis peuvent construire une mini-moto en suivant les étapes présentées dans ce guide... Vroum... Vroum !,"Selbst komplette Vollidioten können ein Taschenmotorrad bauen, wenn sie dieser einfachen Anleitung folgen … Brumm, brumm!",,"Hasta el más idiota puede construir una minimoto si sigue los pasos de esta sencilla guía. ¡Brum, brum!"
+skillbookBlades,items,Item Book,,"Halloween: The Myers Experience",,
+skillbookBladesDesc,items,Item Book,,"A horror story that sold many Kirk masks.",,
+recipebookSecurity,items,Item Book,,Security Measures,,
+recipebookSecurityDesc,items,Item Book,,"Reading this will give you levels in Security which will eventually let you craft gun safes, vault doors and drawbridges.",,
+skillbookForgedArmor,items,Item Book,,Armorsmith,,
+skillbookForgedArmorDesc,items,Item Book,,"You're pretty sure this book was never meant to be taken seriously, given that it speaks of magic defenses, but there could be some practical real-world applications some of it's contents.",,
+recipebookGardenTools,items,Item Book,,"Garden Tools Schematics",,
+recipebookGardenToolsDesc,items,Item Book,,"These schematics will teach you how to perform proper maintenance on various garden shed tools.",,
+skillbookAxes,items,Item Book,,Paul Bunyan Adventures,,
+skillbookAxesDesc,items,Item Book,,"This story follows the adventures of Paul Bunyan and his fabled ox.",,
+skillbookKnight,items,Item Book,,The Knight,,
+skillbookKnightDesc,items,Item Book,,"This story follows the a brave, dragon-slaying knight and Grey Warden on their quest to save a kingdom from Dark Spawn forces.",,
+skillbookMining,items,Item Book,,Mining Engineering,,
+skillbookMiningDesc,items,Item Book,,"An educational book that explains various mining techniques.",,
+skillbookHunter,items,Item Book,,Turok Comic,,
+skillbookHunterDesc,items,Item Book,,"This comic book fantasy follows the adventures of a indian tribe as they fight for survival in a world full of dangerous beasts.",,
+
 
 simpleForge,blocks,Station,,Simple Forge,,
 simpleForgeDesc,blocks,Station,,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, calipers or tool and die set. The Simple forge has a limited number of recipes compared to the normal forge in order to help improve performance.",,
@@ -5456,3 +5535,90 @@ trapFall,blocks,Traps,,Fall Trap,,
 trapFallDesc,blocks,Traps,,This block looks solid but will give way the moment you walk on it. Very handy for making pitfall traps,,
 
 concreteMixing2Desc,progression,Perk,,Unlocks the ability to make concrete and cement.,,
+
+theOutlawDesc2,progression,Perk,KgNone,"You're no Josey Wales, but your Magnum sure packs a punch.",,
+
+theGunman,progression,Perk,KgNone,The Gunman,,
+theGunmanDesc,progression,Perk,KgNone,You broke the laws of logic. Your pistol does more damage with every rank.,,
+
+deadShotDesc2,progression,Perk,KgNone,Shoot them dead with style!  Increase your handgun's chance to blow off heads and limbs with every rank.,Tuez-les avec classe ! Améliorez vos chances d'exploser des têtes et des membres avec votre pistolet au fil des rangs.,"Erschieße sie mit Stil! Erhöhe die Chance deiner Pistole, mit jedem Rang Köpfe und Gliedmaßen abzuschießen.",,¡Mátalos con estilo! Aumenta las posibilidades de que el revólver haga que los sesos y las extremidades de los enemigos salgan volando con nada nivel.
+
+sniper,progression,Skill,KgNone,Rifles,Fusils,Gewehre,,Sniper Rifle
+sniperDesc,progression,Perk,KgNone,Do more damage with Snipers. Gain skill by using items from this group.,,
+riflesDesc2,progression,Skill,KgNone,Do more damage with hunting or bolt rifles. Gain skill by using items from this group. Level up to 20 to be able to assemble them. Level 30 unlocks silencer.,Infligez davantage de dégâts avec les fusils et fusils d'assaut. Obtenez cette compétence en utilisant des objets de ce groupe.,"Verursache mehr Schaden mit Gewehren und Sturmgewehren. Erhalte die Fertigkeit, indem du Waffen aus dieser Kategorie benutzt.",,Inflige más daño con rifles y rifles de asalto. Mejora tu habilidad usando objetos de este grupo.
+hitman,progression,Perk,KgNone,The Hitman,,
+hitmanDesc,progression,Perk,GrChanged,"You're an aspiring hitman. Your sniper does more damage with every rank.",,
+
+assaultrifles,progression,Skill,KgNone,Rifles,Fusils,Gewehre,,Assault Rifles
+assaultriflesDesc,progression,Skill,KgNone,Do more damage with assault rifles.,,
+gijoe,progression,Perk,KgNone,"G.I. Joe",,
+gijoeDesc,progression,Perk,GrChanged,Your smg and assault rifle does more damage with every rank.,,
+
+smg,progression,Skill,KgNone,Rifles,Fusils,Gewehre,,Submachine Guns
+smgDesc,progression,Skill,KgNone,Do more damage with submachine guns.,,
+smgPerk,progression,Perk,KgNone,"Spray and Pray",,
+smgPerkDesc,progression,Perk,GrChanged,Your SMG does more damage with every rank. Level up to 20 to be able to assemble them. Level 30 unlocks silencer.,,
+
+lumberjack,progression,Perk,KgNone,"Lumberjack",,
+lumberjackDesc,progression,Perk,GrChanged,"Do 20% more block damage with axes and use 10% less stamina per swing per rank.",,
+
+ZombieRaveReaper,entityclasses,Entity,,Rave Reaper,,
+ZombieBigBitch,entityclasses,Entity,,Rotting Marge,,
+ZombieClarice,entityclasses,Entity,,Decayed Wife,,
+ZombieLibrarian,entityclasses,Entity,,Zombie Librarian,,
+ZombieVoodooFemale,entityclasses,Entity,,Infected Voodoo Cultist,,
+ZombieVoodooMale,entityclasses,Entity,,Infected Voodoo Cultist,,
+ZombieDan,entityclasses,Entity,,Festering Corpse,,
+ZombieLumberjack,entityclasses,Entity,,Undead Lumberjack,,
+ZombieSurvivorMale,entityclasses,Entity,,Infected Survivor,,
+ZombieSurvivorFemale,entityclasses,Entity,,Infected Survivor,,
+ZombieTrucker,entityclasses,Entity,,Undead Trucker,,
+ZombieKenny,entityclasses,Entity,,Undead Survivor,,
+ZombieRavager,entityclasses,Entity,,Ravager,,
+ZombieNerd,entityclasses,Entity,,Rotting Nerd,,
+ZombieInmate,entityclasses,Entity,,Infected Inmate,,
+ZombieInmateBlack,entityclasses,Entity,,Infected Inmate,,
+ZombieBrute,entityclasses,Entity,,Monsterous Brute,,
+ZombieCharred,entityclasses,Entity,,Charred Corpse,,
+ZombieChildFemale,entityclasses,Entity,,Infected Youth,,
+ZombieChildMale,entityclasses,Entity,,Infected Youth,,
+
+coldDrinkDesc,items,Food,KgNone,This drink has been chilled. Left-Click on a fridge or cooler to make it warmer.,,
+
+scrapIronShiv,items,Item Melee,,Scrap Iron Shiv,,
+scrapIronShivDesc,items,Item Melee,,"This crude shiv was craft from a random piece of scrap iron with its handle wrapped in duct tape. Hope you've had your tetanus shots...",,
+scrapIronShovel,items,Item Melee,,Scrap Iron Shovel,,
+scrapIronShovelDesc,items,Item Melee,,"This crude shovel was made by attaching some random scrap metal to the end of a smoothed wooden stick. It gets t he job done, but it degrades twice as fast.",,
+scrapIronPickaxe,items,Item Melee,,Scrap Iron Pickaxe,,
+scrapIronPickaxeDesc,items,Item Melee,,"This crude pickaxe was crafted with various scrap metal and wood. Serves its purpose but degrades twice as fast.",,
+scrapIronAxe,items,Item Melee,,Scrap Iron Axe,,
+scrapIronAxeDesc,items,Item Melee,,"This crude axe was crafted with scrap and wood. Its not as durable as stone but makes up for it by being a bit sharper.",,
+
+ironRingsRivets,items,Item,KgNone,Iron Rings and Rivets,,,
+ironRingsRivetsDesc,items,Item,KgNone,"These rings and rivets are required for crafting iron armor. You can craft these in the forge if you have a high enough Blacksmithing.",,
+steelRingsRivets,items,Item,KgNone,Steel Rings and Rivets,,,
+steelRingsRivetsDesc,items,Item,KgNone,"These rings and rivets are required for crafting steel armor. You can craft these in the forge if you have a high enough Blacksmithing.",,
+whetstoneDesc,items,Item,KgNone,"Used to repair weapons or tools that have sharp edges such as a hunting knife, axe or pickaxe.",,,
+
+canUnlabeled,items,Food,KgNone,Unlabeled Can,,,
+canUnlabeledDesc,items,Food,KgNone,"This can of food has long since lost its label, leaving the contents of the can a mystery. It could fill you up or it could make you sick. Are you hungry enough to chance it?",,,
+
+toolHeadIronAxe,items,Item,KgNone,Tool Head: Iron Axe,,
+toolHeadSteelAxe,items,Item,KgNone,Tool Head: Steel Axe,,
+toolHeadAxesDesc,items,Item,KgNone,This tool head is used in crafting axes.,,
+toolHeadIronPickaxe,items,Item,KgNone,Tool Head: Iron Pickaxe,,
+toolHeadSteelPickaxe,items,Item,KgNone,Tool Head: Steel Pickaxe,,
+toolHeadPickaxesDesc,items,Item,KgNone,This tool head is used in crafting pickaxes.,,
+toolHeadIronShovel,items,Item,KgNone,Tool Head: Iron Shovel,,
+toolHeadSteelShovel,items,Item,KgNone,Tool Head: Steel Shovel,,
+toolHeadShovelDesc,items,Item,KgNone,This tool head is used in crafting shovels.,,
+toolHeadIronHoe,items,Item,KgNone,Tool Head: Iron Hoe,,
+toolHeadIronHoeDesc,items,Item,KgNone,This tool head is used in crafting an iron hoe.,,
+toolHeadKnifeBlade,items,Item,KgNone,Tool Head: Blade,,
+toolHeadKnifeBladeDesc,items,Item,KgNone,This is an unsharpened blade for a knife.,,
+toolHeadBladeScythe,items,Item,KgNone,Tool Head: Scythe Blade,,
+toolHeadBladeScytheDesc,items,Item,KgNone,This is an unsharpened blade for a scythe.,,
+toolHeadSledgehammer,items,Item,KgNone,Tool Head: Sledgehammer,,
+toolHeadSledgehammerDesc,items,Item,KgNone,This is used to craft a sledgehammer.,,
+toolHeadHammer,items,Item,KgNone,Tool Head: Hammer,,
+toolHeadHammerDesc,items,Item,KgNone,This is used to craft a claw hammer.,,

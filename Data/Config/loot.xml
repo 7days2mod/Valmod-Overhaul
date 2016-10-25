@@ -313,19 +313,7 @@
 	</lootqualitytemplate>
 	
 	<lootqualitytemplate name="legendaryTemplate">
-		<qualitytemplate level="0,0.16" default_quality="1,100">
-			<loot quality="301,600" prob="0.01"/>
-			<loot quality="201,300" prob="0.05"/>
-			<loot quality="101,200" prob="0.15"/>
-			<loot quality="90,100" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="0.16,0.32" default_quality="101,200">
-			<loot quality="301,600" prob="0.01"/>
-			<loot quality="201,300" prob="0.05"/>
-			<loot quality="101,200" prob="0.15"/>
-			<loot quality="90,200" prob="1"/>
-		</qualitytemplate>
-		<qualitytemplate level="0.32,0.48" default_quality="201,300">
+		<qualitytemplate level="0,0.48" default_quality="201,300">
 			<loot quality="301,600" prob="0.01"/>
 			<loot quality="201,300" prob="0.05"/>
 			<loot quality="101,200" prob="0.15"/>
@@ -399,24 +387,39 @@
 	<item name="skillbookGunsmoke" count="1"/>
 	<item name="skillbookRifles" count="1"/>
 	<item name="skillbookShotguns" count="1"/>
-	<item name="skillbookGunSmith" count="1"/>
-	<item name="pistolBook" count="1"/>
+	<item name="skillbookAssaultRifle"/>
+	<item name="skillbookRocket"/>
 	<item name="theEnforcerMagazine" count="1"/>
 	</lootgroup>
 
-<lootgroup name="ValmodQuests" count="1">
-	<item name="challengeSticky" count="1"/>
-	<item name="challengeBigBadBosses" count="1"/>
-	<item name="challengeAnkleBitters" count="1"/>
-	<item name="challengeAnimalTraps" count="1"/>
-	<item name="challengeLightThemUp" count="1"/>
-	<item name="challengeDogEatDog" count="1"/>
-	<item name="challengeFeedTheMole" count="1"/>
-	<item name="challengeTakingNote" count="1"/>
-	<item name="challengeHotrod" count="1"/>
-	<item name="challengeSurvivorJournal" count="1"/>
-	<item name="challengeLockpick" count="1"/>
-	<item name="challengeKickz" count="1"/>
+<lootgroup name="ValmodQuests" >
+	<item name="challengeSticky"/>
+	<item name="challengeBigBadBosses"/>
+	<item name="challengeAnkleBitters"/>
+	<item name="challengeLightThemUp"/>
+	<item name="challengeDogEatDog"/>
+	<item name="challengeFeedTheMole"/>
+	<item name="challengeTakingNote"/>
+	<item name="challengeHotrod"/>
+	<item name="challengeSurvivorJournal"/>
+	<item name="challengeLockpick"/>
+	<item name="challengeKickz"/>
+	<item name="challengeJock"/>
+	<item name="challengeReaper"/>
+	<item name="challengeWalmart"/>
+	<item name="challengeWedding"/>
+	<item name="challengeWallet"/>
+	<item name="challengeBooks"/>
+	<item name="challengeChildsHappiness"/>
+	<item name="challengeToilet"/>
+	<item name="challengeWalkman"/>
+	<item name="challengeCondoms"/>
+	<item name="challengeBaseball"/>
+	<item name="challengeCards"/>
+	<item name="challengeCigarettes"/>
+	<item name="challengeArtist"/>
+	<item name="challengeSoap"/>
+	<item name="challengeBong"/>
 </lootgroup>
 
 <lootgroup name="questChallenge" count="1">
@@ -649,7 +652,8 @@
 	<item group="pistol+ammo" count="1" prob="0.05"/>
 	<item name="bottledRiverWater" count="1,2" prob="0.45"/>
 	<item name="turd" count="1,2" prob="0.3"/>
-	<item name="soap" count="1" prob="0.2"/>
+	<item name="soap" count="1" prob="0.1"/>
+	<item name="questItemToiletPaper" prob="0.1"/>
 </lootgroup>
 
 <lootgroup name="shotguns">
@@ -810,14 +814,16 @@
 	<item group="questChallenge" count="1" />
 	<item name="survivorNoteCollection" />
 	<item name="minibikesForDumbshits"/>
-	<item name="skillbookChemistry"/>
-	<item name="skillbookMedical"/>
 	<item name="skillbookBlacksmith"/>
-	<item name="skillbookBuilding"/>
+	<item name="recipebookElectronics"/>
 	<item name="recipebookMasonry"/>
-	<item name="macDyverBook"/>
-	<item name="skillbookBlunt"/>
+	<item name="theEnforcerMagazine"/>
 	<item name="skillbookWasteland"/>
+	<item name="skillbookAssaultRifle"/>
+	<item name="skillbookRocket"/>
+	<item name="recipebookSinks"/>
+	<item name="recipebookOven"/>
+	<item name="skillbookForgedArmor"/>
 </lootgroup>
 
 <lootgroup name="gasPumps" >
@@ -825,24 +831,37 @@
 </lootgroup>
 <lootgroup name="skillBooks" count="1">
 	<item name="skillbookAthletics"/>
-<!--	<item name="skillbookUnarmed"/> -->
 	<item name="skillbookArchery"/>
 	<item name="skillbookBarter"/>
 	<item name="pistolBook"/>
-	<item name="theEnforcerMagazine"/>
 	<item name="skillbookTools"/>
 	<item name="skillbookTailor"/>
 	<item name="skillbookRogue"/>
 	<item name="skillbookGunsmoke"/>
 	<item name="skillbookRifles"/>
 	<item name="skillbookShotguns"/>
-	<item name="skillbookGunSmith"/>
+	<item name="skillbookBlunt"/>
+	<item name="skillbookBuilding"/>
+	<item name="skillbookCrossbow"/>
+	<item name="skillbookChemistry"/>
+	<item name="skillbookMedical"/>
+	<item name="recipebookAnimalTraps"/>
+	<item name="recipebookPottery"/>
+	<item name="skillbookBlades"/>
+	<item name="recipebookSecurity"/>
+	<item name="recipebookGardenTools"/>
+	<item name="skillbookAxes"/>
+	<item name="skillbookKnight"/>
+	<item name="skillbookMining"/>
+	<item name="skillbookHunter"/>
+	<item name="macDyverBook"/>
 </lootgroup>
 <lootgroup name="loosePaper" count="1">
 <item group="questChallenge" prob="0.025"/>
 <item group="ValmodQuests" prob="0.025"/>
-<item name="paper" count="10,25" prob="0.9"/>
+<item name="paper" count="8,15" prob="0.85"/>
 <item name="survivorNotes" count="1" prob="0.05"/>
+<item name="questItemBook" count="1" prob="0.05"/>
 </lootgroup>
 
 <lootgroup name="commonBooks" count="1">
@@ -894,15 +913,18 @@
 	<item name="canPetfood"/>
 	<item name="canHam"/>
 	<item name="canLamb"/>
-	<item name="canMiso"/>
 	<item name="canPasta"/>
 	<item name="canPeas"/>
 	<item name="canSalmon"/>
 	<item name="canSoup"/>
 	<item name="canStock"/>
-	<item name="canTuna"/>
 	<item name="canPears"/>
 	<item name="foodHoney"/>
+</lootgroup>
+
+<lootgroup name="cupboardcannedfood">
+	<item group="cannedfood"/>
+	<item name="canUnlabeled"/>
 </lootgroup>
 
 <lootgroup name="seeds">
@@ -928,7 +950,6 @@
 	<item name="honeyHam"/>
 	<item name="bowlFruit"/>
 	<item name="bowlChili"/>
-	<item name="bowlMiso"/>
 	<item name="soupPea"/>
 	<item name="bowlPasta"/>
 	<item name="bowlSoup"/>
@@ -960,7 +981,7 @@
 </lootgroup>
 
 <lootgroup name="cupboardFood">
-	<item group="cannedfood" prob="0.3"/>
+	<item group="cupboardcannedfood" prob="0.3"/>
 	<item name="flour" count="1" prob="0.2"/>
 	<item name="Bread" count="1" prob="0.2"/>
 	<item name="ramenNoodles" prob="0.2"/>
@@ -1012,10 +1033,23 @@
 	<item name="ductTape" count="1,3"/>
 </lootgroup>
 
+<lootgroup name="junkQuestItems">
+	<item name="questItemWallet"/>
+	<item name="questItemTeddy"/>
+	<item name="questItemGameboy"/>
+	<item name="questItemWalkman"/>
+	<item name="questItemBaseball"/>
+	<item name="questItemCards"/>
+	<item name="questItemCigarettes"/>
+	<item name="questItemColoringBook"/>
+	<item name="questItemArtSupplies"/>
+</lootgroup>
+
 <lootgroup name="junkGood">
 	<item group="questChallenge" count="1" prob="0.1"/>
 	<item group="treasureMaps" count="1" prob="0.1"/>
-	<item group="books" prob="0.8"/>
+	<item group="books" prob="0.7"/>
+	<item group="junkQuestItems" prob="0.1"/>
 </lootgroup>
 
 <lootgroup name="junkSpray">
@@ -1252,6 +1286,10 @@
 	<item name="macDyverBook"/>
 	<item name="skillbookBlacksmith"/>
 	<item name="recipebookMasonry"/>
+	<item name="recipebookSinks"/>
+	<item name="recipebookOven"/>
+	<item name="recipebookElectronics"/>
+	<item name="recipebookSecurity"/>
 	</lootgroup>
 
 	<lootgroup name="workingStiffsTools" count="1">
@@ -1434,6 +1472,20 @@
 	<item group="carResources" prob="0.1" count="1"/>
 </lootgroup>
 
+<lootgroup name="backpacksQuestItems" >
+	<item name="questItemBook" />
+	<item name="questItemTeddy"/>
+	<item name="questItemGameboy"/>
+	<item name="questItemBaseball"/>
+	<item name="questItemCards"/>
+	<item name="questItemColoringBook"/>
+	<item name="questItemArtSupplies"/>
+	<item name="questItemWalkman"/>
+	<item name="questItemWallet"/>
+	<item name="questItemCigarettes"/>
+	<item name="questItemCondoms" />
+	<item name="questItemRing"/>
+</lootgroup>
 <lootgroup name="backpacks">
 	<item group="commonWeaponParts"/>
 	<item group="cupboard"/>
@@ -1441,6 +1493,7 @@
 	<item group="melee" prob="0.5"/>
 	<item group="Armor" prob="0.5"/>
 	<item name="flashlight02" prob="0.3"/>
+	<item group="backpacksQuestItems"/>
 </lootgroup>
 
 <lootgroup name="airdropMedicine" count="all">
@@ -1465,6 +1518,15 @@
 	<item name="forgedSteel" count="1,2" prob="0.00848"/>
 </lootgroup>
 
+<lootgroup name="MinerSchematics2">
+	<item name="skillbookForgedArmor"/>
+	<item name="skillbookBlacksmith"/>
+	<item name="recipebookMasonry"/>
+	<item name="skillbookTools"/>
+	<item name="recipebookPottery"/>
+	<item name="skillbookMining"/>
+</lootgroup>
+
 <lootgroup name="minerLoot" count="1">
 	<item group="tools"/>
 	<item name="miningHelmet" prob="0.7"/>
@@ -1472,6 +1534,7 @@
 	<item group="rareOres" prob="0.1"/>
 	<item name="ironFragment" count="30,150" prob="0.2"/>
 	<item name="torch" prob="0.1"/>
+	<item group="MinerSchematics2" prob="0.1"/>
 </lootgroup>
 
 <lootgroup name="banditsGeneral" count="1">
@@ -1516,7 +1579,7 @@
 	<item name="bandage"/>
 	<item name="vitamins"/>
 	<item group="MedicineTier2"/>
-	<item group="questChallenge" count="1" prob="0.04"/>
+	<item name="skillbookAthletics" prob="0.04"/>
 	<item group="treasureMaps" count="1" prob="0.06"/>
 </lootgroup>
 <!-- lootcontainer 1 misc storage, cardboard boxes-->
@@ -1559,6 +1622,23 @@
 </lootcontainer>
 
 <!-- lootcontainer 6 night stands and dressers, pistol, ammo, magazines, books -->
+<lootgroup name="nightstandQuestItemsGeneric" >
+	<item name="questItemBook" />
+	<item name="questItemTeddy"/>
+	<item name="questItemGameboy"/>
+	<item name="questItemBaseball"/>
+	<item name="questItemCards"/>
+	<item name="questItemColoringBook"/>
+	<item name="questItemArtSupplies"/>
+</lootgroup>
+<lootgroup name="nightstandQuestItems" >
+	<item name="questItemWalkman"/>
+	<item name="questItemWallet"/>
+	<item name="questItemCigarettes"/>
+	<item name="questItemCondoms" />
+	<item group="nightstandQuestItemsGeneric"/>
+	<item name="questItemBong"/>
+</lootgroup>
 <lootcontainer id="6" count="1,2" size="10,9" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
 	<item group="clothes" prob="40"/>
 	<item group="trophyGroup"/>
@@ -1569,7 +1649,8 @@
 	<item name="flashlight02"/>
 	<item name="sewingKit" />
 	<item name="Lightbulb" count="1,2"/>
-	<item name="tantalizingMagazine"/>	
+	<item name="tantalizingMagazine"/>
+	<item group="nightstandQuestItems"/>
 </lootcontainer>
 
 <!-- lootcontainer 7 medicine cabinets -->
@@ -1589,6 +1670,7 @@
 	<item name="potassiumNitratePowder" count="2,6" prob=".3"/>
 	<item name="Lightbulb" count="1,2"/>
 	<item name="soap" count="1" prob="0.2"/>
+	<item name="questItemToiletPaper"/>
 </lootcontainer>
 
 <!-- lootcontainer 9 backpack, place where people stash things, -->
@@ -1617,9 +1699,17 @@
 </lootcontainer>
 
 <!-- lootcontainer 15 generic zombie loot-->
+<lootgroup name="zombieQuestItems" >
+	<item name="questItemCards"/>
+	<item name="questItemWalkman"/>
+	<item name="questItemWallet"/>
+	<item name="questItemCigarettes"/>
+	<item name="questItemCondoms" />
+</lootgroup>
 	<lootgroup name="zombieQuests">
-	<item group="questChallenge" count="1" prob="0.0105"/>
-	<item group="treasureMaps" count="1" prob="0.0105"/>
+	<item group="questChallenge" count="1" />
+	<item group="treasureMaps" count="1" />
+	<item group="zombieQuestItems" count="1" />
 	</lootgroup>
 <lootcontainer id="15" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item group="junk" prob="0.65"/>
@@ -1687,6 +1777,10 @@
 	<item name="skillbookWasteland"/>
 	<item name="macDyverBook"/>
 	<item name="minibikesForDumbshits"/>
+	<item name="recipebookSinks"/>
+	<item name="recipebookOven"/>
+	<item name="recipebookElectronics"/>
+	<item name="recipebookGardenTools"/>
 	</lootgroup>
 <lootcontainer id="22" count="0,3" size="4,3" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
 	<item group="GarageBooks" prob="0.1"/>
@@ -1973,6 +2067,14 @@
 </lootcontainer>
 
 <!-- lockers -->
+<lootgroup name="lockerQuestItems">
+	<item name="questItemBook" />
+	<item name="questItemTeddy" />
+	<item name="questItemGameboy" />
+	<item name="questItemWalkman" />
+	<item name="questItemBaseball" />
+	<item name="questItemArtSupplies" />
+</lootgroup>
 <lootgroup name="lockerClothes">
 	<item group="clothes" prob="0.75"/>
 	<item group="hats" prob="0.2"/>
@@ -1993,7 +2095,8 @@
 <lootcontainer id="43" count="0,3" size="4,3" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" loot_quality_template="baseTemplate">
 	<item group="lockerMisc" prob="0.2"/>
 	<item group="lockerGood" prob="0.1"/>
-	<item group="lockerClothes" prob="0.7"/>
+	<item group="lockerClothes" prob="0.65"/>
+	<item group="lockerQuestItems" prob="0.05"/>
 </lootcontainer>
 
 <!-- file cabinet -->
@@ -2116,8 +2219,12 @@
 </lootcontainer>
 
 <!-- Bookstore bookcase -->
-<lootcontainer id="60" count="0,1" size="5,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
-	<item group="books"/>
+<lootgroup name="bookstoreBookcase" count="0,1">
+	<item name="questItemBook" prob="0.1"/>
+	<item group="books" prob="0.9"/>
+</lootgroup>
+<lootcontainer id="60" count="1" size="5,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
+	<item group="bookstoreBookcase"/>
 </lootcontainer>
 
 <!-- feral zombie loot -->
@@ -2129,7 +2236,7 @@
 </lootcontainer>
 
 <!-- minibike storage -->
-<lootcontainer id="62" count="0,1" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+<lootcontainer id="62" count="0,1" size="5,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
 	<item name="cobweb" count="0" prob="0.01"/>
 </lootcontainer>
 
@@ -2391,8 +2498,11 @@
 	<item name="partsBoltRifle_parts"/>   
 	</lootgroup>
 	<lootgroup name="HunterSchematics">
-         <item name="skillbookRifles"/>
-         <item name="skillbookArchery"/>
+		<item name="skillbookRifles"/>
+		<item name="skillbookArchery"/>
+		<item name="skillbookHunter"/>
+		<item name="recipebookAnimalTraps"/>
+		<item name="skillbookCrossbow"/>
 	</lootgroup>
 	<lootgroup name="LumberjackTools">
         <item name="fireaxeIron" prob="0.2" />
@@ -2406,14 +2516,15 @@
         <item name="smallEngine" prob="0.1"/>
 	</lootgroup>
 	<lootgroup name="LumberjackSchematics">
-         <item name="skillbookTools"/>
+		<item name="skillbookTools"/>
+		<item name="skillbookAxes"/>
+		<item name="skillbookBlacksmith"/>
 	</lootgroup>
 	<lootgroup name="workerToolset">
         <item name="clawHammer" prob="0.2"/>
         <item name="wrench" prob="0.2"/>
         <item name="shovelIron" prob="0.2"/>
-        <item name="hoeIron" prob="0.2"/>
-        <item name="nailgun" prob="0.1"/>
+		<item group="nailgun+parts" prob="0.1"/>
 		<item name="weedCleaver" prob="0.1"/>
 	</lootgroup>
 	<lootgroup name="workerMisc">
@@ -2434,6 +2545,7 @@
 	<item name="skillbookTools"/>
 	<item name="skillbookBuilding"/>
 	<item name="skillbookBlacksmith"/>
+	<item name="recipebookGardenTools"/>
 	</lootgroup>
 	<lootgroup name="IronBow+Ammo" count="all">
         <item name="ironBow"/>
@@ -2452,39 +2564,38 @@
 	</lootgroup>
 	<lootgroup name="snowZombieFood">
 		<item name="Mead"/>
-		<item group="cannedfood" />
+		<item group="cupboardcannedfood" />
 	</lootgroup>
 	<lootgroup name="snowZombieGeneric">
 		<item group="snowZombieFood" prob="0.4" />
-		<item group="warmClothes" prob="0.5"/>
+		<item group="warmClothes" prob="0.4"/>
 		<item group="snowZombieQuests" prob="0.05"/>
 		<item name="survivorNotes" count="1" prob="0.15"/>
 	</lootgroup>
 
-	<lootgroup name="snowZombieHunter" count="0,3">
+	<lootgroup name="snowZombieHunter" count="1,2">
 		<item group="HunterSchematics"  prob="0.1"/>
         <item name="huntingKnife" prob="0.1"/>
-        <item name="animalHide" count="1,3" prob="0.1"/>
-		<item group="snowZombieHunterWeapons" prob="0.1"/>
+        <item name="animalHide" count="1,3" prob="0.05"/>
+		<item group="snowZombieHunterWeapons" prob="0.17"/>
 		<item group="snowZombieGeneric" prob="0.2"/>
-		<item group="junk" prob="0.4"/>
+		<item group="junk" prob="0.38"/>
 	</lootgroup>
-	<lootgroup name="snowZombieLumberjack" count="0,3">
-		<item group="ammo" prob="0.1"/>
-		<item group="LumberjackTools" prob="0.1"/>
+	<lootgroup name="snowZombieLumberjack" count="1,2">
+		<item group="LumberjackTools" prob="0.2"/>
 		<item group="LumberjackSchematics" prob="0.05"/>
 		<item name="fuelLog" count="4,6" prob="0.1"/>
 		<item name="wood" count="20,30" prob="0.05"/>
 		<item group="junk" prob="0.4"/>
 		<item group="snowZombieGeneric" prob="0.2"/>
 	</lootgroup>
-	<lootgroup name="snowZombieWorker" count="0,3">
-		<item group="ammo" prob="0.1"/>
-		<item group="WorkerTools" prob="0.1"/>
+	<lootgroup name="snowZombieWorker" count="1,2">
+		<item group="ammo" prob="0.08"/>
+		<item group="WorkerTools" prob="0.17"/>
 		<item group="WorkerSchematics" prob="0.1"/>
         <item name="flashlight02" prob="0.05"/>
 		<item group="hazmatGear" count="1" prob="0.05"/>
-		<item group="junk" prob="0.4"/>
+		<item group="junk" prob="0.35"/>
 		<item group="snowZombieGeneric" prob="0.2"/>
 	</lootgroup>
     <!-- Fat Zombie Bomber loot  -->
@@ -2503,8 +2614,8 @@
 		<item group="questChallenge" count="1" prob="0.05"/>
 		<item group="treasureMaps" count="1" prob="0.05"/>
     </lootcontainer>
-    <!-- Zombie feral crawler loot  -->
-    <lootcontainer id="88" count="1,3" size="3,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+    <!-- Zombie Ravager -->
+    <lootcontainer id="88" count="1,2" size="3,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="militaryammo" prob="0.1"/>
 		<item group="commonWeaponParts" prob="0.3"/>	
 		<item group="ammo" prob="0.35"/>
@@ -2519,18 +2630,25 @@
 		<item group="snowZombieHunter"/>
     </lootcontainer>
     <!-- Female Zombies  -->
-<lootgroup name="GenericFemaleZombie">
+<lootgroup name="zombieFemaleQuestItems" >
+	<item name="questItemCards"/>
+	<item name="questItemWalkman"/>
+	<item name="questItemCigarettes"/>
+	<item name="questItemRing"/>
+</lootgroup>
+<lootgroup name="GenericFemaleZombie" count="0,2">
 	<item group="junk" count="1,2" prob="0.3"/>
-	<item name="survivorNotes" prob="0.15"/>
+	<item name="survivorNotes" prob="0.1"/>
 	<item group="clothes" prob="0.1"/>
 	<item group="snowZombieQuests" prob="0.05"/>
-	<item name="bottledWater" count="1,2" prob="0.2"/>
-	<item group="cannedfood" count="1,2" prob="0.25"/>
+	<item name="bottledWater" count="1,2" prob="0.18"/>
+	<item group="cupboardcannedfood" count="1,2" prob="0.25"/>
+	<item group="zombieFemaleQuestItems" count="1,2" prob="0.05"/>
 	<item name="painkillers" prob="0.05"/>
+	<item name="challengeCookbook" count="1" prob="0.02"/>
 </lootgroup>
 <lootcontainer id="90" destroy_on_close="false" count="1" size="4,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
-	<item group="GenericFemaleZombie" prob="0.66"/>
-	<item group="empty" prob="0.34"/>
+	<item group="GenericFemaleZombie" />
 </lootcontainer>
     <!-- Burnt Zombies  -->
 <lootgroup name="BurntJunk">
@@ -2586,56 +2704,34 @@
     </lootcontainer>		
     <lootcontainer id="108" size="10,9" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe"> 
     </lootcontainer>	
-		
-	    <!--Working Oven and Sink -->
-    <lootcontainer id="130" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" >
-	</lootcontainer>
-		
-	<lootcontainer id="201" count="6,8" size="6,4" destroy_on_close="true" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" loot_quality_template="baseTemplate">
-		<item group="militaryguns+ammo" prob="0.5"/>
-		<item group="militaryammo" prob="0.6"/>
-		<item group="guns+ammo" prob="0.7"/>
-		<item group="ammo" count="2"/>
-		<item group="cannedfood" count="2"/>
-		<item group="beverages" count="1"/>
-		<item group="medicine"/>
-		</lootcontainer>			
-	<lootcontainer id="202" count="1" size="3,3" destroy_on_close="true" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" loot_quality_template="baseTemplate">
-	    <item name="cntSurvivorsBreifcase" count="1" prob="0.3"/>
-		<item group="militaryammo" count="1" prob="0.1"/>
-		<item group="ammo" count="1,2" prob="0.2"/>
-		<item group="guns+ammo" prob="0.3"/>
-		<item group="legendarymelee" prob="0.1"/>
-		</lootcontainer>
 
-   
-		    <!-- Snares -->
-	<lootgroup name="meat+hide" count="all">
-		<item name="rawMeat" count="1"/>
-		<item name="animalHide" count="1"/>	
-	</lootgroup>
-	<lootgroup name="bigmeat+hide" count="all">
-		<item name="rawMeat" count="2,3"/>
-		<item name="animalHide" count="5,8"/>	
-		<item name="animalFat" count="3"/>	
-	</lootgroup>
-	<lootgroup name="CapturedBird" count="all">
-		<item name="rawMeat" count="1"/>
-		<item name="feather" count="3,5"/>	
-		<item name="egg" count="1,2"/>
-	</lootgroup>
+	<!-- Snares -->
+<lootgroup name="meat+hide" count="all">
+	<item name="rawMeat" count="1"/>
+	<item name="animalHide" count="1"/>	
+</lootgroup>
+<lootgroup name="bigmeat+hide" count="all">
+	<item name="rawMeat" count="2,3"/>
+	<item name="animalHide" count="5,8"/>	
+	<item name="animalFat" count="3"/>	
+</lootgroup>
+<lootgroup name="CapturedBird" count="all">
+	<item name="rawMeat" count="1"/>
+	<item name="feather" count="3,5"/>
+	<item name="egg" count="1,2"/>
+</lootgroup>
 <lootcontainer id="120" count="1,3" size="4,3" destroy_on_close="true" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
 	<item name="egg" count="1,2" prob="0.25"/>
 	<item name="feather" count="4,10" prob="0.75"/>
 </lootcontainer>
-    <lootcontainer id="121" count="1" size="3,1" destroy_on_close="true" sound_open="UseActions/open_animal" sound_close="UseActions/close_animal" open_time="2.5" loot_quality_template="baseTemplate">
-		<item group="meat+hide"/>
-		<item group="CapturedBird"/>
-		<item group="bigmeat+hide" prob="0.3"/>
-    </lootcontainer>
+<lootcontainer id="121" count="1" size="3,1" destroy_on_close="true" sound_open="UseActions/open_animal" sound_close="UseActions/close_animal" open_time="2.5" loot_quality_template="baseTemplate">
+	<item group="meat+hide"/>
+	<item group="CapturedBird"/>
+	<item group="bigmeat+hide" prob="0.3"/>
+</lootcontainer>
 	
 	<!-- Miner Corpse -->
-	<lootgroup name="MinerTools">
+<lootgroup name="MinerTools">
 		<item name="pickaxeIron"/>
 		<item name="pickaxeSteel" prob="0.3"/>
 		<item name="smallEngine"/>
@@ -2645,10 +2741,15 @@
 		<item name="calipers" prob="0.05"/>
 		<item name="toolAndDieSet" prob="0.05"/>
 	</lootgroup>
-	<lootgroup name="MinerSchematics">
-
+<lootgroup name="MinerSchematics">
+	<item name="skillbookForgedArmor"/>
+	<item name="skillbookBlacksmith"/>
+	<item name="recipebookMasonry"/>
+	<item name="skillbookTools"/>
+	<item name="recipebookPottery"/>
+	<item name="skillbookMining"/>
 	</lootgroup>
-	<lootcontainer id="122" count="0,2" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+<lootcontainer id="122" count="0,2" size="3,3" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 		<item group="MinerTools"/>
 		<item group="MinerSchematics"/>
 		<item name="miningHelmet"/>
@@ -2660,7 +2761,161 @@
 		<item name="scrapIron" count="20,42"/>
 		<item name="oilShale" count="30,42"/>
 		<item name="torch" count="4,6"/>
-		</lootcontainer>	
+		</lootcontainer>
+
+    <!-- Librarian Zombie  -->
+<lootcontainer id="123" destroy_on_close="false" count="0,2" size="4,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="junk" count="1,2" prob="0.2"/>
+	<item name="survivorNotes" prob="0.05"/>
+	<item group="clothes" prob="0.1"/>
+	<item group="snowZombieQuests" prob="0.05"/>
+	<item name="bottledWater" count="1,2" prob="0.1"/>
+	<item group="books" prob="0.1"/>
+	<item name="painkillers" prob="0.1"/>
+	<item name="paper" count="4,8" prob="0.1"/>
+	<item name="oldCash" count="4,13" prob="0.1"/>
+	<item name="cloth" count="1,4" prob="0.1"/>
+</lootcontainer>
+
+    <!-- Survivor Zombie  -->
+<lootcontainer id="124" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="junkAmmo" prob="0.52"/>
+	<item group="clothes" prob="0.06"/>
+	<item group="crossbow+ammo" count="1" prob="0.05"/>
+	<item group="zombieQuests" count="1" prob="0.05"/>
+	<item name="survivorNotes" count="1" prob="0.12"/>
+	<item group="backpacks" prob="0.28"/>
+</lootcontainer>
+
+    <!-- Voodoo Zombie  -->
+<lootcontainer id="125" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="junk" prob="0.6"/>
+	<item group="clothes" prob="0.06"/>
+	<item group="rottenFood" prob="0.07"/>
+	<item name="herbalAntibiotics" count="1,2" prob="0.1"/>
+	<item group="zombieQuests" count="1" prob="0.05"/>
+	<item name="survivorNotes" count="1" prob="0.12"/>
+	<item name="facialPiercings" prob=".008"/>
+</lootcontainer>
+
+	<!-- Trucker Zombie -->
+<lootcontainer id="126" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
+	<item name="shamSandwich" count="1,3" prob="0.2"/>
+	<item group="ammo" prob="0.1"/>
+	<item group="commonWeaponParts" prob="0.1"/>
+	<item name="survivorNotes" count="1" prob="0.1"/>
+	<item name="tantalizingMagazine" prob="0.05"/>
+	<item name="skillbookAthletics" prob="0.05"/>
+	<item name="coffee" prob="0.2"/>
+	<item name="oldCash" count="10,35" prob="0.1"/>
+	<item group="zombieQuests" prob="0.1"/>
+</lootcontainer>
+
+	<!-- Nerd Zombie -->
+<lootgroup name="nerdBooks">
+	<item name="tantalizingMagazine"/>
+	<item name="macDyverBook"/>
+	<item name="skillbookHunter"/>
+	<item name="skillbookKnight"/>
+	<item name="skillbookChemistry"/>
+	<item name="skillbookRogue"/>
+	<item name="recipebookElectronics"/>
+	<item name="skillbookWasteland"/>
+	<item name="skillbookForgedArmor"/>
+	<item name="skillbookShotguns"/>
+</lootgroup>
+<lootcontainer id="127" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
+	<item group="junk" prob="0.6"/>
+	<item group="clothes" prob="0.06"/>
+	<item group="rottenFood" prob="0.07"/>
+	<item group="nerdBooks" count="1" prob="0.05"/>
+	<item group="zombieQuests" count="1" prob="0.05"/>
+	<item name="survivorNotes" count="1" prob="0.1"/>
+	<item name="nerdGlasses" prob=".07"/>
+</lootcontainer>
+
+	<!-- Inmate Zombie -->
+<lootcontainer id="128" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="junk" prob="0.6"/>
+	<item group="rottenFood" prob="0.07"/>
+	<item group="zombieQuests" count="1" prob="0.05"/>
+	<item name="survivorNotes" count="1" prob="0.1"/>
+	<item name="facialPiercings" prob=".008"/>
+	<item name="Syringe" count="2,3" prob="0.01"/>
+	<item name="painkillers" prob="0.06"/>
+	<item name="cigar" prob="0.02"/>
+	<item name="boneShiv" prob="0.06"/>
+	<item name="grainAlcohol" count="1,3" prob="0.02"/>
+	<item name="oldCash" count="4,15" prob="0.06"/>
+</lootcontainer>
+
+	<!-- Child Zombie -->
+<lootgroup name="childQuestItems" >
+	<item name="questItemTeddy"/>
+	<item name="questItemWalkman"/>
+	<item name="questItemGameboy"/>
+	<item name="questItemBaseball"/>
+	<item name="questItemArtSupplies" />
+	<item name="questItemColoringBook"/>
+</lootgroup>
+<lootgroup name="childrenBooks">
+	<item name="skillbookAxes"/>
+	<item name="skillbookArchery"/>
+	<item name="skillbookHunter"/>
+	<item name="skillbookKnight"/>
+	<item name="skillbookChemistry"/>
+</lootgroup>
+<lootcontainer id="129" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="junkFood" prob="0.55"/>
+	<item group="trophyGroup" prob="0.06"/>
+	<item name="shamSandwich" prob="0.07"/>
+	<item group="childrenBooks" count="1" prob="0.058"/>
+	<item name="paper" count="4,6" prob="0.15"/>	
+	<item name="drinkEnergy" prob="0.12"/>
+	<item name="oldCash" count="1,5" prob="0.1"/>
+	<item name="scrapPlastics" count="1,8" prob="0.05"/>
+	<item group="childQuestItems" prob="0.05"/>
+</lootcontainer>
+
+	<!--Working Oven and Sink -->
+<lootcontainer id="130" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" >
+</lootcontainer>
+
+	<!-- Ranger Zombie -->
+<lootcontainer id="131" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item group="junk" prob="0.6"/>
+	<item group="huntingRifleParts" prob="0.08"/>
+	<item group="carFood" prob="0.09"/>
+	<item group="huntingGoods" count="1" prob="0.06"/>
+	<item group="zombieQuests" count="1" prob="0.05"/>
+	<item name="survivorNotes" count="1" prob="0.1"/>
+	<item name="rangerHat" prob=".028"/>
+</lootcontainer>
+
+	<!-- Jason Zombie -->
+<lootcontainer id="132" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
+	<item name="legendaryMachete" count="1" />
+</lootcontainer>
+
+	<!-- Survivor Briefcase -->
+<lootcontainer id="201" count="6,8" size="6,4" destroy_on_close="true" sound_open="UseActions/open_suitcase" sound_close="UseActions/close_suitcase" loot_quality_template="baseTemplate">
+	<item group="militaryguns+ammo" prob="0.5"/>
+	<item group="militaryammo" prob="0.6"/>
+	<item group="guns+ammo" prob="0.7"/>
+	<item group="ammo" count="2"/>
+	<item group="cannedfood" count="2"/>
+	<item group="beverages" count="1"/>
+	<item group="medicine"/>
+</lootcontainer>
+
+	<!-- Suspicious Stump -->
+<lootcontainer id="202" count="1" size="3,3" destroy_on_close="true" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" loot_quality_template="baseTemplate">
+    <item name="cntSurvivorsBreifcase" count="1" prob="0.3"/>
+	<item group="militaryammo" count="1" prob="0.1"/>
+	<item group="ammo" count="1,2" prob="0.2"/>
+	<item group="guns+ammo" prob="0.3"/>
+	<item group="legendarymelee" prob="0.1"/>
+</lootcontainer>
 
 		<!-- Classes Mod -->
 <lootgroup name="Survival_Shirts">	
@@ -2697,11 +2952,11 @@
 
 	<lootgroup name="HunterClass" count="all">	
 	    <item group="SurvivalGear"/>
-        <item name="woodenBow" count="1" quality="250,300"/>
-        <item name="arrow" count="90"/>
+        <item name="gunBoltRifle" count="1" quality="170,170"/>
+        <item name="762mmBullet" count="80"/>
         <item name="huntingKnife" count="1" quality="200,200"/>
-		<item name="tanningRack"/>
         <item name="animalHideHood" count="1" quality="170,170"/>
+        <item name="repairKit" count="4"/>
 		<item name="challengeClassHunter" count="1"/>
 		<item name="perkHunter" count="1"/>
 	</lootgroup>
@@ -2752,11 +3007,11 @@
 		<item name="bandage" count="1"/>
 		<item name="torch" />
         <item name="militaryBoots" count="1"/>
-        <item name="gunAK47" count="1" quality="170,170"/>
+        <item name="gunMP5" count="1" quality="170,170"/>
 		<item name="huntingKnife" count="1" quality="200,200"/>
         <item name="militaryHelmet" count="1"  quality="170,170"/>
         <item name="repairKit" count="4"/>
-        <item name="762mmBullet" count="80"/>
+        <item name="10mmBullet" count="80"/>
 		<item name="challengeClassVeteran" count="1"/>
 		<item name="perkVeteran" count="1"/>
 	</lootgroup>

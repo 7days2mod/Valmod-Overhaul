@@ -571,12 +571,12 @@ snowberryPlant feeds you for 90 sec. -->
 <buff id="peculiarTaste" duration="20" type="sickness" icon="ui_game_symbol_food_poisoning" name_key="peculiarTaste" description_key="peculiarTasteDesc" tooltip_key="peculiarTasteTooltip" causes="mysteryMeat">
 	<modify id="0" stat="stamina" amount="-5" rate="1"/>
 </buff>	 
-<buff id="speedBoost" duration="120" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="speedBoostTooltip" icon="ui_game_symbol_run">
-<modify id="0" stat="speedmodifier" modifyMaxValue="2.01"/>
+<buff id="speedBoost" duration="60" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="speedBoostTooltip" icon="ui_game_symbol_run">
+<modify id="0" stat="speedmodifier" modifyMaxValue="1.3"/>
 <modify id="1" stat="speedmodifier" modifyValue="1.3"/>
 </buff>
-<buff id="energyDrink" duration="40" type="staminaup" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="You have wings!" icon="ui_game_symbol_run">
-<modify id="0" stat="speedmodifier" modifyMaxValue="2.01"/>
+<buff id="energyDrink" duration="30" type="staminaup" name_key="speedBoost" stack="reset" description_key="speedBoostDesc" tooltip_key="You have wings!" icon="ui_game_symbol_run">
+<modify id="0" stat="speedmodifier" modifyMaxValue="1.2"/>
 <modify id="0" stat="stamina" amount="2" rate="1"/>
 <modify id="1" stat="speedmodifier" modifyValue="1.2"/>
 </buff>
@@ -587,6 +587,22 @@ snowberryPlant feeds you for 90 sec. -->
 </buff>
 
 <buff id="nobleed" duration="1"  actions="debuff(bleeding)" overrides="bleeding" debuffif="health greater 0.1" buffif="health lequal 0.1" />
+
+<buff id="randomFood1" duration="1.5" stack="discard" >
+	<modify id="0" stat="food" amount="10" />
+</buff>
+<buff id="randomFood2" duration="1.5" stack="discard" >
+	<modify id="0" stat="food" amount="7" />
+</buff>
+<buff id="randomFood3" duration="1.5" stack="discard" >
+	<modify id="0" stat="food" amount="5" />
+</buff>
+<buff id="randomWater1" duration="1.5" stack="discard" >
+	<modify id="0" stat="water" amount="5" />
+</buff>
+<buff id="randomWater2" duration="1.5" stack="discard" >
+	<modify id="0" stat="water" amount="5" />
+</buff>
 <!--
 This requires a 50+ food bar:
 <buff id="eatFood_1_Trigger" mutex="notFullBlockerBuff" duration="1" debuffif="food > 0.5" actions="increment(CTRfood, 1, 0, 0, 1)"/>

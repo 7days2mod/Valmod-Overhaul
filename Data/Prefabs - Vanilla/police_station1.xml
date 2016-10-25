@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="YOffset" value="-1" />
+    <property name="Zoning" value="Commercial" />
+    <property name="AllowedTownships" value="city,town" />
+    <property name="StaticSpawner.Class" value="SpawnMedium" />
+    <property name="StaticSpawner.Size" value="32,2,32" />
+    <property name="StaticSpawner.Trigger" value="160" />
+    <property name="MaxPerHub" value="1" />
+    <property name="TraderArea" value="False" />
+</prefab>

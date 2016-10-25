@@ -293,7 +293,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="firstAidKit"/>
 			<item name="beaker"/>
 			<item name="antibiotics"/>
-			<item name="bloodDrawKit"/>
 			<item name="firstAidKitSchematic"/>
 		</trader_item_group>
 
@@ -302,7 +301,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="firstAidBandage"/>
 			<item name="bandage"/>
 			<item name="emptyJar"/>
-			<item name="bloodBag"/>
 			<item name="vitamins"/>
 			<item name="grainAlcohol"/>
 			<item name="splint"/>
@@ -359,7 +357,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 	<item name="skillbookGunsmoke"/>
 	<item name="skillbookRifles"/>
 	<item name="skillbookShotguns"/>
-	<item name="skillbookGunSmith"/>
 		</trader_item_group>
 
 		<trader_item_group name="rareBooks" count="1">

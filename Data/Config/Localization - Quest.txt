@@ -221,7 +221,11 @@ quest_BasicSurvival8_description_button_console,,Quest Info,KeyCon KgNone,"Gathe
 
 requirementGroupBow,,Requirement Group,,Holding Bow,,
 requirementGroupCrossbow,,Requirement Group,,Holding Crossbow,,
+requirementGroupBowCrossbow,,Requirement Group,,Holding Bow or Crossbow,,
 requirementGroupBruiser,,Requirement Group,,Holding Club or Combat Axe,,
+requirementGroupHandgun,,Requirement Group,,Holding Pistol or Magnum,,
+requirementGroupRifle,,Requirement Group,,Holding Bolt Rifle or Hunting Rifle,,
+requirementGroupAssault,,Requirement Group,,Holding SMG or Assault Rifle,,
 
 quest_BasicSurvivalVM1,,Quest Info,,Basic Survival 1/3,,
 quest_BasicSurvivalVM2,,Quest Info,,Basic Survival 2/3,,
@@ -233,3 +237,6 @@ quest_BasicSurvivalVME3,,Quest Info,,Basic Survival 3/6,,
 quest_BasicSurvivalVME4,,Quest Info,,Basic Survival 4/6,,
 quest_BasicSurvivalVME5,,Quest Info,,Basic Survival 5/6,,
 quest_BasicSurvivalVME6,,Quest Info,,Basic Survival 6/6,,
+
+questItemTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"Items flagged as quest items are unique items which serve no purpose other than to be used in a quest that can be found through looting.",,,,
+questItemTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Quest Items,,,,

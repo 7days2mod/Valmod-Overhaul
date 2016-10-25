@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="DisallowedBiomes" value="wasteland_hub" />
+    <property name="Zoning" value="Residential" />
+    <property name="AllowedTownships" value="wilderness" />
+    <property name="StaticSpawner.Class" value="SpawnSmall" />
+    <property name="StaticSpawner.Size" value="32,2,32" />
+    <property name="StaticSpawner.Trigger" value="160" />
+</prefab>

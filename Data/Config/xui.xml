@@ -82,18 +82,20 @@
 		<window_group name="dragAndDrop">
 			<window name="dragAndDropItemStack" />
 		</window_group>
-		
+
+<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
+
 		<window_group name="compass">
-<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 1 of 2 -->
-  <!-- On the below line select the compass you want to use - 7DTD Default = windowCompass - RELXIX HUD = windowCompassRELXIX -->
-			<window name="windowCompassRELXIX" />  <!-- windowCompassRELXIX (RELXIX HUD) or windowCompass (7DTD Default) -->
-  <!-- NOTE: You should also restore the default styles.xml if using the default compass else it will still be wider (only changes in styles.xml) -->
-<!-- Add windows to 2 window groups in this file - If using the default compass you may want to delete the next 2 lines -->
-			<window name="mapStatsHUD" />  	<!-- Window that displays Day & Time, Air Temp, Wind Speed, Current Elevation - Delete this line to remove these items -->
-		<!--	<window name="mapCoordsHUD" />-->	<!-- Window that displays Player Coordinates and Bedroll Coordinates - Delete this line to remove these items -->
-<!-- END_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 1 of 2 -->
+			<window name="SMXCompass1" />									<!-- Swappable frame. Change between different compass frames by changing the number. Choose between 1-2 -->
+			<window name="SMXQuestTracker" anchor="RightTop" />
+			<window name="SMXBuffFrame2" anchor="LeftBottom" />				<!-- Swappable frame. Change between different buff frames by changing the number. Choose between 1-4 -->
+			<window name="SMX" anchor="RightTop" />
+			<window name="SMXLevelXPUF1" />									<!-- Swappable frame. Change between different Level/XP displays by changing the number. Choose between 1-2 -->
+			<window name="SMXDayTimeFrame" />
 		</window_group>
-		
+
+
+<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
 		<window_group name="toolTip">
 			<window name="toolTip" />
 			<window name="popupMenu" />
@@ -112,16 +114,11 @@
 		</window_group>
 		
 		<window_group name="toolbelt">
-			<window name="windowToolbelt" anchor="CenterBottom" />
-			<window name="HUDLeftStatBars" anchor="LeftBottom" />
-			<window name="HUDRightStatBars" anchor="RightBottom" />
-<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 2 of 2 -->
+			<window name="ValmodToolbelt" anchor="CenterBottom" />
+			<window name="SMXUnitFrame1" anchor="LeftBottom" />
+			<window name="SMXHudOther" anchor="RightBottom" />
+			<window name="SMXTempFrameUF1" />
 			<window name="windowToolbeltNumbersHUD" />	<!-- Window that displays Numbers on the tool belt for each slot  - Delete this line to remove these items -->
-			<window name="playerXPHUD" />	<!-- Window that displays XP bar and level  - Delete this line to remove these items -->
-			<window name="playerStatsHUD" />	<!-- Window that displays Player Temp, Hunger % and Thirst %  - Delete this line to remove these items -->
-			<window name="playerStatsBarsHUD" />	<!-- Window that displays Bars behind Player Temp, Hunger % and Thirst %  - Delete this line to remove these items -->
-<!-- END_MOD: Red Eagle LXIX's Custom HUD : A14.2(b4) : v0.08 : pt 2 of 2 -->
-			<window name="windowQuestTracker" anchor="RightTop" />
 		</window_group>
 		
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
@@ -197,10 +194,7 @@
 		</window_group>
 
 		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
-<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 : pt 3 of 3 -->
-  <!-- On the below line select the RWG Preview Window Layout you want to use - 7DTD Default = windowRWGPreview - RELXIX HUD = windowRWGPreviewer -->
-			<window name="windowRWGPreviewer" />  <!-- windowRWGPreviewer (RELXIX HUD) or windowRWGPreview (7DTD Default) -->
-<!-- END_MOD: Red Eagle LXIX's Custom HUD : A15(b105) : v0.16 : pt 3 of 3 -->
+			<window name="windowRWGPreview" />
 		</window_group>
 
 		<window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">

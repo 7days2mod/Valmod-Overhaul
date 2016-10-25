@@ -1,4 +1,59 @@
 <controls>
+<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
+
+	<SMX_tb_item_stack_uf1>
+		<rect controller="ItemStack" style="SMXItemStack, hover">
+
+			<texture name="SMXToolbeltSlot" depth="0" size="83,83" texture="@http://i63.tinypic.com/2iide2a.jpg" material="Materials/Transparent" /> <!-- Local Asset Equivalent: toolbeltslot.png -->
+
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="78" height="78" color="[black]" type="sliced" fillcenter="false" visible="false" />
+			<sprite depth="3" name="background" sprite="menu_empty2px" width="83" height="83" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false" />
+			<sprite depth="2" name="highlightOverlay" width="82" height="82" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true" visible="false" />
+
+			<sprite depth="4" name="itemIcon" width="80" height="60" atlas="ItemIconAtlas" sprite="{itemicon}" pos="40,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true" />
+
+			<sprite depth="3" name="durabilityBackground" width="73" height="5" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="5, -74" foregroundlayer="true" />
+			<sprite depth="4" name="durability" width="73" height="5" sprite="menu_empty2px" color="[transparent]" type="filled" pos="5, -74" foregroundlayer="true" />
+
+			<sprite depth="5" name="disabledOverlay" width="82" height="82" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false" />
+
+			<label depth="7" name="stackValue" pos="3,-55" width="73" height="28" text="{itemcount}" font_size="22" effect="outline" justify="center" />
+			<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]" />
+			<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true" />
+			<label depth="12" name="itemName" pos="0,0" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" />
+			<sprite depth="13" name="assembleIcon" size="40,40" sprite="ui_game_symbol_lock" visible="{isassemblelocked}" pos="19,-19" foregroundlayer="true" />
+		</rect>
+	</SMX_tb_item_stack_uf1>
+
+	<SMX_quest_objective_tracker_entry_uf1>
+		<rect width="280" height="26" controller="QuestTrackerObjectiveEntry" visible="{hasobjective}">
+			<sprite depth="2" name="iconTrack" style="SMXicon15px" pos="280,0" color="{objectivecompletecolor}" sprite="{objectivecompletesprite}" visible="{objectiveshowicon}" />
+
+			<label depth="1" pos="0,4" text="{objectiveoptional}{objectivedescription} " upper_case="true" font_size="22" effect="outline" justify="left" visible="{hasobjective}" width="{objectivetextwidth}" />
+			<label depth="1" pos="0,4" text=" [{objectivecompletehexcolor}]{objectivestate}[-]" upper_case="true" font_size="22" effect="outline" justify="right" visible="{hasobjective}" width="{objectivetextwidth}" />
+		</rect>
+	</SMX_quest_objective_tracker_entry_uf1>
+
+	<SMX_active_buff_entry1>
+		<panel height="43" controller="ActiveBuffEntry" width="314" disableautobackground="true" visible="false">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-9999,9999" width="320" height="49" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="0" name="background" color="[darkGrey]" type="sliced" height="45" width="316" pos="-9999,9999" />
+			<sprite depth="2" name="Icon" sprite="{bufficon|once}" style="icon32px" pos="5,-5" />
+			<label depth="2" pos="45,-8" width="280" height="30" text="{buffname|once}  [DECEA3]{buffdisplayinfo}[-]" color="[white]" font_size="28" pivot="topleft" effect="outline" />
+		</panel>
+	</SMX_active_buff_entry1>
+
+	<SMX_active_buff_entry2>
+		<panel height="43" controller="ActiveBuffEntry" width="314" disableautobackground="true" visible="false">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-9999,9999" width="320" height="49" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="0" name="background" color="[darkGrey]" type="sliced" height="45" width="316" pos="-9999,9999" />
+			<sprite depth="2" name="Icon" sprite="{bufficon|once}" style="icon22px" pos="5,-5" />
+			<label depth="2" pos="45,-5" width="280" height="30" text="{buffname|once}  [DECEA3]{buffdisplayinfo}[-]" color="[white]" font_size="22" pivot="topleft" effect="outline" />
+		</panel>
+	</SMX_active_buff_entry2>
+
+<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
 	<slider>
 		<rect depth="1" controller="Slider" height="24" style="scroll">
 			<label depth="1" pos="0, -6"  width="128" height="24" text="{name}"/>

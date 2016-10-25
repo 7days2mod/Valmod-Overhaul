@@ -34,18 +34,23 @@
     <biome name="wasteland_hub">
       <spawn maxcount="5" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
       <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+      <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesUnique" />
+      <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
+      <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="BruteBoss" />
     </biome>    
 
     <biome name="forest">
         <spawn maxcount="1" respawndelay="4" time="Any"   entitygroup="ZombiesAll" />
         
         <spawn maxcount="1" respawndelay="15" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
+        <spawn maxcount="1" respawndelay="5" time="Night" entitygroup="JasonGroup" />
     </biome>
 	
     <biome name="pine_forest">
         <spawn maxcount="1" respawndelay="4" time="Any"   entitygroup="ZombiesAll" />
         
         <spawn maxcount="1" respawndelay="15" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
+        <spawn maxcount="1" respawndelay="5" time="Night" entitygroup="JasonGroup" />
     </biome>	
 
     <biome name="plains">
@@ -933,7 +938,21 @@
 		  <property name="DelayBetweenSpawns" value="1" />
 		  <property name="TotalAlive"         value="0" />
 		  <property name="TotalPerWave"       value="0" />
-		</day>	
+		</day>
+		<day value="29">
+		  <property name="EntityGroupName"    value="ZombiesNight2" />
+		  <property name="Time"               value="Any" />
+		  <property name="DelayBetweenSpawns" value="1" />
+		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalPerWave"       value="0" />
+		</day>
+		<day value="30">
+			<property name="EntityGroupName"    value="RoamingBossGroup" />
+			<property name="Time"               value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive"         value="1" />
+			<property name="TotalPerWave"       value="1" />
+		</day>
 	</entityspawner>
 	
 	<entityspawner name="NightHorde" dynamic="true" wrapMode="clamp"> <!-- these are feral hordes who will find the player for sure -->
@@ -1228,6 +1247,44 @@
 			<property name="TotalPerWave"       value="60" />
 		</day>
 	</entityspawner>
-		
+
+<entityspawner name="SpawnSchool">
+	<day value="*">
+		<property name="ResetToday"        value="false" />
+        <property name="EntityGroupName"    value="SchoolGroup" />
+        <property name="Time"               value="Any" />
+        <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+        <property name="TotalAlive"         value="6" />
+        <property name="TotalPerWave"       value="6" />
+        <property name="DaysToRespawnIfPlayerLeft" value="2" /> <!-- in game days -->
+        <property name="AttackPlayerAtOnce" value="false" />
+      </day>
+</entityspawner>
+
+<entityspawner name="BookstoreSpawn">
+	<day value="*">
+		<property name="ResetToday"        value="false" />
+        <property name="EntityGroupName"    value="BookstoreGroup" />
+        <property name="Time"               value="Any" />
+        <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+        <property name="TotalAlive"         value="6" />
+        <property name="TotalPerWave"       value="6" />
+        <property name="DaysToRespawnIfPlayerLeft" value="2" /> <!-- in game days -->
+        <property name="AttackPlayerAtOnce" value="false" />
+      </day>
+</entityspawner>
+
+<entityspawner name="GraveyardSpawn">
+	<day value="*">
+		<property name="ResetToday"        value="false" />
+        <property name="EntityGroupName"    value="GraveYard" />
+        <property name="Time"               value="Any" />
+        <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+        <property name="TotalAlive"         value="4" />
+        <property name="TotalPerWave"       value="4" />
+        <property name="DaysToRespawnIfPlayerLeft" value="2" /> <!-- in game days -->
+        <property name="AttackPlayerAtOnce" value="false" />
+      </day>
+</entityspawner>
 		
 </spawning>
