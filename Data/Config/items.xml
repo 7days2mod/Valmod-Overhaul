@@ -14848,7 +14848,6 @@ which does not exist, yet. -->
 	<property name="DropScale" value="4" />
 	<property name="IsDeveloper" value="true" />
 	<property name="EconomicValue" value="50" />
-	<property name="PickupJournalEntry" value="questItemTip" />
 </item>
 <item id="2701" name="questItemRing">
 	<property name="Extends" value="questItem" />
