@@ -1202,7 +1202,7 @@
 		<recipe name="minibikeHandlebars" unlock_level="60"/>
 	</crafting_skill>
 	
-	<crafting_skill name="Traps" exp_to_level="230" icon="misc_crafting" description_key="Learn how to craft improvised traps. Every ten levels unlocks a new teir. Level 10 unlocks wood spikes. Level 10 unlocks wood spikes. Level 20 unlocks explosive traps. Level 30 unlocks fire traps." title_key="Traps" group="crafting">
+	<crafting_skill name="Traps" exp_to_level="230" icon="misc_crafting" description_key="Learn how to craft improvised traps. Every ten levels unlocks a new teir. Level 10 unlocks wood spikes. Level 10 unlocks wood spikes. Level 20 unlocks explosive traps. Level 30 unlocks fire traps." title_key="Traps" group="tools">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
 			<multiply skill_level="5,11" value=".931,.871" />
