@@ -5623,3 +5623,6 @@ toolHeadSledgehammer,items,Item,KgNone,Tool Head: Sledgehammer,,
 toolHeadSledgehammerDesc,items,Item,KgNone,This is used to craft a sledgehammer.,,
 toolHeadHammer,items,Item,KgNone,Tool Head: Hammer,,
 toolHeadHammerDesc,items,Item,KgNone,This is used to craft a claw hammer.,,
+
+mechanicalKit,items,Item,KgNone,Mechanical Kit,,,
+mechanicalKitDesc,items,Item,KgNone,"The mechanic kits are used to repair machanical items, motorized tools, vehicles and more.",,,,
