@@ -355,7 +355,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="partsAuger_blade" count="1" craft_area="workbench">
 	<ingredient name="partsAuger_blade" count="1"/>
-	<ingredient name="repairKit" count="4"/>
+	<ingredient name="mechanicalKit" count="4"/>
 	<ingredient name="forgedSteel" count="2"/>
 </recipe>
 
@@ -687,7 +687,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 <recipe name="partsChainsaw_blade" count="1" craft_area="workbench">
 	<ingredient name="partsChainsaw_blade" count="1"/>
-	<ingredient name="repairKit" count="1"/>
+	<ingredient name="mechanicalKit" count="1"/>
 	<ingredient name="forgedSteel" count="2"/>
 </recipe>
 
