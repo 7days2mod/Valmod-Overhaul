@@ -1361,6 +1361,7 @@
 	<item name="purificationTablets" count="1,3"/>
 	<item name="Syringe" count="6,8"/>
 	<item name="grainAlcohol"/>
+	<item name="Tranquilizer" count="0,1"/>
 </lootgroup>
 
 <lootgroup name="medicine" count="1">
