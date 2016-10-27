@@ -6,9 +6,10 @@
 		<!-- EDIT THE TEXTURE PART TO REMOVE THE SMX "LOGO" OR INSERT YOUR OWN LOGO IF YOU WISH. TO AVOID ISSUES, STICK TO THE SIZE. -->
 		<!-- EDIT THE TEXT PART OF THE LABEL SECTION TO SET A CUSTOM MESSAGE FOR YOUR DEDICATED SERVER - STANDARD COLOR IS GREEN, THIS CAN BE CHANGED IN THE COLOR PART. DON'T OVER-DO IT! -->
 
-		<texture name="SMX" depth="0" size="53,35" texture="@file:Mods\SMX\Textures\Misc\valmodhat.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Local Asset Equivalent: smxserverlogo.png -->
+		<texture name="Valmod" depth="0" size="53,35" texture="@file:Mods\SMX\Textures\Misc\valmodhat.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Local Asset Equivalent: smxserverlogo.png -->
+		<label name="SMX" depth="0" size="53,35" text="SMX UI" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
 		<!-- Valmod Version -->
-		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.02" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
+		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.02" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
 
 	</window>
 
