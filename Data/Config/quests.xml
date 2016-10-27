@@ -1274,7 +1274,7 @@ repeatable="false" category_key="challenge" offer="Rifleman's are trained in usi
 repeatable="false" category_key="challenge" offer="Veterans have past military experience." difficulty="easy">
 	<reward type="Skill" id="Assault Rifles" value="30" />
 	<reward type="Skill" id="GI Joe" value="1" />
-	<reward type="Skill" id="762mm Round Crafting" value="1" />
+	<reward type="Skill" id="10mm Round Crafting" value="1" />
 </quest>
 <quest id="perkSurvivor" name="Survivor Skills" subtitle="Survivor Skills" description="This teaches you the skills of the class." icon="misc_crafting" 
 repeatable="false" category_key="challenge" offer="Survivor's specialize in surviving off the land." difficulty="easy">
