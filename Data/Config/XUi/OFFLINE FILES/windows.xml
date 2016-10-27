@@ -174,10 +174,10 @@
 	<window name="SMXBuffFrame2">
 
 		<rect name="hud" pos="93,140" side="left" controller="BuffPopoutList" pivot="BottomLeft">
-			<panel width="168" height="26" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
+			<panel width="168" height="33" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
 				<sprite depth="3" pos="9999,9999"  name="Background" sprite="ui_game_popup" height="26" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" style="icon22px" pos="-58,0" pivot="center" color="[transparent]" />
-				<label depth="6" name="TextContent" pos="0,0" font_size="22" color="[white]" effect="outline" justify="center" height="26" pivot="center" />
+				<sprite depth="4" name="Icon" height="30" width="30" style="icon22px" pos="-58,0" pivot="center" color="[transparent]" />
+				<label depth="6" name="TextContent" pos="0,0" font_size="30" color="[white]" effect="outline" justify="center" height="26" pivot="center" />
 			</panel>
 		</rect>
 
