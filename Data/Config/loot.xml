@@ -1046,10 +1046,10 @@
 </lootgroup>
 
 <lootgroup name="junkGood">
-	<item group="questChallenge" count="1" prob="0.1"/>
+	<item group="questChallenge" count="1" prob="0.15"/>
 	<item group="treasureMaps" count="1" prob="0.1"/>
 	<item group="books" prob="0.7"/>
-	<item group="junkQuestItems" prob="0.1"/>
+	<item group="junkQuestItems" prob="0.05"/>
 </lootgroup>
 
 <lootgroup name="junkSpray">
@@ -1494,7 +1494,7 @@
 	<item group="melee" prob="0.5"/>
 	<item group="Armor" prob="0.5"/>
 	<item name="flashlight02" prob="0.3"/>
-	<item group="backpacksQuestItems"/>
+	<item group="backpacksQuestItems" prob="0.05"/>
 </lootgroup>
 
 <lootgroup name="airdropMedicine" count="all">
@@ -1651,7 +1651,7 @@
 	<item name="sewingKit" />
 	<item name="Lightbulb" count="1,2"/>
 	<item name="tantalizingMagazine"/>
-	<item group="nightstandQuestItems"/>
+	<item group="nightstandQuestItems" prob="0.08" />
 </lootcontainer>
 
 <!-- lootcontainer 7 medicine cabinets -->
@@ -2221,8 +2221,8 @@
 
 <!-- Bookstore bookcase -->
 <lootgroup name="bookstoreBookcase" count="0,1">
-	<item name="questItemBook" prob="0.1"/>
-	<item group="books" prob="0.9"/>
+	<item name="questItemBook" prob="0.05"/>
+	<item group="books" prob="0.95"/>
 </lootgroup>
 <lootcontainer id="60" count="1" size="5,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="baseTemplate">
 	<item group="bookstoreBookcase"/>
@@ -2644,7 +2644,7 @@
 	<item group="snowZombieQuests" prob="0.05"/>
 	<item name="bottledWater" count="1,2" prob="0.18"/>
 	<item group="cupboardcannedfood" count="1,2" prob="0.25"/>
-	<item group="zombieFemaleQuestItems" count="1,2" prob="0.05"/>
+	<item group="zombieFemaleQuestItems" count="1" prob="0.05"/>
 	<item name="painkillers" prob="0.05"/>
 	<item name="challengeCookbook" count="1" prob="0.02"/>
 </lootgroup>
