@@ -19,7 +19,7 @@
     <biome name="city">
         <spawn maxcount="4" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesUnique" />
-        <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+        <spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
     </biome>
 <!-- Gravestown & Perishton-->
@@ -27,13 +27,13 @@
       <spawn maxcount="4" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesUnique" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
-      <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+      <spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombieDogGroup" />
     </biome>
 <!-- Random gen city-->    
     <biome name="wasteland_hub">
-      <spawn maxcount="5" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
-      <spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
+      <spawn maxcount="4" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
+      <spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesUnique" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
       <spawn maxcount="1" respawndelay="1" time="Any" entitygroup="BruteBoss" />
