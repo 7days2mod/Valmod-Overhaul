@@ -603,6 +603,13 @@ snowberryPlant feeds you for 90 sec. -->
 <buff id="randomWater2" duration="1.5" stack="discard" >
 	<modify id="0" stat="water" amount="5" />
 </buff>
+
+<buff id="admin" duration="0" stack="discard" >
+	<modify id="0" stat="food" amount="20" rate="1"/>
+	<modify id="0" stat="stamina" amount="20" rate="1"/>
+	<modify id="0" stat="water" amount="20" rate="1"/>
+	<modify id="1" stat="health" amount="20" rate="1"/>
+</buff>
 <!--
 This requires a 50+ food bar:
 <buff id="eatFood_1_Trigger" mutex="notFullBlockerBuff" duration="1" debuffif="food > 0.5" actions="increment(CTRfood, 1, 0, 0, 1)"/>
