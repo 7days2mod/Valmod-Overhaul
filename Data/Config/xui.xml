@@ -118,6 +118,7 @@
 			<window name="SMXUnitFrame1" anchor="LeftBottom" />
 			<window name="SMXHudOther" anchor="RightBottom" />
 			<window name="SMXTempFrameUF1" />
+			<window name="ZombieKillTracker" />	<!-- Window that displays Zombie Kills -->
 			<window name="windowToolbeltNumbersHUD" />	<!-- Window that displays Numbers on the tool belt for each slot  - Delete this line to remove these items -->
 		</window_group>
 		

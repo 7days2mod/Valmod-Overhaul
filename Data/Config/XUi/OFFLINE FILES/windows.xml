@@ -62,6 +62,15 @@
 
 	</window>
 
+	<window name="ZombieKillTracker" width="400" height="200" pos="135,92" controller="PlayerStatsWindow" anchor="LeftBottom">
+	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="112, -17" sprite="ui_game_symbol_knife" color="0, 0, 0, 125"/>
+	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="110, -15" sprite="ui_game_symbol_skull" color="[black]"/>
+	<sprite depth="3" name="icon" size="40,40" style="icon32px" pos="112, -17" sprite="ui_game_symbol_skull" color="237,231,206"/>
+
+	<label depth="4" name="TextContent" pos="154,-22" font_size="35" color="[black]" foregroundlayer="true" text="{playerzombiekills}[-]" effect="outline" upper_case="true"  />
+	<label depth="4" name="TextContent" pos="155,-23" font_size="30" color="[white]" foregroundlayer="true" text="{playerzombiekills}[-]" effect="outline" upper_case="true"  />
+	</window>
+
 	<window name="SMXToolbelt1" width="760" height="226" depth="0" pos="0,85" anchor="CenterBottom" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
 
 		<rect>
@@ -1511,15 +1520,15 @@
 				<rect name="btnRepair" depth="3" pos="0, -698" height="36">
 					<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
 					<!-- <sprite depth="2" name="background" pos="1,-3" sprite="menu_empty" width="379" height="32" color="[darkGrey]" type="sliced"/> -->
-					<rect depth="3" name="background" pos="3,-5" width="375" height="28">
+					<rect depth="3" name="background" pos="3,-5" width="183" height="28">
 						<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
-						<sprite depth="2" name="windowIcon" width="24" height="24" pos="126,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
-						<sprite depth="2" name="windowIcon" width="24" height="24" pos="124,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="36,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="34,-2" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
 						
-						<sprite depth="2" name="windowIcon" width="24" height="24" pos="124,0" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
-						<sprite depth="2" name="windowIcon" width="24" height="24" pos="126,0" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="34,0" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="36,0" sprite="ui_game_symbol_wrench" color="[black_half_alpha]"/>
 						
-						<sprite depth="2" name="windowIcon" width="24" height="24" pos="125,-1" sprite="ui_game_symbol_wrench"/>
+						<sprite depth="2" name="windowIcon" width="24" height="24" pos="35,-1" sprite="ui_game_symbol_wrench"/>
 						<label depth="2" name="windowName" pos="0,-1" justify="center" text="REPAIR" text_key="xuiRepair" font_size="28" />
 					</rect>
 				</rect>
@@ -1528,76 +1537,76 @@
 		</panel>
 	</window>
 	
-	<window name="windowVehicleStats" width="228" height="280" panel="Right" controller="VehicleStats" >
-		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_minibike"/>
+	<window name="windowVehicleStats" width="380" height="280" panel="Left" controller="VehicleStats" >
+		<!--
+		<panel name="header" height="63" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,5" sprite="ui_game_symbol_minibike"/>
 			<label style="header.name" text="{vehiclename} {vehiclestatstitle}" />
 		</panel>
-		
-		
-		<rect name="content" depth="0" pos="0,-46" height="234">
-			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
-			<sprite depth="1" color="[darkGrey]" type="sliced" width="228" height="197" pos="0,-3" />
+		-->
+		<rect name="btnRefuel" depth="3" pos="194, -2" height="36" >
+				<!--<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	-->
+				<!--<sprite depth="2" name="background" pos="3,-3" sprite="menu_empty" width="224" height="32" color="[darkGrey]" type="sliced" />-->
+				<rect depth="3" pos="3,-5" width="183" height="28">
+					<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="36,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="34,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="34,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="36,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
+					
+					<sprite depth="2" name="windowIcon" width="24" height="24" pos="35,-2" color="[iconColor]" sprite="ui_game_symbol_gas"/>
+					<label depth="2" name="windowName" pos="0,-1" justify="center" text="REFUEL" text_key="xuiRefuel" font_size="28" />
+				</rect>
+		</rect>
+		<rect name="content" depth="0" pos="3,580" height="100">
+			<!--<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />-->	
+			<!--<sprite depth="1" color="[darkGrey]" type="sliced" width="228" height="100" pos="0,-3" />-->
 			<rect depth="2" pos="6,-5">
 				<grid name="stats" rows="5" cols="1" pos="3,-5" cell_width="223" cell_height="30" repeat_content="false" >
-					<panel height="30" width="340" disableautobackground="true">
-						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_speed"/>
-						<label depth="1" width="180" pos="30,-2" name="lblSpeed" font_size="22" text="{speedtitle}: [DECEA3]{speed}m/s ({speedtext})[-]" />
-					</panel>
-					<panel height="30" width="340" disableautobackground="true">
-						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_noise"/>
-						<label depth="1" width="180" pos="30,-2" name="lblNoise" font_size="22" text="{noisetitle}: [DECEA3]{noise}[-]" />
-					</panel>
-					<panel height="30" width="340" disableautobackground="true">
-						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_defense"/>
-						<label depth="1" width="180" pos="30,-2" name="lblProtection" font_size="22" text="{protectiontitle}: [DECEA3]{protection}%[-]" />
-					</panel>
-					<panel height="30" width="340" disableautobackground="true">
-						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_seats"/>
-						<label depth="1" width="180" pos="30,-2" name="lblPassengers" font_size="22" text="{passengersTitle}: [DECEA3]{passengers|once}[-]" />
-					</panel>
-					<panel height="30" width="340" disableautobackground="true">
+					<panel height="20" width="375" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_gas"/>
 						<label depth="1" width="100" pos="30,-2" font_size="22" text="{fueltitle}: [DECEA3]{fuel}%[-]" />
-						
 						<sprite depth="2" width="100" pos="105, -7" height="10" type="sliced" color="[black]" />
 						<sprite depth="2" width="98" pos="106, -8" height="8" type="sliced" color="[mediumGrey]" />
 						<sprite depth="2" name="sprFillPotential" width="98" pos="106, -9" height="6" type="filled" color="[beige]" fill="{potentialfuelfill}" />
-						<sprite depth="2" name="sprFuelFill" width="98" pos="106, -8" height="8" type="filled" color="181,57,57" fill="{fuelfill}" />
+						<sprite depth="2" name="sprFuelFill" width="98" pos="106, -8" height="8" type="filled" color="240,240,240" fill="{fuelfill}" />
 					</panel>
+					<panel height="20" width="375" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_defense"/>
+						<label depth="1" width="180" pos="30,-2" name="lblProtection" font_size="22" text="{protectiontitle}: [DECEA3]{protection}%[-]" />
+					</panel>
+					<panel height="20" width="375" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" sprite="ui_game_symbol_seats"/>
+						<label depth="1" width="180" pos="30,-2" name="lblPassengers" font_size="22" text="{passengersTitle}: [DECEA3]{passengers|once}[-]" />
+					</panel>
+					<panel height="20" width="375" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="132,60" sprite="ui_game_symbol_speed"/>
+						<label depth="1" width="180" pos="160,60" name="lblSpeed" font_size="22" text="{speedtitle}: [DECEA3]{speed}m/s ({speedtext})[-]" />
+					</panel>
+					<panel height="20" width="375" disableautobackground="true">
+						<sprite depth="1" name="windowIcon" style="icon22px" pos="132,60" sprite="ui_game_symbol_noise"/>
+						<label depth="1" width="180" pos="160,60" name="lblNoise" font_size="22" text="{noisetitle}: [DECEA3]{noise}[-]" />
+					</panel>
+
 				</grid>
 			</rect>
-			<rect name="btnRefuel" depth="3" pos="0, -198" height="36" >
-				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
-				<sprite depth="2" name="background" pos="3,-3" sprite="menu_empty" width="224" height="32" color="[darkGrey]" type="sliced" />
-				<rect depth="3" pos="1,-3" width="224" height="31">
-					<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0" />
-					<sprite depth="2" name="windowIcon" width="24" height="24" pos="46,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
-					<sprite depth="2" name="windowIcon" width="24" height="24" pos="44,-3" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
-					
-					<sprite depth="2" name="windowIcon" width="24" height="24" pos="44,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
-					<sprite depth="2" name="windowIcon" width="24" height="24" pos="46,-1" sprite="ui_game_symbol_gas" color="[black_half_alpha]"/>
-					
-					<sprite depth="2" name="windowIcon" width="24" height="24" pos="45,-2" color="[iconColor]" sprite="ui_game_symbol_gas"/>
-					<label depth="2" name="windowName" pos="0,-4" justify="center" text="REFUEL" text_key="xuiRefuel" font_size="24" />
-				</rect>
-			</rect>
+
 		</rect>
 	</window>
 	
-	<window name="windowVehicleStorage" width="380" height="262" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]">
+	<window name="windowVehicleStorage" width="529" height="262" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]">
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<sprite depth="1" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_loot_sack"/>
 			<label style="header.name" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage" />
 		</panel>
-		
-		<grid depth="2" name="inventory" rows="5" cols="6" pos="3,-46" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
+		<grid depth="2" name="inventory" rows="7" cols="10" pos="3,-49" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
 			<item_stack name="0"/>
 		</grid>
 		
-		<panel name="emptyPanel" width="380" height="739" depth="4" pos="0,-49" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">			
+		<panel name="emptyPanel" height="739" width="529" depth="4" pos="0,-46" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">			
 			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
-			<label pos="0,-180" depth="3" name="descriptionText" width="100%" height="80" text="ADD BASKET TO ACCESS STORAGE." text_key="xuiEmptyVehicleStorage" justify="center" font_size="24"/>			
+			<label pos="0,-180" depth="3" name="descriptionText" width="100%" height="80" text="ADD BASKET TO ACCESS STORAGE." text_key="xuiEmptyVehicleStorage" justify="center" font_size="28"/>			
 		</panel>
 	</window>
 	
