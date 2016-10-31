@@ -11231,6 +11231,7 @@ which does not exist, yet. -->
 	<property name="HoldType" value="3" />
 	<property name="Stacknumber" value="50" /> <!-- STK food -->
 	<property name="CraftingIngredientTime" value="15" />
+	<property name="EconomicValue" value="90" />
 	<property class="Action1">
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="1.0" />
@@ -12041,6 +12042,7 @@ which does not exist, yet. -->
 	<property class="Action1">
 		<property name="Gain_water" value="40" />
 	</property>
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 <item id="1974" name="coldlokiWater">
 	<property name="CustomIcon" value="bottledWater" />
