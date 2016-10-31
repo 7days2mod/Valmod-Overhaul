@@ -1248,24 +1248,35 @@
 		<recipe name="bowl" unlock_level="5"/>
 		<recipe name="dinnerPlate" unlock_level="5"/>
 		<recipe name="clayBucket" unlock_level="5"/>
+
 		<recipe name="cementMixer" unlock_level="20"/>
 		<recipe name="chisel" unlock_level="20"/>
 		<recipe name="adobeWhiteBlock" unlock_level="20"/>
 		<recipe name="cobblestones" unlock_level="20"/>
 		<recipe name="cobblestoneFrameBlock" unlock_level="20"/>
+		
+		<recipe name="brickBlock" unlock_level="30"/>
+		<recipe name="brickCNRFull" unlock_level="30"/>
+
+		<recipe name="cement" unlock_level="50"/>
+		<recipe name="rebarFrameBlock" unlock_level="50"/>
+		<recipe name="rebarFrameRamp" unlock_level="50"/>
+		<recipe name="concreteMix" unlock_level="50"/>
+		
+		<!-- The above is all that is visble to the player in the menu -->
 		<recipe name="cobblestoneFrameRamp" unlock_level="20"/>
 		<recipe name="cobblestoneFrameWedge" unlock_level="20"/>
 		<recipe name="cobblestoneFrameWedgeTip" unlock_level="20"/>
 		<recipe name="cobblestoneFramePlate" unlock_level="20"/>
 		<recipe name="cobblestoneFrameCNRFull" unlock_level="20"/>
 		<recipe name="cobblestoneFrameCNRInside" unlock_level="20"/>
+		
 		<recipe name="cobblestoneFramePillar100" unlock_level="20"/>
 		<recipe name="cobblestoneFramePillar50" unlock_level="20"/>		
 		<recipe name="cobblestoneFramePole" unlock_level="20"/>
 		<recipe name="cobblestoneFrameStairs25" unlock_level="20"/>
 		<recipe name="cobblestoneArrowSlitHalf" unlock_level="20"/>
 		
-		<recipe name="brickBlock" unlock_level="30"/>
 		<recipe name="brickCNRFull" unlock_level="30"/>
 		<recipe name="brickCNRInside" unlock_level="30"/>
 		<recipe name="brickCNRRamp" unlock_level="30"/>
@@ -1275,10 +1286,7 @@
 		<recipe name="brickRamp" unlock_level="30"/>
 		<recipe name="brickPlate" unlock_level="30"/>
 		
-		<recipe name="cement" unlock_level="50"/>
-		<recipe name="rebarFrameBlock" unlock_level="50"/>
-		<recipe name="rebarFrameRamp" unlock_level="50"/>
-		<recipe name="concreteMix" unlock_level="50"/>
+
 	</crafting_skill>
 	
 	<crafting_skill name="Blacksmith" icon="forge" description_key="Level this skill up by crafting various items and blocks in the forge. Levels 10, 15, 20, 25, 30, 50 and 80 all unlock new recipes." title_key="Blacksmith" group="crafting">
@@ -1659,7 +1667,7 @@
 		</effect>
 	</perk> 
 
-	<player_skill name="Barter" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging">
+	<player_skill name="Barter" exp_to_level="25" experience_multiplier="1.0606" icon="coin" description_key="Reduce the cost of goods and sell them for more Dukes by improving this skill. Level 20 unlocks the merchant deliver box." title_key="barter" group="scavenging">
 		<effect name="Bartering">
 			<add skill_level="1,10" value="0.00,0.15"/>	
 			<add skill_level="10,20" value="0.15,0.23"/>	
@@ -1672,6 +1680,7 @@
 			<add skill_level="80,90" value="0.52,0.56"/>	
 			<add skill_level="90,100" value="0.56,0.60"/>	
 		</effect>
+		<recipe name="workstationMerchant" unlock_level="20"/>
 	</player_skill>
 	
 	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">

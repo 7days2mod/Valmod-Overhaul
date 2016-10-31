@@ -2319,6 +2319,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="cloth" count="1" />
 	<drop event="Fall" name="cloth" count="1" prob="0.3" stick_chance="0" />
 	<property name="EconomicValue" value="25" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="288" name="awningRedCNRInside">
@@ -2344,6 +2345,7 @@ group desc for stuff like metal siding
 			<property name="UpgradeHitCount" value="5" />
 		</property>
 	<property class="RepairItems"> <property name="cloth" value="10" /> </property>
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="290" name="camoNetBlock">
@@ -2361,6 +2363,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="cloth" count="1" prob="0.3" stick_chance="0" />
 	<property name="EconomicValue" value="25" />
 	<property name="Map.Color" value="50,120,55" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="291" name="camoNetRamp">
@@ -3699,6 +3702,7 @@ group desc for stuff like metal siding
 	<property name="SellableToTrader" value="false" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
+	<property name="CraftingSkillGroup" value="Science"/>
 </block>
 
 <block id="423" name="cntBackpack01">
@@ -3711,6 +3715,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="LootList" value="9" />
 	<property name="Group" value="Basics,Building" />
+	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
 
 <block id="424" name="cntBackpack02">
@@ -14456,21 +14461,19 @@ kind of free
 	</block>
 	<block id="1944" name="workstationMerchant">
 		<property name="Extends" value="cntMailbox" />
-		<property name="IsDeveloper" value="true" />
 		<property name="MaxDamage" value="50" />
 		<property name="StabilitySupport" value="false" />
 		<property name="DescriptionKey" value="workstationMerchantDesc"/>
 		<property name="Model" value="LootContainers/mailbox02" param1="main_mesh" />
 		<drop event="Destroy" name="woodDebris" count="0" />
 		<drop event="Fall" name="woodDebris" count="0" prob="1.0"  stick_chance=".75" />
-		<property name="Class" value="Workstation" />
-		<property class="Workstation">
-			<property name="Modules" value="output,input"/>
-		</property>
 		<property name="Group" value="Basics" />
 		<property class="RepairItems">
 			<property name="wood" value="10" />
 		</property>
+		<property name="Stacknumber" value="1" />
+		<property name="Class" value="VendingMachine" />
+		<property name="TraderID" value="20" />
 	</block>
 
 	<block id="1946" name="workstationArmory">
