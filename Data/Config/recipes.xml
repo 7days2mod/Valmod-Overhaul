@@ -58,11 +58,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<wildcard_forge_category />
 </recipe>
 
-<recipe name="rockSmall" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
+<recipe name="rockSmall" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="1">
 	<ingredient name="unit_stone" count="5"/>
 </recipe>
 
-<recipe name="scrapBrass" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
+<recipe name="scrapBrass" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="1">
 	<ingredient name="unit_brass" count="1"/>
 </recipe>
 
@@ -70,7 +70,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<wildcard_forge_category />
 </recipe>
 
-<recipe name="scrapIron" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
+<recipe name="scrapIron" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="1">
 	<ingredient name="unit_iron" count="1"/>
 </recipe>
 
@@ -78,7 +78,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<wildcard_forge_category />
 </recipe>
 
-<recipe name="scrapLead" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
+<recipe name="scrapLead" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="1">
 	<ingredient name="unit_lead" count="1"/>
 </recipe>
 
@@ -138,7 +138,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="paper" count="1"/>
 </recipe>
 
-<recipe name="burningBarrel" count="1" craft_area="workstationDecor">
+<recipe name="burningBarrel" count="1" >
 	<ingredient name="forgedIron" count="3"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
