@@ -2444,6 +2444,7 @@ which does not exist, yet. -->
 	<property name="DropScale" value="3" />
 	<property name="Group" value="Resources" />
 	<property name="CraftingIngredientTime" value="0.5" />
+	<property name="CraftingSkillGroup" value="Masonry"/>
 </item>
 
 <item id="191" name="turd">
