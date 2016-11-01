@@ -1134,7 +1134,7 @@
 		<recipe name="steelGloves" unlock_level="50"/>
 	</crafting_skill>
 	
-	<crafting_skill name="Mechanical" icon="misc_crafting" description_key="This skill levels the more you work with electronics and mechanical gear." title_key="Mechanical Skills" group="crafting">
+	<crafting_skill name="Mechanical" icon="misc_crafting" description_key="This skill levels the more you work with electronics and mechanical gear. Level 10/15/25 unlocks the chainsaw/nailgun/auger. Level 30 unlocks gear mechanicsm and mechanical parts. Level 60 unlocks minibike." title_key="Mechanical Skills" group="crafting">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
 			<multiply skill_level="5,11" value=".931,.871" />
