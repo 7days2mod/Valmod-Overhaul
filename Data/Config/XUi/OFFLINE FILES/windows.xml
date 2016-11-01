@@ -34,7 +34,7 @@
 		<grid name="SMXFWFrame" pos="-2,70" rows="1" cols="2" width="118" cell_width="118" cell_height="35" repeat_content="false" side="left">
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
 				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
-				<sprite name="BarContent" depth="2" size="102,-10" color="0,128,0" type="filled" fill="0" pos="10,-75" />
+				<sprite name="BarContent" depth="2" size="102,-10" color="64,214,109,200" type="filled" fill="0" pos="10,-75" />
 		<!-- Uncomment this if you want percentages to show		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" />
 		-->
@@ -42,13 +42,12 @@
 
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
 				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
-				<sprite name="BarContent" depth="2" size="102,-10" color="0,153,255" type="filled" fill="0" pos="10,-75" />
+				<sprite name="BarContent" depth="2" size="102,-10" color="64,177,214,200" type="filled" fill="0" pos="10,-75" />
 		<!-- Uncomment this if you want percentages to show		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" />
 			-->
 			</rect>
 		</grid>
-
 	</window>
 	
 	<window name="SMXLevelXPUF1" style="SMXLevelXP.window">
@@ -1008,7 +1007,7 @@
 				<item_stack name="0"/>
 			</grid>
 						<sprite depth="1" pos="0,0">
-				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-130,45" texture="@file:Mods\SMX\Textures\Toolbelt\valtoolbelt.png" material="Materials/Transparent Colored"/>
+				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-125,45" texture="@file:Mods\SMX\Textures\Toolbelt\valtoolbelt.png" material="Materials/Transparent Colored"/>
 			</sprite>
 		</rect>
 	</window>
