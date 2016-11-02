@@ -1447,6 +1447,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New" />
 	<property name="Model" value="Branch_legacy" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodSupport" /> </property>
+	<drop event="Destroy" name="nail" count="0" prob="1" />
 </block>
 
 <block id="175" name="rWoodSupport">
