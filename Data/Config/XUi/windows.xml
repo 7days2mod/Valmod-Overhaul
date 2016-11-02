@@ -17,7 +17,7 @@
 
 		<grid name="SMXHSFrame" pos="0,145" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i67.tinypic.com/nq5ml5.jpg" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
+				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i.imgur.com/1yE0DM5.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
 				<sprite name="BarContent" depth="2" height="15" width="220" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-86" />
 		<!-- Uncomment this if oyu want percentages to show
 				<label depth="6" name="TextContent" pos="0,-83" font_size="20" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
@@ -25,7 +25,7 @@
 			</rect>
 
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i67.tinypic.com/rro0ut.jpg" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
+				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i.imgur.com/7IjrVvg.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
 				<sprite name="BarContent" depth="2" size="220,30" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-67" />
 				<label depth="6" name="TextContent" pos="0,-66" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
@@ -33,7 +33,7 @@
 
 		<grid name="SMXFWFrame" pos="-2,70" rows="1" cols="2" width="118" cell_width="118" cell_height="35" repeat_content="false" side="left">
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@http://i64.tinypic.com/iwm73o.jpg" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
+				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@http://i.imgur.com/bFzF5wF.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
 				<sprite name="BarContent" depth="2" size="102,-10" color="64,214,109,200" type="filled" fill="0" pos="10,-75" />
 		<!-- Uncomment this if you want percentages to show		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" />
@@ -41,7 +41,7 @@
 			</rect>
 
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@http://i64.tinypic.com/iwm73o.jpg" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
+				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@http://i.imgur.com/bFzF5wF.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
 				<sprite name="BarContent" depth="2" size="102,-10" color="64,177,214,200" type="filled" fill="0" pos="10,-75" />
 		<!-- Uncomment this if you want percentages to show		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" />
@@ -95,7 +95,7 @@
 
 	<window name="SMXHudOther">
 
-				<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@http://i66.tinypic.com/xft537.jpg" material="Materials/Transparent" justify="right" rotation="90"/> <!-- Local Asset Equivalent: hudotherbg.png -->
+				<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@http://i.imgur.com/HzB8tJ3.png" material="Materials/Transparent" justify="right" rotation="90"/> <!-- Local Asset Equivalent: hudotherbg.png -->
 
 		<rect name="SMXCollector" pos="-90,31" side="right" controller="CollectedItemList" pivot="BottomLeft">
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
@@ -138,7 +138,7 @@
 
 	<window name="SMXQuestTracker" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
 
-		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@http://i67.tinypic.com/28we34m.jpg" material="Materials/Transparent" /> <!-- Local Asset Equivalent: questsbg.png -->
+		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@http://i.imgur.com/DmqKEqC.png" material="Materials/Transparent" /> <!-- Local Asset Equivalent: questsbg.png -->
 
 		<label depth="1" text="{questtitle}" font_size="26" effect="outline" justify="center" upper_case="true" pos="-100, -5" height="28" />
 		<sprite pos="-100,-8" depth="1" name="windowIcon" style="icon22px" sprite="{questicon}" justify="left" />
