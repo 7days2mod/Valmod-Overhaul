@@ -4931,6 +4931,8 @@ cntEPSBookcase,blocks,Loot Container,,Bookcase,,
 cntEPSWallSafe,blocks,Loot Container,,Wall Safe,,
 cntEPSCoffin,blocks,Loot Container,,Coffin,,
 cntEPSGasPump,blocks,Loot Container,,Gas Pump,,
+cntEPSDrawer,blocks,Loot Container,,Wall Drawer,,
+
 workstationOven,blocks,Block Building,,Working Oven,,
 workstationOvenDesc,blocks,Block Building,,This working oven can be used to cook many different recipes without using a fuel source.,,
 WorkingSinkDesc,blocks,Block Building,,This working can be used as a source of clean water. Fill your jars or bowls with water by left-clicking with them.,,

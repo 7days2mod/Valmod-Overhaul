@@ -2909,6 +2909,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="forgedIron" count="15" />
         <ingredient name="shortMetalPipe" count="5" />
     </recipe>
+<recipe name="cntEPSDrawer" count="1" craft_area="workstationDecor">
+	<ingredient name="forgedIron" count="10"/>
+	<ingredient name="spring" count="2"/>
+	<ingredient name="gearMechanism" count="1"/>
+</recipe>
 
 		<!-- Misc Recipes Mod -->
 <recipe name="steelPolish" count="1" craft_area="chemistryStation" craft_tool="beaker" craft_time="150">

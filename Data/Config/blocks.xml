@@ -14435,18 +14435,14 @@ kind of free
 	</block>
 	<!-- Workstation Mod -->
 	<!-- 1940-1941 Reserved -->
-<block id="1942" name="simpleForge">
-	<property name="Extends" value="forge" />
-	<property name="IsDeveloper" value="true" />
-	<property name="CustomIcon" value="forge" />
-	<property class="Workstation">
-	<property name="CraftingAreaRecipes" value="simpleForge"/>
-	<property name="Modules" value="tools,output,fuel,material_input"/>
-	<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
-	</property>
-	<property name="DescriptionKey" value="simpleForgeDesc"/>
-	<property name="CraftingSkillGroup" value="Blacksmith"/>
-</block>
+	<block id="1942" name="cntEPSDrawer">
+		<property name="Extends" value="morticianDrawer" />
+		<property name="CustomIcon" value="morticianDrawer" />
+		<property name="Class" value="SecureLoot" />
+		<property name="LootList" value="108" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Mechanical"/>
+	</block>
 	<block id="1943" name="workstationDecor">
 		<property name="Extends" value="woodTable" />
 		<property name="Texture" value="214,217,54,54,54,54" />
