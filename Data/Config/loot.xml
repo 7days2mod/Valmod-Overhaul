@@ -439,7 +439,7 @@
 	<item name="qc_stagparty" count="1"/>
 	<item name="qc_dontfeedthebears" count="1"/>
 	<item name="qc_buythefarm" count="1"/>
-	<item group="ValmodQuests" prob="2"/>
+	<item group="ValmodQuests" prob="3"/>
 	<item name="recipebookLoki" count="1"/>
 </lootgroup>
 
