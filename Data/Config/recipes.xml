@@ -2333,7 +2333,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="1"/>
 </recipe>
 
-<recipe name="trapSpikesNew" count="1">
+<recipe name="trapSpikesNew" count="1" craft_exp_gain="25">
 	<ingredient name="wood" count="100"/>
 </recipe>
 
