@@ -2151,7 +2151,7 @@ featherDesc,items,Item,KgNone,Feathers are primarily found in bird nests & on ch
 femur,items,Item,KgNone,Large Bone,Gros os,Großer Knochen,,Hueso largo
 femurDesc,items,Item,KgNone,A rather ordinary femur. It could be useful.,Un fémur des plus ordinaires. Ça peut servir.,Ein recht gewöhnlicher Oberschenkelknochen. Er könnte sich als nützlich erweisen.,,Un fémur común y corriente. Podría ser útil.
 fertilizer,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Fertilizer,,,,
-fertilizerDesc,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Fertilizer is made in a beaker or concrete mixer. Use a gardening hoe to fertilize your farmland and increase the yield of your crops.,,,,
+fertilizerDesc,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Fertilizer is made in a chemistry station. Use a gardening hoe to fertilize your farmland and increase the yield of your crops.,,,,
 fishingWeight,items,Item,KgNone,Lead Fishing Weight,Plomb de pêche,Angelblei,,Pesas de pesca de plomo
 fishingWeightDesc,items,Item,KgNone,Lead objects can be scrapped into scrap lead in your backpack or smelted in a forge as a core resource.,"Les objets en plomb peuvent être recyclés dans votre sac à dos pour obtenir du plomb recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Blei können in deinem Rucksack zerlegt werden, um Bleistücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de plomo se pueden despedazar para tener chatarra de plomo en tu mochila o fundir en la fragua para obtener recursos básicos.
 flashlight02,items,Item,KgNone,Flashlight,Lampe de poche,Taschenlampe,,Linterna
