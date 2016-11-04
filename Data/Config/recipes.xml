@@ -3542,7 +3542,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="crudeNail" count="2"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
-<recipe name="scrapIronShiv" count="1">
+<recipe name="scrapIronShiv" count="1" craft_exp_gain="10">
 	<ingredient name="scrapIron" count="3"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
