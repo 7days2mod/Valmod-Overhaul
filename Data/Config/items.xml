@@ -9456,6 +9456,7 @@ which does not exist, yet. -->
 			<property name="GetQualityFromWeapon" value="true" />
 			<property name="ApplyBuff" value="1,1" param1="firstAid" />
 		</property>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 	<item id="1621" name="InfectionDart">
 		<property name="DescriptionKey" value="InfectionDartDesc"/>
@@ -9475,6 +9476,7 @@ which does not exist, yet. -->
 			<property name="EntityDamage" value="1,3" />
 			<property name="ApplyBuff" value="1,1" param1="infection" />
 		</property>
+		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 	<item id="1622" name="ChemicalDart">
 		<property name="DescriptionKey" value="ChemicalDartDesc"/>
@@ -9495,6 +9497,7 @@ which does not exist, yet. -->
 			<property name="EntityDamage" value="15,18" />
 			<property name="ApplyBuff" value="1,1" param1="AcidSplash" />
 		</property>
+		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 <item id="1623" name="clubBurning">
 	<property name="Class" value="ItemClassTorch" />
