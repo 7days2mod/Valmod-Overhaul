@@ -3055,7 +3055,7 @@ group desc for stuff like metal siding
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<property name="LootList" value="37" />
 	<drop event="Harvest" name="rottingFlesh" count="2" />
-	<drop event="Destroy" name="femur" count="1"/>
+	<drop event="Destroy" name="femur" count="4"/>
 </block>
 
 <block id="362" name="tanDrywallPillar100">
