@@ -1134,7 +1134,7 @@
 		<recipe name="steelGloves" unlock_level="50"/>
 	</crafting_skill>
 	
-	<crafting_skill name="Mechanical" icon="misc_crafting" description_key="This skill levels the more you work with electronics and mechanical gear. Level 10/15/25 unlocks the chainsaw/nailgun/auger. Level 30 unlocks gear mechanicsm and mechanical parts. Level 60 unlocks minibike." title_key="Mechanical Skills" group="crafting">
+	<crafting_skill name="Mechanical" icon="misc_crafting" description_key="This skill levels the more you work with electronics and mechanical gear. Level 10/15/25 unlocks the chainsaw/nailgun/auger. Level 30 unlocks gear mechanicsm and mechanical parts. Level 50 unlocks minibike." title_key="Mechanical Skills" group="crafting">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
 			<multiply skill_level="5,11" value=".931,.871" />
@@ -1196,10 +1196,10 @@
 		<recipe name="gearMechanism" unlock_level="30"/>
 		<recipe name="mechanicalParts" unlock_level="30"/>
 		
-		<recipe name="minibikeChassis" unlock_level="60"/>
-		<recipe name="minibikeWheels" unlock_level="60"/>
-		<recipe name="minibikeSeat" unlock_level="60"/>
-		<recipe name="minibikeHandlebars" unlock_level="60"/>
+		<recipe name="minibikeChassis" unlock_level="50"/>
+		<recipe name="minibikeWheels" unlock_level="50"/>
+		<recipe name="minibikeSeat" unlock_level="50"/>
+		<recipe name="minibikeHandlebars" unlock_level="50"/>
 	</crafting_skill>
 	
 	<crafting_skill name="Traps" exp_to_level="230" icon="misc_crafting" description_key="Learn how to craft improvised traps. Every ten levels unlocks a new teir. Level 10 unlocks wood spikes. Level 10 unlocks wood spikes. Level 20 unlocks explosive traps. Level 30 unlocks fire traps." title_key="Traps" group="tools">
