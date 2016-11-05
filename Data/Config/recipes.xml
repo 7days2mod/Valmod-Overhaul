@@ -3580,7 +3580,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Class - Medic (Locked)" count="1" >
   <ingredient name="classSelection" count="1" />
 	</recipe>
-
+	
+	
+	<recipe name="sprayPaint" count="1" craft_area="workstationDecor">
+        <ingredient name="scrapIron" count="3"/>
+    </recipe>
 	<!-- Dye Station -->
 <!-- Valmod Temp Remove for performance
 	<recipe name="sprayPaint" count="1" craft_area="dyeStation">
