@@ -12157,6 +12157,7 @@ which does not exist, yet. -->
 	<property name="HoldType" value="45" />
 	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
 	<property name="CraftingSkillGroup" value="Carpentry"/>
+	<property name="SellableToTrader" value="false" />
 </item>
 <item id="1983" name="charcoalChips">
 	<property name="DescriptionKey" value="charcoalChipsDesc"/>
