@@ -17,7 +17,7 @@
 
 		<grid name="SMXHSFrame" pos="0,145" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i.imgur.com/1yE0DM5.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
+				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i.imgur.com/2q3G8Bv.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
 				<sprite name="BarContent" depth="2" height="15" width="220" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-86" />
 		<!-- Uncomment this if oyu want percentages to show
 				<label depth="6" name="TextContent" pos="0,-83" font_size="20" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
@@ -25,7 +25,7 @@
 			</rect>
 
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i.imgur.com/7IjrVvg.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
+				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i.imgur.com/3NWFNa7.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
 				<sprite name="BarContent" depth="2" size="220,30" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-67" />
 				<label depth="6" name="TextContent" pos="0,-66" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
