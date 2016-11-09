@@ -392,6 +392,22 @@
 	<item name="theEnforcerMagazine" count="1"/>
 	</lootgroup>
 
+<lootgroup name="SpecialQuests" >
+	<item name="challengeWedding"/>
+	<item name="challengeWallet"/>
+	<item name="challengeBooks"/>
+	<item name="challengeChildsHappiness"/>
+	<item name="challengeToilet"/>
+	<item name="challengeWalkman"/>
+	<item name="challengeCondoms"/>
+	<item name="challengeBaseball"/>
+	<item name="challengeCards"/>
+	<item name="challengeCigarettes"/>
+	<item name="challengeArtist"/>
+	<item name="challengeSoap"/>
+	<item name="challengeBong"/>
+</lootgroup>
+
 <lootgroup name="ValmodQuests" >
 	<item name="challengeSticky"/>
 	<item name="challengeBigBadBosses"/>
@@ -407,19 +423,6 @@
 	<item name="challengeJock"/>
 	<item name="challengeReaper"/>
 	<item name="challengeWalmart"/>
-	<item name="challengeWedding"/>
-	<item name="challengeWallet"/>
-	<item name="challengeBooks"/>
-	<item name="challengeChildsHappiness"/>
-	<item name="challengeToilet"/>
-	<item name="challengeWalkman"/>
-	<item name="challengeCondoms"/>
-	<item name="challengeBaseball"/>
-	<item name="challengeCards"/>
-	<item name="challengeCigarettes"/>
-	<item name="challengeArtist"/>
-	<item name="challengeSoap"/>
-	<item name="challengeBong"/>
 </lootgroup>
 
 <lootgroup name="questChallenge" count="1">
@@ -440,6 +443,7 @@
 	<item name="qc_dontfeedthebears" count="1"/>
 	<item name="qc_buythefarm" count="1"/>
 	<item group="ValmodQuests" prob="3"/>
+	<item group="SpecialQuests" prob="3"/>
 	<item name="recipebookLoki" count="1"/>
 </lootgroup>
 
@@ -652,8 +656,8 @@
 	<item group="pistol+ammo" count="1" prob="0.05"/>
 	<item name="bottledRiverWater" count="1,2" prob="0.45"/>
 	<item name="turd" count="1,2" prob="0.3"/>
-	<item name="soap" count="1" prob="0.1"/>
-	<item name="questItemToiletPaper" prob="0.1"/>
+	<item name="soap" count="1" prob="0.15"/>
+	<item name="questItemToiletPaper" prob="0.05"/>
 </lootgroup>
 
 <lootgroup name="shotguns">
