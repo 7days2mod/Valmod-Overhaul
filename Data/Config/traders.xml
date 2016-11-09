@@ -274,6 +274,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="partsRocketLauncher_receiver"/>
 			<item name="partsRocketLauncher_parts"/>
 			<item name="rocketLauncherSchematic"/>
+			<item name="gunChoke"/>
+			<item name="gunSilencer"/>
+			<item name="gunScope"/>
 		</trader_item_group>
 
 		<trader_item_group name="meleeWeapon">
