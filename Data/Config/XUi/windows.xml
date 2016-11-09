@@ -9,7 +9,7 @@
 		<texture name="Valmod" depth="0" size="53,35" texture="@http://i.imgur.com/pl91cRj.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Local Asset Equivalent: smxserverlogo.png -->
 		<label name="SMX" depth="0" size="53,35" text="SMX UI" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
 		<!-- Valmod Version -->
-		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.15" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
+		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.16" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
 
 	</window>
 
