@@ -9120,6 +9120,7 @@ which does not exist, yet. -->
 		<property name="DegradationRate" value="10,10" />
 		<property name="DegradationMax" value="700,4000" />
 	</property>
+		<property name="EconomicValue" value="3000" />
 	</item>
 	<item id="1601" name="gunChoke">
 		<property name="Extends" value="partsPumpShotgun_barrel" />
@@ -9127,6 +9128,7 @@ which does not exist, yet. -->
 		<property class="Attributes">
 			<property name="Accuracy" value="1, 0.01" />
 		</property>
+		<property name="EconomicValue" value="3000" />
 	</item>
 	<item id="1602" name="gunScope">
 		<property name="Extends" value="partsSniperRifle_receiver" />
@@ -9134,6 +9136,7 @@ which does not exist, yet. -->
 		<property class="Attributes">
 			<property name="FalloffRange" value="70,250" />
 		</property>
+		<property name="EconomicValue" value="3000" />
 	</item>
 	<item id="1603" name="gunPistolSilenced">
 		<property name="Extends" value="gunPistol" />
