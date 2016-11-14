@@ -1899,6 +1899,7 @@ which does not exist, yet. -->
 	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
 	<property name="EconomicValue" value="14" />
 	<property name="Group" value="Ammo/Weapons" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="151" name="10mmBullet">
@@ -1908,6 +1909,7 @@ which does not exist, yet. -->
 	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
 	<property name="EconomicValue" value="17" />
 	<property name="Group" value="Ammo/Weapons" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="152" name="44MagBullet">
@@ -1917,6 +1919,7 @@ which does not exist, yet. -->
 	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
 	<property name="Group" value="Ammo/Weapons" />
 	<property name="EconomicValue" value="19" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="153" name="762mmBullet">
@@ -1926,6 +1929,7 @@ which does not exist, yet. -->
 	<property name="Stacknumber" value="500" /> <!-- STK ammo -->
 	<property name="EconomicValue" value="19" />
 	<property name="Group" value="Ammo/Weapons" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="156" name="shotgunShell">
@@ -1941,6 +1945,7 @@ which does not exist, yet. -->
 		<property name="BlockDamage" value="5.4,13.5" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="157" name="shotgunSlug">
@@ -1955,6 +1960,7 @@ which does not exist, yet. -->
 		<property name="BlockDamage" value="100,150" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="159" name="rocket">
@@ -1993,6 +1999,7 @@ which does not exist, yet. -->
 	<property name="DropScale" value="4" />
 	<property name="Group" value="Ammo/Weapons" />
 	<property name="EconomicValue" value="6" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <item id="161" name="gasCan">
@@ -9639,6 +9646,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value="30,40" />
 			<property name="DamageBonus.wood" value="25" />
 		</property>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 	<item id="1644" name="shotgunShellINC">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
@@ -9654,6 +9662,7 @@ which does not exist, yet. -->
 			<property name="BlockDamage" value="14,17" />
 			<property name="ApplyBuff" value="1,1" param1="burningSmall" />
 		</property>
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 	<item id="1645" name="blunderbussAmmoShredder">
 		<property name="Extends" value="blunderbussAmmo" />
@@ -9663,6 +9672,7 @@ which does not exist, yet. -->
 			<property name="EntityDamage" value="8,12" />
 			<property name="ApplyBuff" value="1,1" param1="bleeding" />
 		</property>
+		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 	<item id="1646" name="HollowTip">
 		<property name="Extends" value="bulletTip" />
