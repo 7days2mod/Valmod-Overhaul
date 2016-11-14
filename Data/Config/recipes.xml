@@ -4510,7 +4510,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="waterFilter" count="1">
 	<ingredient name="clayBucket" count="1" />
 	<ingredient name="crushedSand" count="50"/>
-	<ingredient name="gravel" count="50"/>
+<!--	<ingredient name="gravel" count="50"/> -->
 	<ingredient name="charcoalChips" count="50"/>
 </recipe>
 <recipe name="clayBucket" count="1" craft_area="campfire">
