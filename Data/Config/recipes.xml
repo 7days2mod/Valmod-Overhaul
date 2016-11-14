@@ -3452,17 +3452,17 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="healingAgent" count="1" >
         <ingredient name="painkillers" count="3" />  
     </recipe>
-    <recipe name="chemicalAgent" count="1" craft_area="chemistryStation" >
+    <recipe name="chemicalAgent" count="1" craft_area="chemistryStation" craft_time="50">
         <ingredient name="rottingFlesh" count="1"/>
     </recipe>
     <recipe name="chemicalAgent" count="30" craft_area="chemistryStation" >
         <ingredient name="carBattery" count="1"/>
     </recipe>
-    <recipe name="ChemicalDart" count="1" craft_area="workstationArmory">
+    <recipe name="ChemicalDart" count="1" craft_area="workstationArmory" craft_time="2">
          <ingredient name="Syringe" count="1"/>
         <ingredient name="chemicalAgent" count="1"/>
     </recipe>
-    <recipe name="lokiShell" count="1"  craft_area="workstationArmory">
+    <recipe name="lokiShell" count="1"  craft_area="workstationArmory" craft_time="4">
          <ingredient name="chemicalAgent" count="1"/>
         <ingredient name="gunPowder" count="2"/>
         <ingredient name="shotgunShellCasing" count="1"/>
