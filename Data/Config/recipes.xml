@@ -4519,23 +4519,23 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Recipe Break from Bench -->
 <recipe name="woodFrameBlock" count="1" >
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="5"/>
 </recipe>
 
 <recipe name="woodFrameCNRFull" count="1">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="5"/>
 </recipe>
 
 <recipe name="woodFrameCNRInside" count="1" >
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="5"/>
 </recipe>
 
 <recipe name="woodFrameRamp" count="1" >
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="5"/>
 </recipe>
 
 <recipe name="woodFrameWedge" count="1" >
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="5"/>
 </recipe>
 
 
