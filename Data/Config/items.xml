@@ -12318,7 +12318,7 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="5" />
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,10" />
-		<property name="BlockDamage" value="15,30" />
+		<property name="BlockDamage" value="19,30" />
 		<property name="DegradationMax" value="200,600" />
 		<property name="DegradationRate" value="2,2" />
 	</property>
