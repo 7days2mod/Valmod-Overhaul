@@ -1152,7 +1152,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="egg" count="1"/>
 </recipe>
 
-<recipe name="emptyJar" count="1" craft_area="forge" material_based="true">
+<recipe name="emptyJar" count="1" craft_area="forge" material_based="true" craft_time="8">
 	<ingredient name="unit_glass" count="10"/>
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
