@@ -558,7 +558,7 @@ snowberryPlant feeds you for 90 sec. -->
 	<buff id="sideeffect" duration="10" name_key="crashing" type="speedmodifier" description_key="crashingDesc" tooltip_key="You're crashing hard." icon="buff_icon_stunned">
 		<modify id="0" stat="speedmodifier" setValue="0.1"/>
 	</buff>	
-	<buff id="AcidSplash" stack="stack" stacklimit="2" hitmask="head;body" debuffif="+water > 1" ffcheck="true" name_key="burningSmall" description_key="burningSmallDesc" tooltip_key="burningSmallTooltip" cures="bottledWater" actions="attach(ParticleEffects/p_signal_flareprefab, @impact);damage(6,5,50,8)" icon="ui_game_symbol_fire"/>
+	<buff id="AcidSplash" mutex="isPlayer" stack="stack" stacklimit="2" hitmask="head;body" debuffif="+water > 1" ffcheck="true" name_key="burningSmall" description_key="burningSmallDesc" tooltip_key="burningSmallTooltip" cures="bottledWater" actions="attach(ParticleEffects/p_signal_flareprefab, @impact);damage(6,5,50,8)" icon="ui_game_symbol_fire"/>
 	<buff id="WellnessLoss" duration="2" type="sickness" actions="increment(@wellness, -5, 0, 1, 1)" name_key="Madness" tooltip_key="This can't be real..." description_key="Surviving in this world is slowly eating away at your sanity." icon="ui_game_symbol_food_poisoning">
         <modify id="0" stat="stamina" amount="-3" rate="1"/>
         <modify id="0" stat="speedmodifier" setValue="0.40"/>
