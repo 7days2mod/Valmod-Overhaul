@@ -1627,16 +1627,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="10"/>
 </recipe>
 
-<recipe name="logCabinBlock" count="1">
+<recipe name="logCabinBlock" count="1" craft_exp_gain="5">
 	<ingredient name="wood" count="20"/>
 </recipe>
-<recipe name="logCabinBlock" count="1" craft_area="workbench" craft_tool="handSaw">
+<recipe name="logCabinBlock" count="1" craft_area="workbench" craft_tool="handSaw" craft_exp_gain="5">
 	<ingredient name="wood" count="20"/>
 </recipe>
-<recipe name="logCabinRamp" count="1">
+<recipe name="logCabinRamp" count="1" craft_exp_gain="5">
 	<ingredient name="wood" count="20"/>
 </recipe>
-<recipe name="logCabinRamp" count="1" craft_area="workbench" craft_tool="handSaw">
+<recipe name="logCabinRamp" count="1" craft_area="workbench" craft_tool="handSaw" craft_exp_gain="5">
 	<ingredient name="wood" count="20"/>
 </recipe>
 
