@@ -851,32 +851,32 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="10"/>
 </recipe>
 
-<recipe name="cntStorageAmmo" count="1">
+<recipe name="cntStorageAmmo" count="1" craft_area="workbench" craft_tool="handSaw">
 	<ingredient name="nail" count="10"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
 
-<recipe name="cntStorageBuilding" count="1">
+<recipe name="cntStorageBuilding" count="1" craft_area="workbench" craft_tool="handSaw">
 	<ingredient name="nail" count="10"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
 
-<recipe name="cntStorageExplosives" count="1">
+<recipe name="cntStorageExplosives" count="1" craft_area="workbench" craft_tool="handSaw">
 	<ingredient name="nail" count="10"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
 
-<recipe name="cntStorageFood" count="1">
+<recipe name="cntStorageFood" count="1" craft_area="workbench" craft_tool="handSaw">
 	<ingredient name="nail" count="10"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
 
-<recipe name="cntStorageHealth" count="1">
+<recipe name="cntStorageHealth" count="1" craft_area="workbench" craft_tool="handSaw">
 	<ingredient name="nail" count="10"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
 
-<recipe name="cntStorageWeapons" count="1">
+<recipe name="cntStorageWeapons" count="1" craft_area="workbench" craft_tool="handSaw">
 	<ingredient name="nail" count="10"/>
 	<ingredient name="wood" count="20"/>
 </recipe>
