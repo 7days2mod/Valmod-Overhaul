@@ -9710,7 +9710,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="lokiShellDesc"/>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
-			<property name="EntityDamage" value="3.6,9" />
+			<property name="EntityDamage" value="4,10" />
 			<property name="BlockDamage" value="14,17" />
 			<property name="ApplyBuff" value="1,1" param1="AcidSplash" />
 		</property>
