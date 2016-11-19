@@ -3122,8 +3122,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 	
 		<!-- Hidden Door Mod -->
-	<recipe name="Remote" count="1" >
-  <ingredient name="forgedIron" count="5"  />
+<recipe name="Remote" count="1" >
+	<ingredient name="forgedIron" count="5"  />
+	<ingredient name="electricParts" count="5"/>
 </recipe>
 	<recipe name="gearMechanism" count="1" >
 	<ingredient name="mechanicalParts" count="2"/>
