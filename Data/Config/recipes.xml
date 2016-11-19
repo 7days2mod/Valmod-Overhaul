@@ -3096,17 +3096,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="workstationOven" count="1" craft_area="workbench" >
         <ingredient name="forgedIron" count="20" />
         <ingredient name="cookingGrill" count="2" />
+		<ingredient name="ovenKit" count="1" />
     </recipe>
     <recipe name="workingCabinetSink" count="1" craft_area="workbench" craft_tool="handSaw">
         <ingredient name="wood" count="15" />
         <ingredient name="forgedIron" count="10"/>
         <ingredient name="shortMetalPipe" count="5"/>
+        <ingredient name="plumbingKit" count="1" />
     </recipe>
     <recipe name="workingGranitSink" count="1" craft_area="workbench" craft_tool="handSaw"> 
         <ingredient name="wood" count="15" />
         <ingredient name="cobblestones" count="5" />
         <ingredient name="forgedIron" count="10"/>
         <ingredient name="shortMetalPipe" count="5"/>
+		<ingredient name="plumbingKit" count="1" />
     </recipe>
 <recipe name="ovenKit" count="1">
 	<ingredient name="electricParts" count="5"/>
