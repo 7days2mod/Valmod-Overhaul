@@ -879,6 +879,7 @@ group desc for stuff like metal siding
 	<property name="Tag" value="TreeTrunk" />
 	<property name="IsPlant" value="true" />
 	<property name="ParticleOnDeath" value="treeGib_burnt" />
+	<drop event="Harvest" name="feather" count="1,2" prob=".35" />
 </block>
 
 <block id="129" name="treeMasterGrowing">
