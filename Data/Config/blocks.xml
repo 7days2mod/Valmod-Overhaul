@@ -15409,7 +15409,7 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/suitcase" param1="main_mesh" />
 		<property name="Place" value="TowardsPlacer" />
-		<property name="LootList" value="223" />
+		<property name="LootList" value="224" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
 		<property name="LPHardnessScale" value="8" />
