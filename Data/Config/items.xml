@@ -15168,62 +15168,6 @@ which does not exist, yet. -->
 	</property>
 </item>
 
-<!-- Ammo Supply -->
-<item id="2635" name="ammoSupply9mm">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="ammoSupply9mm" />
-	<property name="DescriptionKey" value="ammoSupplyDesc"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="AmmoSupply9mm" />
-	</property>
-</item>
-<item id="2636" name="ammoSupply10mm">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="ammoSupply10mm" />
-	<property name="DescriptionKey" value="ammoSupplyDesc"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="AmmoSupply10mm" />
-	</property>
-</item>
-<item id="2637" name="ammoSupply44Mag">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="ammoSupply44Mag" />
-	<property name="DescriptionKey" value="ammoSupplyDesc"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="AmmoSupply44Mag" />
-	</property>
-</item>
-<item id="2638" name="ammoSupply762mm">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="ammoSupply762mm" />
-	<property name="DescriptionKey" value="ammoSupplyDesc"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="AmmoSupply762mm" />
-	</property>
-</item>
-<item id="2639" name="ammoSupplyShotgun">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="ammoSupplyShotgun" />
-	<property name="DescriptionKey" value="ammoSupplyDesc"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="AmmoSupplyShotgun" />
-	</property>
-</item>
-<item id="2640" name="genericAmmoBox">
-	<property name="DescriptionKey" value="genericAmmoBoxDesc"/>
-	<property name="Meshfile" value="Items/Misc/sackPrefab" />
-	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-	<property name="Material" value="organic" />
-	<property name="HoldType" value="3" />
-	<property name="Stacknumber" value="50" />
-	<property class="Preview">
-		<property name="Zoom" value="28" />
-		<property name="Pos" value="0,-0.05" />
-		<property name="Rot" value="90,45,0" />
-	</property>
-	<property name="Group" value="Resources" />
-	</item>
-
 <!-- Merchant -->
 <item id="2940" name="merchantCatalogExtender">
 	<property name="Extends" value="paper" />
@@ -15435,6 +15379,61 @@ which does not exist, yet. -->
 	</property>
 </item>
 
+<!-- Ammo Supply -->
+<item id="2967" name="ammoSupply9mm">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIcon" value="ammoSupply9mm" />
+	<property name="DescriptionKey" value="ammoSupplyDesc"/>
+	<property class="Action1">
+	<property name="QuestGiven" value="AmmoSupply9mm" />
+	</property>
+</item>
+<item id="2968" name="ammoSupply10mm">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIcon" value="ammoSupply10mm" />
+	<property name="DescriptionKey" value="ammoSupplyDesc"/>
+	<property class="Action1">
+	<property name="QuestGiven" value="AmmoSupply10mm" />
+	</property>
+</item>
+<item id="2969" name="ammoSupply44Mag">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIcon" value="ammoSupply44Mag" />
+	<property name="DescriptionKey" value="ammoSupplyDesc"/>
+	<property class="Action1">
+	<property name="QuestGiven" value="AmmoSupply44Mag" />
+	</property>
+</item>
+<item id="2980" name="ammoSupply762mm">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIcon" value="ammoSupply762mm" />
+	<property name="DescriptionKey" value="ammoSupplyDesc"/>
+	<property class="Action1">
+	<property name="QuestGiven" value="AmmoSupply762mm" />
+	</property>
+</item>
+<item id="2981" name="ammoSupplyShotgun">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIcon" value="ammoSupplyShotgun" />
+	<property name="DescriptionKey" value="ammoSupplyDesc"/>
+	<property class="Action1">
+	<property name="QuestGiven" value="AmmoSupplyShotgun" />
+	</property>
+</item>
+<item id="2982" name="genericAmmoBox">
+	<property name="DescriptionKey" value="genericAmmoBoxDesc"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="Material" value="organic" />
+	<property name="HoldType" value="3" />
+	<property name="Stacknumber" value="50" />
+	<property class="Preview">
+		<property name="Zoom" value="28" />
+		<property name="Pos" value="0,-0.05" />
+		<property name="Rot" value="90,45,0" />
+	</property>
+	<property name="Group" value="Resources" />
+	</item>
 <!-- Classes -->
 
 <item id="3000" name="perkSurvivor">
