@@ -310,6 +310,39 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="rareMedicine"/>
 		</trader_item_group>
 
+		<trader_item_group name="ValmodQuests" count="1">
+	<item name="challengeSticky"/>
+	<item name="challengeBigBadBosses"/>
+	<item name="challengeAnkleBitters"/>
+	<item name="challengeLightThemUp"/>
+	<item name="challengeDogEatDog"/>
+	<item name="challengeFeedTheMole"/>
+	<item name="challengeTakingNote"/>
+	<item name="challengeHotrod"/>
+	<item name="challengeSurvivorJournal"/>
+	<item name="challengeLockpick"/>
+	<item name="challengeKickz"/>
+	<item name="challengeJock"/>
+	<item name="challengeReaper"/>
+	<item name="challengeWalmart"/>
+		</trader_item_group>
+
+		<trader_item_group name="SpecialQuests" count="2">
+			<item name="challengeWedding"/>
+			<item name="challengeWallet"/>
+			<item name="challengeBooks"/>
+			<item name="challengeChildsHappiness"/>
+			<item name="challengeToilet"/>
+			<item name="challengeWalkman"/>
+			<item name="challengeCondoms"/>
+			<item name="challengeBaseball"/>
+			<item name="challengeCards"/>
+			<item name="challengeCigarettes"/>
+			<item name="challengeArtist"/>
+			<item name="challengeSoap"/>
+			<item name="challengeBong"/>
+		</trader_item_group>
+
 		<trader_item_group name="questChallenge" count="1">
 			<item name="qc_silenceofthelambs" count="1"/>
 			<item name="qc_drunkanddisorderly" count="1"/>
@@ -334,6 +367,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="qt_claude" count="1" prob="0.2"/>
 			<item name="qt_sarah" count="1" prob="0.2"/>
 			<item name="qt_raphael" count="1" prob="0.2"/>
+			<item group="ValmodQuests" count="1"/>
+			<item group="SpecialQuests" count="1"/>
 		</trader_item_group>
 
 		<trader_item_group name="commonBooks" count="1">
