@@ -681,8 +681,8 @@
 			<sprite depth="4" name="itemIcon" width="60" height="40" atlas="ItemIconAtlas" sprite="{itemicon}" pos="35,-30" pivot="center" foregroundlayer="true" color="{iconcolor}" />
 			<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true"/>
 			
-			<sprite depth="3" name="durabilityBackground" width="70" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -60" foregroundlayer="true"/>
-			<sprite depth="4" name="durability" width="70" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -60" foregroundlayer="true"/>
+			<sprite depth="3" name="durabilityBackground" width="60" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="1, -50" foregroundlayer="true"/>
+			<sprite depth="4" name="durability" width="60" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="1, -50" foregroundlayer="true"/>
 			
 			<sprite depth="5" name="disabledOverlay" width="72" height="72" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
 			
