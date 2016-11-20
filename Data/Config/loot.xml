@@ -3139,7 +3139,7 @@
 		</lootgroup>
 	<lootgroup name="WildcardClass" count="all">
 	    <item group="SurvivalGear"/>
-		<item name="genericAmmoBox" count="30" />
+		<item name="genericAmmoBox" count="3" />
 		<item name="casinoCoin" count="150"/>
 		<item group="legendarymelee" />
 		<item name="perkWildcard" />
