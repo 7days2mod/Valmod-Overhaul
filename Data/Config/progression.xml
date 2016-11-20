@@ -1737,6 +1737,17 @@
 		<recipe name="Remote" unlock_level="20"/>
 	</perk>
 
+	<perk name="Skinning Knife" icon="knife" description_key="Learn how to craft a skinning knife. These knives are useful for getting extra hides from skinning animals." title_key="Skinning Knife" max_level="1" skill_point_cost_per_level="10" group="weapons">
+		<requirement perk_level="1" required_skill_name="Leatherworking" required_skill_level="80"/>
+		<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="80"/>
+		<recipe name="skinningKnife" unlock_level="1"/>
+	</perk>
+	
+	<perk name="Butcher Knife" icon="knife" description_key="Learn how to craft a butcher knife. These knives are useful for getting extra meat from animals." title_key="Butcher Knife" max_level="1" skill_point_cost_per_level="10" group="weapons">
+		<requirement perk_level="1" required_skill_name="Cooking" required_skill_level="80"/>
+		<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="80"/>
+		<recipe name="butcherKnife" unlock_level="1"/>
+	</perk>
 
 </skills>
 
