@@ -6,7 +6,7 @@
 		<!-- EDIT THE TEXTURE PART TO REMOVE THE SMX "LOGO" OR INSERT YOUR OWN LOGO IF YOU WISH. TO AVOID ISSUES, STICK TO THE SIZE. -->
 		<!-- EDIT THE TEXT PART OF THE LABEL SECTION TO SET A CUSTOM MESSAGE FOR YOUR DEDICATED SERVER - STANDARD COLOR IS GREEN, THIS CAN BE CHANGED IN THE COLOR PART. DON'T OVER-DO IT! -->
 
-		<texture name="Valmod" depth="0" size="53,35" texture="@http://i.imgur.com/pl91cRj.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Local Asset Equivalent: smxserverlogo.png -->
+		<texture name="Valmod" depth="0" size="53,35" texture="@file:Mods\SMX\Textures\Misc\valmodhat.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Local Asset Equivalent: smxserverlogo.png -->
 		<label name="SMX" depth="0" size="53,35" text="SMX UI" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
 		<!-- Valmod Version -->
 		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.16" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
@@ -17,15 +17,15 @@
 
 		<grid name="SMXHSFrame" pos="0,145" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i.imgur.com/1yE0DM5.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
+				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@file:Mods\SMX\Textures\UnitFrames\staminabarempty.png" material="Materials/Transparent Colored" pos="0,-75" /> <!-- Local Asset Equivalent: staminabarempty.png -->
 				<sprite name="BarContent" depth="2" height="15" width="220" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-86" />
-		<!-- Uncomment this if oyu want percentages to show
+		<!-- Uncomment this if you want percentages to show
 				<label depth="6" name="TextContent" pos="0,-83" font_size="20" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 				-->
 			</rect>
 
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@http://i.imgur.com/7IjrVvg.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
+				<texture name="SMXHealthBarBG" depth="1" size="240,60" texture="@file:Mods\SMX\Textures\UnitFrames\healthbarempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: healthbarempty.png -->
 				<sprite name="BarContent" depth="2" size="220,30" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-67" />
 				<label depth="6" name="TextContent" pos="0,-66" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
@@ -33,22 +33,21 @@
 
 		<grid name="SMXFWFrame" pos="-2,70" rows="1" cols="2" width="118" cell_width="118" cell_height="35" repeat_content="false" side="left">
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@http://i.imgur.com/bFzF5wF.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
+				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
 				<sprite name="BarContent" depth="2" size="102,-10" color="64,214,109,200" type="filled" fill="0" pos="10,-75" />
-		<!-- Uncomment this if you want percentages to show		
+		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" />
-		-->
+		
 			</rect>
 
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@http://i.imgur.com/bFzF5wF.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
+				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@file:Mods\SMX\Textures\UnitFrames\foodwaterempty.png" material="Materials/Transparent Colored" pos="0,-55" /> <!-- Local Asset Equivalent: foodwaterempty.png -->
 				<sprite name="BarContent" depth="2" size="102,-10" color="64,177,214,200" type="filled" fill="0" pos="10,-75" />
-		<!-- Uncomment this if you want percentages to show		
+		
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" />
-			-->
+			
 			</rect>
 		</grid>
-
 	</window>
 	
 	<window name="SMXLevelXPUF1" style="SMXLevelXP.window">
@@ -61,7 +60,7 @@
 		</rect>
 
 	</window>
-	
+
 	<window name="ZombieKillTracker" width="400" height="200" pos="135,92" controller="PlayerStatsWindow" anchor="LeftBottom">
 	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="112, -17" sprite="ui_game_symbol_knife" color="0, 0, 0, 125"/>
 	<sprite depth="3" name="icon" size="45,45" style="icon32px" pos="110, -15" sprite="ui_game_symbol_skull" color="[black]"/>
@@ -74,7 +73,7 @@
 	<window name="SMXToolbelt1" width="760" height="226" depth="0" pos="0,85" anchor="CenterBottom" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
 
 		<rect>
-			<texture name="SMXToolbeltBG" depth="0" size="760,120" pos="-380,30" texture="@http://i63.tinypic.com/29p6g6b.jpg" material="Materials/Transparent" /> <!-- Local Asset Equivalent: toolbeltbg.png -->
+			<texture name="SMXToolbeltBG" depth="0" size="760,120" pos="-380,30" texture="@file:Mods\SMX\Textures\Misc\hudotherbg.png" material="Materials/Transparent" /> <!-- Local Asset Equivalent: toolbeltbg.png -->
 
 			<grid name="SMXToolbelt" depth="1" rows="1" cols="8" pos="-340,20" cell_width="85" cell_height="85" controller="Toolbelt" repeat_content="true">
 				<SMX_tb_item_stack_uf1 name="0"/>
@@ -95,7 +94,7 @@
 
 	<window name="SMXHudOther">
 
-				<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@http://i.imgur.com/HzB8tJ3.png" material="Materials/Transparent" justify="right" rotation="90"/> <!-- Local Asset Equivalent: hudotherbg.png -->
+				<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@file:Mods\SMX\Textures\Misc\hudotherbg.png" material="Materials/Transparent" justify="right" rotation="90"/> <!-- Local Asset Equivalent: hudotherbg.png -->
 
 		<rect name="SMXCollector" pos="-90,31" side="right" controller="CollectedItemList" pivot="BottomLeft">
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
@@ -138,7 +137,7 @@
 
 	<window name="SMXQuestTracker" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
 
-		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@http://i.imgur.com/DmqKEqC.png" material="Materials/Transparent" /> <!-- Local Asset Equivalent: questsbg.png -->
+		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@file:Mods\SMX\Textures\QuestTracker\questsbg.png" material="Materials/Transparent" /> <!-- Local Asset Equivalent: questsbg.png -->
 
 		<label depth="1" text="{questtitle}" font_size="26" effect="outline" justify="center" upper_case="true" pos="-100, -5" height="28" />
 		<sprite pos="-100,-8" depth="1" name="windowIcon" style="icon22px" sprite="{questicon}" justify="left" />
@@ -813,7 +812,7 @@
 				</grid>
 			<!-- VALMOD remove if offline-->
 			<sprite depth="1" name="background" pos="0,0" color="[black]" type="sliced">
-				<texture depth="500" name="InventoryBackground" width="597" height="297" pos="3,-3" texture="@http://i.imgur.com/kpry8zm.png" material="Materials/Transparent Colored"/>
+				<texture depth="500" name="InventoryBackground" width="597" height="297" pos="3,-3" texture="@file:Mods\SMX\Textures\Misc\inventorybg.png" material="Materials/Transparent Colored"/>
 			</sprite>
 			<!-- Valmod Remove if Offline-->
 		</panel>
@@ -1008,7 +1007,7 @@
 				<item_stack name="0"/>
 			</grid>
 						<sprite depth="1" pos="0,0">
-				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-125,45" texture="@http://i.imgur.com/L4BtVIj.png" material="Materials/Transparent Colored"/>
+				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-125,45" texture="@file:Mods\SMX\Textures\Toolbelt\valtoolbelt.png" material="Materials/Transparent Colored"/>
 			</sprite>
 		</rect>
 	</window>

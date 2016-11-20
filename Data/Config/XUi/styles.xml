@@ -32,7 +32,7 @@
 
 	<style name="SMXcompass.window.background" type="texture">
 		<style_entry name="depth" value="0" />
-		<style_entry name="texture" value="@http://i64.tinypic.com/jhrct2.jpg" /> <!-- Local Asset Equivalent: compassbg.png -->
+		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compassbg.png" /> <!-- Online Equivalent: http://i64.tinypic.com/jhrct2.jpg -->
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="492,140" />
 		<style_entry name="pos" value="-60,10" />
@@ -40,7 +40,7 @@
 
 	<style name="SMXcompass.window.indicator" type="texture">
 		<style_entry name="depth" value="9" />
-		<style_entry name="texture" value="@http://i.imgur.com/9FNNkZP.png" /> <!-- Local Asset Equivalent: compassindicate.png -->
+		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator.png" /> <!-- Online Equivalent: http://i65.tinypic.com/11jx6ap.jpg -->
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="32,48" />
 		<style_entry name="pos" value="184,10" />
@@ -625,5 +625,22 @@
 		<style_entry name="invalid_sprite" value="ui_game_symbol_x"/>
 		<style_entry name="width" value="603"/>
 		<style_entry name="height" value="400"/>
+	</style>
+
+	<!--Valmod Larger Backpack -->
+	<style name="itemStackInventory">
+		<style_entry name="select_color" value="[red]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="64,64,64,0"/>
+		<style_entry name="highlight_color" value="[red]"/>
+		<style_entry name="holding_color" value="[red]"/>
+		<style_entry name="width" value="62"/>
+		<style_entry name="height" value="62"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
 	</style>
 </styles>

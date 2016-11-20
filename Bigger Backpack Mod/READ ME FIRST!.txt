@@ -1,0 +1,7 @@
+WARNING! Using this breaks EAC (Easy Anti Cheat)! That means if you use this you will not be able to launch the game with Anti Cheat nor will you be able to play on servers with EAC enabled. You can launch the 7DaysToDie.exe in the directory to play the game without EAC.
+
+How to Install Bigger Backpack:
+1. Install Valmod first.
+2. Then Install Bigger Backpack, same as Valmod. You have to install this ontop of Valmod.
+3. Be sure to launch the game without EAC.
+4. Done.
