@@ -15509,6 +15509,13 @@ which does not exist, yet. -->
 	<property name="QuestGiven" value="perkBuilder" />
 	</property>
 </item>
-
+<item id="3009" name="perkWildcard">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property name="CustomIcon" value="expGain" />
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property class="Action1">
+	<property name="QuestGiven" value="perkWildcard" />
+	</property>
+</item>
 
 </items>

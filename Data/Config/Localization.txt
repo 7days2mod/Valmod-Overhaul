@@ -5149,6 +5149,8 @@ classSurvivorDesc2,blocks,Block Building,,"The survivor starts off with an iron 
 classMedicDesc,blocks,Block Building,,"The medic starts off with extra medical supplies and a pistol. Skilled in medicine and science.",,
 classMedicDesc2,blocks,Block Building,,"The medic starts off with extra medical supplies and a pistol. Skilled in medicine, science and first aid.",,
 
+classWildcardDesc,blocks,Block Building,,"The wildcard class starts with only skill points and no specifically tailored gear. You can then build this class to match your preferences.",,
+
 clubBurning,items,Item Melee,,Burning Club,,
 clubBurningDesc,items,Item Melee,,A wooden club set on fire at a campfire. Won't last long but useful for a primitive weapon.,,
 
@@ -5274,6 +5276,7 @@ perkBruiser,items,Item,,Bruiser Perks,,
 perkRifleman,items,Item,,Rifleman Perks,,
 perkVeteran,items,Item,,Veteran Perks,,
 perkBuilder,items,Item,,Builder Perks,,
+perkWildcard,items,Item,,Wildcard Perks,,
 
 lokiShell,items,Item Gun,,Chemical Shell,,
 lokiShellDesc,items,Item Gun,,These shells have been filled with a chemical agent that melts through flesh on contact.,,

@@ -3082,6 +3082,13 @@
 		<item name="challengeClassMedic" count="1"/>
 		<item name="perkMedic" count="1"/>
 		</lootgroup>
+	<lootgroup name="WildcardClass" count="all">
+	    <item group="SurvivalGear"/>
+		<item name="genericAmmoBox" count="30" />
+		<item name="casinoCoin" count="150"/>
+		<item group="legendarymelee" />
+		<item name="perkWildcard" />
+		</lootgroup>
 
 			<!-- Hunter Class -->	
 	<lootcontainer id="251" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="classTemplate">
@@ -3118,6 +3125,10 @@
 		    <!-- Medic Class -->
 	<lootcontainer id="223" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="classTemplate">
 	    <item group="MedicClass"/>
+		</lootcontainer>
+		    <!-- Wildcard Class -->
+	<lootcontainer id="224" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="classTemplate">
+	    <item group="WildcardClass"/>
 		</lootcontainer>
 
 </lootcontainers>

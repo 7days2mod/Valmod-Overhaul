@@ -15382,7 +15382,38 @@ kind of free
 		<drop event="Destroy" count="0" />
 		<drop event="Harvest" name="Lightbulb" tool_category="Pluck" count="0" />
 	</block>
-
+	<block id="2017" name="Class - Wildcard (Locked)">
+		<property name="DescriptionKey" value="classWildcardDesc"/>
+		<property name="CustomIcon" value="Class - Wildcard" />
+		<property name="Group" value="Class System" />
+		<property name="Material" value="wood+wood" />
+		<property name="Shape" value="Ext3dModel" />
+		<property name="Mesh" value="models" />
+		<property name="Model" value="LootContainers/suitcase" param1="main_mesh" />
+		<property name="Place" value="TowardsPlacer" />
+		<drop event="Destroy" count="0" prob="1" />
+		<property name="CanPickup" value="true" />
+		<property name="DowngradeBlock" value="Class - Wildcard" />
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="Class - Wildcard" />
+			<property name="Item" value="classKey" />
+			<property name="ItemCount" value="1" />
+			<property name="UpgradeHitCount" value="1" />
+		</property>
+	</block>
+	<block id="2018" name="Class - Wildcard">
+		<property name="Class" value="Loot" />
+		<property name="Group" value="Survival" />
+		<property name="Material" value="wood+wood" />
+		<property name="Shape" value="Ext3dModel" />
+		<property name="Mesh" value="models" />
+		<property name="Model" value="LootContainers/suitcase" param1="main_mesh" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="LootList" value="223" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="woodDebris" count="1" prob="1.0"  stick_chance=".75" />
+		<property name="LPHardnessScale" value="8" />
+	</block>
 	<!-- Farming Mod -->
 	<block id="2019" name="seedApple">
 		<property name="Class" value="UpgradeRated" />

@@ -1314,5 +1314,9 @@ repeatable="false" category_key="challenge" offer="Miners are skilled with worki
 	<reward type="Skill" id="Blacksmith" value="15" />
 	<reward type="Skill" id="Mining Tools" value="20" />
 </quest>
+<quest id="perkWildcard" name="Wildcard Skills" subtitle="Wildcard Skills" description="This teaches you the skills of the class." icon="misc_crafting" 
+repeatable="false" category_key="challenge" offer="The Wildcard class can be custom tailored to match your preferences." difficulty="easy">
+	<reward type="SkillPoints" value="50" />
+</quest>
 
 </quests>
