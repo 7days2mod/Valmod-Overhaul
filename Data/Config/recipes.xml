@@ -4605,10 +4605,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="houseFrontDoor1_v1" count="1" craft_area="workstationDecor">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
+	<ingredient name="scrapBrass" count="20" />
 </recipe>
 <recipe name="houseFrontDoor2_v1" count="1" craft_area="workstationDecor">
-	<ingredient name="wood" count="10"/>
+	<ingredient name="wood" count="20"/>
+	<ingredient name="scrapBrass" count="20" />
 </recipe>
 <recipe name="woodCross" count="1" craft_area="workstationDecor" craft_tool="handSaw">
 	<ingredient name="wood" count="10"/>
