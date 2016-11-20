@@ -4478,6 +4478,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="wood" count="20"/>
         <ingredient name="scrapIron" count="20"/>
     </recipe>
+    <recipe name="workstationQuest" count="1" craft_area="workbench" craft_time="3200">
+        <ingredient name="wood" count="50"/>
+    </recipe>
     <recipe name="workstationArmory" count="1" >
         <ingredient name="wood" count="50"/>
         <ingredient name="scrapIron" count="10"/>

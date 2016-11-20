@@ -5313,6 +5313,9 @@ lokiMeatDesc,items,Item Food,,"It's certainly better than dog food, regardless o
 workstationMerchant,blocks,Block Building,,Merchant Delivery Box,,
 workstationMerchantDesc,blocks,Block Building,,This workstation can be used to exchange casino coins for various goods.,,
 
+workstationQuest,blocks,Block Building,,Quest Board,,
+workstationQuestDesc,blocks,Block Building,,This quest board can be used to purchase various quests.,,
+
 soapDesc,items,Item,,"Depending on where you found this you might want to use it quickly to wash your hands.",,
 
 cabinetFiller2Block,blocks,Block,,Red Block,,

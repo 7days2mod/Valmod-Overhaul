@@ -14473,6 +14473,15 @@ kind of free
 		<property name="TraderID" value="20" />
 	</block>
 
+	<block id="1945" name="workstationQuest">
+		<property name="Extends" value="chaulkboardPlate" />
+		<property name="MaxDamage" value="50" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Stacknumber" value="1" />
+		<property name="Class" value="VendingMachine" />
+		<property name="TraderID" value="21" />
+	</block>
+
 	<block id="1946" name="workstationArmory">
 		<property name="MaxDamage" value="50" />
 		<property name="StabilitySupport" value="false" />

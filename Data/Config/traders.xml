@@ -1404,6 +1404,13 @@ workstations
 		</trader_items>
 	</trader_info>
 
+	<!-- Quest Board -->
+	<trader_info id="21" reset_interval="2" override_buy_markup="1.0" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
+		<trader_items count="10">
+			<item group="questChallenge" count="1"/>
+		</trader_items>
+	</trader_info>
+
 	<!-- Trader 99/Test, carries a selection of everything -->
 	<trader_info id="99" min_inventory="50" max_inventory="600" min_items_swapped="13" max_items_swapped="13"
 		reset_interval="3" open_time="6:05" close_time="21:50">
