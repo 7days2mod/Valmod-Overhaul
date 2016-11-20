@@ -1290,11 +1290,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="gearMechanism" count="2" />
 </recipe>
 
-<recipe name="gasCan" count="20" craft_area="chemistryStation">
-	<ingredient name="oilShale" count="15"/>
+<recipe name="gasCan" count="100" craft_area="chemistryStation">
+	<ingredient name="oilShale" count="12"/>
 </recipe>
 
-<recipe name="gasCan" count="10" craft_area="chemistryStation" craft_tool="beaker">
+<recipe name="gasCan" count="100" craft_area="chemistryStation" craft_tool="beaker">
 	<ingredient name="bioFuel" count="3"/>
 	<ingredient name="grainAlcohol" count="1"/>
 </recipe>
