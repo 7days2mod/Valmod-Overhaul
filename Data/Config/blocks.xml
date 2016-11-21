@@ -2818,6 +2818,7 @@ group desc for stuff like metal siding
 	<property name="LootList" value="2" />
 	<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 	<property name="EconomicValue" value="40" />
+	<property name="MaxDamage" value="100" />
 </block>
 
 <block id="337" name="cntNightstand">
