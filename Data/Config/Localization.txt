@@ -4915,6 +4915,8 @@ oilRefiner,blocks,Block Building,,Oil Refiner,,
 oilRefinerDesc,blocks,Block Building,,This workstation is used for refining raw oil into weapon oil or gasoline.,,
 workstationDecor,blocks,Block Building,,Decorative Artisan Station,,
 workstationDecorDesc,blocks,Block Building,,This workstation is used for crafting decorative blocks such as couches or tables.,,
+workstationCombine,blocks,Block Building,,Combine Station,,
+workstationCombineDesc,blocks,Block Building,,This workstation is only used to combine items and serves no other function.,,
 
 cntEPSMunitionsBox,blocks,Loot Container,,Munitions Box,,
 cntEPSLockers,blocks,Loot Container,,Lockers,,

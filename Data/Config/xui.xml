@@ -247,5 +247,12 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
+		<window_group name="workstation_workstationCombine" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
+		</window_group>	
+
 	</ruleset>
 </xui>

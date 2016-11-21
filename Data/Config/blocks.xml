@@ -14436,7 +14436,18 @@ kind of free
 		<property name="LiquidStatic" value="asphalt" />
 	</block>
 	<!-- Workstation Mod -->
-	<!-- 1940-1941 Reserved -->
+	<!-- 1940 Reserved -->
+	<block id="1941" name="workstationCombine">
+		<property name="Extends" value="woodTable" />
+		<property name="Texture" value="74" />
+		<property name="MaxDamage" value="50" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Class" value="Workstation" />
+		<property class="Workstation">
+			<property name="Modules" value="output"/>
+		</property>
+		<property name="Group" value="Building" />
+	</block>
 	<block id="1942" name="cntEPSDrawer">
 		<property name="Extends" value="morticianDrawer" />
 		<property name="CustomIcon" value="morticianDrawer" />
