@@ -400,10 +400,10 @@
 			<requirement type="Holding" id="gunBoltRifle" />
 			<requirement type="Holding" id="gunHuntingRifle" />
 		</requirement>
-		<objective type="AnimalKill" value="25"  />
+		<objective type="AnimalKill" value="20"  />
 		<reward type="Skill" id="Leatherworking" value="2" />
 		<reward type="Skill" id="Blade Weapons" value="2" />
-		<reward type="Item" id="762mmBullet" value="35" />
+		<reward type="Item" id="762mmBullet" value="30" />
 		<reward type="Quest" id="challenge_hunter3" />
 	</quest>
 	
@@ -413,10 +413,10 @@
 			<requirement type="Holding" id="gunBoltRifle" />
 			<requirement type="Holding" id="gunHuntingRifle" />
 		</requirement>
-		<objective type="AnimalKill" value="50"  />
+		<objective type="AnimalKill" value="40"  />
 		<reward type="Skill" id="Leatherworking" value="2" />
 		<reward type="Skill" id="Blade Weapons" value="2" />
-		<reward type="Item" id="762mmBullet" value="60" />
+		<reward type="Item" id="762mmBullet" value="50" />
 		<reward type="Quest" id="challenge_animaltrap" />
 	</quest>
 	
