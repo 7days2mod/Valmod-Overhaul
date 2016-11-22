@@ -3548,9 +3548,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="100"/>
 </recipe> 
 <recipe name="scrapIronAxe" count="1">
-	<ingredient name="ironFragment" count="10"/>
+	<ingredient name="scrapIron" count="10"/>
 	<ingredient name="yuccaFibers" count="2"/>
-	<ingredient name="wood" count="2"/>
+	<ingredient name="wood" count="5"/>
 </recipe>
 <recipe name="scrapIronPickaxe" count="1">
 	<ingredient name="scrapIron" count="15"/>

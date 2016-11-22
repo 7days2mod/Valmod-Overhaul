@@ -3376,6 +3376,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="313" />
 	<property name="Group" value="Building" />
 	<property name="EconomicValue" value="18" />
+	<property name="IsTerrainDecoration" value="true" />
 </block>
 
 <block id="390" name="brickCNRRamp">
@@ -7044,6 +7045,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1,3" />
 	<property name="EconomicValue" value="6" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="IsTerrainDecoration" value="true" />
 </block>
 
 <block id="789" name="stainlessSteelPyramid">
