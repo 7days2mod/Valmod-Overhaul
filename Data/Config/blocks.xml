@@ -11551,6 +11551,7 @@ kind of free
 <block id="1411" name="window03WoodBroke3">
 	<property name="Extends" value="window03WoodBroke2" />
 	<property name="Model" value="Buildings/window03_wood_broke3" param1="main_mesh" />
+	<property name="BuffsWhenWalkedOn" value="bleedingSmall"/>
 </block>
 
 <block id="1412" name="window03WoodBroke4">

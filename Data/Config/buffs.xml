@@ -610,6 +610,10 @@ snowberryPlant feeds you for 90 sec. -->
 	<modify id="0" stat="water" amount="20" rate="1"/>
 	<modify id="1" stat="health" amount="20" rate="1"/>
 </buff>
+<buff id="bleedingSmall" mutex="Resistance" duration="10" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+	<modify id="0" stat="stamina" amount="-1" rate="1"/>
+	<modify id="1" stat="health" amount="-1" rate="1"/>
+</buff>
 <!--
 This requires a 50+ food bar:
 <buff id="eatFood_1_Trigger" mutex="notFullBlockerBuff" duration="1" debuffif="food > 0.5" actions="increment(CTRfood, 1, 0, 0, 1)"/>
