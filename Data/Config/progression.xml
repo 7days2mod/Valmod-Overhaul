@@ -175,7 +175,7 @@
 		<recipe name="clubBarbed" unlock_level="30"/>
 		<recipe name="clubSpiked" unlock_level="40"/>
 	</action_skill>
-	<action_skill name="Blade Weapons" exp_to_level="150" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons">
+	<action_skill name="Blade Weapons" exp_to_level="150" icon="knife" description_key="Do more damage with bladed weapons and harvest faster if applicable. Gain skill by using items from this group. Level 20 unlocks hunting knife. 30 unlocks machete. 50 unlocks scythe. 80 unlocks Combat Axe." title_key="bladeWeapons" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
 			<multiply skill_level="5,11" value="1.04,1.07" />
@@ -225,7 +225,7 @@
 			<add skill_level="3" value="0.3"/>
 		</effect>
 	</perk>
-	<action_skill name="Mining Tools" exp_to_level="500" icon="mining" description_key="Do more damage within mining tools and harvest resources faster. Level 20 unlocks iron pickaxe. Level 40 unlocks steel pickaxe." title_key="miningTools" group="tools">
+	<action_skill name="Mining Tools" exp_to_level="500" icon="mining" description_key="Do more damage within mining tools and harvest resources faster. Level 10 unlocks shovel, hoe and weed cleaver. Level 20 unlocks iron pickaxe. Level 40 unlocks steel pickaxe." title_key="miningTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
 			<multiply skill_level="10,20" value="1.32,1.45"/>
