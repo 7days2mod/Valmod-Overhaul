@@ -9350,8 +9350,8 @@ which does not exist, yet. -->
 		</property>
 	</item>
 	<item id="1618" name="combatAxe">
-		<property name="CustomIcon" value="combatAxe" />
 		<property name="Extends" value="fireaxeSteel" />
+		<property name="CustomIcon" value="combatAxe" />
 		<property name="DescriptionKey" value="combatAxeDesc"/>
 		<property name="FuelValue" value="16" />
 		<property class="Action0">
@@ -9375,11 +9375,12 @@ which does not exist, yet. -->
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="15,35" />
-			<property name="BlockDamage" value="6,35" />
+			<property name="BlockDamage" value="20,35" />
 			<property name="DegradationMax" value="400,1200" />
 			<property name="DegradationRate" value="1,1" />
+			<property name="DismembermentBaseChance" value="0.3,0.4"/>
 		</property>
-		<property name="ActionSkillGroup" value="Blade Weapons"/>
+		<property name="ActionSkillGroup" value="Axes"/>
 		<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 	</item>
 	<item id="1619" name="Tranquilizer">
