@@ -12301,17 +12301,46 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="5" />
 </item>
 <item id="1994" name="scrapIronAxe">
-	<property name="Extends" value="stoneAxe" />
-	<property name="RepairTools" value="scrapIron" />
-	<property name="EconomicValue" value="5" />
+	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
 	<property name="Material" value="metal" />
+	<property name="RepairTools" value="whetstone" />
+	<property name="HoldType" value="32" />
+	<property name="EconomicValue" value="5" />
+	<property name="EconomicBundleSize" value="1" />
+	<property name="SellableToTrader" value="false" />
+ 	<property name="DegradationBreaksAfter" value="false" />
+	<property name="SoundJammed" value="ItemNeedsRepair" />
+	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="FuelValue" value="12" />
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="0.8" />
+		<property name="Range" value="2.1" />
+		<property name="Block_range" value="3" />
+		<property name="Sphere" value="0.1" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="3" />
+		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.glass" value="25" />
+		<property name="DamageBonus.wood" value="1" />
+		<property name="DamageBonus.metal" value="0.5" />
+		<property name="DamageBonus.earth" value="0.25" />
+		<property name="DamageBonus.organic" value="1" />
+		<property name="ActionExp" value="2" />
+		<property name="ToolCategory.Butcher" value="0.5" />
+	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,14" />
 		<property name="BlockDamage" value="20,35" />
 		<property name="DegradationMax" value="100,600" />
 		<property name="DegradationRate" value="2,2" />
+		<property name="DismembermentBaseChance" value="0,0"/>
+		<property name="DismembermentBonus" value="0,0"/>
 	</property>
+	<property name="Group" value="Tools/Traps,Basics" />
 	<property name="ActionSkillGroup" value="Axes"/>
+	<property name="CraftingSkillGroup" value="Tool Smithing"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 <item id="1995" name="scrapIronPickaxe">
 	<property name="Extends" value="pickaxeIron" />
