@@ -4760,77 +4760,77 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="whiteMetalPillar100" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="whiteMetalBlock" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="whiteMetalRamp" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="whiteMetalCNRRound" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 
 <recipe name="greenMetalRoofCNRInside" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="greenMetalRamp" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="greenMetalBlock" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="greenMetalCNRFull" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="greenMetalWedge" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="greenMetalWedgeTip" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="greenMetalGable" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="greenMetalPlate" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 
 <recipe name="blueMetalRamp1" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="blueMetalBlock" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="blueMetalPlate" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="blueMetalCNRRound" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 
 <recipe name="redMetalPillar100" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="redMetalRamp" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="redMetalBlock" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="redMetalCNRRound" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 
 <recipe name="orangeMetalRamp" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="orangeMetalBlock" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 <recipe name="orangeMetalPlate" count="1" craft_area="workstationDecor" craft_tool="weldingTorch">
-	<ingredient name="scrapIron" count="10"/>
+	<ingredient name="scrapIron" count="15"/>
 </recipe>
 
 
