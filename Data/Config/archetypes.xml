@@ -8350,5 +8350,123 @@
 			<gene name="breastSize" value="0.5"/>
 		</dna>
 	</archetype>
+	<archetype name="ZombieRegen" male="true" hair_color="25,228,44" eye_color="184,169,166" skin_color="42,92,67" type="Player" >
+		<base_mesh_parts>
+			<part slot="head" layer="base" mesh="male_base_face">
+				<texture name="male_head_zombie" color="skin"/>
+				<texture name="male_head_wound" color="25,228,44"/>	<texture name="female_legs_wound" color="25,228,44,255"/>
+				<texture name="unisex_face_dirt_overlay" color="25,228,44"/>
+			</part>
+			<part slot="eyes" layer="base" mesh="male_base_eyes">
+				<texture name="unisex_eye_bloodshot" color="25,228,44,255"/>
+			</part>
+			<part slot="hands" layer="base" mesh="male_base_hands">
+				<texture name="male_hands" color="skin"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+			</part>
+			<part slot="chest" layer="base" mesh="male_base_chest">
+				<texture name="male_torso" color="skin"/>
+				<texture name="unisex_face_dirt_overlay" color="25,228,44,255"/>
+				<texture name="female_legs_wound" color="25,228,44,255"/>
+				<texture name="male_head_wound" color="25,228,44"/>
+			</part>
+			<part slot="legs" layer="base" mesh="male_base_legs">
+				<texture name="male_pants_01" color="skin"/>
+				<texture name="male_shorts" color="0,0,0,255"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+				<texture name="female_legs_wound" color="25,228,44,255"/>
+			</part>
+			<part slot="legs" layer="outer" mesh="male_base_legs">
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+				<texture name="female_legs_wound" color="25,228,44,255"/>
+			</part>
+			<part slot="legs" layer="inner" mesh="male_base_legs">
+				<texture name="male_shorts" color="83,63,51,250"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+				<texture name="male_head_wound" color="25,228,44,255"/>
+			</part>
+			<part slot="feet" layer="base" mesh="male_base_feet">
+				<texture name="unisex_armor_kevlar_boots" color="skin"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+			</part>
+		</base_mesh_parts>
+		<preview_mesh_parts>
+		</preview_mesh_parts>
+		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
+			<gene name="neckUp_Down" value="0"/>
+			<gene name="neckLeft_Right" value="0"/>
+			<gene name="neckTiltLeft_Right" value="0"/>
+			<gene name="headUp_Down" value="0"/>
+			<gene name="headLeft_Right" value="0"/>
+			<gene name="headTiltLeft_Right" value="0"/>
+			<gene name="jawOpen_Close" value="0"/>
+			<gene name="jawForward_Back" value="0"/>
+			<gene name="jawLeft_Right" value="0"/>
+			<gene name="mouthLeft_Right" value="0"/>
+			<gene name="mouthUp_Down" value="0"/>
+			<gene name="mouthNarrow_Pucker" value="0"/>
+			<gene name="tongueOut" value="0"/>
+			<gene name="tongueCurl" value="0"/>
+			<gene name="tongueUp_Down" value="0"/>
+			<gene name="tongueLeft_Right" value="0"/>
+			<gene name="tongueWide_Narrow" value="0"/>
+			<gene name="leftMouthSmile_Frown" value="-0.53"/>
+			<gene name="rightMouthSmile_Frown" value="-0.53"/>
+			<gene name="leftLowerLipUp_Down" value="0"/>
+			<gene name="rightLowerLipUp_Down" value="0"/>
+			<gene name="leftUpperLipUp_Down" value="0"/>
+			<gene name="rightUpperLipUp_Down" value="0"/>
+			<gene name="leftCheekPuff_Squint" value="0"/>
+			<gene name="rightCheekPuff_Squint" value="0"/>
+			<gene name="noseSneer" value="0"/>
+			<gene name="leftEyeOpen_Close" value="0"/>
+			<gene name="rightEyeOpen_Close" value="0"/>
+			<gene name="leftEyeUp_Down" value="0"/>
+			<gene name="rightEyeUp_Down" value="0"/>
+			<gene name="leftEyeIn_Out" value="0"/>
+			<gene name="rightEyeIn_Out" value="0"/>
+			<gene name="browsIn" value="0"/>
+			<gene name="leftBrowUp_Down" value="0.23"/>
+			<gene name="rightBrowUp_Down" value="0.23"/>
+			<gene name="midBrowUp_Down" value="-0.43"/>
+		</expression>
+		<dna>
+			<gene name="height" value="1.6"/>
+			<gene name="headSize" value="0.785"/>
+			<gene name="headWidth" value="0.73"/>
+			<gene name="handsSize" value="0.5"/>
+			<gene name="feetSize" value="0.635"/>
+			<gene name="muscle" value="0.35"/>
+			<gene name="weight" value="0.50"/>
+			<gene name="gluteusSize" value="0.25"/>
+			<gene name="earsSize" value="0.61"/>
+			<gene name="earsPosition" value="0.285"/>
+			<gene name="earsRotation" value="0.57"/>
+			<gene name="noseSize" value="0.855"/>
+			<gene name="noseCurve" value="1"/>
+			<gene name="noseWidth" value="0.85"/>
+			<gene name="noseInclination" value="0.005"/>
+			<gene name="nosePosition" value="0.99"/>
+			<gene name="nosePronounced" value="0.53"/>
+			<gene name="noseFlatten" value="0.5"/>
+			<gene name="chinSize" value="0.5"/>
+			<gene name="chinPronounced" value="0.5"/>
+			<gene name="chinPosition" value="0.5"/>
+			<gene name="mandibleSize" value="0.95"/>
+			<gene name="jawsSize" value="0.795"/>
+			<gene name="jawsPosition" value="0.5"/>
+			<gene name="cheekSize" value="0.355"/>
+			<gene name="cheekPosition" value="0.5"/>
+			<gene name="lowCheekPronounced" value="0.5"/>
+			<gene name="lowCheekPosition" value="0.44"/>
+			<gene name="foreheadSize" value="0.5"/>
+			<gene name="foreheadPosition" value="0.455"/>
+			<gene name="lipsSize" value="0.5"/>
+			<gene name="mouthSize" value="1"/>
+			<gene name="eyeRotation" value="0.505"/>
+			<gene name="eyeSize" value="0.995"/>
+			<gene name="breastSize" value="0.5"/>
+		</dna>
+	</archetype>
 	
 </archetypes>

@@ -86,12 +86,10 @@
 		<entity name="zombiedog" prob="0.05" />
 		<entity name="Burnt Crawler" />
 		<entity name="Burnt Spider" />
-		<entity name="ZombieCharred" />
     </entitygroup>
 	
     <entitygroup name="ZombiesUnique">
 		<entity name="Scorched Rusher" />
-		<entity name="ZombieCharred" />
 		<entity name="Burnt Spider" />
 		<entity name="Feral Ravager" />
 		<entity name="ZombieRavager" />
@@ -283,11 +281,10 @@
   </entitygroup>
 
   <entitygroup name="ZombiesBurntForest">
-    <entity name="burntzombie" prob="0.7"/>
+    <entity name="burntzombie" prob="0.8"/>
     <entity name="Burnt Spider" prob="0.05"/>
     <entity name="Burnt Crawler" prob="0.1"/>
 	<entity name="Scorched Rusher" prob="0.05"/>
-	<entity name="ZombieCharred" prob="0.1"/>
   </entitygroup>
     
     <entitygroup name="SnowZombies">
@@ -297,7 +294,8 @@
 	
     <entitygroup name="ZombiesBoss">
 		<entity name="fatzombiecop" prob="0.6"/>
-		<entity name="Burning Boss" prob="0.3"/>
+		<entity name="Burning Boss" prob="0.2"/>
+		<entity name="ZombieRegen" prob="0.1"/>
 		<entity name="ZombieTrucker" prob="0.1"/>
     </entitygroup>	
 	

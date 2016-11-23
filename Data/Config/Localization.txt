@@ -5594,6 +5594,7 @@ ZombieCharred,entityclasses,Entity,,Charred Corpse,,
 ZombieChildFemale,entityclasses,Entity,,Infected Youth,,
 ZombieChildMale,entityclasses,Entity,,Infected Youth,,
 ZombieJason,entityclasses,Entity,,Crazed Slasher,,
+ZombieRegen,entityclasses,Entity,,Radiated Regenerator,,
 
 coldDrinkDesc,items,Food,KgNone,This drink has been chilled. Left-Click on a fridge or cooler to make it warmer.,,
 

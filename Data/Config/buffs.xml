@@ -614,6 +614,13 @@ snowberryPlant feeds you for 90 sec. -->
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
 	<modify id="1" stat="health" amount="-1" rate="1"/>
 </buff>
+
+<buff id="Rusher" mutex="burning" duration="5" debuffif="+water > 1" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)" >
+	<modify id="0" stat="speedmodifier" modifyMaxValue="1.3"/>
+	<modify id="1" stat="speedmodifier" modifyValue="1.3"/>
+</buff>
+
+<buff id="Regen" mutex="AcidSplash" duration="1.5" ffcheck="true" actions="attach(ParticleEffects/p_signal_flareprefab, @impact)" />
 <!--
 This requires a 50+ food bar:
 <buff id="eatFood_1_Trigger" mutex="notFullBlockerBuff" duration="1" debuffif="food > 0.5" actions="increment(CTRfood, 1, 0, 0, 1)"/>

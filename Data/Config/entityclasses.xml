@@ -1718,7 +1718,7 @@
 	<property name="PanicSpeed"         value="0.55" />
 	<property name="CanClimbLadders"     value="false" />
 </entity_class>
-<entity_class name="ZombieCharred" extends="zombieUMA" >
+<entity_class name="Scorched Rusher" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieCharred"/>
 	<property name="WalkType" value="7" />
 	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
@@ -1728,9 +1728,23 @@
 	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath" />
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
-	<property name="HandItem" value="handBurningZombie" />
-	<property name="MaxHealth" value="80" />
+	<property name="HandItem" value="handBurningRusher" />
+	<property name="MaxHealth" value="20" />
 	<property name="LootListOnDeath" value="91" />
+	
+	<property name="WanderSpeed"        value="0.3" />
+	<property name="ApproachSpeed"      value="0.3" />
+	<property name="NightWanderSpeed"   value="0.3" />
+	<property name="NightApproachSpeed" value="1.1" />
+	<property name="PanicSpeed"         value="0.4" />
+	
+	<property name="AITask-1" value="BreakDoor" />
+	<property name="AITask-2" value="BreakBlock" />
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+	<property name="AITask-6" value="ApproachSpot" />
+	<property name="AITask-7" value="Wander" />
 </entity_class>
 <!--<entity_class name="ZombieChildFemale" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieChildFemale"/>
@@ -1810,6 +1824,27 @@
 	<property name="DeadBodyHitPoints" value="20" />
 	<property name="HasDeathAnim" value="true" />
 </entity_class>
-
+<entity_class name="ZombieRegen" extends="zombieUMA" >
+	<property name="Archetype" value="ZombieRegen"/>
+	<property name="WalkType" value="2" />
+	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
+	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert" />
+	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack" />
+	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain" />
+	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath" />
+	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
+	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
+	<property name="HandItem" value="handRegenerator" />
+	<property name="MaxHealth" value="300" />
+	<property name="LootListOnDeath" value="17" />
+	
+	<property name="AITask-1" value="BreakDoor" />
+	<property name="AITask-2" value="BreakBlock" />
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+	<property name="AITask-6" value="ApproachSpot" />
+	<property name="AITask-7" value="Wander" />
+</entity_class>
 
 </entity_classes>

@@ -11482,6 +11482,13 @@ which does not exist, yet. -->
 		<property name="Buff" value="burningSmall,infection,stunned" />
 		<property name="Buff_chance" value="0.2,0.07,0.3" />
 	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="1" />
+		<property name="Use_time" value="..." />
+		<property name="Buff" value="Rusher" />
+		<property name="Buff_chance" value="1" />
+	</property>
 </item>
 <item id="1904" name="handZombieBurningTank">
 <property name="Extends" value="handCopZombie" />
@@ -11525,6 +11532,24 @@ which does not exist, yet. -->
 		<property name="EntityDamage" value="30,30" />
 		<property name="BlockDamage" value="20,20" />
 		<property name="DegradationRate" value="0,0" />
+	</property>
+</item>
+<item id="1909" name="handRegenerator">
+	<property name="Extends" value="handMaster" />
+	<property name="IsDeveloper" value="true" />
+	<property class="Action0">
+		<property name="DamageEntity" value="10" />
+		<property name="DamageBlock" value="20" />
+		<property name="Buff" value="bleeding,infection,stunned" />
+		<property name="Buff_chance" value="0.04,0.2,0.4" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="1" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="50" />
+		<property name="Buff" value="Regen" />
+		<property name="Buff_chance" value="1" />
 	</property>
 </item>
 	
