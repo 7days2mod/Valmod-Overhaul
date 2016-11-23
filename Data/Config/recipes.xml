@@ -3314,7 +3314,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <recipe name="chickenCoop" count="1" >
         <ingredient name="wood" count="10"/>
         <ingredient name="yuccaFibers" count="15" />
-		<ingredient name="animalFeed" count="2" />
+		<ingredient name="animalFeed" count="10" />
     </recipe>
     <recipe name="trapFire" count="2" craft_area="workbench">      
 		<ingredient name="forgedSteel" count="8" />

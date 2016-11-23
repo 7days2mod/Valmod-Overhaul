@@ -447,7 +447,7 @@
 		<action type="TrackQuest" />
 		<objective type="FetchKeep" id="wood" value="10" />
 		<objective type="FetchKeep" id="yuccaFibers" value="15" />
-		<objective type="Craft" id="animalFeed" value="2" />
+		<objective type="Craft" id="animalFeed" value="10" />
 		<reward type="Recipe" id="chickenCoop" />
 		<reward type="Quest" id="challenge_animaltrap4" />
 	</quest>
