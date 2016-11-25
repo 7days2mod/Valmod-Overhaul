@@ -9328,6 +9328,7 @@ which does not exist, yet. -->
 	</item>
 	<item id="1616" name="ironCrossbow">
 		<property name="Extends" value="crossbow" />
+		<property name="RepairTools" value="forgedIron" />
 		<property name="DescriptionKey" value="ironCrossbowDesc"/>
 		<property name="RepairTools" value="wood" />
 		<property name="FuelValue" value="40" />
@@ -9342,6 +9343,7 @@ which does not exist, yet. -->
 	</item>
 	<item id="1617" name="ironBow">
 		<property name="Extends" value="woodenBow" />
+		<property name="RepairTools" value="forgedIron" />
 		<property name="DescriptionKey" value="ironBowDesc"/>
 		<property class="Attributes">
 			<property name="EntityDamage" value="3,10" />
