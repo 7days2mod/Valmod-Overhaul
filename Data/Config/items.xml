@@ -9789,6 +9789,24 @@ which does not exist, yet. -->
 			<property name="DismembermentBaseChance" value="5,5"/>
 		</property>
 	</item>
+	<item id="1665" name="Admin 25 Skillpoints">
+	<property name="CustomIcon" value="survivorNotes" />
+	<property name="CustomIconTint" value="172,33,50" />
+	<property name="Candrop" value="false" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Stacknumber" value="5" />
+	<property name="Meshfile" value="Items/Misc/paper" />
+	<property name="HoldType" value="21" />
+	<property name="Material" value="Survivor Notes" />
+	<property name="Weight" value="1" />
+	<property name="FuelValue" value="20" />
+	<property name="Group" value="Survival" />
+	<property class="Action1">
+		<property name="Class" value="Quest" />
+		<property name="QuestGiven" value="adminskill" />
+		<property name="Delay" value="0" />
+	</property>
+	</item>
 
 	<!-- Expanded Clothes Mod -->
 	<item id="1694" name="pimpHat">

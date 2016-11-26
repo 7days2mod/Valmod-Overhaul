@@ -1255,6 +1255,11 @@ repeatable="true" category_key="challenge" difficulty="easy">
 	<reward type="SkillPoints" value="5" />
 </quest>
 
+<quest id="adminskill" name="25 Skill Points" subtitle="25 Skill Points" description="Cheat!" icon="misc_crafting" 
+repeatable="true" category_key="challenge" difficulty="easy">
+	<reward type="SkillPoints" value="25" />
+</quest>
+
 <!-- Class Perks -->
 <quest id="perkHunter" name="Hunter Skills" subtitle="Hunter Skills" description="This teaches you the skills of the class." icon="misc_crafting" 
 repeatable="false" category_key="challenge" offer="Hunter's are trained in tracking down animals." difficulty="easy">
