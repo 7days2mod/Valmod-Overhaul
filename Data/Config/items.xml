@@ -14968,6 +14968,15 @@ which does not exist, yet. -->
 </item>
 <item id="2706" name="questItemToiletPaper">
 	<property name="Extends" value="questItem" />
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="1.0" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_health" value="0" />
+		<property name="Gain_food" value="0" />
+		<property name="Gain_water" value="0" />
+		<property name="Debuff" value="dysentery" />
+	</property>
 </item>
 <item id="2707" name="questItemGameboy">
 	<property name="Extends" value="questItem" />
