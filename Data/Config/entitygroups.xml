@@ -15,26 +15,6 @@
 		<entity name="zombieSteveCrawler" prob="0.05" />
 		<entity name="Bloated Walker" prob="0.07"/>
 		<entity name="Scorched Rusher" prob="0.03"/>
-		
-
-    </entitygroup>
-
-    <entitygroup name="ZombiesAll2">
-        <entity name="zombieBoe" />
-        <entity name="zombieJoe" />
-        <entity name="zombieSteve" />
-        <entity name="zombieMoe" />
-        <entity name="zombieYo" />
-		<entity name="zombieArlene" />
-		<entity name="zombieDarlene" />
-		<entity name="zombieMarlene" />
-		<entity name="zombieNurse" />
-		<entity name="zombieSteveCrawler" />
-		<entity name="Feral Ravager" prob="0.02"/>
-		<entity name="Bloated Walker" prob="0.06"/>
-		<entity name="Scorched Rusher" prob="0.006"/>
-		
-
     </entitygroup>
 	
     <entitygroup name="ZombiesNight">
@@ -53,29 +33,6 @@
 		<entity name="zombieSteveCrawler" />
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
-		
-
-    </entitygroup>
-	
-    <entitygroup name="ZombiesNight2">
-		<entity name="spiderzombie"/>
-        <entity name="zombieBoe"/>
-        <entity name="zombieJoe" />
-        <entity name="zombieSteve" />
-        <entity name="zombieMoe" />
-        <entity name="zombieYo" />
-		<entity name="zombieArlene" />
-		<entity name="zombieDarlene" />
-		<entity name="zombieMarlene" />
-		<entity name="zombieNurse" />
-		<entity name="hornet" prob="0.05" />
-		<entity name="zombiedog" prob="0.05" />
-		<entity name="zombieSteveCrawler" />
-		<entity name="Feral Ravager" prob="0.02"/>
-		<entity name="Bloated Walker" prob="0.06"/>
-		
-
-        <entity name="ZombieTrucker" />
     </entitygroup>
 
     <entitygroup name="ZombiesBurning">
@@ -95,7 +52,7 @@
 		<entity name="ZombieRavager" />
 		<entity name="Bloated Walker" />
     </entitygroup>
-    
+
     <entitygroup name="ZombiesWasteland">
 		<entity name="spiderzombie"/>
         <entity name="zombieBoe" />
@@ -116,10 +73,7 @@
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
 		<entity name="Scorched Rusher" prob="0.02"/>
-		
-
-        <entity name="ZombieTrucker" />
-    </entitygroup>	
+    </entitygroup>
     
     <entitygroup name="ZombiesWastelandNight">
 		<entity name="spiderzombie"/>
@@ -142,10 +96,8 @@
 		<!-- <entity name="zombieFemaleHazmat" prob="0.02" /> -->
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
-		
-
-        <entity name="ZombieTrucker" />
-    </entitygroup>	
+    </entitygroup>
+	
 	<entitygroup name="ZombiesWastelandNightNoBears">
 		<!-- 
 		Bears/Animals aren't controllable by the BloodMoon horde system  until Joe
@@ -170,62 +122,8 @@
 		<!-- <entity name="zombieFemaleHazmat" prob="0.02" /> -->
 		<entity name="Feral Ravager" prob="0.02"/>
 		<entity name="Bloated Walker" prob="0.06"/>
-		
-
-        <entity name="ZombieTrucker" />
 	</entitygroup>
-    <entitygroup name="ZombiesWastelandNight2">
-		<entity name="spiderzombie"/>
-        <entity name="zombieBoe" prob="0.05"/>
-        <entity name="zombieJoe" prob="0.05"/>
-        <entity name="zombieSteve" prob="0.05"/>
-        <entity name="zombieMoe" prob="0.05"/>
-        <entity name="zombieYo" prob="0.05"/>
-		<entity name="zombieArlene" />
-		<entity name="zombieDarlene" />
-		<entity name="zombieMarlene" />
-		<entity name="zombieNurse" />		
-		<entity name="hornet" prob="0.15"/>
-		<entity name="zombiedog" prob="0.15"/>
-		<entity name="zombieSteveCrawler" prob="0.05"/>
-		<entity name="fatzombiecop" prob="0.15"/>
-		<entity name="burntzombie" prob="0.07"/>
-		<entity name="zombieBear" prob="0.1"/>
-		<entity name="zombieferal" prob="0.1"/>
-		<entity name="Feral Ravager" prob="0.02"/>
-		<entity name="Bloated Walker" prob="0.06"/>
-		<entity name="Scorched Rusher" prob="0.03"/>
-		
-
-        <entity name="ZombieTrucker" />
-    </entitygroup>	   
-	<entitygroup name="ZombiesWastelandNight2NoBears">
-		<!-- 
-		Bears/Animals aren't controllable by the BloodMoon horde system  until Joe
-		refactors all the Animal code.
-		-->
-		<entity name="spiderzombie"/>
-		<entity name="zombieBoe" prob="0.05"/>
-		<entity name="zombieJoe" prob="0.05"/>
-		<entity name="zombieSteve" prob="0.05"/>
-		<entity name="zombieMoe" prob="0.05"/>
-		<entity name="zombieYo" prob="0.05"/>
-		<entity name="zombieArlene" />
-		<entity name="zombieDarlene" />
-		<entity name="zombieMarlene" />
-		<entity name="zombieNurse" />
-		<entity name="hornet" prob="0.15"/>
-		<entity name="zombiedog" prob="0.15"/>
-		<entity name="zombieSteveCrawler" prob="0.05"/>
-		<entity name="fatzombiecop" prob="0.15"/>
-		<entity name="burntzombie" prob="0.07"/>
-		<entity name="zombieferal" prob="0.1"/>
-		<entity name="Feral Ravager" prob="0.02"/>
-		<entity name="Bloated Walker" prob="0.06"/>
-		
-
-        <entity name="ZombieTrucker" />
-	</entitygroup>
+ 
     <entitygroup name="ZombiesWastelandNight3">
 		<entity name="spiderzombie"/>
         <entity name="zombieBoe" prob="0.05"/>
@@ -268,8 +166,6 @@
 		<entity name="zombieSteveCrawler" prob="0.1"/>
 		<entity name="Feral Ravager" prob="0.01"/>
 		<entity name="Bloated Walker" prob="0.06"/>
-		<entity name="Scorched Rusher" prob="0.003"/>
-		
     </entitygroup>
 
 	<entitygroup name="ZombieScouts">
