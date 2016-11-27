@@ -11455,6 +11455,7 @@ kind of free
 
 <block id="1403" name="emberPile1">
 	<property name="Material" value="wood_weak" />
+	<property name="MaxDamage" value="50" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -11465,12 +11466,13 @@ kind of free
 	<property name="ParticleOffset" value="0,0,0" />
 <!--<property name="BuffsWhenWalkedOn" value="blockBurn2Trigger"/> -->
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
-	<drop event="Harvest" name="coal" count="3" prob=".5"/>
+	<drop event="Harvest" name="coal" count="3" prob=".6"/>
 	<drop event="Destroy" name="wood" count="3" />
 </block>
 
 <block id="1404" name="emberPile2">
 	<property name="Extends" value="emberPile1" />
+	<property name="MaxDamage" value="50" />
 	<property name="Model" value="OutdoorDecor/ember_pile_2" param1="main_mesh" />
 	<property name="ParticleName" value="hotembers" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
@@ -11479,25 +11481,27 @@ kind of free
 
 <block id="1405" name="emberPile3">
 	<property name="Material" value="wood_weak" />
+	<property name="MaxDamage" value="50" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="OutdoorDecor/ember_pile_3" param1="main_mesh" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
-	<drop event="Harvest" name="coal" count="3" prob=".5"/>
+	<drop event="Harvest" name="coal" count="3" prob=".6"/>
 	<drop event="Destroy" name="wood" count="3" />
 </block>
 
 <block id="1406" name="emberPile4">
 	<property name="Material" value="wood_weak" />
+	<property name="MaxDamage" value="50" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="OutdoorDecor/ember_pile_4" param1="main_mesh" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
-	<drop event="Harvest" name="coal" count="3" prob=".5"/>
+	<drop event="Harvest" name="coal" count="3" prob=".6"/>
 	<drop event="Destroy" name="wood" count="3" />
 </block>
 	<!-- 1 Free -->
