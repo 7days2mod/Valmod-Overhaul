@@ -810,7 +810,7 @@
 					<item_stack_inventory name="0"/>
 				</grid>
 			<sprite depth="1" name="background" pos="0,0" color="[black]" type="sliced">
-				<texture depth="500" name="InventoryBackground" width="603" height="332" pos="3,-3" texture="@file:Mods\SMX\Textures\Misc\inventorybg.png" material="Materials/Transparent Colored"/>
+				<texture depth="500" name="InventoryBackground" width="603" height="335" pos="3,-3" texture="@file:Mods\SMX\Textures\Misc\inventorybg.png" material="Materials/Transparent Colored"/>
 			</sprite>
 		</panel>
 	</window>
