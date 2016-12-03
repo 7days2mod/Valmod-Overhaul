@@ -122,7 +122,7 @@
 			<multiply skill_level="3" value="0.25"/>
 		</effect>
 	</perk>
-	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
+	<perk name="Quality Joe" icon="quality_joe" description_key="Adds 25, 50 or 100 quality points to found items. This perk can only be purchased. Level 2 unlocks the Combine Station where you can merge tools and weapons together to get better quality variants." title_key="qualityJoe" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
 		<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="1"/>
 		<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="30"/>
 		<requirement skill_level="3" required_skill_name="Scavenging" required_skill_level="60"/>
@@ -132,6 +132,7 @@
 			<add skill_level="2" value="50"/>
 			<add skill_level="3" value="100"/>
 		</effect>
+		<recipe name="workstationCombine" unlock_level="2"/>
 	</perk>
 	<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="57" experience_multiplier="1.0195" group="clothing">
 	<!-- 10 hits to make level 2, 3000 hits to max it... instead of 64000 -->

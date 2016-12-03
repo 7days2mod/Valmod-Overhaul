@@ -2916,7 +2916,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 		<!-- Misc Recipes Mod -->
-<recipe name="workstationCombine" count="1" >
+<recipe name="workstationCombine" count="1" craft_area="workbench">
 	<ingredient name="wood" count="200"/>
 	<ingredient name="nail" count="10"/>
 </recipe>
