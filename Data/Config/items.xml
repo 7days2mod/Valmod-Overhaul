@@ -1584,7 +1584,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="ActionSkillGroup" value="Mechanical"/>
 	<property name="CraftingSkillGroup" value="Tool Smithing"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
@@ -1686,7 +1686,7 @@ which does not exist, yet. -->
 		<!--<property name="Restricted_upgrade_items" value="concrete" />-->
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Construction Tools"/>
+	<property name="ActionSkillGroup" value="Mechanical"/>
 	<property name="CraftingSkillGroup" value="Mechanical"/> <!-- 15.0 workaround. Should be Gun Smithing -->
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="PickupJournalEntry" value="gunAssemblyTip" />
@@ -1735,7 +1735,7 @@ which does not exist, yet. -->
 		<!-- xxx trains blade weapons SUPER fast but ActionExp cannot be set lower than 1 -->
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Mechanical"/>
 	<property name="CraftingSkillGroup" value="Mechanical"/> <!-- 15.0 workaround. Should be Gun Smithing -->
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="PickupJournalEntry" value="gunAssemblyTip" />
@@ -1784,7 +1784,7 @@ which does not exist, yet. -->
 		<property name="ActionExp" value="1" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Mechanical"/>
 	<property name="CraftingSkillGroup" value="Mechanical"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 	<property name="PickupJournalEntry" value="gunAssemblyTip" />
@@ -11488,6 +11488,7 @@ which does not exist, yet. -->
 		<property class="Action0">
 			<property name="DamageEntity" value="10" />
 			<property name="DamageBlock" value="200" />
+			<property name="Range" value="1.8" />
 			<property name="Buff" value="bleeding,stunned,infection" />
 			<property name="Buff_chance" value="0.3,0.4,0.4" />
 		</property>
