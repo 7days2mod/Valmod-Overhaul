@@ -655,7 +655,6 @@
 			<requirement type="Holding" id="clubBarbed" />
 			<requirement type="Holding" id="clubSpiked" />
 			<requirement type="Holding" id="clubBurning" />
-			<requirement type="Holding" id="combatAxe" />
 			<requirement type="Holding" id="legendaryClubSpiked" />
 		</requirement>
 
@@ -675,7 +674,7 @@
 			<requirement type="Holding" id="clubBarbed" />
 			<requirement type="Holding" id="clubSpiked" />
 			<requirement type="Holding" id="clubBurning" />
-			<requirement type="Holding" id="combatAxe" />
+			<requirement type="Holding" id="legendaryClubSpiked" />
 		</requirement>
 		<objective type="ZombieKill" value="50" />
 		
@@ -694,7 +693,7 @@
 			<requirement type="Holding" id="clubBarbed" />
 			<requirement type="Holding" id="clubSpiked" />
 			<requirement type="Holding" id="clubBurning" />
-			<requirement type="Holding" id="combatAxe" />
+			<requirement type="Holding" id="legendaryClubSpiked" />
 		</requirement>
 		<objective type="ZombieKill" value="100" />
 		
