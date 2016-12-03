@@ -838,7 +838,7 @@
 	<reward type="Item" id="casinoCoin" value="200" />
 	<reward type="SkillPoints" value="1" />
 </quest>
-<quest id="challenge_cigarettes" name="Cancerous Addiction" subtitle="Cancerous Addiction" description="Listen bud, It won't be a bitter that takes me down. If I'm going out, Im going out with my smokes. But its hard to do that when you can't find the bloody things. Please, if you come across a pack in your journey I'll pay you well for it." icon="ui_game_symbol_treasure" 
+<quest id="challenge_cigarettes" name="Cancerous Addiction" subtitle="Cancerous Addiction" description="Listen bud, It won't be a biter that takes me down. If I'm going out, Im going out with my smokes. But its hard to do that when you can't find the bloody things. Please, if you come across a pack in your journey I'll pay you well for it." icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="challenge" offer="Listen bud, It won't be a bitter that takes me down. If I'm going out, Im going out with my smokes. But its hard to do that when you can't find the bloody things. Please, if you come across a pack in your journey I'll pay you well for it." difficulty="easy">
 	<objective type="Fetch" id="questItemCigarettes" value="1" />
 	<reward type="Item" id="casinoCoin" value="200" />
