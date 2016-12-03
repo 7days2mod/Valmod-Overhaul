@@ -11652,7 +11652,6 @@ which does not exist, yet. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="metal" />
-	<property name="Weight" value="5" />
 	<property name="HoldType" value="45" />
 	<property name="Stacknumber" value="10" />
 	<property name="DropScale" value="4" />
