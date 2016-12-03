@@ -9260,6 +9260,7 @@ which does not exist, yet. -->
 		</property>
 		<property class="Action0">
 			<property name="Magazine_size" value="1" />
+			<property name="DamageBonus.head" value="7" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
