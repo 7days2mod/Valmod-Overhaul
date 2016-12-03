@@ -1681,6 +1681,7 @@
 			<add skill_level="90,100" value="0.56,0.60"/>	
 		</effect>
 		<recipe name="workstationMerchant" unlock_level="20"/>
+		<recipe name="workstationQuest" unlock_level="20"/>
 	</player_skill>
 	
 	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
