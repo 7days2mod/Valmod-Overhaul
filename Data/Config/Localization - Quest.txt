@@ -1,4 +1,4 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish
+﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish
 quest,,Category,KgNone,Quest,Quête,Quest,,Misión
 challenge,,Category,KgNone,Challenge,Défi,Herausforderung,,Desafío
 treasure,,Category,KgNone,Treasure,Trésor,Schatz,,Tesoros
@@ -222,7 +222,7 @@ quest_BasicSurvival8_description_button_console,,Quest Info,KeyCon KgNone,"Gathe
 requirementGroupBow,,Requirement Group,,Holding Bow,,
 requirementGroupCrossbow,,Requirement Group,,Holding Crossbow,,
 requirementGroupBowCrossbow,,Requirement Group,,Holding Bow or Crossbow,,
-requirementGroupBruiser,,Requirement Group,,Holding Club or Combat Axe,,
+requirementGroupBruiser,,Requirement Group,,Holding Club,,
 requirementGroupHandgun,,Requirement Group,,Holding Pistol or Magnum,,
 requirementGroupRifle,,Requirement Group,,Holding Bolt Rifle or Hunting Rifle,,
 requirementGroupAssault,,Requirement Group,,Holding SMG or Assault Rifle,,
