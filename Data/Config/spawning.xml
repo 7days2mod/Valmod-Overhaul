@@ -739,6 +739,48 @@
 		  <property name="TotalAlive"         value="0" />
 		  <property name="TotalPerWave"       value="0" />
 		</day>	
+		<day value="22">
+		  <property name="EntityGroupName"    value="ZombiesAll" />
+		  <property name="Time"               value="Any" />
+		  <property name="DelayBetweenSpawns" value="1" />
+		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalPerWave"       value="0" />
+		</day>		
+		<day value="23">
+		  <property name="EntityGroupName"    value="ZombiesAll" />
+		  <property name="Time"               value="Any" />
+		  <property name="DelayBetweenSpawns" value="1" />
+		  <property name="TotalAlive"         value="3" />
+		  <property name="TotalPerWave"       value="3" />
+		</day>	
+		<day value="24">
+		  <property name="EntityGroupName"    value="ZombiesAll" />
+		  <property name="Time"               value="Any" />
+		  <property name="DelayBetweenSpawns" value="1" />
+		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalPerWave"       value="0" />
+		</day>			
+		<day value="25">
+		  <property name="EntityGroupName"    value="ZombiesAll" />
+		  <property name="Time"               value="Any" />
+		  <property name="DelayBetweenSpawns" value="1" />
+		  <property name="TotalAlive"         value="15" />
+		  <property name="TotalPerWave"       value="15,25" />
+		</day>	
+		<day value="26">
+		  <property name="EntityGroupName"    value="ZombiesAll" />
+		  <property name="Time"               value="Any" />
+		  <property name="DelayBetweenSpawns" value="1" />
+		  <property name="TotalAlive"         value="0" />
+		  <property name="TotalPerWave"       value="0" />
+		</day>		
+		<day value="27">
+		  <property name="EntityGroupName"    value="ZombiesAll" />
+		  <property name="Time"               value="Any" />
+		  <property name="DelayBetweenSpawns" value="1" />
+		  <property name="TotalAlive"         value="6" />
+		  <property name="TotalPerWave"       value="6" />
+		</day>		
 	</entityspawner>
 	
 	<entityspawner name="RoamingHordeSpawnNight" dynamic="true" wrapMode="wrap">
