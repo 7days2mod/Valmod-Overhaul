@@ -9702,6 +9702,7 @@ which does not exist, yet. -->
 </item>
 <item id="1651" name="shotgunShellCasing">
 	<property name="Extends" value="bulletCasing" />
+	<property name="Material" value="paper" />
 	<property name="DescriptionKey" value="shotgunShellCasingDesc"/>
 </item>
 	<item id="1652" name="lokiShell">
