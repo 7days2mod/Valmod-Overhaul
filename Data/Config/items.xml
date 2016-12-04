@@ -9535,7 +9535,7 @@ which does not exist, yet. -->
 		<property name="Stamina_usage" value="6" />
 		<property name="Buff" value="burning" />
 		<property name="Buff_chance" value="0.6" />
-		<property name="DamageBonus.head" value="6" />
+		<property name="DamageBonus.head" value="4" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.snow" value="10" />
 		<property name="ActionExp" value="5" />
