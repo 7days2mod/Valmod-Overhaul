@@ -14265,7 +14265,6 @@ kind of free
 		<property name="Texture" value="8,8,8,8,8,8" />
 		<property name="CustomIcon" value="Concrete_Hidden_Door" />
 		<drop event="Destroy" name="hiddenConcreteDoor" count="1" prob="1" />
-		<property name="DowngradeBlock" value="solidWoodFrameBlock" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property class="UpgradeBlock">
@@ -14284,7 +14283,6 @@ kind of free
 		<property name="Material" value="Mconcrete" />
 		<property name="Texture" value="8,8,8,8,8,8" />
 		<drop event="Destroy" name="hiddenConcreteDoor" count="1" prob="1" />
-		<property name="DowngradeBlock" value="solidWoodFrameBlock" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="MultiBlockDim" value="2,2,1" />
 		<property class="UpgradeBlock">
@@ -14302,7 +14300,6 @@ kind of free
 		<property name="Material" value="wood+wood" />
 		<property name="Texture" value="241" />
 		<drop event="Destroy" name="hiddenWoodDoor" count="1" prob="1" />
-		<property name="DowngradeBlock" value="solidWoodFrameBlock" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="MultiBlockDim" value="1,2,1" />
 		<property class="UpgradeBlock">
@@ -14320,7 +14317,6 @@ kind of free
 		<property name="Material" value="wood+wood" />
 		<property name="Texture" value="241" />
 		<drop event="Destroy" name="hiddenWoodDoor" count="1" prob="1" />
-		<property name="DowngradeBlock" value="solidWoodFrameBlock" />
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="MultiBlockDim" value="2,2,1" />
 		<property class="UpgradeBlock">
