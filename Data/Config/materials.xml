@@ -956,14 +956,5 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Mass" type="int" value="12" />
 	<property name="MaxDamage" value="2000" />
 </material>
-   <material id="feather">
-	<property name="damage_category" value="wood" />
-	<property name="surface_category" value="wood" />
-	<property name="forge_category" value="feather" />
-	<property name="Hardness" type="float" value="1" />
-	<property name="stepsound" value="wood" />
-	<property name="stability_glue" value="24" />
-	<property name="Mass" type="int" value="4" />
-	<property name="MaxDamage" value="200" />
-   </material>
+
 </materials>

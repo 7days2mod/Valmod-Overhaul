@@ -20,9 +20,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<wildcard_forge_category />
 </recipe>
 
-<recipe name="feather" count="1" tooltip="ttScrapMetalBrass" craft_time="0.1" craft_exp_gain="0">
-	<wildcard_forge_category />
-</recipe>
 <recipe name="assortedVegetables" count="1" tooltip="ttScrapVeggies" craft_time="0.1" craft_exp_gain="0">
 	<wildcard_forge_category />
 </recipe>
