@@ -1511,7 +1511,7 @@
 	<property name="SoundRandomTime" value="25.0" />
 	<property name="SoundAlertTime" value="15.0" />
 	<property name="ExperienceGain" value="30"/>
-	<property name="MaxHealth"    value="20" />
+	<property name="MaxHealth"    value="50" />
 	<property name="WanderSpeed"        value="0.5" />
 	<property name="ApproachSpeed"      value="0.9" />
 	<property name="NightWanderSpeed"   value="0.8" />
@@ -1835,7 +1835,7 @@
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
 	<property name="HandItem" value="handRegenerator" />
-	<property name="MaxHealth" value="300" />
+	<property name="MaxHealth" value="500" />
 	<property name="LootListOnDeath" value="17" />
 	
 	<property name="AITask-1" value="BreakDoor" />
