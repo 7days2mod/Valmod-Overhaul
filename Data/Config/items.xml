@@ -1343,6 +1343,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.earth" value=".2" />
 		<property name="DamageBonus.organic" value=".2" />
 		<property name="ActionExp" value="4" />
+		<property name="ToolCategory.Miner" value="0.5" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
 	<property class="Attributes">
@@ -1369,6 +1370,7 @@ Mesh files no longer used:
 		<property name="Stamina_usage" value="5" />
 		<property name="DamageBonus.head" value="4" />
 		<property name="ToolCategory.MyCatStone" value="0.5" />
+		<property name="ToolCategory.Miner" value="1" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
 	<property class="Attributes">
@@ -1784,6 +1786,7 @@ which does not exist, yet. -->
 		<property name="SupportHarvesting" value="true" />
 		<property name="UseMeleeCrosshair" value="true" />
 		<property name="ActionExp" value="1" />
+		<property name="ToolCategory.Miner" value="1" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
 	<property name="ActionSkillGroup" value="Mechanical"/>
