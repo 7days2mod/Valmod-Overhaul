@@ -1496,28 +1496,6 @@
 		<property name="UpperArmDismemberThreshold" value="0"/>
 		<property name="HasDeathAnim" value="false" />		
     </entity_class>
-<entity_class name="Scorched Rusher" extends="zombie01">
-	<property name="LootListOnDeath" value="91" />
-	<property name="HandItem"             value="handBurningRusher" />
-	<property name="Mesh"   value="Zombies/ZombieStandardBurntRagdoll" />
-	<property name="WalkType"  value="7" />
-	<property name="SoundRandom"     value="Enemies/Burnt_Zombie/zombieburntroam" />
-	<property name="SoundAlert"     value="Enemies/Burnt_Zombie/zombieburntalert" />
-	<property name="SoundAttack"     value="Enemies/Burnt_Zombie/zombieburntattack" />
-	<property name="SoundHurt"     value="Enemies/Burnt_Zombie/zombieburntpain" />
-	<property name="SoundDeath"   value="Enemies/Burnt_Zombie/zombieburntdeath" />
-	<property name="SoundSense"  value="Enemies/Burnt_Zombie/zombieburntsense" />
-	<property name="SoundFootstepModifier"  value="Enemies/Burnt_Zombie/zombieburntfootstep" />
-	<property name="SoundRandomTime" value="25.0" />
-	<property name="SoundAlertTime" value="15.0" />
-	<property name="ExperienceGain" value="30"/>
-	<property name="MaxHealth"    value="50" />
-	<property name="WanderSpeed"        value="0.5" />
-	<property name="ApproachSpeed"      value="0.9" />
-	<property name="NightWanderSpeed"   value="0.8" />
-	<property name="NightApproachSpeed" value="1.2" />
-	<property name="PanicSpeed"         value="1.2" />
-</entity_class>
 <entity_class name="Burnt Spider" extends="burntzombie">
 	<property name="CanClimbVertical" value="true" />
 	<property name="WalkType" value="8" />
