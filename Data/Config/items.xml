@@ -1289,6 +1289,7 @@ Mesh files no longer used:
 		<property name="ActionExp" value="4" />
 		<property name="ToolCategory.Butcher" value="0.5" />
 		<property name="Sound_harvesting" value="UseActions/open_animal" />
+		<property name="ToolCategory.Lumberjack" value="1" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,15" />
@@ -1732,6 +1733,7 @@ which does not exist, yet. -->
 		<property name="SupportHarvesting" value="true" />
 		<property name="UseMeleeCrosshair" value="true" />
 		<property name="ActionExp" value="1" />
+		<property name="ToolCategory.Lumberjack" value="1" />
 		<!-- xxx trains blade weapons SUPER fast but ActionExp cannot be set lower than 1 -->
 	</property>
 	<property name="Group" value="Tools/Traps" />
@@ -9375,6 +9377,7 @@ which does not exist, yet. -->
 			<property name="DamageBonus.metal" value=".25" />
 			<property name="DamageBonus.earth" value=".25" />
 			<property name="ToolCategory.Butcher" value="0.55" />
+			<property name="ToolCategory.Lumberjack" value="0" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="15,35" />
@@ -12375,6 +12378,7 @@ which does not exist, yet. -->
 		<property name="DamageBonus.organic" value="1" />
 		<property name="ActionExp" value="2" />
 		<property name="ToolCategory.Butcher" value="0.5" />
+		<property name="ToolCategory.Lumberjack" value="0.5" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,14" />
