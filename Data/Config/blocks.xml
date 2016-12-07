@@ -719,6 +719,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="grass" />
 	<property name="Texture" value="293" />
+	<property name="MultiBlockDim" value="1,2,1" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="CanDecorateOnSlopes" value="true" />
@@ -742,6 +743,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="grass" />
 	<property name="Texture" value="395" />
+	<property name="MultiBlockDim" value="1,2,1" />
 	<property name="Collide" value="melee" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="Class" value="CropsGrown" />
@@ -886,6 +888,7 @@ group desc for stuff like metal siding
 
 <block id="129" name="treeMasterGrowing">
 	<property name="Extends" value="treeMaster" />
+	<property name="MultiBlockDim" value="1,2,1" />
 	<property name="PlantGrowing.Next" value="treePlantedMountainPine8m" />
 	<property name="PlantGrowing.GrowthRate" value="63" />
 	<property name="PlantGrowing.IsRandom" value="false" />
@@ -3728,6 +3731,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/backpack01" param1="main_mesh" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="LootList" value="9" />
+	<property name="LightOpacity" value="0" />
 	<property name="Group" value="Basics,Building" />
 	<property name="CraftingSkillGroup" value="Tailoring"/>
 </block>
@@ -3735,31 +3739,37 @@ group desc for stuff like metal siding
 <block id="424" name="cntBackpack02">
 	<property name="Extends" value="cntBackpack01" />
 	<property name="Model" value="LootContainers/backpack02" param1="main_mesh" />
+	<property name="LightOpacity" value="0" />
 </block>
 
 <block id="425" name="cntBackpack03">
 	<property name="Extends" value="cntBackpack01" />
 	<property name="Model" value="LootContainers/backpack03" param1="main_mesh" />
+	<property name="LightOpacity" value="0" />
 </block>
 
 <block id="426" name="cntDuffle01">
 	<property name="Extends" value="cntBackpack01" />
 	<property name="Model" value="LootContainers/duffle01" param1="main_mesh" />
+	<property name="LightOpacity" value="0" />
 </block>
 
 <block id="427" name="cntSportsBag01">
 	<property name="Extends" value="cntBackpack01" />
 	<property name="Model" value="LootContainers/sports_bag01" param1="main_mesh" />
+	<property name="LightOpacity" value="0" />
 </block>
 
 <block id="428" name="cntSportsBag02">
 	<property name="Extends" value="cntBackpack01" />
 	<property name="Model" value="LootContainers/sports_bag02" param1="main_mesh" />
+	<property name="LightOpacity" value="0" />
 </block>
 
 <block id="429" name="cntPurse01">
 	<property name="Extends" value="cntBackpack01" />
 	<property name="Model" value="LootContainers/purse01" param1="main_mesh" />
+	<property name="LightOpacity" value="0" />
 	<property name="LootList" value="48" />
 	<property name="DescriptionKey" value="cntPurse01Desc"/>
 </block>
@@ -3835,7 +3845,7 @@ group desc for stuff like metal siding
 	<property name="Explosion.RadiusBlocks" value="4" />
 	<property name="Explosion.RadiusEntities" value="5" />
 	<property name="Explosion.BlockDamage" value="20" />
-	<property name="Explosion.EntityDamage" value="350" />
+	<property name="Explosion.EntityDamage" value="180" />
 	<property name="EconomicValue" value="182" />
 </block>
 
@@ -4594,6 +4604,7 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Texture" value="241" />
 	<property name="Model" value="OutdoorDecor/mushroom_sprout" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,2,1" />
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="PlantGrowing.FertileLevel" value="1" />
@@ -4617,6 +4628,7 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Texture" value="241" />
 	<property name="Model" value="OutdoorDecor/mushroom_harvest" param1="main_mesh" />
+	<property name="MultiBlockDim" value="1,2,1" />
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<property name="CanPickup" value="true" param1="mushrooms" />
 	<property name="IsTerrainDecoration" value="true" />
@@ -4631,10 +4643,9 @@ kind of free
 	<property name="Extends" value="cropsGrowingMaster" />
 	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="plantedYucca3Harvest" />
-	<property name="Material" value="Mtallgrass" />
+	<property name="Material" value="Mcorn" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab" />
-	<property name="MultiBlockDim" value="1,2,1" />
 	<property name="PlantGrowing.Next" value="plantedYucca2" />
 	<property name="Group" value="Food/Cooking,Medicine" />
 	<property name="DescriptionKey" value="yuccaSeedDesc"/>
@@ -4779,7 +4790,7 @@ kind of free
 </block>
 
 <block id="549" name="sectionalArm2">
-    <property name="CustomIcon" value="sectionalArm" />
+	<property name="CustomIcon" value="sectionalArm" />
 	<property name="Material" value="furniture" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
@@ -5290,6 +5301,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<property name="LootList" value="41" />
+	<property name="LightOpacity" value="0" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -5909,8 +5921,7 @@ kind of free
 <block id="657" name="cntVendingMachine">
 	<property name="Group" value="Building" />
 	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
-	<property name="Material" value="Mmetal_weak" />
-	<property name="LPHardnessScale" value="8" />
+	<property name="Material" value="Mmetal_medium" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Class" value="VendingMachine" />
 	<property name="Shape" value="ModelEntity" />
@@ -5921,6 +5932,7 @@ kind of free
 	<property class="RepairItems"> <property name="forgedIron" value="4" /> </property>
 	<property name="TraderID" value="3" />
 	<property name="EconomicValue" value="2000" />
+	<property name="LightOpacity" value="0" />
 	<drop event="Destroy" count="0" />
 </block>
 
@@ -5928,6 +5940,7 @@ kind of free
 	<property name="Extends" value="cntVendingMachine" />
 	<property name="Model" value="Entities/LootContainers/vending_machinePrefab" />
 	<property name="TraderID" value="4" />
+	<property name="LightOpacity" value="0" />
 </block>
 
 <block id="659" name="cobblestoneFrameWedge">
@@ -6343,7 +6356,7 @@ kind of free
 	<property name="FallDamage" value="false" />
 		<!-- <property name="UpgradeRated.BlockCombined" value="air" /> -->
 		<property name="UpgradeRated.ToBlock" value="GoreBlock1BonesPrefab" />
-		<property name="UpgradeRated.Rate" value="22" />
+		<property name="UpgradeRated.Rate" value="25" />
 	<property name="DowngradeBlock" value="GoreBlock1BonesPrefab" />
 	<drop event="Harvest" name="rottingFlesh" count="1" prob=".6" tool_category="Butcher" />
 	<drop event="Harvest" name="rottingFlesh" count="2" prob=".6" />
@@ -6364,7 +6377,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 		<!-- <property name="UpgradeRated.BlockCombined" value="air" /> -->
 		<property name="UpgradeRated.ToBlock" value="air" />
-		<property name="UpgradeRated.Rate" value="15" />
+		<property name="UpgradeRated.Rate" value="25" />
 	<drop event="Harvest" name="femur" count="1" prob=".4" tool_category="Butcher" />
 	<drop event="Destroy" name="femur" count="1" prob="1" />
 </block>
@@ -7550,7 +7563,7 @@ kind of free
 
 <block id="853" name="plantedYucca3Harvest">
 	<property name="Extends" value="cropsHarvestableMaster" />
-	<property name="Material" value="Mtallgrass" />
+	<property name="Material" value="Mcorn" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="Entities/Plants/plant_yucca_harvestPrefab" />
 	<property name="MultiBlockDim" value="1,2,1" />
@@ -7562,7 +7575,7 @@ kind of free
 
 <block id="854" name="plantedAloe3Harvest">
 	<property name="Extends" value="cropsHarvestableMaster" />
-	<property name="Material" value="Mtallgrass" />
+	<property name="Material" value="Mcorn" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="Entities/Plants/plant_aloe_harvestPrefab" />
 	<property name="Collide" value="melee,movement,rocket" />
@@ -7575,7 +7588,7 @@ kind of free
 <block id="855" name="plantedAloe1">
 	<property name="Extends" value="cropsGrowingMaster" />
 	<property name="IsDeveloper" value="true" />
-	<property name="Material" value="Mtallgrass" />
+	<property name="Material" value="Mcorn" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="Entities/Plants/plant_aloe1_Prefab" />
 	<property name="PlantGrowing.Next" value="plantedAloe2" />
@@ -7618,7 +7631,7 @@ kind of free
 	<property name="Class" value="Hay" />
 	<property name="Material" value="hay" />
 	<property name="Texture" value="196" />
-	<property name="FuelValue" value="4" />
+	<property name="FuelValue" value="8" />
 	<property name="CanPickup" value="true" />
 	<property name="FallDamage" value="false" />
 	<drop event="Destroy" name="hayBaleBlock" count="1" />
@@ -7961,11 +7974,11 @@ kind of free
 	<property name="Extends" value="cropsGrowingMaster" />
 	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="cornSeed" />
-	<property name="Material" value="Mtallgrass" />
+	<property name="Material" value="Mcorn" /> <!-- mostly for the particle effect -->
 	<property name="Shape" value="New" />
 	<property name="Model" value="corn_sprout_shape" />
 	<property name="Mesh" value="cutoutmoveable" />
-	<property name="MultiBlockDim" value="1,1,1" />
+	<property name="MultiBlockDim" value="1,4,1" />
 	<property name="Collide" value="melee" />
 	<property name="Texture" value="529" />
 	<property name="Place" value="Door" />
@@ -7981,7 +7994,7 @@ kind of free
 	<property name="Shape" value="New" />
 	<property name="Model" value="corn_growth_shape" />
 	<property name="Mesh" value="cutoutmoveable" />
-	<property name="MultiBlockDim" value="1,3,1" />
+	<property name="MultiBlockDim" value="1,4,1" />
 	<property name="Collide" value="melee" />
 	<property name="Texture" value="529" />
 	<property name="PlantGrowing.Next" value="plantedCorn3Harvest" />
@@ -7989,7 +8002,7 @@ kind of free
 
 <block id="902" name="plantedCorn3Harvest"> <!-- stage 3, harvestable / player-farmed and prefab corn -->
 	<property name="Extends" value="cropsHarvestableMaster" />
-	<property name="Material" value="Mtallgrass" />
+	<property name="Material" value="Mcorn" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="corn_harvest_shape" />
 	<property name="Mesh" value="cutoutmoveable" />
@@ -8004,7 +8017,7 @@ kind of free
 
 <block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
 	<property name="CustomIcon" value="plantedCorn3Harvest" /> <property name="CustomIconTint" value="ffffa0" />
-	<property name="Material" value="Mtallgrass" />
+	<property name="Material" value="Mcorn" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="corn_dead_shape" />
@@ -13888,6 +13901,7 @@ kind of free
 <block id="1926" name="cntVendingMachineTrader">
 	<property name="Extends" value="cntVendingMachine" />
 	<property name="Model" value="Entities/LootContainers/vending_machine_traderPrefab" />
+	<property name="LightOpacity" value="0" />
 	<property name="TraderID" value="5" />
 </block>
 

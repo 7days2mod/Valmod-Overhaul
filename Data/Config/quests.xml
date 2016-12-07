@@ -109,7 +109,7 @@
 		<objective type="BlockPlace" id="campfire" value="1" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="ShowTip" value="tutorialTipQuest03" stage="aftercomplete" />
+		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
 		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
     </quest>
 

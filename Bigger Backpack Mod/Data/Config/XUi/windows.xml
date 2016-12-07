@@ -9,7 +9,7 @@
 		<texture name="Valmod" depth="0" size="53,35" texture="@file:Mods\SMX\Textures\Misc\valmodhat.png" material="Materials/Transparent Colored" pos="-160,-6" /> <!-- Local Asset Equivalent: smxserverlogo.png -->
 		<label name="SMX" depth="0" size="53,35" text="SMX UI" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
 		<!-- Valmod Version -->
-		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.31" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
+		<label name="SMXServerInfo1" depth="0" size="53,35" text="VMO V4.32" font_size="20" effect="outline" color="[white]" justify="center" pos="-160,-15" overflow="resizeheight" />
 
 	</window>
 
@@ -1593,7 +1593,7 @@
 	
 	<window name="windowVehicleStorage" width="529" height="262" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]">
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-			<sprite depth="1" name="windowIcon" style="icon32px" pos="4,-5" sprite="ui_game_symbol_loot_sack"/>
+			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
 			<label style="header.name" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage" />
 		</panel>
 		<grid depth="2" name="inventory" rows="7" cols="10" pos="3,-49" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">

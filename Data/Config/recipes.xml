@@ -2526,6 +2526,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="signShopColdBeer" count="1" craft_area="workstationDecor">
+	<ingredient name="nail" count="4"/>
 	<ingredient name="wood" count="5"/>
 </recipe>
 

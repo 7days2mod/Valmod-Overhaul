@@ -157,7 +157,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<!-- Snow Sub Biome grass and Bluebrrries -->
 		<subbiome prob="0.1">
 			<layers>
-				<layer depth="4" blockname="snow" />
+				<layer depth="4" blockname="snow" > <resource blockname="gravel" cluster="1" prob="0.071" rwgGenerationType="all" /> </layer>
 				<layer depth="3" blockname="dirt" > <resource blockname="clay" cluster="1" prob="0.2" rwgGenerationType="all" /> <resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" /> </layer>
 				<layer depth="*" blockname="stone" >
 					<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />
@@ -192,7 +192,7 @@ If you do not declare them, the decorations of the main biome are used.
 		</subbiome>
 		<subbiome prob="0.1">
 			<layers>
-				<layer depth="4" blockname="snow" />
+				<layer depth="4" blockname="snow" > <resource blockname="gravel" cluster="1" prob="0.071" rwgGenerationType="all" /> </layer>
 				<layer depth="3" blockname="dirt" > <resource blockname="clay" cluster="1" prob="0.2" rwgGenerationType="all" /> <resource blockname="gravel" cluster="1" prob="0.811" rwgGenerationType="all" /> </layer>
 				<layer depth="*" blockname="stone" >
 					<resource blockname="ironOre" cluster="1" prob="0.1130" rwgGenerationType="all" />

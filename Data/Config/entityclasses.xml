@@ -136,27 +136,27 @@
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 	<property name="HeadDismemberBaseChance" value="0"/>
-	<property name="HeadDismemberBonusChance" value="0.07"/>
-	<property name="HeadDismemberThreshold" value="0.25"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
-	<property name="LowerLegDismemberThreshold" value="0.5"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0.23"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment -->
+	<property name="LowerLegDismemberThreshold" value="0.175"/>
 	<property name="LowerLegDismemberBaseChance" value="0"/>
-	<property name="LowerLegDismemberBonusChance" value="0.07"/>
-	<property name="UpperLegDismemberThreshold" value="0.5"/>
+	<property name="LowerLegDismemberBonusChance" value="0.9"/>
+	<property name="UpperLegDismemberThreshold" value="0.175"/>
 	<property name="UpperLegDismemberBaseChance" value="0"/>
-	<property name="UpperLegDismemberBonusChance" value="0.07"/>
-	<property name="LowerArmDismemberThreshold" value="0.5"/>
+	<property name="UpperLegDismemberBonusChance" value="0.9"/>
+	<property name="LowerArmDismemberThreshold" value="0.105"/>
 	<property name="LowerArmDismemberBaseChance" value="0"/>
-	<property name="LowerArmDismemberBonusChance" value="0.07"/>
-	<property name="UpperArmDismemberThreshold" value="0.5"/>
+	<property name="LowerArmDismemberBonusChance" value="0.9"/>
+	<property name="UpperArmDismemberThreshold" value="0.105"/>
 	<property name="UpperArmDismemberBaseChance" value="0"/>
-	<property name="UpperArmDismemberBonusChance" value="0.07"/>
-	<property name="LegCrawlerThreshold" value="0"/>
-	<property name="LegCrippleThreshold" value="0.5"/>
+	<property name="UpperArmDismemberBonusChance" value="0.9"/>
+	<property name="LegCrawlerThreshold" value="0"/> <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
+	<property name="LegCrippleThreshold" value="0.01"/>
 	<property name="KnockdownProneDamageThreshold" value="0.5"/>
-	<property name="KnockdownProneStunDuration" value="2,3"/>
+	<property name="KnockdownProneStunDuration" value="4,6"/>
 	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
 	<property name="KnockdownKneelDamageThreshold" value="0.4"/>
-	<property name="KnockdownKneelStunDuration" value="2,3"/>
+	<property name="KnockdownKneelStunDuration" value="5,7"/>
 	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
@@ -181,6 +181,11 @@
 	<property name="ExperienceGain" value="1000"/>
 	<property name="LootListOnDeath" value="61" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
+	<property name="HeadDismemberThreshold" value="0.2"/>
+	<property name="LowerLegDismemberThreshold" value="0.105"/>
+	<property name="UpperLegDismemberThreshold" value="0.105"/>
+	<property name="LowerArmDismemberThreshold" value="0.063"/>
+	<property name="UpperArmDismemberThreshold" value="0.063"/>
 </entity_class>
 
 <entity_class name="zombieBoe" extends="zombie01">
@@ -479,6 +484,10 @@
 	<property name="LegCrippleThreshold" value="0"/>
 	<property name="KnockdownProneDamageThreshold" value="0"/>
 	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	<property name="LegsExplosionDamageMultiplier" value="2"/> <!-- volatile so vulnerable to land mines/explosives -->
+	<property name="ArmsExplosionDamageMultiplier" value="2"/>
+	<property name="HeadExplosionDamageMultiplier" value="2"/>
+	<property name="ChestExplosionDamageMultiplier" value="2"/>
 </entity_class>
 
 <entity_class name="hornet">
@@ -974,11 +983,6 @@
 	<property name="WalkType" value="7" />
 	<property name="ModelType" value="ZombieUMA" />
 	<property name="RootMotion" value="true" />
-	<property name="WanderSpeed" value="0.08" />
-	<property name="ApproachSpeed" value="0.2" />
-	<property name="NightWanderSpeed" value="0.08" />
-	<property name="NightApproachSpeed" value="1.1" />
-	<property name="PanicSpeed" value="0.4" />
 	<property name="HasRagdoll" value="true" />
 	<property name="AvatarController" value="AvatarZombieUMAController" />
 	<property name="PhysicsBody" value="zombieUMA" />
@@ -987,33 +991,6 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="HeadDismemberBaseChance" value="0"/>
-	<property name="HeadDismemberBonusChance" value="0.07"/>
-	<property name="HeadDismemberThreshold" value="0.25"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
-	<property name="LowerLegDismemberThreshold" value="0.5"/>
-	<property name="LowerLegDismemberBaseChance" value="0"/>
-	<property name="LowerLegDismemberBonusChance" value="0.07"/>
-	<property name="UpperLegDismemberThreshold" value="0.5"/>
-	<property name="UpperLegDismemberBaseChance" value="0"/>
-	<property name="UpperLegDismemberBonusChance" value="0.07"/>
-	<property name="LowerArmDismemberThreshold" value="0.5"/>
-	<property name="LowerArmDismemberBaseChance" value="0"/>
-	<property name="LowerArmDismemberBonusChance" value="0.07"/>
-	<property name="UpperArmDismemberThreshold" value="0.5"/>
-	<property name="UpperArmDismemberBaseChance" value="0"/>
-	<property name="UpperArmDismemberBonusChance" value="0.07"/>
-	<property name="LegCrawlerThreshold" value="0"/>
-	<property name="LegCrippleThreshold" value="0.5"/>
-	<property name="KnockdownProneDamageThreshold" value="0.5"/>
-	<property name="KnockdownProneStunDuration" value="2,3"/>
-	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
-	<property name="KnockdownKneelDamageThreshold" value="0.4"/>
-	<property name="KnockdownKneelStunDuration" value="2,3"/>
-	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
-	<property name="LegsExplosionDamageMultiplier" value="1"/>
-	<property name="ArmsExplosionDamageMultiplier" value="1"/>
-	<property name="HeadExplosionDamageMultiplier" value="1"/>
-	<property name="ChestExplosionDamageMultiplier" value="1"/>
 </entity_class>
 
 <entity_class name="ZombieFemaleUMA" extends="zombieUMA" >
@@ -1047,6 +1024,7 @@
 <entity_class name="ZombieFemaleFatUMA" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieFemaleFatUMA"/>
 	<property name="MaxHealth" value="300" />
+	<property name="HandItem" value="handStrongZombie" />
 	<property name="WalkType" value="1" />
 	<property name="ExperienceGain" value="300"/>
 	<property name="LootListOnDeath" value="85" /> <!-- used to be 15 -->
@@ -1269,7 +1247,7 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="850"/>
 	<property name="DeadBodyHitPoints" value="20" /> <!-- For harvesting -->
 	<property name="HasDeathAnim" value="true" />
 </entity_class>
@@ -1331,7 +1309,7 @@
 	<property name="LootListOnDeath" value="71" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="1275"/>
 	<property name="DeadBodyHitPoints" value="20" />
 	<property name="HasDeathAnim" value="true" />
 </entity_class>

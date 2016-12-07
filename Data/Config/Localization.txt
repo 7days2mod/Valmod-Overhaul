@@ -1223,7 +1223,7 @@ plantedBlueberry1,blocks,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Blueberry 
 plantedBlueberry3Harvest,blocks,Farming,EnChanged KgNone,Blueberry Plant (Harvestable),Myrtilles 3 récoltables,Gepflanzte Heidelbeere 3 – Ernte,,Sembrado Mora 3 Cosecha
 plantedChrysanthemum3Harvest,blocks,Farming,KgNone,Chrysanthemum (Harvestable),Chrysanthème,Chrysantheme,,Crisantemo
 plantedChrysanthemum3HarvestDesc,blocks,Farming,KgNone,Chrysanthemum can be used to brew a cool and refreshing red tea.,Les chrysanthèmes servent à préparer du thé rouge rafraîchissant.,"Chrysantheme kann benutzt werden, um einen kühlenden und erfrischenden roten Tee zu brauen.",,Se pueden usar los crisantemos para hacer refrescante té rojo fresco.
-plantedCoffee1,blocks,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Coffee Beans,,,,
+plantedCoffee1,blocks,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Coffee Seed,,Kaffeesamen,,
 plantedCoffee3Harvest,blocks,Farming,KgNone,Coffee Plant (Harvestable),Récolte de café 3,Gepflanzte Kaffee-Ernte 3,,Sembrado Café 3 Cosecha
 plantedCorn1,blocks,Farming,EnChanged,Corn Seed,,,,
 plantedCorn2,blocks,Farming,KgNone,Planted Corn 2 (Growing),Tige de maïs planté 2,Gepflanzte Maisstaude 2,,Sembrado Tallo de maíz 2 Cosecha
@@ -1916,7 +1916,7 @@ tshirtWhite,items,Clothes,KgNone,White T-Shirt,T-shirt blanc,Weißes T-Shirt,,Ca
 wornBoots,items,Clothes,KgNone,Worn Boots,Bottes usées,Verschlissene Stiefel,,Botas desgastadas
 wornBootsDesc,items,Clothes,KgNone,Do walk a mile in someone else's boots. They surely won't need them any more.,"Allez-y, enfilez ces chaussures. Ce n'est pas comme si leur propriétaire en avait encore besoin.",Schlüpf mal in die Stiefel eines anderen. Er kann sie sowieso nicht mehr gebrauchen.,,Recorre kilómetros en las botas de otro. Seguro que ya no las necesitan.
 aloePlant,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Aloe Vera Plant,,,,
-aloeSeed,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Aloe Vera Seed,,,,
+aloeSeed,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Aloe Vera Seed,,Aloe Vera Samen,,
 aloeSeedDesc,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Plant aloe vera seeds in fertile dirt to grow aloe vera plants.,,,,
 yuccaSeed,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Yucca Seed,,,,
 yuccaSeedDesc,items,Farming,KeyTrunk FrNone GrNone KgNone SpNone,Plant yucca seeds in fertile dirt to grow yucca plants.,,,,
@@ -4321,9 +4321,11 @@ facialPiercingsDesc,items,Clothes,,The risk of infection is not enough of a chal
 steelLogSpike6,blocks,Trap,,Steel Log Spike 6,,Stahlspitze 6,,
 plantedYucca1,blocks,Farming,,Yucca Seed,,,,
 nerdGlasses,items,Clothes,,Nerdy Glasses,,Starke Brille,,
-nerdGlassesDesc,items,Clothes,EnChanged,These make you look smart but you know how looks can be deceiving.,,Ein Bücherwurm zu sein hatte schon mal mehr Vorteile als gut mit einer Keule umgehen zu können.,,
-jailDoor,blocks,Block,KgNone,Jail Door,,Gefängnistür,,
-jailDoorDesc,blocks,Block,KgNone,Where do you think you're going?,,,,
+nerdGlassesDesc,items,Clothes,,These make you look smart but you know how looks can be deceiving.,,Ein Bücherwurm zu sein hatte schon mal mehr Vorteile als gut mit einer Keule umgehen zu können.,,
+jailDoor,blocks,Block,,Jail Door,,Gefängnistür,,
+jailDoorDesc,blocks,Block,,Where do you think you're going?,,,,
+plantedAloe1,blocks,Farming,,Aloe Vera Seed,,Aloe Vera Samen,,
+plantedHop1,blocks,Farming,,Hop Seed,,Hopfensamen,,
 
 gunPistolSilenced,items,Item Gun,,Pistol (Silenced),,
 gunPistolSilencedDesc,items,Item Gun,,A silenced pistol. Uses 9mm ammo. Can be re-assembled and repaired if you level high enough in pistols.,,
