@@ -995,7 +995,7 @@
 		</effect>
 		<recipe name="sewingKit" unlock_level="5"/>
 	</crafting_skill>
-	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="Craft hide or leather clothing faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group. Level 15 unlocks leather and tanning rack." title_key="leatherworking" group="clothing">
+	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="Level this by crafting leather. Gain skill by crafting and repairing items from this group. Level 15 unlocks leather and tanning rack." title_key="leatherworking" group="clothing">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
 			<multiply skill_level="5,11" value=".931,.871" />
@@ -1005,53 +1005,11 @@
 			<multiply skill_level="49,70" value=".667,.591" />
 			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
-		<effect name="CraftingQuality">
-			<setvalue skill_level="1,5" value="1,69" />
-			<setvalue skill_level="5,11" value="69,129" />
-			<setvalue skill_level="11,19" value="129,187" />
-			<setvalue skill_level="19,32" value="187,259" />
-			<setvalue skill_level="32,49" value="259,334" />
-			<setvalue skill_level="49,70" value="334,409" />
-			<setvalue skill_level="70,100" value="409,500" />
-		</effect>
-		<effect name="RepairTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
-		</effect>
-		<effect name="RepairAmount">
-			<add skill_level="1,10" value="1,21"/>
-			<add skill_level="10,20" value="21,27"/>
-			<add skill_level="20,30" value="27,31"/>
-			<add skill_level="30,40" value="31,35"/>
-			<add skill_level="40,50" value="35,38"/>
-			<add skill_level="50,60" value="38,41"/>
-			<add skill_level="60,70" value="41,43"/>
-			<add skill_level="70,80" value="43,46"/>
-			<add skill_level="80,90" value="46,48"/>
-			<add skill_level="90,100" value="48,50"/>
-		</effect>
-		<effect name="RepairQualityLoss">
-			<multiply skill_level="1,5" value="1.67,1.464" />
-			<multiply skill_level="5,11" value="1.464,1.283" />
-			<multiply skill_level="11,19" value="1.283,1.109" />
-			<multiply skill_level="19,32" value="1.109,.892" />
-			<multiply skill_level="32,49" value=".892,.668" />
-			<multiply skill_level="49,70" value=".668,.44" />
-			<multiply skill_level="70,100" value=".44,.167" />
-		</effect>
 		<recipe name="leather" unlock_level="15"/>
 		<recipe name="tanningRack" unlock_level="15"/>
 	</crafting_skill>
 
-	<crafting_skill name="Armor Smithing" icon="forge" description_key="Craft heavy armor faster and at better quality while repairing it more efficiently. Gain skill by crafting and repairing these items. Every 10 levels unlocks a new tier of armor until Steel Armor." title_key="armorer" group="clothing">
+	<crafting_skill name="Armor Smithing" icon="forge" description_key="Craft armor faster and at better quality while repairing it more efficiently. Gain skill by crafting and repairing these items. Every 10 levels unlocks a new tier of armor until Steel Armor." title_key="armorer" group="clothing">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
 			<multiply skill_level="5,11" value=".931,.871" />
