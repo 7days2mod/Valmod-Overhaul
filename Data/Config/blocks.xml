@@ -2502,7 +2502,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="rockSmall" value="8" /> </property>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 	<drop event="Destroy" count="0" />
-	<drop event="Destroy" name="campfire" count="1" tool_category="Disassemble" />
+	<drop event="Destroy" name="campfire" count="1" />
 	<property name="Group" value="Food/Cooking,Basics,Building" />
 	<property name="DescriptionKey" value="campfireDesc"/>
 	<property name="EconomicValue" value="5" />
