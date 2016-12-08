@@ -1645,6 +1645,7 @@
 </entity_class>-->
 <entity_class name="ZombieBrute" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieBrute"/>
+	<property name="SurfaceCategory" value="metal" />
 	<property name="HandItem"             value="GorillaBossHand" />
 	<property name="WalkType"             value="8" />
 	<property name="CanClimbLadders"     value="false" />
