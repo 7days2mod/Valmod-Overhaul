@@ -32,7 +32,7 @@
 
 	<style name="SMXcompass.window.background" type="texture">
 		<style_entry name="depth" value="0" />
-		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compassbg.png" /> <!-- Online Equivalent: http://i64.tinypic.com/jhrct2.jpg -->
+		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compassbg.png" /> <!-- Online Mac: @http://i.imgur.com/t3XdV7o.png -->
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="492,140" />
 		<style_entry name="pos" value="-60,10" />
@@ -40,7 +40,7 @@
 
 	<style name="SMXcompass.window.indicator" type="texture">
 		<style_entry name="depth" value="9" />
-		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator.png" /> <!-- Online Equivalent: http://i65.tinypic.com/11jx6ap.jpg -->
+		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator.png" /> <!-- Online Mac: @http://i.imgur.com/te7nHcB.png -->
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="32,48" />
 		<style_entry name="pos" value="184,10" />
