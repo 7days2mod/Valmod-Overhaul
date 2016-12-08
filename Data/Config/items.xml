@@ -11491,9 +11491,9 @@ which does not exist, yet. -->
 		<property class="Action0">
 			<property name="DamageEntity" value="10" />
 			<property name="DamageBlock" value="200" />
-			<property name="Range" value="1.8" />
+			<property name="Range" value="2" />
 			<property name="Buff" value="bleeding,stunned,infection" />
-			<property name="Buff_chance" value="0.3,0.4,0.4" />
+			<property name="Buff_chance" value="0.3,0.8,0.4" />
 		</property>
 	</item>
 <item id="1903" name="handBurningRusher">
