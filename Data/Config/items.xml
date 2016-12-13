@@ -10822,9 +10822,10 @@ which does not exist, yet. -->
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="1" />
+			<property name="Buff" value="eatFood_3_Trigger" />
 			<property name="Gain_food" value="10" />
 			<property name="Gain_water" value="0" />
-			<property name="Gain_wellness" value="0.6" />
+			<property name="Gain_wellness" value="0.4" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
@@ -10840,9 +10841,10 @@ which does not exist, yet. -->
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="2" />
+			<property name="Buff" value="eatFood_3_Trigger" />
 			<property name="Gain_food" value="23" />
 			<property name="Gain_water" value="1" />
-			<property name="Gain_wellness" value="1" />
+			<property name="Gain_wellness" value="0.4" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
