@@ -4918,7 +4918,7 @@ oilRefinerDesc,blocks,Block Building,,This workstation is used for refining raw 
 workstationDecor,blocks,Block Building,,Decorative Artisan Station,,
 workstationDecorDesc,blocks,Block Building,,This workstation is used for crafting decorative blocks such as couches or tables.,,
 workstationCombine,blocks,Block Building,,Combine Station,,
-workstationCombineDesc,blocks,Block Building,,This workstation is only used to combine items and serves no other function.,,
+workstationCombineDesc,blocks,Block Building,,This workstation is only used to combine items and serves no other function. Requires level 2 in Quality Joe perk.,,
 
 cntEPSMunitionsBox,blocks,Loot Container,,Munitions Box,,
 cntEPSLockers,blocks,Loot Container,,Lockers,,
