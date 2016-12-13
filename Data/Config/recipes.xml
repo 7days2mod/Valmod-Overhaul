@@ -3067,7 +3067,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <ingredient name="cloth" count="2" />
   <ingredient name="Peroxide" count="1" />
 </recipe>
-	<recipe name="maniacPowder" count="1" >
+	<recipe name="maniacPowder" count="1" craft_area="chemistryStation" >
   <ingredient name="potassiumNitratePowder" count="1" />
   <ingredient name="painkillers" count="1" />
   <ingredient name="mushrooms" count="1" />
