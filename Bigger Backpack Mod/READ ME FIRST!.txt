@@ -6,6 +6,3 @@ How to Install Bigger Backpack:
 3. Be sure to launch the game without EAC.
 4. Done.
 
-
-SERVERS:
-If you want to use this on a server the server must have EAC disabled and you will have to use the Assembly-CSharp.dll file from the Server folder.
