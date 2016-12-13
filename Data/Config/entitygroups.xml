@@ -74,6 +74,22 @@
 		<entity name="Bloated Walker" prob="0.06"/>
 		<entity name="Scorched Rusher" prob="0.02"/>
     </entitygroup>
+	
+    <entitygroup name="ZombiesWastelandHub">
+		<entity name="spiderzombie"/>
+        <entity name="zombieBoe" />
+        <entity name="zombieJoe" />
+        <entity name="zombieSteve" />
+        <entity name="zombieMoe" />
+        <entity name="zombieYo" />
+		<entity name="zombieArlene" />
+		<entity name="zombieDarlene" />
+		<entity name="zombieMarlene" />
+		<entity name="zombieNurse" />		
+		<entity name="hornet" />
+		<entity name="zombiedog" />
+		<entity name="zombieSteveCrawler" />
+    </entitygroup>	
     
     <entitygroup name="ZombiesWastelandNight">
 		<entity name="spiderzombie"/>
@@ -189,9 +205,10 @@
     </entitygroup>    		
 	
     <entitygroup name="ZombiesBoss">
-		<entity name="fatzombiecop" prob="0.6"/>
-		<entity name="Burning Boss" prob="0.2"/>
-		<entity name="ZombieRegen" prob="0.1"/>
+        <entity name="zombieMoe" prob="0.3"/>
+		<entity name="fatzombiecop" prob="0.5"/>
+		<entity name="Burning Boss" prob="0.05"/>
+		<entity name="ZombieRegen" prob="0.05"/>
 		<entity name="ZombieTrucker" prob="0.1"/>
     </entitygroup>	
 	
@@ -348,8 +365,8 @@
     </entitygroup>
 
     <entitygroup name="BruteBoss">
-		<entity name="zombieBoe" prob="0.85"/>
-		<entity name="ZombieBrute" prob="0.15"/>
+		<entity name="zombieBoe" prob="0.9"/>
+		<entity name="ZombieBrute" prob="0.1"/>
     </entitygroup>
 	
     <entitygroup name="RoamingBossGroup">
