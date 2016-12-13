@@ -804,8 +804,8 @@
 			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[gold]" foregroundlayer="true" />
 		</panel>
 		
-		<panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true">
-				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="303" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
+		<panel name="content" width="100%" height="335" depth="0" pos="0,-46" disableautobackground="true">
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="335" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
 				<grid depth="1" name="inventory" rows="5" cols="9" pos="3,-3" cell_width="67" cell_height="67" controller="Backpack" repeat_content="true" >
 					<item_stack_inventory name="0"/>
 				</grid>
