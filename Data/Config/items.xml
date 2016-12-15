@@ -4386,7 +4386,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="animalHidePonchoDesc"/>
 	<property name="Group" value="Clothing" />
 	<property name="ActionSkillGroup" value="Light Armor"/>
-	<property name="CraftingSkillGroup" value="Leatherworking"/>
+	<property name="CraftingSkillGroup" value="Armor Smithing"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="Weight" value="25" />
 </item>
