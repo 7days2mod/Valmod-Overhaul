@@ -9688,7 +9688,7 @@ kind of free
 </block>
 
 <block id="1164" name="commercialDoor1_v1">
-	<property name="MaxDamage" value="100" />
+	<property name="MaxDamage" value="150" />
 	<property name="Class" value="DoorSecure" />
 	<property name="Material" value="metal" />
 	<property name="Shape" value="ModelEntity" />
