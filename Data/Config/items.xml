@@ -12637,7 +12637,7 @@ which does not exist, yet. -->
 		<property name="DescriptionKey" value="recipebookOvenDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Skills_to_gain" value="Mechanical,Oven Repair,Oven Repair" />
+			<property name="Skills_to_gain" value="Mechanical,Oven Repair,Oven Repair,Oven Repair" />
 		</property>
 	</item>
 	<item id="2053" name="skillbookLockpick">
