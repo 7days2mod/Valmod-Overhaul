@@ -3295,6 +3295,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
         <ingredient name="wood" count="4"/>
         <ingredient name="glue" count="4"/>
     </recipe>
+<recipe name="trapAdhesiveSpike" count="1" craft_area="workbench">
+	<ingredient name="wood" count="20"/>
+	<ingredient name="glue" count="4"/>
+</recipe>
 	<recipe name="animalFeed" count="1" >
   <ingredient name="pineSeed" count="3" />
 	</recipe>
