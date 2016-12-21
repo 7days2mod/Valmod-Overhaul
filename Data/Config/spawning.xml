@@ -97,7 +97,7 @@
 		    <property name="EntityGroupName"    value="ZombieDogGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="2" />
 
@@ -120,7 +120,7 @@
 		    <property name="EntityGroupName"    value="ZombieFarmGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="5" />
 
@@ -143,7 +143,7 @@
 		    <property name="EntityGroupName"    value="ZombieSoldierGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="6" />
 
@@ -166,7 +166,7 @@
 		    <property name="EntityGroupName"    value="ZombieUtilityWorkerGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="6" />
 
@@ -189,7 +189,7 @@
 		    <property name="EntityGroupName"    value="ZombieUtilityWorkerGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="3" />
 
@@ -213,7 +213,7 @@
 		    <property name="EntityGroupName"    value="ZombieGhostTownGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="12" />
 
@@ -236,7 +236,7 @@
 		    <property name="EntityGroupName"    value="ZombieGhostTownGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="2" />
 
@@ -259,7 +259,7 @@
 		    <property name="EntityGroupName"    value="ZombieFootballStadiumGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="6" />
 
@@ -282,7 +282,7 @@
 		    <property name="EntityGroupName"    value="ZombieBikerBarGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="6" />
 
@@ -305,7 +305,7 @@
 		    <property name="EntityGroupName"    value="ZombieDogGroup" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in seconds -->
 		    <property name="TotalAlive"         value="3" />
 
@@ -328,7 +328,7 @@
       <property name="EntityGroupName"    value="ZombiesFeral" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in seconds -->
       <property name="TotalAlive"         value="1" />
 
@@ -352,7 +352,7 @@
         <property name="EntityGroupName"    value="HornetGroup" />
         <property name="Time"               value="Any" />
         
-        <property name="DelayBetweenSpawns" value="0" />        <!-- in seconds -->
+        <property name="DelayBetweenSpawns" value="1" />        <!-- in seconds -->
         <property name="TotalAlive"         value="3" />
         
         <property name="TotalPerWave"       value="3" />
@@ -375,7 +375,7 @@
       <property name="EntityGroupName"    value="ZombiesCave" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in seconds -->
       <property name="TotalAlive"         value="1" />
 
@@ -396,7 +396,7 @@
       <property name="EntityGroupName"    value="ZombiesAll" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in seconds -->
       <property name="TotalAlive"         value="2" />
 
@@ -417,7 +417,7 @@
         <property name="EntityGroupName"    value="ZombiesAll" />
         <property name="Time"               value="Any" />
         
-        <property name="DelayBetweenSpawns" value="0" />        <!-- in seconds -->
+        <property name="DelayBetweenSpawns" value="1" />        <!-- in seconds -->
         <property name="TotalAlive"         value="4" />
         
         <property name="TotalPerWave"       value="4" />
@@ -436,7 +436,7 @@
         <property name="EntityGroupName"    value="ZombiesAll" />
         <property name="Time"               value="Any" />
         
-        <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+        <property name="DelayBetweenSpawns" value="1" />        <!-- in full seconds -->
         <property name="TotalAlive"         value="6" />
         
         <property name="TotalPerWave"       value="6" />
@@ -455,7 +455,7 @@
 		    <property name="EntityGroupName"    value="ZombiesAll" />
 		    <property name="Time"               value="Any" />
 
-		    <property name="DelayBetweenSpawns" value="0" />
+		    <property name="DelayBetweenSpawns" value="1" />
 		    <!-- in full seconds -->
 		    <property name="TotalAlive"         value="10" />
 
@@ -475,7 +475,7 @@
         <property name="EntityGroupName"    value="ZombiesAll" />
         <property name="Time"               value="Any" />
 
-        <property name="DelayBetweenSpawns" value="0" />
+        <property name="DelayBetweenSpawns" value="1" />
         <!-- in full seconds -->
         <property name="TotalAlive"         value="12" />
 
@@ -495,7 +495,7 @@
       <property name="EntityGroupName"    value="ZombiesCrawlers" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in full seconds -->
       <property name="TotalAlive"         value="3" />
 
@@ -515,7 +515,7 @@
       <property name="EntityGroupName"    value="ZombiesBurntForest" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in full seconds -->
       <property name="TotalAlive"         value="12" />
 
@@ -536,7 +536,7 @@
       <property name="EntityGroupName"    value="SnowZombies" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in seconds -->
       <property name="TotalAlive"         value="3" />
 
@@ -556,7 +556,7 @@
       <property name="EntityGroupName"    value="SnowZombies" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in full seconds -->
       <property name="TotalAlive"         value="7" />
 
@@ -576,7 +576,7 @@
       <property name="EntityGroupName"    value="SnowZombies" />
       <property name="Time"               value="Any" />
 
-      <property name="DelayBetweenSpawns" value="0" />
+      <property name="DelayBetweenSpawns" value="1" />
       <!-- in full seconds -->
       <property name="TotalAlive"         value="10" />
 
@@ -1295,7 +1295,7 @@
 		<property name="ResetToday"        value="false" />
         <property name="EntityGroupName"    value="SchoolGroup" />
         <property name="Time"               value="Any" />
-        <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+        <property name="DelayBetweenSpawns" value="1" />        <!-- in full seconds -->
         <property name="TotalAlive"         value="6" />
         <property name="TotalPerWave"       value="6" />
         <property name="DaysToRespawnIfPlayerLeft" value="2" /> <!-- in game days -->
@@ -1308,7 +1308,7 @@
 		<property name="ResetToday"        value="false" />
         <property name="EntityGroupName"    value="BookstoreGroup" />
         <property name="Time"               value="Any" />
-        <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+        <property name="DelayBetweenSpawns" value="1" />        <!-- in full seconds -->
         <property name="TotalAlive"         value="6" />
         <property name="TotalPerWave"       value="6" />
         <property name="DaysToRespawnIfPlayerLeft" value="2" /> <!-- in game days -->
@@ -1321,7 +1321,7 @@
 		<property name="ResetToday"        value="false" />
         <property name="EntityGroupName"    value="GraveYard" />
         <property name="Time"               value="Any" />
-        <property name="DelayBetweenSpawns" value="0" />        <!-- in full seconds -->
+        <property name="DelayBetweenSpawns" value="1" />        <!-- in full seconds -->
         <property name="TotalAlive"         value="4" />
         <property name="TotalPerWave"       value="4" />
         <property name="DaysToRespawnIfPlayerLeft" value="2" /> <!-- in game days -->
