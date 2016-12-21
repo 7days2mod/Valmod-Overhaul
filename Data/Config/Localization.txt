@@ -4449,7 +4449,7 @@ ledAviatorGoggles,items,Item Clothes,,Mole Goggles,,
 ledGoggles,items,Item Clothes,,LED Goggles,,
 LEDHelmetDesc,items,Item Clothes,,Wear this to be able to toggle on the LED light.,,
 
-bowlDesc,items,Item Food,,Use claw bowls for cooking stews and other various foods.,,
+bowlDesc,items,Item Food,,Use clay bowls for cooking stews and other various foods.,,
 bowl,items,Item Food,,Clay Bowl,,
 bowlMurkyDesc,items,Item Food,,This bowl is full of murky water. Boil it or use purification tablets to clean it.,,
 bowlMurkyWater,items,Item Food,,Bowl of Murky Water,,
@@ -4592,7 +4592,7 @@ gearMechanismDesc,items,Item Tool,,"These gears are required for making hidden d
 electricalWires,items,Item Tool,,Electrical Wires,,
 electricalWiresDesc,items,Item Tool,,These wires are required for making electric lights.,,
 electricToolkit,items,Item Tool,,Electric Toolkit,,
-electricToolkitDesc,items,Item Tool,,This toolkit is used in the Decor Artisan Station for crafting electric lights.,,
+electricToolkitDesc,items,Item Tool,,This toolkit is used in the Decor Artisan Station for crafting electric lights. Requires the Electrician perk to craft.,,
 
 improvisedWeaponsSchematic,items,Item Book,,Improvised Weapons,,
 improvisedWeaponsSchematicDesc,items,Item Book,,"This schematic teaches you how ot make clubs, shivs and the blunderbuss.",,
@@ -5322,8 +5322,6 @@ workstationQuest,blocks,Block Building,,Quest Board,,
 workstationQuestDesc,blocks,Block Building,,This quest board can be used to purchase various quests.,,
 
 soapDesc,items,Item,,"Depending on where you found this you might want to use it quickly to wash your hands.",,
-
-cabinetFiller2Block,blocks,Block,,Red Block,,
 
 aloeLotion,buffs,Buff,,Aloe Lotion,,
 aloeLotionDesc,buffs,Buff,,A nice layer of lotion helps keep your skin cool.,,
