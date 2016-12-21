@@ -1856,7 +1856,7 @@ which does not exist, yet. -->
 <item id="146" name="crossbow">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
 	<property name="Material" value="metal" />
-	<property name="RepairTools" value="forgedIron" />
+	<property name="RepairTools" value="wood" />
 	<property name="HoldType" value="26" />
  	<property name="FuelValue" value="70" />
 	<property name="EconomicValue" value="220" />
