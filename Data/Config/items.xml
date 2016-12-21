@@ -12288,7 +12288,7 @@ which does not exist, yet. -->
 		<property name="Sphere" value="0.1" />
 		<property name="Block_range" value="4" />
 		<property name="Sound_start" value="swoosh" />
-		<property name="Stamina_usage" value="4" />
+		<property name="Stamina_usage" value="5" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.head" value="6" />
 		<property name="DamageBonus.stone" value=".1" />
