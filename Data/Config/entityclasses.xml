@@ -152,11 +152,11 @@
 	<property name="UpperArmDismemberBonusChance" value="0.9"/>
 	<property name="LegCrawlerThreshold" value="0"/> <!-- at like .175 nearly every zombie knocked down from a leg hit turns into a crawler -->
 	<property name="LegCrippleThreshold" value="0.01"/>
-	<property name="KnockdownProneDamageThreshold" value="0.5"/>
-	<property name="KnockdownProneStunDuration" value="4,6"/>
+	<property name="KnockdownProneDamageThreshold" value="0.55"/>
+	<property name="KnockdownProneStunDuration" value="3,4"/>
 	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
 	<property name="KnockdownKneelDamageThreshold" value="0.4"/>
-	<property name="KnockdownKneelStunDuration" value="5,7"/>
+	<property name="KnockdownKneelStunDuration" value="3,4"/>
 	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
