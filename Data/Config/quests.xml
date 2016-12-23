@@ -413,10 +413,10 @@
 			<requirement type="Holding" id="gunBoltRifle" />
 			<requirement type="Holding" id="gunHuntingRifle" />
 		</requirement>
-		<objective type="AnimalKill" value="40"  />
+		<objective type="AnimalKill" value="25"  />
 		<reward type="Skill" id="Leatherworking" value="2" />
 		<reward type="Skill" id="Blade Weapons" value="2" />
-		<reward type="Item" id="762mmBullet" value="50" />
+		<reward type="Item" id="762mmBullet" value="40" />
 		<reward type="Quest" id="challenge_animaltrap" />
 	</quest>
 	
@@ -1249,7 +1249,9 @@ repeatable="true" category_key="challenge" difficulty="easy">
 	<reward type="SkillPoints" value="1" />
 </quest>
 
-<quest id="survivorNoteCollection" name="Survivor Experience" subtitle="Survivor Experience" description="Your experience surviving in this harsh world has given you a skill point." icon="misc_crafting" 
+<quest id="survivorNoteCollection" name="Survivor Experience" subtitle="Survivor Experience" 
+offer="This is a collection of survivor notes which might give you a little insight on surviving in this harsh world."
+description="Your experience surviving in this harsh world has given you a skill point." icon="misc_crafting" 
 repeatable="true" category_key="challenge" difficulty="easy">
 	<reward type="SkillPoints" value="5" />
 </quest>
