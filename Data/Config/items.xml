@@ -3720,6 +3720,7 @@ which does not exist, yet. -->
 </item>
 
 <item id="397" name="hazmatBoots"> <!-- armorMasterHazMatArmor -->
+	<property name="Waterproof" value="0.1"/>
 	<property name="Insulation" value="6"/>
 	<property name="Encumbrance" value="0.03" />
 	<property name="Material" value="MmilitaryFiber" />
@@ -14959,7 +14960,7 @@ which does not exist, yet. -->
 	<property name="Material" value="organic" />
 	<property name="Weight" value="5" />
 	<property name="HoldType" value="45" />
-	<property name="Stacknumber" value="1" />
+	<property name="Stacknumber" value="5" />
 	<property name="DropScale" value="4" />
 	<property name="IsDeveloper" value="true" />
 	<property name="EconomicValue" value="50" />
