@@ -10849,6 +10849,7 @@ which does not exist, yet. -->
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
+		<property name="Smell" value="smallSmell" />
 		<property name="CraftingSkillGroup" value="Cooking"/>
 	</item>
 	<item id="1805" name="drinkEnergy">
