@@ -736,7 +736,7 @@
 	</quest>
 
 <!-- New Various Quests -->
-<quest id="challenge_weddingring" name="StickyPages" subtitle="Collectes" description="Hey survivor. This chick I've been trying to get with in our group for months now refuses to put out unless we get 'married' - as if thats even a thing anymore. To make matters worse she won't accept unless she has some fancy ring. Nothing I've tried has been enough her her highness. Find me a diamond ring and I'll make make it worth your while - it'll certaily be worth mine!" icon="ui_game_symbol_treasure" 
+<quest id="challenge_weddingring" name="Holy Matrimony" subtitle="Collectes" description="Hey survivor. This chick I've been trying to get with in our group for months now refuses to put out unless we get 'married' - as if thats even a thing anymore. To make matters worse she won't accept unless she has some fancy ring. Nothing I've tried has been enough her her highness. Find me a diamond ring and I'll make make it worth your while - it'll certaily be worth mine!" icon="ui_game_symbol_treasure" 
 	repeatable="true" category_key="challenge" offer="Hey survivor. This chick I've been trying to get with in our group for months now refuses to put out unless we get 'married' - as if thats even a thing anymore. To make matters worse she won't accept unless she has some fancy ring. Nothing I've tried has been enough her her highness. Find me a diamond ring and I'll make make it worth your while - it'll certaily be worth mine!" difficulty="easy">
 	<objective type="Fetch" id="questItemRing" value="1" />
 	<reward type="Item" id="casinoCoin" value="600" />
