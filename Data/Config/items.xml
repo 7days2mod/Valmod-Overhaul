@@ -2041,6 +2041,7 @@ which does not exist, yet. -->
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.5" />
 		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.body" value="0.8" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2079,6 +2080,7 @@ which does not exist, yet. -->
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.25" />
 		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.body" value="0.8" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2116,6 +2118,7 @@ which does not exist, yet. -->
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.35" />
 		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.body" value="0.8" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2151,6 +2154,7 @@ which does not exist, yet. -->
 		<property name="Gravity" value="-6"/>
 		<property name="LifeTime" value="12" />
 		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.body" value="0.8" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="2" />
 		<property name="DamageBonus.earth" value="0.1" />
@@ -2221,6 +2225,7 @@ which does not exist, yet. -->
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="12" />
 		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.body" value="0.8" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0" />
@@ -2257,6 +2262,7 @@ which does not exist, yet. -->
 		<property name="Gravity" value="-4"/>
 		<property name="LifeTime" value="12" />
 		<property name="DamageBonus.head" value="5" />
+		<property name="DamageBonus.body" value="0.8" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
 		<property name="DamageBonus.earth" value="0" />
