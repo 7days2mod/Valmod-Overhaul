@@ -677,6 +677,18 @@
 		<recipe name="crossbowRepeater" unlock_level="50"/>
 	</action_skill>
 
+	<perk name="Master Archer" icon="archery" description_key="Each level in perk raises your damage with bows and crossbows." title_key="Master Archer" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+		<requirement perk_level="1" required_skill_name="Archery" required_skill_level="10"/>
+		<requirement perk_level="2" required_skill_name="Archery" required_skill_level="30"/>
+		<requirement perk_level="3" required_skill_name="Archery" required_skill_level="50"/>
+		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.1"/>
+			<multiply skill_level="2" value="1.2"/>
+			<multiply skill_level="3" value="1.3"/>
+		</effect>
+	</perk>
+
 	<crafting_skill name="Fletching" icon="archery" description_key="fletchingDesc" title_key="fletching" group="weapons">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,10" value="1.00,0.76"/>
