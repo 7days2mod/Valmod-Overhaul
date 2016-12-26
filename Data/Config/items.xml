@@ -11581,6 +11581,16 @@ which does not exist, yet. -->
 		<property name="Buff_chance" value="1" />
 	</property>
 </item>
+<item id="1910" name="axeJason">
+	<property name="Extends" value="fireaxeIron" />
+	<property name="IsDeveloper" value="true" />
+	<property name="Candrop" value="false" />
+	<property class="Attributes">
+		<property name="EntityDamage" value="25,25" />
+		<property name="BlockDamage" value="40,40" />
+		<property name="DegradationRate" value="0,0" />
+	</property>
+</item>
 	
 	<!-- Health Items -->
 	<item id="1920" name="Peroxide">

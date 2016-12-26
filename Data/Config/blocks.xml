@@ -701,6 +701,11 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<drop event="Destroy" count="0" />
 </block>
 
+<block id="61" name="cntCorpseJasonAxe">
+	<property name="Extends" value="cntCorpseJason" />
+	<property name="LootList" value="133"/>
+</block>
+
 <!-- ****************************  Master Material Blocks  **************************** -->
 	<!-- Master blocks are material based because it means that the repair and upgrade resources -->
 	<!-- only need to be listed once. -->

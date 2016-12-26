@@ -361,7 +361,8 @@
     <entitygroup name="JasonGroup">
 		<entity name="zombieBoe" prob="0.9"/>
 		<entity name="zombieYo" prob="2"/>
-		<entity name="ZombieJason" prob="0.1"/>
+		<entity name="ZombieJason" prob="0.05"/>
+		<entity name="ZombieJasonAxe" prob="0.05"/>
     </entitygroup>
 
     <entitygroup name="BruteBoss">
@@ -370,7 +371,8 @@
     </entitygroup>
 	
     <entitygroup name="RoamingBossGroup">
-		<entity name="ZombieJason" prob="0.3"/>
+		<entity name="ZombieJason" prob="0.15"/>
+		<entity name="ZombieJasonAxe" prob="0.15"/>
 		<entity name="ZombieBrute" prob="0.7"/>
     </entitygroup>
 

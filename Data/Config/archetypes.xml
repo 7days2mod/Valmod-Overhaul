@@ -8259,7 +8259,6 @@
 				<texture name="clothes_army_pants" color="0,0,0"/>
 				<texture name="unisex_face_dirt_overlay" color="0,0,0"/>
 				<texture name="male_head_wound" color="78,15,15,255"/>
-				<texture name="female_head_wound" color="116,70,70,255"/>
 			</part>
 			<part slot="legs" layer="inner" mesh="male_clothes_denim_pants">
 				<texture name="male_pants_01" color="1E212B"/>
@@ -8270,6 +8269,129 @@
 				<texture name="worn_boots" color="80,80,80"/>
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 				<texture name="male_head_wound" color="0,0,0,255"/>
+			</part>
+		</base_mesh_parts>
+		<preview_mesh_parts>
+		</preview_mesh_parts>
+		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
+			<gene name="neckUp_Down" value="0"/>
+			<gene name="neckLeft_Right" value="0"/>
+			<gene name="neckTiltLeft_Right" value="0"/>
+			<gene name="headUp_Down" value="0"/>
+			<gene name="headLeft_Right" value="0"/>
+			<gene name="headTiltLeft_Right" value="0"/>
+			<gene name="jawOpen_Close" value="0"/>
+			<gene name="jawForward_Back" value="0"/>
+			<gene name="jawLeft_Right" value="0"/>
+			<gene name="mouthLeft_Right" value="0"/>
+			<gene name="mouthUp_Down" value="0"/>
+			<gene name="mouthNarrow_Pucker" value="0"/>
+			<gene name="tongueOut" value="0"/>
+			<gene name="tongueCurl" value="0"/>
+			<gene name="tongueUp_Down" value="0"/>
+			<gene name="tongueLeft_Right" value="0"/>
+			<gene name="tongueWide_Narrow" value="0"/>
+			<gene name="leftMouthSmile_Frown" value="-0.53"/>
+			<gene name="rightMouthSmile_Frown" value="-0.53"/>
+			<gene name="leftLowerLipUp_Down" value="0"/>
+			<gene name="rightLowerLipUp_Down" value="0"/>
+			<gene name="leftUpperLipUp_Down" value="0"/>
+			<gene name="rightUpperLipUp_Down" value="0"/>
+			<gene name="leftCheekPuff_Squint" value="0"/>
+			<gene name="rightCheekPuff_Squint" value="0"/>
+			<gene name="noseSneer" value="0"/>
+			<gene name="leftEyeOpen_Close" value="0"/>
+			<gene name="rightEyeOpen_Close" value="0"/>
+			<gene name="leftEyeUp_Down" value="0"/>
+			<gene name="rightEyeUp_Down" value="0"/>
+			<gene name="leftEyeIn_Out" value="0"/>
+			<gene name="rightEyeIn_Out" value="0"/>
+			<gene name="browsIn" value="0"/>
+			<gene name="leftBrowUp_Down" value="0.23"/>
+			<gene name="rightBrowUp_Down" value="0.23"/>
+			<gene name="midBrowUp_Down" value="-0.43"/>
+		</expression>
+		<dna>
+			<gene name="height" value="1.8"/>
+			<gene name="headSize" value="0.83"/>
+			<gene name="headWidth" value="0.61"/>
+			<gene name="handsSize" value="1"/>
+			<gene name="feetSize" value="1"/>
+			<gene name="muscle" value="1"/>
+			<gene name="weight" value="0.57"/>
+			<gene name="gluteusSize" value="0.5"/>
+			<gene name="earsSize" value="0.61"/>
+			<gene name="earsPosition" value="0.62"/>
+			<gene name="earsRotation" value="0.5"/>
+			<gene name="noseSize" value="0.855"/>
+			<gene name="noseCurve" value="1"/>
+			<gene name="noseWidth" value="0.85"/>
+			<gene name="noseInclination" value="0.31"/>
+			<gene name="nosePosition" value="0.68"/>
+			<gene name="nosePronounced" value="0.58"/>
+			<gene name="noseFlatten" value="0.5"/>
+			<gene name="chinSize" value="0.5"/>
+			<gene name="chinPronounced" value="0.5"/>
+			<gene name="chinPosition" value="0.5"/>
+			<gene name="mandibleSize" value="0.95"/>
+			<gene name="jawsSize" value="0.795"/>
+			<gene name="jawsPosition" value="0.5"/>
+			<gene name="cheekSize" value="0.355"/>
+			<gene name="cheekPosition" value="0.5"/>
+			<gene name="lowCheekPronounced" value="0.5"/>
+			<gene name="lowCheekPosition" value="0.44"/>
+			<gene name="foreheadSize" value="0.5"/>
+			<gene name="foreheadPosition" value="0.455"/>
+			<gene name="lipsSize" value="0.5"/>
+			<gene name="mouthSize" value="1"/>
+			<gene name="eyeRotation" value="0.505"/>
+			<gene name="eyeSize" value="0.995"/>
+			<gene name="breastSize" value="0.5"/>
+		</dna>
+	</archetype>
+	<archetype name="ZombieJasonAxe" male="true" hair_color="255,255,255" eye_color="184,169,166" skin_color="1,12,18" type="Player" >
+		<base_mesh_parts>
+			<part slot="head" layer="base" mesh="male_base_face">
+				<texture name="male_head_zombie" color="skin"/>
+				<texture name="male_skull_overlay" color="255,255,255"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+			</part>
+			<part slot="head" layer="outer" mesh="armor_hazmat_head">
+				<texture name="unisex_fiberCloth_gloves" color="FFF8C7"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+				<texture name="male_head_wound" color="0,0,0,255"/>
+				<texture name="female_legs_wound" color="0,0,0,255"/>
+			</part>
+			<part slot="head" layer="inner" mesh="armor_leather_hood">
+				<texture name="unisex_fiberCloth_legs" color="FFF8C7"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,55"/>
+				<texture name="male_head_wound" color="0,0,0"/>
+				<texture name="female_legs_wound" color="0,0,0,255"/>
+				<texture name="female_torso_wound" color="0,0,0,255"/>
+			</part>
+			<part slot="eyes" layer="base" mesh="male_base_eyes">
+				<texture name="unisex_eye_bloodshot" color="59,56,56,255"/>
+			</part>
+			<part slot="hands" layer="base" mesh="male_armor_kevlar_gloves">
+				<texture name="unisex_armor_kevlar_gloves" color="A19648"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+				<texture name="male_head_wound" color="78,15,15,255"/>
+				<texture name="female_legs_wound" color="93,39,39,255"/>
+			</part>
+			<part slot="chest" layer="base" mesh="sweatshirt">
+				<texture name="sweatshirt" color="17343D"/>
+				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
+				<texture name="unisex_face_dirt_overlay" color="0,0,0,50"/>
+				<texture name="male_head_wound" color="0,0,0,255"/>
+				<texture name="female_torso_wound" color="0,0,0,255"/>
+			</part>
+			<part slot="legs" layer="base" mesh="male_clothes_overalls">
+				<texture name="unisex_clothes_overalls" color="17343D"/>
+				<texture name="unisex_face_dirt_overlay" color="0,0,0,255"/>
+				<texture name="male_head_wound" color="80,80,80,255"/>
+			</part>
+			<part slot="feet" layer="base" mesh="worn_boots">
+				<texture name="worn_boots" color="80,80,80"/>
 			</part>
 		</base_mesh_parts>
 		<preview_mesh_parts>

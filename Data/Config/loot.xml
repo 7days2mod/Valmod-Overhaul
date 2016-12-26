@@ -2953,9 +2953,30 @@
 </lootcontainer>
 
 	<!-- Jason Zombie -->
+<lootgroup name="JasonMachete" count="1">
+	<item name="legendaryMachete" prob="0.4"/>
+	<item name="machete" prob="0.6"/>
+</lootgroup>
+<lootgroup name="JasonMacheteLoot" count="all">
+	<item group="JasonMachete"/>
+	<item name="oldCash" count="60,230" />
+	<item group="treasureMaps" count="0,1"/>
+</lootgroup>
 <lootcontainer id="132" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate">
-	<item name="legendaryMachete" prob="0.3"/>
-	<item name="machete" prob="0.7"/>
+	<item group="JasonMacheteLoot"/>
+</lootcontainer>
+
+<lootgroup name="JasonAxe" count="1">
+	<item name="legendaryFireaxe" prob="0.4"/>
+	<item name="fireaxeSteel" prob="0.6"/>
+</lootgroup>
+<lootgroup name="JasonAxeLoot" count="all">
+	<item group="JasonAxe"/>
+	<item name="oldCash" count="60,230" />
+	<item group="treasureMaps" count="0,1"/>
+</lootgroup>
+<lootcontainer id="133" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate">
+	<item group="JasonAxeLoot"/>
 </lootcontainer>
 
 	<!-- Survivor Briefcase -->

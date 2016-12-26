@@ -1781,6 +1781,12 @@
 	<property name="DeadBodyHitPoints" value="20" />
 	<property name="HasDeathAnim" value="true" />
 </entity_class>
+<entity_class name="ZombieJasonAxe" extends="ZombieJason" >
+	<property name="Archetype" value="ZombieJasonAxe"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="axeJason" />
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="axeJason" />
+	<property name="CorpseBlock" value="cntCorpseJasonAxe"/>
+</entity_class>
 <entity_class name="ZombieRegen" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieRegen"/>
 	<property name="WalkType" value="2" />

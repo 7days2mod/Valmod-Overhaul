@@ -5037,7 +5037,7 @@ cntZombieBloatedWalker,blocks,Loot Container,,Bloated Walker Loot,,
 cntZombieFemale,blocks,Loot Container,,Zombie Loot,,
 cntZombieBurnt,blocks,Loot Container,,Zombie Loot,,
 cntCorpseJason,blocks,Loot Container,,Crazed Slasher Loot,,
-
+cntCorpseJasonAxe,blocks,Loot Container,,Crazed Slasher Loot,,
 
 challengeSticky,items,Zombie Challenge Note,,A Sticky Offer,,
 challengeClassMiner,items,Zombie Challenge Note,,Class Quest - Miner,,
