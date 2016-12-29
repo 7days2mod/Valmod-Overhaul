@@ -1251,7 +1251,7 @@ repeatable="true" category_key="challenge" difficulty="easy">
 
 <quest id="survivorNoteCollection" name="Survivor Experience" subtitle="Survivor Experience" 
 offer="This is a collection of survivor notes which might give you a little insight on surviving in this harsh world."
-description="Your experience surviving in this harsh world has given you a skill point." icon="misc_crafting" 
+description="Your experience surviving in this harsh world has given you 5 skill points." icon="misc_crafting" 
 repeatable="true" category_key="challenge" difficulty="easy">
 	<reward type="SkillPoints" value="5" />
 </quest>
