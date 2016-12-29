@@ -129,9 +129,9 @@ built-in buff variables:
 
 <buff id="isPlayer" buffif="+full > 0" />
 	
-<buff id="bleeding" mutex="Resistance" duration="60" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+<buff id="bleeding" mutex="Resistance" duration="120" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
-	<modify id="1" stat="health" amount="-1" rate="1"/>
+	<modify id="1" stat="health" amount="-1" rate="2"/>
 </buff>
 
 <buff id="trapDamage1Trigger" duration="1" type="bleeding" actions="setvar(CTRtrapDmg1, 3);debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge)" /> <!-- spikes and other traps -->
@@ -610,9 +610,9 @@ snowberryPlant feeds you for 90 sec. -->
 	<modify id="0" stat="water" amount="20" rate="1"/>
 	<modify id="1" stat="health" amount="20" rate="1"/>
 </buff>
-<buff id="bleedingSmall" mutex="Resistance" duration="10" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
+<buff id="bleedingSmall" mutex="Resistance" duration="20" type="bleeding" actions="debuff(fullBuff);debuff(firstAid);debuff(firstAidLarge);damage(0,5,0,0)" icon="ui_game_symbol_critical" name_key="bleedingOut" description_key="bleedingOutDesc" tooltip_key="bleedingOutTooltip" cures="bandage,firstAidBandage,firstAidKit">
 	<modify id="0" stat="stamina" amount="-1" rate="1"/>
-	<modify id="1" stat="health" amount="-1" rate="1"/>
+	<modify id="1" stat="health" amount="-1" rate="2"/>
 </buff>
 
 <buff id="Rusher" mutex="burning" duration="5" debuffif="+water > 1" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)" >
