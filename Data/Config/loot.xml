@@ -316,26 +316,26 @@
 		<qualitytemplate level="0,0.48" default_quality="201,300">
 			<loot quality="301,600" prob="0.01"/>
 			<loot quality="201,300" prob="0.05"/>
-			<loot quality="101,200" prob="0.15"/>
-			<loot quality="90,300" prob="1"/>
+			<loot quality="150,200" prob="0.15"/>
+			<loot quality="150,300" prob="1"/>
 		</qualitytemplate>
 		<qualitytemplate level="0.48,0.64" default_quality="301,400">
 			<loot quality="501,600" prob="0.03"/>
 			<loot quality="401,500" prob=".10"/>
 			<loot quality="301,400" prob="0.25"/>
-			<loot quality="90,300" prob="0.75"/>
+			<loot quality="200,300" prob="0.75"/>
 		</qualitytemplate>
 		<qualitytemplate level="0.64,0.80" default_quality="401,500">
 			<loot quality="501,600" prob="0.05"/>
 			<loot quality="401,500" prob="0.25"/>
 			<loot quality="301,400" prob="0.25"/>
-			<loot quality="90,300" prob="0.5"/>
+			<loot quality="200,300" prob="0.5"/>
 		</qualitytemplate>
 		<qualitytemplate level="0.80,1" default_quality="501,600">
 			<loot quality="501,600" prob="0.10"/>
 			<loot quality="401,500" prob=".25"/>
 			<loot quality="301,400" prob="0.25"/>
-			<loot quality="90,300" prob="0.4"/>
+			<loot quality="250,300" prob="0.4"/>
 		</qualitytemplate>
 	</lootqualitytemplate>
 </lootqualitytemplates>
