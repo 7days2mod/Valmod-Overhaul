@@ -2961,6 +2961,7 @@
 	<item group="JasonMachete"/>
 	<item name="oldCash" count="60,230" />
 	<item group="treasureMaps" count="0,1"/>
+	<item name="survivorNoteCollection" />
 </lootgroup>
 <lootcontainer id="132" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate">
 	<item group="JasonMacheteLoot"/>
@@ -2974,6 +2975,7 @@
 	<item group="JasonAxe"/>
 	<item name="oldCash" count="60,230" />
 	<item group="treasureMaps" count="0,1"/>
+	<item name="survivorNoteCollection" />
 </lootgroup>
 <lootcontainer id="133" count="1" size="4,4" destroy_on_close="true" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="legendaryTemplate">
 	<item group="JasonAxeLoot"/>
