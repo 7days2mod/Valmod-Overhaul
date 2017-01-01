@@ -265,7 +265,7 @@
 		<recipe name="wrench" unlock_level="40"/>
 	</action_skill>
 	
-	<action_skill name="Axes" icon="mining" description_key="Do more damage with axes and harvest resources faster. Level 10 unlocks iron fireaxe. Level 20 unlocks steel fireaxe. Level 50 unlocks combatAxe." title_key="axesTitle" group="tools">
+	<action_skill name="Axes" icon="mining" description_key="Do more damage with axes and harvest resources faster. Level 10 unlocks iron fireaxe. Level 20 unlocks steel fireaxe. Level 50 unlocks Combat Axe." title_key="axesTitle" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
 			<multiply skill_level="10,20" value="1.32,1.45"/>
