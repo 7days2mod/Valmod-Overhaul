@@ -5190,7 +5190,7 @@ MasterArcher,progression,Skill,,Master Archer,,
 archerDesc,progression,Skill,,"Learn how to craft an iron bow, iron crossbow and crossbow repeater.",,
 
 fletching,progression,Skill,,Fletching,,
-fletchingDesc,progression,Skill,,"Level 3 unlocks arrows. Level 20 unlocks iron arrows/bolts. Level 30 unlocks steel arrows/bolts. Level 50 unlocks flaming arrows and explosive bolts. Level this by crafting arrows and bolts to speed up your crafting.",,
+fletchingDesc,progression,Skill,,"Level 20 unlocks iron arrows/bolts. Level 30 unlocks steel arrows/bolts. Level 50 unlocks flaming arrows and explosive bolts. Increase your level by crafting arrows and bolts.",,
 
 expGainDesc,items,Item,,Read this to gain a skill point in the relevant category.,,
 expWeaponSmithing,items,Item,,Experience - Weapon Smithing,,
