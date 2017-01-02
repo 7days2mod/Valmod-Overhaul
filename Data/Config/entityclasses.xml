@@ -131,7 +131,7 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="100"/>
+	<property name="ExperienceGain" value="200"/>
 	<property name="DeadBodyHitPoints" value="20" /> <!-- For harvesting -->
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -178,7 +178,7 @@
 	<property name="NightApproachSpeed" value="1.35" />	
 	<property name="HandItem" value="handCopZombie" />
 	<property name="MaxHealth" value="750" />
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1500"/>
 	<property name="LootListOnDeath" value="61" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="HeadDismemberThreshold" value="0.2"/>
@@ -232,7 +232,7 @@
 	<property name="Weight" value="70" />
 	<property name="PushFactor" value="20" />
 	<property name="CanClimbLadders" value="true" />
-	<property name="ExperienceGain" value="300"/>
+	<property name="ExperienceGain" value="350"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -367,7 +367,7 @@
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="ExperienceGain" value="350"/>
+	<property name="ExperienceGain" value="550"/>
 </entity_class>
 
 <entity_class name="spiderzombie" extends="zombie01">
@@ -473,7 +473,7 @@
 	<property name="Explosion.BlockDamage" value="500" />
 	<property name="Explosion.EntityDamage" value="150" />
 	<property name="Explosion.DamageBonus.earth" value="0" />
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="850"/>
 	<property name="HeadDismemberBonusChance" value="0.08"/>
 	<property name="HeadDismemberThreshold" value="0"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
 	<property name="LowerLegDismemberThreshold" value="0"/>
@@ -592,7 +592,7 @@
 	<property name="SoundAttack" value="Enemies/Zombie_Dogs/zombiedogattack" />
 	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense" />
 	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup" />
-	<property name="ExperienceGain" value="200"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="Immunity" value="sickness;disease;bleeding;wellness" />
 	<property name="Weight" value="70" />
 	<property name="MaxViewAngle" value="180" />
@@ -660,7 +660,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="false" />
-	<property name="ExperienceGain" value="100"/>
+	<property name="ExperienceGain" value="120"/>
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
@@ -731,7 +731,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
-	<property name="ExperienceGain" value="350"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="DeadBodyHitPoints" value="250" /> <!-- For harvesting -->
@@ -799,7 +799,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
-	<property name="ExperienceGain" value="400"/>
+	<property name="ExperienceGain" value="1400"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="0"/>
 	<!-- For harvesting -->
@@ -832,7 +832,7 @@
 	<property name="SoundDeath" value="Animals/rabbitdeath" />
 	<property name="PanicSpeed" value="1.5" />
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="50"/>
+	<property name="ExperienceGain" value="130"/>
 	<property name="SwimOffset" value="2"/>
 	<!-- For harvesting -->
 	<property name="DeadBodyHitPoints" value="80" />
@@ -855,7 +855,7 @@
 	<property name="SoundDeath" value="Animals/Chicken/chickendeath" />
 	<property name="PanicSpeed" value="1" />
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="50"/>
+	<property name="ExperienceGain" value="100"/>
 	<property name="SwimOffset" value="2"/>
 	<!-- For harvesting -->
 	<property name="DeadBodyHitPoints" value="80" />
@@ -876,7 +876,7 @@
 	<property name="SoundDeath" value="Animals/pigdeath" />
 	<property name="PanicSpeed" value="1.2" />
 	<property name="PhysicsBody" value="pig" />
-	<property name="ExperienceGain" value="50"/>
+	<property name="ExperienceGain" value="100"/>
 	<property name="SwimOffset" value="0.7"/>
 	<!-- For harvesting -->
 	<drop event="Harvest" name="rawMeat" count="4" />
@@ -1034,7 +1034,7 @@
 	<property name="Archetype" value="ZombieSoldier"/>
 	<property name="LootListOnDeath" value="73" />
 	<property name="MaxHealth" value="500" />
-	<property name="ExperienceGain" value="400"/>
+	<property name="ExperienceGain" value="450"/>
 	<property name="WalkType" value="7" />
 </entity_class>
 
@@ -1436,7 +1436,6 @@
 <entity_class name="Bloated Walker" extends="zombieMoe">
 	    <property name="WalkType"  value="2" />
 	    <property name="LootListOnDeath"  value="87" />
-		<property name="ExperienceGain" value="80"/>		
         <property name="Class"  			  value="EntityZombieCop" />
         <property name="Explosion.ParticleIndex"   value="8" />
         <property name="Explosion.RadiusBlocks"    value="2" />
@@ -1461,7 +1460,7 @@
         <property name="SoundSense"  value="Enemies/Feral_Zombie/zombieferalsense" />
         <property name="SoundFootstepModifier"  value="Enemies/Feral_Zombie/zombieferalfootstep" />
         <property name="MaxHealth"    value="200" />
-		<property name="ExperienceGain" value="80"/>
+		<property name="ExperienceGain" value="200"/>
         <property name="WanderSpeed"        value="0.3" />
         <property name="ApproachSpeed"      value="0.7" />
         <property name="NightWanderSpeed"   value="0.5" />
@@ -1610,7 +1609,7 @@
 	<property name="CanClimbVertical" value="true" />
 	<property name="WalkType" value="8" />
 	<property name="MaxHealth"    value="200" />
-	<property name="ExperienceGain" value="80"/>
+	<property name="ExperienceGain" value="150"/>
 	<property name="WanderSpeed"        value="0.3" />
 	<property name="ApproachSpeed"      value="0.7" />
 	<property name="NightWanderSpeed"   value="0.5" />
@@ -1686,7 +1685,7 @@
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
 	<property name="HandItem" value="handBurningRusher" />
-	<property name="MaxHealth" value="20" />
+	<property name="MaxHealth" value="25" />
 	<property name="LootListOnDeath" value="91" />
 	
 	<property name="WanderSpeed"        value="0.3" />
