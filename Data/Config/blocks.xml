@@ -465,6 +465,7 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<drop event="Harvest" name="coal" count="10" />
 	<drop event="Fall" name="coal" count="20" prob=".5" stick_chance="0" />
 	<property name="CanMobsSpawnOn" value="true" />
+	<drop event="Harvest" name="coal" count="2,4" tool_category="Shovel" />
 </block>
 
 <block id="28" name="terrainFiller">
@@ -11496,6 +11497,8 @@ kind of free
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<drop event="Harvest" name="coal" count="3" prob=".6"/>
 	<drop event="Destroy" name="wood" count="3" />
+	<drop event="Harvest" name="charcoalChips" count="1,2" tool_category="Shovel" />
+	<drop event="Harvest" name="coal" count="1,2" tool_category="Shovel" />
 </block>
 
 <block id="1404" name="emberPile2">
@@ -11518,6 +11521,8 @@ kind of free
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<drop event="Harvest" name="coal" count="3" prob=".6"/>
 	<drop event="Destroy" name="wood" count="3" />
+	<drop event="Harvest" name="charcoalChips" count="1,2" tool_category="Shovel" />
+	<drop event="Harvest" name="coal" count="1,2" tool_category="Shovel" />
 </block>
 
 <block id="1406" name="emberPile4">
@@ -11531,6 +11536,8 @@ kind of free
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
 	<drop event="Harvest" name="coal" count="3" prob=".6"/>
 	<drop event="Destroy" name="wood" count="3" />
+	<drop event="Harvest" name="charcoalChips" count="1,2" tool_category="Shovel" />
+	<drop event="Harvest" name="coal" count="1,2" tool_category="Shovel" />
 </block>
 	<!-- 1 Free -->
 

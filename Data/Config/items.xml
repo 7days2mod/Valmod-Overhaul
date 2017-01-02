@@ -1409,6 +1409,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.organic" value=".7" />
 		<property name="DamageBonus.stone" value="0.5" />
 		<property name="ActionExp" value="3" />
+		<property name="ToolCategory.Shovel" value="1" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="4,12" />
@@ -1450,6 +1451,7 @@ Mesh files no longer used:
 		<property name="DamageBonus.organic" value=".7" />
 		<property name="DamageBonus.stone" value=".5" />
 		<property name="ActionExp" value="4" />
+		<property name="ToolCategory.Shovel" value="1" />
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="7,15.5" />
