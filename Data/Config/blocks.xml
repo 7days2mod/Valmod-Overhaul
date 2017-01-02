@@ -4735,8 +4735,8 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="LootList" value="25" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
-	<drop event="Harvest" name="feather" count="3" prob=".35" tool_category="Disassemble" />
-	<drop event="Harvest" name="feather" count="2" prob=".6" tool_category="Disassemble" />
+	<drop event="Harvest" name="feather" count="3" prob=".35" />
+	<drop event="Harvest" name="feather" count="2" prob=".6" />
 	<drop event="Destroy" name="yuccaFibers" count="2,8" />
 </block>
 
