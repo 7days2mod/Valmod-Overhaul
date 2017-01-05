@@ -15330,12 +15330,11 @@ kind of free
 		<property name="Group" value="Tools/Traps" />
 	</block>
 	<block id="2004" name="trapSteelFireSpike">		
-	<property name="MaxDamage" value="2000" />
+	<property name="MaxDamage" value="5000" />
 	<property name="Class" value="TrunkTip" />
 	<property name="Damage" value="7" />
 	<property name="Damage_received" value="40" />
 	<property name="Material" value="Msteel" />
-	<property name="MaxDamage" value="10000" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="cone1m" />
 	<property name="Texture" value="355" />
