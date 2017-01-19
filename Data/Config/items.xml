@@ -9347,7 +9347,7 @@ which does not exist, yet. -->
 			<property name="Range" value="220" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="3,10" />
+			<property name="EntityDamage" value="5,10" />
 			<property name="DegradationRate" value="1,1" />
 			<property name="DegradationMax" value="50,650" />
 		</property>
@@ -9357,7 +9357,7 @@ which does not exist, yet. -->
 		<property name="RepairTools" value="forgedIron" />
 		<property name="DescriptionKey" value="ironBowDesc"/>
 		<property class="Attributes">
-			<property name="EntityDamage" value="3,10" />
+			<property name="EntityDamage" value="5,10" />
 			<property name="DegradationRate" value="1,1" />
 			<property name="DegradationMax" value="100,850" />
 		</property>
