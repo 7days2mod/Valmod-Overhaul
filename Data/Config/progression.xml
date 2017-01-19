@@ -1594,6 +1594,7 @@
 
 	<perk name="Miner 69er" icon="mining" description_key="miner69erDesc" title_key="miner69er" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement perk_level="1" required_skill_name="Mining Tools" required_skill_level="1"/>
+		<requirement perk_level="1" required_skill_name="Mechanical" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Mining Tools" required_skill_level="20"/>
 		<requirement perk_level="3" required_skill_name="Mining Tools" required_skill_level="40"/>
 		<requirement perk_level="4" required_skill_name="Mining Tools" required_skill_level="60"/>
