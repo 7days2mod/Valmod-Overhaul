@@ -5480,7 +5480,7 @@ gunskillbookDesc,items,Item Book,,"A gun enthusiast book.",,
 
 macDyverBook2Desc,items,Item Book,,"Read MacDyver's adventures as he finds improvised and clever ways to escape tricky situations.",,
 
-cntGarbageDisposal,blocks,Loot Container,,Garbage Disposal,,
+cntGarbageDisposalEmpty,blocks,Loot Container,,Garbage Disposal,,
 cntGarbageDisposalDesc,blocks,Block,,"The garbage disposal can can be used to get rid of trash items. Fill it with the trash you want to dispose of and right click it with a Trash Bag. You will then have to wait to use it again. Warning: This will delete all the items inside.",,
 trashbag,items,Item,,Trash Bag,,
 trashbagDesc,items,Item,,Hold this in hand and right-click on a Garbage Disposal to dispose of the contents within the garbage disposal.,,
