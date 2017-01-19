@@ -4598,10 +4598,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="woodFrameBlock" count="1"/>
 </recipe>
 <recipe name="drywallBlock" count="1" craft_area="workstationDecor" craft_tool="handSaw">
+	<ingredient name="nail" count="4"/>
 	<ingredient name="wood" count="10"/>
 </recipe>
 <recipe name="drywallWhiteBlock" count="1" craft_area="workstationDecor" craft_tool="handSaw">
 	<ingredient name="wood" count="10"/>
+	<ingredient name="nail" count="4"/>
 </recipe>
 <recipe name="orangeDrywallBlock" count="1" craft_area="cementMixer" craft_tool="chisel">
 	<ingredient name="stone" count="4"/>
@@ -4937,41 +4939,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 <recipe name="762mmBullet" count="1" craft_area="workstationArmory" craft_tool="bulletTumbler" craft_exp_gain="0">
 	<ingredient name="44MagBullet" count="1"/>
-</recipe>
-
-<recipe name="gunPowder" count="1" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="9mmBullet" count="1"/>
-</recipe>
-<recipe name="gunPowder" count="2" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="10mmBullet" count="1"/>
-</recipe>
-<recipe name="gunPowder" count="3" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="44MagBullet" count="1"/>
-</recipe>
-<recipe name="gunPowder" count="3" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="762mmBullet" count="1"/>
-</recipe>
-<recipe name="gunPowder" count="1" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="shotgunShell" count="1"/>
-</recipe>
-<recipe name="gunPowder" count="4" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="shotgunSlug" count="1"/>
-</recipe>
-
-<recipe name="bulletTip" count="1" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="9mmBullet" count="1"/>
-</recipe>
-<recipe name="bulletTip" count="1" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="10mmBullet" count="1"/>
-</recipe>
-<recipe name="bulletTip" count="1" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="44MagBullet" count="1"/>
-</recipe>
-<recipe name="bulletTip" count="1" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="762mmBullet" count="1"/>
-</recipe>
-<recipe name="bulletTip" count="3" craft_area="workstationArmory" craft_tool="bulletTumbler">
-	<ingredient name="shotgunSlug" count="1"/>
 </recipe>
 
 <recipe name="arrow" count="1" craft_area="workstationArmory">
