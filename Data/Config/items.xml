@@ -6356,7 +6356,7 @@ which does not exist, yet. -->
 		<property name="Gain_food" value="10" />
 		<property name="Buff" value="eatFood_9_Trigger" />
 		<property name="Gain_water" value="-5" />
-		<property name="Gain_wellness" value="0.8" />
+		<property name="Gain_wellness" value="0.2" />
 		<property name="Sound_start" value="UseActions/player_eating" />
 	</property>
 	<property name="Smell" value="largeSmell" />
