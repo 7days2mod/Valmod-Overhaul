@@ -1632,6 +1632,14 @@
 			<multiply skill_level="4" value="1.8"/>
 			<multiply skill_level="5" value="2.0"/>
 		</effect>
+		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.1125"/>
+			<multiply skill_level="2" value="1.225"/>
+			<multiply skill_level="3" value="1.3375"/>
+			<multiply skill_level="4" value="1.45"/>
+			<multiply skill_level="5" value="1.5625"/>
+		</effect>
 		<effect name="StaminaDegradation">
 			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="0.9"/>
