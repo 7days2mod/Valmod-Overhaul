@@ -55,6 +55,8 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<drop event="Harvest" name="coal" count="2" prob=".01"/>
 	<drop event="Harvest" name="whetstone" count="2" prob=".2" />
 	<drop event="Harvest" name="rockSmall" count="4,5" tool_category="Miner" />
+	<drop event="Harvest" name="potassiumNitratePowder" count="2" prob=".2" tool_category="Miner" />
+	<drop event="Harvest" name="coal" count="2" prob=".2" tool_category="Miner" />
 </block>
 
 <block id="2" name="grass">
