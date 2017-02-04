@@ -8915,6 +8915,7 @@ which does not exist, yet. -->
 	<property name="Stacknumber" value="10" /> <!-- STK loot -->
 	<property name="Weight" value="15" />
 	<property name="EconomicValue" value="750" />
+	<property name="SellableToTrader" value="false" />
 	<property name="Group" value="Chemicals" />
 </item>
 
