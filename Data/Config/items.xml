@@ -10947,7 +10947,7 @@ which does not exist, yet. -->
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="5" />
 			<property name="Gain_stamina" value="20" />
-			<property name="Gain_wellness" value="0.8" />
+			<property name="Gain_wellness" value="0" />
 			<property name="Create_item" value="emptyJar" />
 			<property name="Buff" value="DrinkBeer" />
 		</property>
