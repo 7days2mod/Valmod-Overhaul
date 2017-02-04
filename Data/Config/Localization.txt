@@ -5430,7 +5430,8 @@ trussingWallSpikeDesc,blocks,Traps,,"These spike traps can damage, cripple, even
 challengeKickz,items,Zombie Challenge Note,,Kickz Shoe Sponsorship,,
 challengeKickzDesc,items,Zombie Challenge Note,,"The slow do not survive.",,
 
-clayBucketDesc,items,Item,,"This is specifically designed for water filtration in the chemistry station. Crafted in the campfire."
+
+clayBucketDesc,items,Item,,"This can be used to craft a water filtration to use in the chemistry station. Crafted in the campfire."
 clayBucket,items,Item,,Clay Amphora,,
 waterFilterDesc,items,Item,,"This can be used in the chemistry station for water filtration."
 waterFilter,items,Item,,Water Filter,,
