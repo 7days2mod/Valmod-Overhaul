@@ -1807,6 +1807,9 @@
 	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
 	<property name="AITask-6" value="ApproachSpot" />
 	<property name="AITask-7" value="Wander" />
+	
+	<property name="KnockdownProneStunDuration" value="2,3"/>
+	<property name="KnockdownKneelStunDuration" value="2,3"/>
 </entity_class>
 
 </entity_classes>
