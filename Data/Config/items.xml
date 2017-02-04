@@ -2482,7 +2482,7 @@ which does not exist, yet. -->
 		<property name="Max_strain_time" value="1" />
 		<property name="Sound_start" value="swoosh" />
 	</property>
-	<property name="CraftingIngredientTime" value="750" />
+	<property name="CraftingIngredientTime" value="550" />
 </item>
 
 <!-- * * * * * * * * * * parts for assembled weapons, tools, and vehicles * * * * * * * * * * -->
