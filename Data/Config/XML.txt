@@ -169,6 +169,14 @@ above the extend it reads that line and THEN reads all the properties from
 the parent block - including the shape.
 
 
+Also:
+Extend CAN NOT extend from a model
+<block id="431" name="mineCandyTin">
+to a shape
+<block id="1408" name="rScrapIronPlateMine">
+
+Sure, you can do it but then the texture atlas cannot be baked because the block inherits properties that it shouldn't.
+
 - - - - - - - - - - - - - - - - - - - - - - - - -
 
 <property name="CanMobsSpawnOn" value="true" />
@@ -370,6 +378,89 @@ This sound is from the material value of the upgrade RESOURCE.
 
 <property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 This sound is played once when the upgrade is taking effect.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Global UV for dummies (A16)
+
+WTF is that?
+It means that if a texture is "global", the block texture will ALWAYS display with the same side up
+even if the block is rotated in a way that would display this side upside down or to the right.
+
+This is defined per texture in blocktextures.xml.
+
+On some faces (the steps of stairs) this is not desired because they would look wrong in some rotations. There you set it to local.
+
+
+This setting can be overridden in blocks.xml on a per block / face base:
+
+<property name="UseGlobalUV" value="D,D,L,D,D,G" />
+<property name="UseGlobalUV" value="Local" />
+<property name="UseGlobalUV" value="Global" />
+
+All values are case sensitive.
+D = use default from blocktextures.xml
+L = force local
+G = force global
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Something *I* stumbled over recently:
+
+While
+\Assets\Textures\Blocks\blocktextures.xml
+controls the setup (global/local) per texture, it does not directly affect the game.
+
+Rebuilding the texture atlas also generates
+\Assets\AssetBundles\BlockTextureAtlases\ta_opaquexml.txt 
+(for instance)
+
+and *that* file is what makes the textures use a default of local/global ingame.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Shape="new" and plants.
+
+The new shapes do not allow to pass light through them.
+
+This means the corn will not get any "AO light" at the base of the trunk and thus "die" instantly after planting.
+
+Add the property "LightOpacity" where needed.
+
+
+Also, a block uses the higher LightOpacity value of MATERIAL and SHAPE
+...and Shape="new" always has LightOpacity="255".
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Blocks and light and plants.
+
+There are 16 possible light values.
+
+Full sunlight = 15.
+Full darkness = 0.
+
+If the light is reduced by traveling through a block with LightOpacity="6" then the light value below this block is 9.
+
+Every square that light has to travel "sideways" to reach the block subtracts 1.
+
+Plants require 3 to grow.
+
+There may also be a max distance that light can travel horizontally.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Textures and the map.
+
+The "top" face of a block determines the colour that it displays on the map UI.
+
+Here it's texture 277, bright blue.
+	<property name="Texture" value="277,574,576,577,578,575" />
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1180,12 +1271,13 @@ Repair balancing
 
 Known A15.0 bug:
 Repairing simple items like clubs does not work the same way as repairing assembled items like firearms.
+*Should be fixed for 16 - at least it's on the list*
 
 Club at QL 600:
-no skills: 100 QL loss, max skills: 100 QL loss and no loss at QL 119 and below.
+no skills: 100 QL loss, max skills: 10 QL loss and no loss at QL 119 and below.
 QL is multiplied.
 
-Assembled items:
+Assembled items:  (work in progress)
 no skills: 30 QL loss, max skills: 2 QL loss at every QL
 QL repair loss is strictly subtracted from the QL.
 
@@ -1284,6 +1376,11 @@ If you make layers varied, small and plentiful you will get more seam lines wher
 
 Another possibility is to generate subbiomes that look the same on the surface but have a different layer setup.
 This may or may not become a feature.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+The world is saved / loaded as chunks of 16x256x16 (x y z) blocks.
 
 
 ---------------------------------------------------------------------

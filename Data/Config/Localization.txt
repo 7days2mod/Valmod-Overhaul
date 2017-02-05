@@ -4326,6 +4326,46 @@ jailDoor,blocks,Block,,Jail Door,,Gefängnistür,,
 jailDoorDesc,blocks,Block,,Where do you think you're going?,,,,
 plantedAloe1,blocks,Farming,,Aloe Vera Seed,,Aloe Vera Samen,,
 plantedHop1,blocks,Farming,,Hop Seed,,Hopfensamen,,
+auth_messageTitle,UI,AuthenticationMessages,,Server disconnected you:,Le serveur vous a déconnecté(e) :,Verbindung zum Server wurde unterbrochen:,,El servidor se ha desconectado:
+steamauth_k_EBeginAuthSessionResultInvalidTicket,UI,AuthenticationMessages,,Steam kicked you: Your authentication data is invalid!,,,,
+steamauth_k_EBeginAuthSessionResultDuplicateRequest,UI,AuthenticationMessages,,Steam kicked you: Your authentication data is no longer valid!,,,,
+steamauth_k_EBeginAuthSessionResultInvalidVersion,UI,AuthenticationMessages,,Steam kicked you: You run an invalid game version!,,,,
+steamauth_k_EBeginAuthSessionResultGameMismatch,UI,AuthenticationMessages,,Steam kicked you: Your authentication data is from a different game!,,,,
+steamauth_k_EBeginAuthSessionResultExpiredTicket,UI,AuthenticationMessages,,Steam kicked you: Your authentication data has expired!,,,,
+steamauth_unknown,UI,AuthenticationMessages,,Steam kicked you for an unknown reason. Please report this incident on the official forum.,,,,
+steamauth_k_EAuthSessionResponseUserNotConnectedToSteam,UI,AuthenticationMessages,,Steam kicked you: Steam client is not fully connected. Try restarting the Steam client.,,,,
+steamauth_k_EAuthSessionResponseNoLicenseOrExpired,UI,AuthenticationMessages,,Steam kicked you: You do not have a valid license for 7 Days To Die.,,,,
+steamauth_k_EAuthSessionResponseVACBanned,UI,AuthenticationMessages,,Steam kicked you: Your account is banned by VAC.,,,,
+steamauth_k_EAuthSessionResponseLoggedInElseWhere,UI,AuthenticationMessages,,Steam kicked you: Your account is logged in and playing a game on another machine.,,,,
+steamauth_k_EAuthSessionResponseVACCheckTimedOut,UI,AuthenticationMessages,,Steam kicked you: Checking your VAC status timed out.,,,,
+steamauth_k_EAuthSessionResponseAuthTicketCanceled,UI,AuthenticationMessages,,Steam kicked you: Your authentication has become invalid. Maybe your Steam client lost connection to the network.,,,,
+steamauth_k_EAuthSessionResponseAuthTicketInvalidAlreadyUsed,UI,AuthenticationMessages,,Steam kicked you: Your authentication has already been used!,,,,
+steamauth_k_EAuthSessionResponseAuthTicketInvalid,UI,AuthenticationMessages,,Steam kicked you: Your authentication data is invalid!,,,,
+steamauth_k_EAuthSessionResponsePublisherIssuedBan,UI,AuthenticationMessages,,Steam kicked you: Your account has been banned from the game!,,,,
+auth_EmptyNameOrPlayerID,UI,AuthenticationMessages,,Your player name may not be empty!,,,,
+auth_InvalidSteamID,UI,AuthenticationMessages,,Your SteamID is invalid!,,,,
+auth_DuplicatePlayerID,UI,AuthenticationMessages,,Your Steam account is already playing on this server!,,,,
+auth_DuplicatePlayerName,UI,AuthenticationMessages,,The player name '{0}' already exits on the server! Please choose a different one,Le nom de joueur « {0} » existe déjà sur le serveur ! Veuillez choisir un nom différent,Den Spielernamen „{0}“ gibt es bereits auf diesem Server! Bitte wähle einen anderen Namen,,El nombre de jugador '{0}' ya existe en este servidor. Elige uno diferente.
+auth_InvalidAuthTicket,UI,AuthenticationMessages,,Your authentication data is invalid!,,,,
+auth_NotOnWhitelist,UI,AuthenticationMessages,,You are not on the whitelist of the server!,Vous n'êtes pas sur la liste approuvée de ce serveur !,Du bist nicht auf der weißen Liste dieses Servers!,,No estás en la lista blanca de este servidor.
+auth_VersionMismatch,UI,AuthenticationMessages,,Game Version Mismatch: you have '{0}' and server has '{1}',Erreur de version du jeu : vous avez « {0} » et le serveur a « {1} »,Unterschiedliche Versionen des Spiels: Du hast „{0}“ und der Server hat „{1}“,,Incompatibilidad de versión: tú tienes la '{0}' y el servidor la '{1}'.
+auth_PlayerLimitExceeded,UI,AuthenticationMessages,,Too many players on the server! Allowed: {0},Il y a trop de joueurs sur le serveur ! Autorisé : {0},Zu viele Spieler auf dem Server! Zugelassen: {0},,¡Demasiados jugadores en el servidor! Permitidos: {0}
+auth_Banned,UI,AuthenticationMessages,,You are banned until {0},Vous êtes banni(e) jusqu'à {0}.,Du bist bis {0} gebannt.,,Eres expulsado hasta {0}.
+auth_ManualKick,UI,AuthenticationMessages,,You have been kicked.,,,,
+auth_unknown,UI,AuthenticationMessages,,Unknown reason. Please report this incident on the official forum.,,,,
+eacauth_ClientDisconnected,UI,AuthenticationMessages,,Kicked by EAC: Communication to client module lost.,,,,
+eacauth_ClientAuthenticationFailed,UI,AuthenticationMessages,,Kicked by EAC: Authentication failed.,,,,
+eacauth_ClientBanned,UI,AuthenticationMessages,,Kicked by EAC: Banned account.,,,,
+eacauth_ClientViolation,UI,AuthenticationMessages,,Kicked by EAC: File or process integrity violation detected!,,,,
+eacauth_ban_unrestricted,UI,AuthenticationMessages,,Kicked by EAC: You are banned!,,,,
+eacauth_ban_restricted,UI,AuthenticationMessages,,Kicked by EAC: You are banned until {0}!,,,,
+eacauth_unknown,UI,AuthenticationMessages,,EAC kicked you for an unknown reason. Please report this incident on the official forum.,,,,
+eacauth_message,UI,AuthenticationMessages,,EAC message: {0},,,,
+auth_reason,UI,AuthenticationMessages,,Reason: {0},Raison: {0},Grund: {0},,Razón: {0}
+authstate_steam,UI,AuthenticationMessages,,Waiting for Steam verification ...,,,,
+authstate_eac,UI,AuthenticationMessages,,Waiting for EAC verification ...,,,,
+authstate_authenticated,UI,AuthenticationMessages,,Receiving game data ...,,,,
+
 
 gunPistolSilenced,items,Item Gun,,Pistol (Silenced),,
 gunPistolSilencedDesc,items,Item Gun,,A silenced pistol. Uses 9mm ammo. Can be re-assembled and repaired if you level high enough in pistols.,,

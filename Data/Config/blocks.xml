@@ -499,12 +499,6 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<property name="UpgradeRated.Rate" value="8" />
 	<property name="Group" value="Building" />
 	<property class="RepairItems"> <property name="dirtFragment" value="10" /> <property name="yuccaFibers" value="2" /> </property>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="fertileFarmland" />
-		<property name="Item" value="hoeIron" />
-		<property name="ItemCount" value="0" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
 	<drop event="Harvest" name="dirtFragment" count="7" />
 	<drop event="Destroy" name="dirtFragment" count="3" />
 	<drop event="Fall" name="sod" count="1" prob="0.25" stick_chance="1" />
@@ -525,6 +519,12 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<property name="LPHardnessScale" value="2" />
 	<property name="Map.Color" value="55,79,58" />
 	<property class="RepairItems"> <property name="dirtFragment" value="10" /> <property name="yuccaFibers" value="2" /> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="fertileFarmland" />
+		<property name="Item" value="hoeIron" />
+		<property name="ItemCount" value="0" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
 	<drop event="Harvest" name="dirtFragment" count="7" />
 	<drop event="Destroy" name="dirtFragment" count="3" />
 	<drop event="Fall" name="sod" count="1" prob="0.25" stick_chance="1" />
@@ -723,7 +723,7 @@ group desc for stuff like metal siding
 	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="blueberrySeed" />
 	<property name="Material" value="plants" />
-	<property name="LightOpacity" value="0"/>
+	<property name="LightOpacity" value="0" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="grass" />
@@ -748,7 +748,7 @@ group desc for stuff like metal siding
 <block id="120" name="cropsHarvestableMaster">
 	<property name="IsDeveloper" value="true" />
 	<property name="Material" value="plants" />
-	<property name="LightOpacity" value="0"/>
+	<property name="LightOpacity" value="0" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="grass" />
@@ -885,7 +885,7 @@ group desc for stuff like metal siding
 	<property name="Class" value="ModelTree" />
 	<property name="Shape" value="ModelTree" />
 	<property name="Material" value="treeWoodSmall" />
-	<property name="LightOpacity" value="0"/>
+	<property name="LightOpacity" value="0" />
 	<property name="Texture" value="116" />
 	<property name="IsDeveloper" value="true" />
 	<property name="CanPlayersSpawnOn" value="false" />
@@ -3532,75 +3532,66 @@ group desc for stuff like metal siding
 	</property>
 </block>
 
-  <block id="408" name="trapSpikesNew">
-    <property name="Class" value="TrunkTip"/>
-    <property name="Damage" value="5"/>
-    <property name="Damage_received" value="40"/>
-    <property name="Material" value="MtrapSpikes1"/>
-    <property name="Shape" value="Ext3dModel"/>
-    <property name="Mesh" value="models"/>
-    <property name="Model" value="Traps/trap_spikes01" param1="main_mesh"/>
-    <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-    <property name="FuelValue" value="720"/>
-    <property name="IsTerrainDecoration" value="true"/>
-    <property name="BuffsWhenWalkedOn" value="trapDamageZombie"/>
-    <property class="RepairItems">
-      <property name="wood" value="1"/>
-    </property>
-    <property name="DowngradeBlock" value="trapSpikesDamage1"/>
-    <drop event="Destroy" name="wood" count="7"/>
-    <drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
-    <property name="Group" value="Tools/Traps"/>
-    <property name="EconomicValue" value="10"/>
-    <property name="EconomicBundleSize" value="50"/>
+<block id="408" name="trapSpikesNew"> <!-- 6 stages total -->
+	<property name="Class" value="TrunkTip" />
+	<property name="Damage" value="5" />
+	<property name="Damage_received" value="40" />
+	<property name="Material" value="MtrapSpikes1" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Traps/trap_spikes01" param1="main_mesh" />
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+	<property name="FuelValue" value="720" />
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="BuffsWhenWalkedOn" value="trapDamageZombie"/>
+	<property class="RepairItems"> <property name="wood" value="1" /> </property>
+	<property name="DowngradeBlock" value="trapSpikesDamage1" />
+	<drop event="Destroy" name="wood" count="7" />
+	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="Group" value="Tools/Traps" />
+	<property name="EconomicValue" value="10" />
+	<property name="EconomicBundleSize" value="50" />
 	<property name="CraftingSkillGroup" value="Traps"/>
-  </block>
-  <block id="409" name="trapSpikesDamage1">
-    <property name="Extends" value="trapSpikesNew"/>
-    <property name="Model" value="Traps/trap_spikes01_damage01" param1="main_mesh"/>
-    <property name="DowngradeBlock" value="trapSpikesDamage2"/>
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="trapSpikesNew"/>
-      <property name="Item" value="wood"/>
-      <property name="ItemCount" value="12"/>
-      <property name="UpgradeHitCount" value="4"/>
-    </property>
-    <property name="CustomUpgradeSound" value="Crafting/place_block_wood"/>
-  </block>
-  <block id="410" name="trapSpikesDamage2">
-    <property name="Extends" value="trapSpikesDamage1"/>
-    <property name="Model" value="Traps/trap_spikes01_damage02" param1="main_mesh"/>
-    <property name="DowngradeBlock" value="trapSpikesDamage3"/>
-    <property class="UpgradeBlock">
-      <property name="ItemCount" value="24"/>
-      <property name="ToBlock" value="trapSpikesNew"/>
-    </property>
-  </block>
-  <block id="411" name="trapSpikesDamage3">
-    <property name="Extends" value="trapSpikesDamage1"/>
-    <property name="Model" value="Traps/trap_spikes01_damage03" param1="main_mesh"/>
-    <property name="DowngradeBlock" value="trapSpikesDamage4"/>
-    <property class="UpgradeBlock">
-      <property name="ItemCount" value="36"/>
-      <property name="ToBlock" value="trapSpikesNew"/>
-    </property>
-  </block>
-  <block id="412" name="trapSpikesDamage4">
-    <property name="Extends" value="trapSpikesDamage1"/>
-    <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh"/>
-    <property name="DowngradeBlock" value="trapSpikesDamage5"/>
-    <property class="UpgradeBlock">
-      <property name="ItemCount" value="48"/>
-      <property name="ToBlock" value="trapSpikesNew"/>
-    </property>
-  </block>
-  <block id="413" name="trapSpikesDamage5">
-    <property name="Extends" value="trapSpikesDamage1" param1="DowngradeBlock"/>
-    <property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh"/>
-    <property class="UpgradeBlock">
-      <property name="ItemCount" value="60"/>
-      <property name="ToBlock" value="trapSpikesNew"/>
-    </property>
+</block>
+
+<block id="409" name="trapSpikesDamage1">
+	<property name="Extends" value="trapSpikesNew" />
+	<property name="Model" value="Traps/trap_spikes01_damage01" param1="main_mesh" />
+	<property name="DowngradeBlock" value="trapSpikesDamage2" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="trapSpikesNew" />
+		<property name="Item" value="wood" />
+		<property name="ItemCount" value="12" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
+</block>
+
+<block id="410" name="trapSpikesDamage2">
+	<property name="Extends" value="trapSpikesDamage1" />
+	<property name="Model" value="Traps/trap_spikes01_damage02" param1="main_mesh" />
+	<property name="DowngradeBlock" value="trapSpikesDamage3" />
+	<property class="UpgradeBlock"> <property name="ItemCount" value="24" /> <property name="ToBlock" value="trapSpikesNew" /> </property>
+</block>
+
+<block id="411" name="trapSpikesDamage3">
+	<property name="Extends" value="trapSpikesDamage1" />
+	<property name="Model" value="Traps/trap_spikes01_damage03" param1="main_mesh" />
+	<property name="DowngradeBlock" value="trapSpikesDamage4" />
+	<property class="UpgradeBlock"> <property name="ItemCount" value="36" /> <property name="ToBlock" value="trapSpikesNew" /> </property>
+</block>
+
+<block id="412" name="trapSpikesDamage4">
+	<property name="Extends" value="trapSpikesDamage1" />
+	<property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh" />
+	<property name="DowngradeBlock" value="trapSpikesDamage5" />
+	<property class="UpgradeBlock"> <property name="ItemCount" value="48" /> <property name="ToBlock" value="trapSpikesNew" /> </property>
+</block>
+
+<block id="413" name="trapSpikesDamage5">
+	<property name="Extends" value="trapSpikesDamage1" param1="DowngradeBlock" />
+	<property name="Model" value="Traps/trap_spikes01_damage04" param1="main_mesh" />
+	<property class="UpgradeBlock"> <property name="ItemCount" value="60" /> <property name="ToBlock" value="trapSpikesNew" /> </property>
 </block>
 
 <block id="414" name="steelBlock">
@@ -3825,7 +3816,7 @@ group desc for stuff like metal siding
 	<property name="Explosion.RadiusBlocks" value="2" />
 	<property name="Explosion.RadiusEntities" value="4" />
 	<property name="Explosion.BlockDamage" value="10" />
-	<property name="Explosion.EntityDamage" value="45" /> <!-- Explosions do roughly 75% of this value in actual player damage... but players can wear armor -->
+	<property name="Explosion.EntityDamage" value="45" /> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
 	<property name="Explosion.DamageBonus.stone" value="0" />
 	<property name="Explosion.DamageBonus.metal" value="0" />
 	<property name="Explosion.DamageBonus.earth" value="0" />
@@ -3835,8 +3826,8 @@ group desc for stuff like metal siding
 	<property name="DropScale" value="3" />
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Tools/Traps" />
-	<property name="EconomicValue" value="97" />
 	<property name="CraftingSkillGroup" value="Traps"/>
+	<property name="EconomicValue" value="97" />
 </block>
 
 <block id="432" name="mineHubcap">
@@ -4612,7 +4603,7 @@ kind of free
 
 <block id="530" name="plantedMushroom1">
 	<property name="Material" value="Mmushrooms" />
-	<property name="LightOpacity" value="0"/>
+	<property name="LightOpacity" value="0" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Texture" value="241" />
@@ -8031,7 +8022,7 @@ kind of free
 <block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
 	<property name="CustomIcon" value="plantedCorn3Harvest" /> <property name="CustomIconTint" value="ffffa0" />
 	<property name="Material" value="Mcorn" />
-	<property name="LightOpacity" value="0"/>
+	<property name="LightOpacity" value="0" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="corn_dead_shape" />
@@ -10632,6 +10623,7 @@ kind of free
 </block>
 
 <block id="1276" name="woodCatwalkWedgeRailing">
+
 	<property name="Extends" value="woodCatwalk" />
 	<property name="Model" value="catwalk_wedge_rail" />
 	<property class="UpgradeBlock">
