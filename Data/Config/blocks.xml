@@ -7129,11 +7129,13 @@ kind of free
 
 <block id="797" name="metalRivetBlock">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="MaxDamage" value="1000" />
 	<property name="Texture" value="46" />
 </block>
 
 <block id="798" name="metalRivetRamp">
 	<property name="Extends" value="scrapIronRamp" />
+	<property name="MaxDamage" value="1000" />
 	<property name="Texture" value="46" />
 </block>
 
@@ -8898,6 +8900,7 @@ kind of free
 
 <block id="1045" name="metalRivetStairs25">
 	<property name="Extends" value="metalNoUpgradeMaster" />
+	<property name="MaxDamage" value="1000" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="StairsFilled" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="Texture" value="46" />
