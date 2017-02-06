@@ -13427,6 +13427,7 @@ kind of free
 <block id="1630" name="redMetalBlock">
 	<property name="Material" value="metal" />
 	<property name="Texture" value="311" />
+	<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
 	<drop event="Destroy" name="scrapIron" count="5,20" />
 </block>
 
