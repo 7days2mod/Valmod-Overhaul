@@ -15183,6 +15183,7 @@ kind of free
   	<!-- Expanded Trap Mod -->
  	<block id="1991" name="chickenCoop">
 	<property name="DescriptionKey" value="chickenCoopDesc"/>
+	<property name="LightOpacity" value="0"/>
     <property name="Material" value="wood_weak" />
     <property name="Shape" value="Half" />
     <property name="Texture" value="196,241,272,272,272,272" />
@@ -15198,6 +15199,7 @@ kind of free
   </block>
 	<block id="1992" name="chickenCoop2">
 	<property name="CustomIcon" value="chickenCoop" />
+	<property name="LightOpacity" value="0"/>
     <property name="Material" value="wood_weak" />
     <property name="Shape" value="Half" />
     <property name="Texture" value="196,241,272,272,272,272" />
@@ -15217,6 +15219,7 @@ kind of free
   </block>
 	<block id="1993" name="chickenNest">
     <property name="Class" value="Loot" />
+	<property name="LightOpacity" value="0"/>
     <property name="Material" value="wood_weak" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
@@ -15227,6 +15230,7 @@ kind of free
   </block>
   	<block id="1994" name="animalSnare">
 		<property name="DescriptionKey" value="animalSnareDesc"/>
+		<property name="LightOpacity" value="0"/>
 		<property name="Material" value="snare" />
 		<property name="Shape" value="Plate" />
 		<property name="Texture" value="196" />
@@ -15239,6 +15243,7 @@ kind of free
 	</block>
 	<block id="1995" name="animalbaitedsnare">
 		<property name="CustomIcon" value="animalSnare" />
+		<property name="LightOpacity" value="0"/>
 		<property name="Material" value="snare" />
 		<property name="Shape" value="Plate" />
 		<property name="Texture" value="196" />
@@ -15253,6 +15258,7 @@ kind of free
 	</block>
 	<block id="1996" name="BaitedSnareCaptured">
 		<property name="CustomIcon" value="animalSnare" />
+		<property name="LightOpacity" value="0"/>
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="121" />
 		<property name="Material" value="wood" />
