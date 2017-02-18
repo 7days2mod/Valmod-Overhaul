@@ -15151,6 +15151,7 @@ which does not exist, yet. -->
 <item id="2806" name="legendaryChainsaw">
 	<property name="RepairTools" value="mechanicalKit" />
 	<property name="DescriptionKey" value="legendaryChainsawDesc"/>
+	<property name="DegradationBreaksAfter" value="false" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Chainsaw/chainsaw" />
 	<property name="Material" value="metal" />
 	<property name="HoldType" value="19" />
