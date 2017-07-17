@@ -2,7 +2,7 @@
 <prefab>
     <property name="CopyAirBlocks" value="True" />
     <property name="AllowTopSoilDecorations" value="True" />
-    <property name="Zoning" value="Residential" />
+    <property name="Zoning" value="ResidentialOld" />
     <property name="YOffset" value="-2" />
     <property name="RotationToFaceNorth" value="2" />
     <property name="AllowedTownships" value="town,rural" />
@@ -10,4 +10,10 @@
     <property name="StaticSpawner.Size" value="32,2,32" />
     <property name="StaticSpawner.Trigger" value="160" />
     <property name="TraderArea" value="False" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="SleeperVolumeSize" value="56, 14, 56" />
+    <property name="SleeperVolumeStart" value="-6, 0, -6" />
+    <property name="SleeperVolumeGroup" value="S_Default_Med" />
+    <property name="SleeperVolumeGameStageAdjust" value="" />
+    <property name="SleeperIsLootVolume" value="False" />
 </prefab>

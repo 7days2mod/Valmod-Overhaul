@@ -51,7 +51,6 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-<!--			<window name="windowCombine" /> -->
 		</window_group>				
 
 		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
@@ -73,30 +72,26 @@
 			<window name="windowCreative" />
 		</window_group>
 		
-		<window_group name="backpack">	
+		<!--#$-IGS BEGIN: Needed to disable input in new system -$#-->
+		<window_group name="backpack" actionSet="false">	
 			<window name="itemInfoPanel"/>
 			<window name="emptyInfoPanel" />
 			<window name="windowBackpack"/>
 		</window_group>
 		
-		<window_group name="dragAndDrop">
+		<window_group name="dragAndDrop" actionSet="false">
 			<window name="dragAndDropItemStack" />
 		</window_group>
-
-<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
-
-		<window_group name="compass">
-			<window name="SMXCompass1" />									<!-- Swappable frame. Change between different compass frames by changing the number. Choose between 1-2 -->
-			<window name="SMXQuestTracker" anchor="RightTop" />
-			<window name="SMXBuffFrame2" anchor="LeftBottom" />				<!-- Swappable frame. Change between different buff frames by changing the number. Choose between 1-4 -->
+		
+		<window_group name="compass" actionSet="false">
+			<window name="SMXCompass1" anchor="CenterTop" />
+<!--		<window name="windowCompass" /> -->
+			<window name="SMXDayTimeFrame" anchor="LeftTop" />
 			<window name="SMX" anchor="RightTop" />
-			<window name="SMXLevelXPUF1" />									<!-- Swappable frame. Change between different Level/XP displays by changing the number. Choose between 1-2 -->
-			<window name="SMXDayTimeFrame" />
+			<window name="SMXLevelXPUF1" anchor="LeftTop" />
 		</window_group>
-
-
-<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
-		<window_group name="toolTip">
+		
+		<window_group name="toolTip" actionSet="false">
 			<window name="toolTip" />
 			<window name="popupMenu" />
 		</window_group>
@@ -113,11 +108,13 @@
 			<window name="windowTimer"/>
 		</window_group>
 		
-		<window_group name="toolbelt">
-			<window name="ValmodToolbelt" anchor="CenterBottom" />
+		<window_group name="toolbelt" actionSet="false">
+			<window name="windowToolbelt" anchor="CenterBottom" />
 			<window name="SMXUnitFrame1" anchor="LeftBottom" />
+			<window name="SMXBuffFrame4" anchor="LeftBottom" />
 			<window name="SMXHudOther" anchor="RightBottom" />
 			<window name="SMXTempFrameUF1" />
+			<window name="windowQuestTracker" anchor="RightTop" />
 			<window name="ZombieKillTracker" />	<!-- Window that displays Zombie Kills -->
 			<window name="windowToolbeltNumbersHUD" />	<!-- Window that displays Numbers on the tool belt for each slot  - Delete this line to remove these items -->
 		</window_group>
@@ -129,7 +126,7 @@
 			<window name="windowVehicleStorage" />
 		</window_group>
 		
-		<window_group name="windowpaging">
+		<window_group name="windowpaging" actionSet="false">
 			<window name="windowPagingHeader" anchor="CenterTop"/>
 		</window_group>
 
@@ -152,7 +149,7 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
 
-		<window_group name="radial">
+		<window_group name="radial" actionSet="keyboard">
 			<window name="windowRadial"/>
 		</window_group>
 		
@@ -161,6 +158,7 @@
 			<window name="windowSkillInfo"/>
 			<!-- <window name="windowSkillStats"/> -->
 		</window_group>
+		<!--#$-IGS END-$#-->
 		
 		<window_group name="quests" controller="XUiC_QuestWindowGroup">
 			<window name="windowQuestList" />
@@ -184,6 +182,12 @@
 			<window name="windowColorPicker"/>
 		</window_group>
 		
+		<!--#$-IGS BEGIN: Adding window to hold gampad callouts -$#-->
+		<window_group name="CalloutGroup"  actionSet="false">
+			<window name="GamepadCallouts" />
+		</window_group>
+		<!--*#$-IGS END.-$#-->
+
 		<window_group name="trader" controller="XUiC_TraderWindowGroup">
 			<window name="windowTrader"/>
 			<window name="windowNonPagingHeader" />
@@ -193,10 +197,70 @@
 		<window_group name="sign">
 			<window name="windowSignEdit" />
 		</window_group>
-
-		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
-			<window name="windowRWGPreview" />
+		
+		<window_group name="powersource" controller="XUiC_PowerSourceWindowGroup">
+			<window name="windowPowerSourceStats" />
+			<window name="windowPowerSourceSlots" />
+			<window name="windowNonPagingHeader" />
 		</window_group>
+		
+		<window_group name="powertrigger" controller="XUiC_PowerTriggerWindowGroup">
+			<window name="windowPowerTriggerOptions" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerrangedtrap" controller="XUiC_PowerRangedTrapWindowGroup">
+			<window name="windowPowerRangedTrapOptions" />
+			<window name="windowPowerTrapSlots" />
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+			
+		</window_group>
+		
+		<window_group name="powercamera" controller="XUiC_PowerCameraWindowGroup" actionSet="controller">
+			<window name="windowPowerCameraControl" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<window_group name="powerspotlight" controller="XUiC_PoweredSpotlightWindowGroup">
+			<window name="windowPowerCameraControlPreview" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="materials">
+			<window name="windowMaterials" />
+			<window name="windowMaterialInfo" />
+		</window_group>
+
+		<window_group name="spawnMenu">
+			<window name="spawnMenu" />
+		</window_group>
+		
+		<window_group name="ingameMenu">
+			<window name="ingameMenu" />
+		</window_group>
+		
+		<window_group name="woPropsSleeperVolume">
+			<window name="woPropsSleeperVolume" />
+		</window_group>
+		
+		<window_group name="editorPanelSelector">
+			<window name="editorPanelSelector" />
+		</window_group>
+		
+		<window_group name="ingameDebugMenu">
+			<window name="ingameDebugMenu" />
+		</window_group>
+		
+		<window_group name="levelTools">
+			<window name="levelTools" />
+		</window_group>
+		
+		<window_group name="prefabList">
+			<window name="prefabList" />
+		</window_group>
+		
 
 		<window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
@@ -252,7 +316,8 @@
 			<window name="craftingInfoPanel"/>
 			<window name="windowNonPagingHeader" />
 			<window name="windowCombine" />
-		</window_group>	
-
+		</window_group>
+		
+		
 	</ruleset>
 </xui>

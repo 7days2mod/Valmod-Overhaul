@@ -1,0 +1,39 @@
+<xui>
+	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
+	
+		<window_group name="toolTip" actionSet="false">
+			<window name="toolTip" />
+			<window name="popupMenu" />
+		</window_group>
+		
+		<window_group name="profiles">
+			<window name="windowArchetypePreview"/>
+		</window_group>
+		
+		<window_group name="archetypes" controller="XUiC_ArchetypesWindowGroup" stack_panel_y_offset="332">
+			<window name="windowArchetypePreview2"/>
+			<window name="windowSliders"/>
+			<window name="windowColorPicker"/>
+		</window_group>
+		
+		<!--#$-IGS BEGIN: Adding window to hold gampad callouts -$#-->
+		<window_group name="CalloutGroup"  actionSet="false">
+			<window name="GamepadCallouts" />
+		</window_group>
+		<!--*#$-IGS END.-$#-->
+
+		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
+			<window name="windowRWGPreview" />
+			<!--<window name="windowRWGPoiList" />-->
+			<!--<window name="windowRWGLSystem" />-->
+		</window_group>
+		
+		<window_group name="messageBox" controller="MessageBoxWindowGroup">
+			<window name="messageBox" />
+		</window_group>
+		
+		<window_group name="createWorld" controller="CreateWorld">
+			<window name="createWorld" />
+		</window_group>
+	</ruleset>
+</xui>

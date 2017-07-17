@@ -17,21 +17,26 @@ Gazz.
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
-Property:  IsDeveloper  (mostly blocks.xml + items.xml)
+Property:  IsDeveloper  (mostly blocks.xml + items.xml) ... is now obsolete.
 
-<property name="IsDeveloper" value="true" />
+Enter Property:
 
-There is a "Developer" button on the creative menu.
+"CreativeMode", values: "Player,Dev,None"
+Technically "All" is a value but that's the default so why bother?
 
-By default it is off.
-When it is off you do not see any blocks / items that have this flag set.
+What this does is that the creative menu can display different sets of blocks in "player" and "dev/level builder" view mode.
 
-These blocks or items are ones you SHOULD NOT USE unless you know exactly what you are doing.
+If you turn on the "dev button" on the creative menu you always see both "dev" and "player".
 
-In most cases these are master blocks / items that provide default values for "real" blocks and items that are extended from them.
+With this button OFF:
 
-The flag itself is not inherited by "Extends" so all child blocks / items remain visible.
+- In the editor you see "all" and "dev" items.
+- In game mode you see "all" and "player" items.
 
+"None" means no display ever. Like for master blocks that are not to be used directly.
+
+
+The property itself is not inherited by "Extends" so all child blocks / items remain visible.
 
 Extended items do NOT inherit auto-calculated weight.
 Only items with actual recipes have it.
@@ -379,6 +384,34 @@ This sound is from the material value of the upgrade RESOURCE.
 <property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 This sound is played once when the upgrade is taking effect.
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Upgrade and hit sounds from textures
+
+Any 	<property name="Shape" value="ModelEntity" />
+does NOT need a texture entry.
+
+If one is given, the sound attached to the texture in blocktextures (and baked into that other file I cant remember)
+WILL play when this block is hit, overriding the block's material assignment.
+
+Any 	<property name="Shape" value="Ext3dModel" />
+DOES need a (dummy) texture entry.
+
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Transparent / cutout meshes and frame blocks
+
+added <Property name="Frame"/> to each master frame block.
+
+This marks the block as a frame so in the code it sends a multiplier to the inside rendering to either happen or not.
+If the property is there then it will render the back faces of the geo, shrink it slightly (so z-fighting doesn't happen), and flip the normals to point inside.
+
+Related: 
+*Changed: Defaulted transparent blocks to have no backface culling per Joel’s request for glass blocks.
+
 
 - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -389,9 +422,9 @@ It means that if a texture is "global", the block texture will ALWAYS display wi
 even if the block is rotated in a way that would display this side upside down or to the right.
 
 This is defined per texture in blocktextures.xml.
+(which does nothing until the (opaque) atlas is baked)
 
 On some faces (the steps of stairs) this is not desired because they would look wrong in some rotations. There you set it to local.
-
 
 This setting can be overridden in blocks.xml on a per block / face base:
 
@@ -404,6 +437,14 @@ D = use default from blocktextures.xml
 L = force local
 G = force global
 
+A16 features all new UV code so in principle it does not matter at all which "side" is actually facing which way.
+The only blocks that were set to local UV are those that do NOT match any adjacent (other) blocks that they might touch.
+Like poles, supports or pillars.
+Their texture would never "continue on an adjacent block" and for diagonal polesthe wood texture might as well "run the right way".
+So these use the local override on the block.
+
+PS: Normal people don't need to know any of these weird graphics shenanigans so don't worry about it.
+I'm only documenting this for a handful of crazies.
 
 - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -461,6 +502,30 @@ The "top" face of a block determines the colour that it displays on the map UI.
 
 Here it's texture 277, bright blue.
 	<property name="Texture" value="277,574,576,577,578,575" />
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Block default placement:  Place + HandleFace
+
+Place overrides HandleFace so you can only have one or the other.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Upgrading and downgrading to random block targets.
+
+All of this... works now:
+
+	<property class="UpgradeBlock"> <property name="ToBlock" value="lootWasteland" /> </property>
+
+	<property name="DowngradeBlock" value="lootWasteland" />
+
+	<property name="UpgradeRated.ToBlock" value="lootWasteland" />
+
+	<property name="PlantGrowing.Next" value="lootWasteland" />
+
+Loot placeholders are defined in loot.xml.
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -567,7 +632,7 @@ Resource value x 1.2
 Common tool required. Cooking pot or grill - essentially free with a forge so does not stack with that bonus.
 Resource value x 1.2
 
-Rare tool required. Calipers, beaker...
+Rare tool required. Crucible, beaker...
 Resource value x 1.5
 
 Farming required. Not hard but time-consuming.
@@ -683,6 +748,49 @@ Optional attributes of a lootcontainer:
 "buff"
 "buff_chance"
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Adjusting gun accuracy / spread
+
+Crosshair_min_distance(int): the min size of the crosshairs on screen
+			Increasing it also increases the spread of Magazine_item_ray_spreads
+Crosshair_max_distance(int): the max size of the crosshairs on screen
+
+Magazine_item_ray_spreads: The projectile spread, both zoomed and hip-fired
+			Used for shotguns and pistols.
+
+			"Magazine_item_ray_spreads" generates a wider cone if the player is moving fast.
+
+Rays_spread:		Technically deprecated but still used because... it's what we got.
+			This one works for launchers but has a completely different scale.
+
+Accuracy: 		Attribute, can scale with QL
+			The spread of the weapon if hip-fired.
+			If Accuracy is defined, Magazine_item_ray_spreads is floored to zero
+			and aimed fire is dead on.
+			Used for rifles.
+
+			"Accuracy" uses a CYLINDER for the shot projection, not a cone.
+
+Zoom_max_out / Zoom_max_in: Those are plain FOV values
+
+Ranges measured at a FOV of 72. (only noobs use the default of 50)
+For FOV 50 multiply them by about 1.5.
+
+gunRocketLauncher
+	s0.095, 8.5m, 1m spread
+gunSawedOffPumpShotgun / blunderbuss
+	s0.74, 6m, 1m spread
+gunPumpShotgun
+	s0.835, 11m, 1m spread (shell) = 5.2°
+	s0.605, 25m, 1m spread (slug) = 2.29°
+
+
+Spread 5°: 2.6m @ 30m
+Spread 5°: 2.6m @ 30m
+
+Spread 15°: 4.3m @ 16m   or 14.5 sqm
+
+A zombie standing inside a 1m spread cone covers 55% of the whole cone.
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
@@ -749,10 +857,36 @@ Material types
 	These *are* defined in materials.xml. If you need a new "scrapable" material it must be defined as such in materials.xml + recipes.xml.
 
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Hold types / timers / delays / rate of fire
 
 Hold types are in misc.xml
 
+Speaking of - what these do is not exactly obvious.
 
+misc.xml - hold_type - ray_cast  is a delay in seconds.
+What it does depends on the item class/action.
+
+---
+For the "Eat" (and probably "UseOther") action:
+- This timer is started when you click / use an item.
+- You cannot switch toolbelt slots while this timer is running. (to not mess up the animation)
+- When THIS timer has run out, any item effects and buffs are applied on an "eat" action.
+- It does not prevent you from spam-clicking the item.
+	Doing so while the timer is running, both animation and timer start over.
+	The item effects/buffs are not applied until you stop clicking and let the timer run to completion.
+---
+For a pistol this timer has no discernible effect.
+---
+
+items.xml - action - delay  is a delay in seconds.
+
+- This timer prevents spam-clicking of a consumeable item and also is started when you click / use an item.
+- This controls the rate of fire of a weapon because you cannot "click" faster than that.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
 
 UMA Slots
 
@@ -1007,6 +1141,18 @@ a dirty needle on a blood draw kit... use the nasty side of your imagination.
 
 - - - - - - - - - - - - - - - - - - - - - - - - -
 
+Use delay of items
+
+While an item action can define a delay, it does not block you from spamming the button.
+
+misc.xml:
+        <hold_type id="22" newmodel="false" ray_cast="0.5" holster="0" unholster="0.2" />        <!-- 22 sham -->
+
+ray_cast is the delay that actually does that.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
 "Stacknumber"
 
 If an item has 
@@ -1233,7 +1379,7 @@ Use of "Extends" is not supported for recipes.
 
 Usable craft areas ( = block name of the crafting station) and tools:
 
-forge		[anvil | calipers | toolAndDieSet]
+forge		[anvil | forgeCrucible | toolAndDieSet]
 campfire	[cookingPot | cookingGrill | beaker]
 cementMixer
 backpack ?
@@ -1356,6 +1502,213 @@ as needed.
 The sound still has to be assigned in sounds.xml.
 
 
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+Icons usable for buffs:
+(some may be nonsense or not even work but hey - not my problem)
+
+Checkmark.tga                                                         
+map_poi_editor.png                                                    
+map_spawn.png                                                         
+map_static_spawner_editor.png                                         
+server_icon_vac.tga                                                   
+star 1.png                                                            
+star.png                                                              
+ui_game_filled_circle.tga                                             
+ui_game_header_fill.tga                                               
+ui_game_header_fill_gradient.tga                                      
+ui_game_header_insert.tga                                             
+ui_game_panel_header.tga                                              
+ui_game_popup.tga                                                     
+ui_game_select_row.tga                                                
+ui_game_shape_arch.tga                                                
+ui_game_shape_cone1m.tga                                              
+ui_game_shape_corner_round_1m.tga                                     
+ui_game_shape_corner_rounded.tga                                      
+ui_game_shape_cube.tga                                                
+ui_game_shape_cube_half.tga                                           
+ui_game_shape_cube_quarter.tga                                        
+ui_game_shape_plate.tga                                               
+ui_game_shape_plate_25cm.tga                                          
+ui_game_shape_plate_wall.tga                                          
+ui_game_shape_pole_0.5m.tga                                           
+ui_game_shape_pole_1m.tga                                             
+ui_game_shape_pole_square.tga                                         
+ui_game_shape_ramp.tga                                                
+ui_game_shape_ramp_corner_filler.tga                                  
+ui_game_shape_ramp_inside_corner.tga                                  
+ui_game_shape_ramp_outside_corner.tga                                 
+ui_game_shape_stairs.tga                                              
+ui_game_shape_stairs_filled.tga                                       
+ui_game_shape_stairs_filled_corner.tga                                
+ui_game_shape_wedge60.tga                                             
+ui_game_shape_wedge60_tip.tga                                         
+ui_game_shape_wedge60_tip_corner.tga                                  
+ui_game_shape_wedged_corner.tga                                       
+ui_game_stat_bar_health.tga                                           
+ui_game_stat_bar_stamina.tga                                          
+ui_game_symbol_add.tga                                                
+ui_game_symbol_airdrop.tga                                            
+ui_game_symbol_all_blocks.tga                                         
+ui_game_symbol_allies.tga                                             
+ui_game_symbol_archery.tga                                            
+ui_game_symbol_armor_iron.tga                                         
+ui_game_symbol_armor_leather.tga                                      
+ui_game_symbol_arrow_left.tga                                         
+ui_game_symbol_arrow_max.tga                                          
+ui_game_symbol_arrow_right.tga                                        
+ui_game_symbol_assemble.tga                                           
+ui_game_symbol_backpack.tga                                           
+ui_game_symbol_battery.tga                                            
+ui_game_symbol_beer.tga                                               
+ui_game_symbol_block_damage.tga                                       
+ui_game_symbol_block_repair.tga                                       
+ui_game_symbol_block_upgrade.tga                                      
+ui_game_symbol_book.tga                                               
+ui_game_symbol_brokenbone.tga                                         
+ui_game_symbol_bullet_point.tga                                       
+ui_game_symbol_campfire.tga                                           
+ui_game_symbol_cement.tga                                             
+ui_game_symbol_chair.tga                                              
+ui_game_symbol_character.tga                                          
+ui_game_symbol_check.tga                                              
+ui_game_symbol_chemistry.tga                                          
+ui_game_symbol_climb.tga                                              
+ui_game_symbol_clock.tga                                              
+ui_game_symbol_club.tga                                               
+ui_game_symbol_coffee.tga                                             
+ui_game_symbol_coin.tga                                               
+ui_game_symbol_cold.tga                                               
+ui_game_symbol_compass.tga                                            
+ui_game_symbol_computer.tga                                           
+ui_game_symbol_cookware.tga                                           
+ui_game_symbol_critical.tga                                           
+ui_game_symbol_death.tga                                              
+ui_game_symbol_defense.tga                                            
+ui_game_symbol_diamond.tga                                            
+ui_game_symbol_door.tga                                               
+ui_game_symbol_drive.tga                                              
+ui_game_symbol_drop.tga                                               
+ui_game_symbol_drunk.tga                                              
+ui_game_symbol_dysentery.tga                                          
+ui_game_symbol_electric_generator.tga                                 
+ui_game_symbol_electric_max_power.tga                                 
+ui_game_symbol_electric_outlet.tga                                    
+ui_game_symbol_electric_plugin.tga                                    
+ui_game_symbol_electric_power.tga                                     
+ui_game_symbol_electric_solar.tga                                     
+ui_game_symbol_electric_switch.tga                                    
+ui_game_symbol_electric_turret.tga                                    
+ui_game_symbol_fire.tga                                               
+ui_game_symbol_food_poisoning.tga                                     
+ui_game_symbol_forge.tga                                              
+ui_game_symbol_fork.tga                                               
+ui_game_symbol_gas.tga                                                
+ui_game_symbol_gunsmithing.tga                                        
+ui_game_symbol_hammer.tga                                             
+ui_game_symbol_hand.tga                                               
+ui_game_symbol_horn.tga                                               
+ui_game_symbol_hot.tga                                                
+ui_game_symbol_hunger.tga                                             
+ui_game_symbol_infection.tga                                          
+ui_game_symbol_invite.tga                                             
+ui_game_symbol_keypad.tga                                             
+ui_game_symbol_knife.tga                                              
+ui_game_symbol_light_armor.tga                                        
+ui_game_symbol_lightbulb.tga                                          
+ui_game_symbol_lock.tga                                               
+ui_game_symbol_loot_sack.tga                                          
+ui_game_symbol_map.tga                                                
+ui_game_symbol_map_bed.tga                                            
+ui_game_symbol_map_cabin.tga                                          
+ui_game_symbol_map_campsite.tga                                       
+ui_game_symbol_map_cave.tga                                           
+ui_game_symbol_map_city.tga                                           
+ui_game_symbol_map_civil.tga                                          
+ui_game_symbol_map_cursor.tga                                         
+ui_game_symbol_map_fortress.tga                                       
+ui_game_symbol_map_house.tga                                          
+ui_game_symbol_map_player_arrow.tga                                   
+ui_game_symbol_map_town.tga                                           
+ui_game_symbol_map_trader.tga                                         
+ui_game_symbol_map_waypoint_remove.tga                                
+ui_game_symbol_map_waypoint_set.tga                                   
+ui_game_symbol_medical.tga                                            
+ui_game_symbol_mic.tga                                                
+ui_game_symbol_minibike.tga                                           
+ui_game_symbol_mining.tga                                             
+ui_game_symbol_misc_crafting.tga                                      
+ui_game_symbol_muscle.tga                                             
+ui_game_symbol_natural_healing.tga                                    
+ui_game_symbol_noise.tga                                              
+ui_game_symbol_oxygen.tga                                             
+ui_game_symbol_paint_allsides.tga                                     
+ui_game_symbol_paint_brush.tga                                        
+ui_game_symbol_paint_bucket.tga                                       
+ui_game_symbol_paint_copy_block.tga                                   
+ui_game_symbol_paint_eyedropper.tga                                   
+ui_game_symbol_paint_roller.tga                                       
+ui_game_symbol_paint_spraygun.tga                                     
+ui_game_symbol_pen.tga                                                
+ui_game_symbol_percent.tga                                            
+ui_game_symbol_perk.tga                                               
+ui_game_symbol_pills.tga                                              
+ui_game_symbol_ping.tga                                               
+ui_game_symbol_pistol.tga                                             
+ui_game_symbol_player.tga                                             
+ui_game_symbol_players.tga                                            
+ui_game_symbol_quality_joe.tga                                        
+ui_game_symbol_quest.tga                                              
+ui_game_symbol_quest_remove.tga                                       
+ui_game_symbol_radiation.tga                                          
+ui_game_symbol_resource.tga                                           
+ui_game_symbol_rifle.tga                                              
+ui_game_symbol_rotate_advanced.tga                                    
+ui_game_symbol_rotate_auto.tga                                        
+ui_game_symbol_rotate_on_face.tga                                     
+ui_game_symbol_rotate_simple.tga                                      
+ui_game_symbol_run.tga                                                
+ui_game_symbol_safe.tga                                               
+ui_game_symbol_science.tga                                            
+ui_game_symbol_scrap.tga                                              
+ui_game_symbol_search.tga                                             
+ui_game_symbol_seats.tga                                              
+ui_game_symbol_service.tga                                            
+ui_game_symbol_shirt.tga                                              
+ui_game_symbol_shopping_cart.tga                                      
+ui_game_symbol_shotgun.tga                                            
+ui_game_symbol_skills.tga                                             
+ui_game_symbol_skull.tga                                              
+ui_game_symbol_sledge.tga                                             
+ui_game_symbol_smell.tga                                              
+ui_game_symbol_spatula.tga                                            
+ui_game_symbol_speed.tga                                              
+ui_game_symbol_splint.tga                                             
+ui_game_symbol_star.tga                                               
+ui_game_symbol_stunned.tga                                            
+ui_game_symbol_subtract.tga                                           
+ui_game_symbol_tailoring.tga                                          
+ui_game_symbol_talk.tga                                               
+ui_game_symbol_tea.tga                                                
+ui_game_symbol_temperature.tga                                        
+ui_game_symbol_thirst.tga                                             
+ui_game_symbol_tool.tga                                               
+ui_game_symbol_tool_smithing.tga                                      
+ui_game_symbol_treasure.tga                                           
+ui_game_symbol_trophy.tga                                             
+ui_game_symbol_unlock.tga                                             
+ui_game_symbol_vending.tga                                            
+ui_game_symbol_water.tga                                              
+ui_game_symbol_weapon_smithing.tga                                    
+ui_game_symbol_weight.tga                                             
+ui_game_symbol_wet.tga                                                
+ui_game_symbol_wind.tga                                               
+ui_game_symbol_workbench.tga                                          
+ui_game_symbol_wrench.tga                                             
+ui_game_symbol_x.tga                                                  
+ui_game_symbol_zombie.tga                                             
+wedge_tip_half.tga                                                    
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
 
@@ -1391,6 +1744,9 @@ Icons for blocks and items:
 If there is a 	<property name="CustomIcon" value="blah" />
 neither the icon nor a placeholder space are baked into the icon atlas.
 
+The icon atlas is generated at
+\Assets\Resources\GUI\Atlases\ItemIcons.png
+\Assets\Resources\GUI\Atlases\ItemIcons.txt
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
@@ -1530,5 +1886,284 @@ Attributes:
 	"priority"
 	"rate"
 	"volume"
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+File: ENTITYCLASSES.XML
+
+
+Target parameters for AITask properties:
+
+EntityAnimalBear
+EntityAnimalRabbit
+EntityAnimalStag
+EntityCar
+EntityEnemy
+EntityFallingBlock
+EntityFallingTree
+EntityItem
+EntityNPC
+EntityPlayer
+EntitySupplyCrate
+EntitySupplyPlane
+EntityVehicle
+
+
+<property name="AITask-3" value="Territorial"/>
+	(unused in A16) see spawning.xml
+	If an ENTITYSPAWNER has Territorial=true and TerritorialRange=distance and the entity_class (here) has AITask Territorial
+	then an entity WILL return to it's spawn point (ignoring everything) when it exceeds this distance.
+
+In general there are 2 classes of tasks in this entity system.
+AITask- : movement task that decides what to do, possibly with the chosen target
+AITarget- : targeting task, it determines what the entity should target
+
+
+<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30"/>
+param2 : give up time
+If the entity is chasing a target for this long it will potentially give up... unless the
+target is still in range/sight, in which case the pursuit is continued.
+Essentially you have to break LOS for this long.
+
+An entity will be aggro again if attacked after it has stopped pursueing.
+(bug in 16.0: Zombies never seem to stop pursueing)
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Wandering Hordes / Gamestage
+
+Wandering hordes don't spawn until 28 hours into the game.
+
+Wandering hordes will use the player's gamestage... but wrap around at 50.
+If you are GS 57 you get the "07" wandering horde.
+This is kinda hacky but the best we got for now. Stay tuned for A17.
+
+To test them:
+
+	shownexthordetime
+	settime to that
+	see the spawns on the console or ingame
+
+- - - - - - - - - - - - - - - - - - - - - - - - -
+
+maxAlive
+values in gamestages.xml  are now per player, not per party.
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Imposters / Distant POI
+
+<property name="DistantPOIOverride" value="hotel_ostrich" />
+	If your custom-built prefab HAS no baked imposter you can choose to display any of the EXISTING .mesh files in the prefab folder.
+	It will obviously be the wrong building... but you can see that there is SOMETHING over yonder instead of nothing.
+
+<property name="DistantPOIYOffset" value="0" />
+	Move the imposter up/down to deal with zfighting with the ground or the actual blocks.
+
+<property name="SleeperVolumeSize" value="54, 7, 40#54, 7, 27#13, 7, 21#54, 6, 27#54, 17, 32#54, 10, 27#21, 7, 26#54, 6, 27#21, 10, 26#5, 10, 5" />
+<property name="SleeperVolumeStart" value="0, 0, 0#0, 7, 13#41, 0, 0#0, 14, 13#0, 36, 8#0, 26, 13#18, 36, 14#0, 20, 13#18, 43, 14#23, 26, 24" />
+	Sleeper volume dimensions.
+
+<property name="SleeperVolumeGroup" value="S_ZomUtilityWorker_L,S_ZomUtilityWorker_L,S_BikerBar_Med,S_GhostTown_Med,S_LootRoom_XS,S_ZomUtilityWorker_Med,S_LootRoom_L,S_ZomUtilityWorker_L,S_LootRoom_XS,S_LootRoom_XS" />
+	See gamestages.xml
+
+<property name="SleeperVolumeGameStageAdjust" value=",,,,,,hard,,hard," />
+	A volume can have a gamestage modifier. See gamestages.xml
+
+<property name="SleeperIsLootVolume" value="False,False,True,False,False,False,True,False,True,True" />
+	A loot volume is a sleeper volume that CAN intersect with ONE other non-loot volume.
+	No other kind of intersecting volumes is allowed. (it may not crash but zombies will not know where they belong)
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+<!-- Template for adding a new shape to main building blocks
+
+<block id="bbbbbb" name="woodFrameWedgeID">
+	<property name="Extends" value="woodFrameMaster" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="woodWedgeID" />	</property>
+</block>
+
+<block id="bbbbbb" name="solidWoodFrameWedgeID">
+	<property name="Extends" value="woodFrameWedgeID" />
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CustomIcon" value="woodFrameWedgeID" />
+	<property name="CanPickup" value="false" />
+</block>
+
+<block id="bbbbbb" name="woodWedgeID">
+	<property name="Extends" value="woodMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodWedgeID" /> </property>
+	<property name="DowngradeBlock" value="solidWoodFrameWedgeID" />
+</block>
+
+<block id="bbbbbb" name="rWoodWedgeID">
+	<property name="Extends" value="rWoodMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodMetalWedgeID" /> </property>
+	<property name="DowngradeBlock" value="woodWedgeID" />
+</block>
+
+<block id="bbbbbb" name="rWoodMetalWedgeID">
+	<property name="Extends" value="rWoodMetalMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeID" /> </property>
+	<property name="DowngradeBlock" value="rWoodWedgeID" />
+</block>
+
+<block id="bbbbbb" name="scrapIronFrameWedgeID">
+	<property name="Extends" value="scrapIronFrameMaster" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="CanPickup" value="true" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeID" /> </property>
+</block>
+
+<block id="bbbbbb" name="solidScrapIronFrameWedgeID">
+	<property name="Extends" value="scrapIronFrameWedgeID" />
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CustomIcon" value="scrapIronFrameWedgeID" />
+	<property name="CanPickup" value="false" />
+</block>
+
+<block id="bbbbbb" name="scrapIronWedgeID">
+	<property name="Extends" value="scrapIronMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronWedgeID" /> </property>
+	<property name="DowngradeBlock" value="solidScrapIronFrameWedgeID" />
+</block>
+
+<block id="bbbbbb" name="rScrapIronWedgeID">
+	<property name="Extends" value="rScrapIronMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeID" /> </property>
+	<property name="DowngradeBlock" value="scrapIronWedgeID" />
+</block>
+
+<block id="bbbbbb" name="pouredConcreteWedgeID">
+	<property name="Extends" value="pouredConcreteMaster" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="UpgradeRated.ToBlock" value="concreteWedgeID" />
+</block>
+
+<block id="bbbbbb" name="concreteWedgeID">
+	<property name="Extends" value="concreteMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredRConcreteWedgeID" /> </property>
+</block>
+
+<block id="bbbbbb" name="pouredRConcreteWedgeID">
+	<property name="Extends" value="pouredRConcreteMaster" />
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="pouredConcreteWedgeID" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="UpgradeRated.ToBlock" value="rConcreteWedgeID" />
+</block>
+
+<block id="bbbbbb" name="rConcreteWedgeID">
+	<property name="Extends" value="rConcreteMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="steelWedgeID" /> </property>
+	<property name="DowngradeBlock" value="concreteWedgeID" />
+</block>
+
+<block id="bbbbbb" name="steelWedgeID">
+	<property name="Extends" value="steelMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="Texture" value="356" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelWedgeID" /> </property>
+	<property name="DowngradeBlock" value="rConcreteWedgeID" />
+</block>
+
+<block id="bbbbbb" name="stainlessSteelWedgeID">
+	<property name="Extends" value="stainlessSteelMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property name="DowngradeBlock" value="rConcreteWedgeID" />
+</block>
+
+<block id="bbbbbb" name="brickWedgeID">
+	<property name="Extends" value="brickMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock">	<property name="ToBlock" value="pouredConcreteWedgeID" /> </property>
+</block>
+
+<block id="bbbbbb" name="flagstoneWedgeID">
+	<property name="Extends" value="flagstoneMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneWedgeID"/> </property>
+</block>
+
+
+<block id="bbbbbb" name="cobblestoneWedgeID">
+	<property name="Extends" value="cobblestoneMaster" />
+	<property name="Shape" value="New" />
+	<property name="Model" value="wedge60Model" /> <property name="Place" value="TowardsPlacerInverted" />
+	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteWedgeID" />	</property>
+</block>
+
+-->
+
+
+
+<!--
+
+<recipe name="woodFrameWedgeID" count="1">
+	<ingredient name="wood" count="5"/>
+</recipe>
+	ALTERNATIVE - use one or the other!
+	<recipe name="woodWedgeID" count="1">
+		<ingredient name="wood" count="10"/>
+	</recipe>
+
+<recipe name="scrapIronFrameWedgeID" count="1">
+	<ingredient name="scrapIron" count="15"/>
+</recipe>
+	ALTERNATIVE - use one or the other!
+	<recipe name="scrapIronWedgeID" count="1">
+		<ingredient name="scrapIron" count="40"/>
+	</recipe>
+
+<recipe name="pouredConcreteWedgeID" count="1">
+	<ingredient name="concreteMix" count="10"/>
+</recipe>
+
+<recipe name="brickWedgeID" count="1" craft_area="forge" material_based="true">
+	<ingredient name="unit_stone" count="10"/>
+	<ingredient name="unit_clay" count="60"/>
+</recipe>
+
+<recipe name="flagstoneWedgeID" count="1">
+	<ingredient name="cobblestones" count="3"/>
+</recipe>
+
+-->
+
+
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------

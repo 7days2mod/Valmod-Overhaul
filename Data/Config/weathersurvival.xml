@@ -21,7 +21,7 @@
 	<!-- Max percent per second the player can dry off  (1=100%) -->
 	<property name="MaxDryPercentPerSecond" value="0.1"/>
 	<!-- How many degrees per second your core temp changes when you are dry. -->
-	<property name="CoreTempChangeRateWhenDry" value="0.05"/>
+	<property name="CoreTempChangeRateWhenDry" value="0.075"/>
 	<!-- How many degrees per second your core temp changes when you are wet. -->
 	<property name="CoreTempChangeRateWhenWet" value="0.5"/>
 	<!-- How much to multiply the change rate when player temperature is going to a positive. -->

@@ -6,3 +6,4 @@ How to Install Bigger Backpack:
 3. Be sure to launch the game without EAC.
 4. Done.
 
+Note: This does not work retroactively for saves. So you will need to start a new game to get the extra inventory slots.

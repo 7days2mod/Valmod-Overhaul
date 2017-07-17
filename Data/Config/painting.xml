@@ -1,0 +1,1057 @@
+<paints>
+<!-- -->
+
+<!-- ID: can only be 0-255, name = localisation key, ID 0 is the "delete" entry. Do not re-use 0. -->
+<!-- TextureId: this matches <property name="Texture" /> -->
+<!-- Group: to organise textures on the paint tool menu, this is also the localisation key of the group -->
+<!-- PaintCost: default=1
+
+Used Groups:
+	Decorations
+	Faux
+	Masonry
+	Metal
+	Painted
+	Wall Coverings
+	Wood and Roofing
+
+1 txGroupDecoration
+2 txGroupFaux
+2 txGroupMasonry
+3 txGroupMetal
+1 txGroupPainted
+2 txGroupWallCovering
+1 txGroupWood
+
+Textures we might want for (terrain) imposters
+  0
+  1
+  2
+  6
+ 10 have
+ 11
+178 ice
+181
+185
+185
+195
+200
+288
+290
+301
+396
+-->
+<paint id="0" name="txName_Delete">
+	<property name="TextureId" value="0" />
+	<property name="Group" value="txGroupExcluded" />
+	<property name="Hidden" value="true" />
+</paint>
+
+<paint id="1" name="txName_Brick">
+	<property name="TextureId" value="7"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="2" name="txName_Concrete">
+	<property name="TextureId" value="8"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="3" name="txName_Tile_floor5">
+	<property name="TextureId" value="9"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="4" name="txName_Asphalt">
+	<property name="TextureId" value="10"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="5" name="txName_Gravel">
+	<property name="TextureId" value="11"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="6" name="txName_Concrete_block">
+	<property name="TextureId" value="12"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+	<property name="SortIndex" value="0" />
+</paint>
+
+<paint id="7" name="txName_Awning1">
+	<property name="TextureId" value="13"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="8" name="txName_Awning2">
+	<property name="TextureId" value="14"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="9" name="txName_Awning3">
+	<property name="TextureId" value="15"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="10" name="txName_Treetrunk_cut">
+	<property name="TextureId" value="21"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="11" name="txName_Rough_cut_wood">
+	<property name="TextureId" value="22"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="12" name="txName_Window_plug">
+	<property name="TextureId" value="23"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="13" name="txName_Gravestone1">
+	<property name="TextureId" value="24"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="14" name="txName_Pillcase">
+	<property name="TextureId" value="25"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="15" name="txName_Cobblestone">
+	<property name="TextureId" value="26"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="16" name="txName_Log_cabin">
+	<property name="TextureId" value="43"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="17" name="txName_Shingles_wood">
+	<property name="TextureId" value="44"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="18" name="txName_Metal_rivet">
+	<property name="TextureId" value="46"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="19" name="txName_Siding_blue">
+	<property name="TextureId" value="50"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="20" name="txName_Siding_green">
+	<property name="TextureId" value="51"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="21" name="txName_Siding_white">
+	<property name="TextureId" value="52"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="22" name="txName_Siding_yellow">
+	<property name="TextureId" value="53"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="23" name="txName_Wood_painted1">
+	<property name="TextureId" value="54"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="24" name="txName_Pillcase_side">
+	<property name="TextureId" value="55"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="25" name="txName_Wood_painted2">
+	<property name="TextureId" value="56"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="26" name="txName_Carpet1">
+	<property name="TextureId" value="57"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="27" name="txName_Plaster_green_middle">
+	<property name="TextureId" value="58"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="28" name="txName_Plaster_green_baseboard">
+	<property name="TextureId" value="59"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="29" name="txName_Tile_floor1">
+	<property name="TextureId" value="61"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="30" name="txName_Plaster_green_top">
+	<property name="TextureId" value="62"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="31" name="txName_Shutters1">
+	<property name="TextureId" value="64"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="32" name="txName_Wood_osb">
+	<property name="TextureId" value="65"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="33" name="txName_Bookcase">
+	<property name="TextureId" value="67"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="34" name="txName_Garage_door1">
+	<property name="TextureId" value="73"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="35" name="txName_Wood_painted3">
+	<property name="TextureId" value="74"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="36" name="txName_Carpet2">
+	<property name="TextureId" value="75"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="37" name="txName_Tile_floor2">
+	<property name="TextureId" value="76"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="38" name="txName_Siding_tan">
+	<property name="TextureId" value="77"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="39" name="txName_Cabinet_old_counter">
+	<property name="TextureId" value="78"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="40" name="txName_Cabinet_old_ft">
+	<property name="TextureId" value="79"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="41" name="txName_Cabinet_old_top_ft">
+	<property name="TextureId" value="81"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<!-- free -->
+
+<paint id="43" name="txName_Cabinet_old_wood">
+	<property name="TextureId" value="84"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="44" name="txName_Treetrunk_pine">
+	<property name="TextureId" value="116"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="45" name="txName_Adobe_tan">
+	<property name="TextureId" value="168"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="46" name="txName_Adobe_peach">
+	<property name="TextureId" value="169"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="47" name="txName_Clay_roof">
+	<property name="TextureId" value="170"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="48" name="txName_Adobe_white">
+	<property name="TextureId" value="171"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="49" name="txName_Adobe_trim_white">
+	<property name="TextureId" value="172"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="50" name="txName_Drywall_creme">
+	<property name="TextureId" value="173"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="51" name="txName_Drywall_creme_baseboard">
+	<property name="TextureId" value="174"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="52" name="txName_Taupe_metal">
+	<property name="TextureId" value="531"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="53" name="txName_Beercooler">
+	<property name="TextureId" value="190"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="54" name="txName_Beercooler_sides">
+	<property name="TextureId" value="191"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="55" name="txName_Shingles_old">
+	<property name="TextureId" value="192"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="56" name="txName_Barnwood">
+	<property name="TextureId" value="193"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="57" name="txName_Corregated_metal">
+	<property name="TextureId" value="194"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="58" name="txName_Dead_grass">
+	<property name="TextureId" value="196"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="59" name="txName_Woodfloor01">
+	<property name="TextureId" value="214"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="60" name="txName_Drywall_tan">
+	<property name="TextureId" value="215"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="61" name="txName_Drywall_tan_baseboard">
+	<property name="TextureId" value="216"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="62" name="txName_Drywall_ceiling">
+	<property name="TextureId" value="217"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="63" name="txName_Flagstone">
+	<property name="TextureId" value="226"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="64" name="txName_Brick01">
+	<property name="TextureId" value="227"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="66" name="txName_Shingles_asphalt">
+	<property name="TextureId" value="229"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="67" name="txName_Wood_old">
+	<property name="TextureId" value="241"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="68" name="txName_Plaster">
+	<property name="TextureId" value="245"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="69" name="txName_Fence_wood">
+	<property name="TextureId" value="246"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="70" name="txName_Brick_pavers">
+	<property name="TextureId" value="247"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="71" name="txName_Rug01">
+	<property name="TextureId" value="248"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="72" name="txName_Granite">
+	<property name="TextureId" value="261"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="73" name="txName_Cabinet">
+	<property name="TextureId" value="262"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="74" name="txName_Cabinet_top">
+	<property name="TextureId" value="263"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="75" name="txName_Fridge_stainless">
+	<property name="TextureId" value="265"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="76" name="txName_Fridge_stainless_bottom">
+	<property name="TextureId" value="266"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="77" name="txName_Fridge_stainless_side">
+	<property name="TextureId" value="267"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="78" name="txName_Curb_grass">
+	<property name="TextureId" value="269"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="79" name="txName_Cardboard_sides">
+	<property name="TextureId" value="270"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="80" name="txName_Wood_fence">
+	<property name="TextureId" value="272"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="81" name="txName_Cardboard_top">
+	<property name="TextureId" value="276"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="82" name="txName_Wrought_iron_metal">
+	<property name="TextureId" value="282"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="83" name="txName_Storage_health">
+	<property name="TextureId" value="284"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="84" name="txName_Brick_decayed">
+	<property name="TextureId" value="299"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="85" name="txName_Siding_white_burnt">
+	<property name="TextureId" value="302"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="86" name="txName_WoodPaneling_burnt">
+	<property name="TextureId" value="303"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="87" name="txName_Metal_plate_wall">
+	<property name="TextureId" value="307"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="88" name="txName_Smokestack_red">
+	<property name="TextureId" value="311"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="89" name="txName_Smokestack_white">
+	<property name="TextureId" value="312"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="90" name="txName_Ventilation_duct">
+	<property name="TextureId" value="314"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="91" name="txName_Concrete_reinforced">
+	<property name="TextureId" value="315"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="92" name="txName_Tile_industrial">
+	<property name="TextureId" value="319"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="93" name="txName_Glass_industrial">
+	<property name="TextureId" value="320"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="94" name="txName_Concrete_trim">
+	<property name="TextureId" value="321"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="95" name="txName_Curb_wasteland">
+	<property name="TextureId" value="326"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="96" name="txName_Tanbrick">
+	<property name="TextureId" value="328"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="97" name="txName_Sidewalk_wasteland">
+	<property name="TextureId" value="329"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="98" name="txName_Concrete_trim2">
+	<property name="TextureId" value="330"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="99" name="txName_Concrete_trim3">
+	<property name="TextureId" value="331"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="100" name="txName_Paintedbrick">
+	<property name="TextureId" value="332"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="101" name="txName_Painting01">
+	<property name="TextureId" value="334"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="102" name="txName_Painting01_trim">
+	<property name="TextureId" value="335"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="103" name="txName_Painting02">
+	<property name="TextureId" value="336"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="104" name="txName_Tile_floor3">
+	<property name="TextureId" value="340"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="105" name="txName_Wall_oven">
+	<property name="TextureId" value="341"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="106" name="txName_Drop_ceiling01">
+	<property name="TextureId" value="342"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="107" name="txName_Carpet3">
+	<property name="TextureId" value="344"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="108" name="txName_Cabinet_side">
+	<property name="TextureId" value="345"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="109" name="txName_Cabinet_range">
+	<property name="TextureId" value="346"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="110" name="txName_Reinforced_metal_plate_wall">
+	<property name="TextureId" value="352"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="111" name="txName_Steel_floor">
+	<property name="TextureId" value="355"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="112" name="txName_Steel_wall">
+	<property name="TextureId" value="356"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="113" name="txName_Medicine_cabinet">
+	<property name="TextureId" value="358"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="114" name="txName_Tile_floor4">
+	<property name="TextureId" value="361"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="115" name="txName_Chaulkboard">
+	<property name="TextureId" value="372"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="116" name="txName_Granite_sink">
+	<property name="TextureId" value="373"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="117" name="txName_Cabinet_old_counter_sink">
+	<property name="TextureId" value="374"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="118" name="txName_Curb_plainsgrass">
+	<property name="TextureId" value="376"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="119" name="txName_Reinforced_wood">
+	<property name="TextureId" value="379"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="120" name="txName_Reinforced_wood_metal">
+	<property name="TextureId" value="380"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="121" name="txName_Fur_rug">
+	<property name="TextureId" value="382"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="122" name="txName_Window_plug04">
+	<property name="TextureId" value="384"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="123" name="txName_Green_rusty_metal">
+	<property name="TextureId" value="385"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="124" name="txName_Drop_ceiling02">
+	<property name="TextureId" value="391"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="125" name="txName_Wood_barricade">
+	<property name="TextureId" value="407"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="126" name="txName_Wood_barricade02">
+	<property name="TextureId" value="408"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="127" name="txName_Glass_industrial02">
+	<property name="TextureId" value="413"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="128" name="txName_Storage_ammo">
+	<property name="TextureId" value="418"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="129" name="txName_Storage_building">
+	<property name="TextureId" value="419"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="130" name="txName_Storage_explosives">
+	<property name="TextureId" value="420"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="131" name="txName_Storage_food">
+	<property name="TextureId" value="421"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="132" name="txName_Storage_weapons">
+	<property name="TextureId" value="422"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="133" name="txName_Supply_crate"> <!-- shipping crate -->
+	<property name="TextureId" value="423"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<!-- free -->
+
+<paint id="135" name="txName_Cold_beer">
+	<property name="TextureId" value="427"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="136" name="txName_Green_metal_roof">
+	<property name="TextureId" value="428"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="137" name="txName_Orange_metal_roof">
+	<property name="TextureId" value="429"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="138" name="txName_Drywall_orange">
+	<property name="TextureId" value="430"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<!-- free -->
+
+<paint id="140" name="txName_Blue_metal_roof">
+	<property name="TextureId" value="435"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="141" name="txName_Drywall_blue">
+	<property name="TextureId" value="436"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<!-- free -->
+
+<paint id="143" name="txName_Tread_plate">
+	<property name="TextureId" value="445"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="144" name="txName_Metal_base">
+	<property name="TextureId" value="446"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="145" name="txName_Duct_soft">
+	<property name="TextureId" value="519"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="146" name="txName_Pipe_metal">
+	<property name="TextureId" value="520"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="147" name="txName_Pipe_metal2">
+	<property name="TextureId" value="523"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="148" name="txName_Rusty_metal_base">
+	<property name="TextureId" value="571"/>
+	<property name="Group" value="txGroupMetal"/>
+	<property name="PaintCost" value="3" />
+</paint>
+
+<paint id="149" name="txName_Storage_generic">
+	<property name="TextureId" value="572"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="150" name="txName_Tanbrick02">
+	<property name="TextureId" value="534"/>
+	<property name="Group" value="txGroupFaux"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="151" name="txName_Concrete_white">
+	<property name="TextureId" value="535"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="152" name="txName_Concrete_yellow">
+	<property name="TextureId" value="536"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="153" name="txName_Concrete_blue">
+	<property name="TextureId" value="537"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="154" name="txName_Concrete_brown">
+	<property name="TextureId" value="538"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="155" name="txName_Concrete_orange">
+	<property name="TextureId" value="539"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="156" name="txName_Concrete_red">
+	<property name="TextureId" value="540"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="157" name="txName_Concrete_dark_red">
+	<property name="TextureId" value="541"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="158" name="txName_Concrete_pink">
+	<property name="TextureId" value="542"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="159" name="txName_Concrete_purple">
+	<property name="TextureId" value="543"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="160" name="txName_Concrete_green">
+	<property name="TextureId" value="544"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="161" name="txName_Concrete_grey">
+	<property name="TextureId" value="545"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="162" name="txName_Concrete_dark_grey">
+	<property name="TextureId" value="546"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="163" name="txName_Glass_opaque">
+	<property name="TextureId" value="532"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="164" name="txName_Bullseye">
+	<property name="TextureId" value="547"/>
+	<property name="Group" value="txGroupDecoration"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="165" name="txName_Drywall">
+	<property name="TextureId" value="548"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="166" name="txName_Concrete_camo">
+	<property name="TextureId" value="549"/>
+	<property name="Group" value="txGroupPainted"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="167" name="txName_Plywood">
+	<property name="TextureId" value="525"/>
+	<property name="Group" value="txGroupWood"/>
+	<property name="PaintCost" value="1" />
+</paint>
+
+<paint id="168" name="txName_Carpet4">
+	<property name="TextureId" value="555"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="169" name="txName_GraniteBlack">
+	<property name="TextureId" value="552"/>
+	<property name="Group" value="txGroupMasonry"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="170" name="txName_Tile_Marble_Grey">
+	<property name="TextureId" value="553"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+
+<paint id="171" name="txName_Fabric_Blinds">
+	<property name="TextureId" value="580"/>
+	<property name="Group" value="txGroupWallCovering"/>
+	<property name="PaintCost" value="2" />
+</paint>
+<!-- Localised up to here -->
+
+
+</paints>

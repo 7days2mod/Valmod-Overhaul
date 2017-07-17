@@ -1,0 +1,219 @@
+
+STEALTH
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Zombies (actually all entities), sleeping or awake, can see, hear, and smell you.
+Hearing and smelling work similar.
+
+
+If a zombie sees you, you become "hunted".
+
+If you are "hunted" and disappear out of sight (stepping into a very dark place where the zombie can not see you)
+you immediately lose the "hunted" status.
+
+The zombie will still continue moving to your last known *location* for 30 seconds. (hardcoded)
+
+
+The light level of your environment matters.
+If you stand in the shadows and move slowly or not at all you are harder to see. A zombie would have to get closer before it can see you.
+
+
+- - - - - - - - 
+
+Movement and stance affect how easy you are to see.
+Hardcoded. Search "player.MovementState > 1" for constants.
+
+	0.5  crouching and standing still
+	1.25 crouching and walking
+	1.5  crouching and running
+	1.5  standing and walking
+	2.0  standing and running
+
+
+- - - - - - - - 
+
+Item Light Properties (items.xml)
+
+What if you are holding a torch?  
+
+Items have a <property name="LightValue" value="0.98" />
+
+	When the object is held it increases your light level by that much.
+	Max is 1 which means 100% or a value of 100 on the debug UI.
+	On a gun with attached flashlight this is added only while the light is turned on.
+
+
+- - - - - - - - 
+
+How does cover work?
+
+	There is no complex concept of cover. Vision is either completely blocked by an object or not.
+
+
+- - - - - - - - 
+
+AWAKE Zombie Properties (entityclasses.xml)
+
+* SightRange="distance in meters" : The absolute max range that a zombie can see for.
+	Not randomised itself but used to LERP the *required* light levels
+	for detection at the current distance. (math speak, look it up)
+
+* SightScale="MinLight,MaxLight" : defines how well lit you have to be for the zombie to see you.
+	2 constants for this entity class. Not randomised.
+	At the zombies furthest sight distance, any player who is brighter than MaxLight will be seen.
+	At 0 distance from the zombie any player that is brighter than MinLight will be seen.
+	While not random *per* zombie, the constantly shifting distance and light values
+	with multiple zombies make it playable.
+	Used only in the "ApproachAndAttackTarget" AI task.
+
+* NoiseAlertThreshold="volume"
+* SmellAlertThreshold="smell value"
+	If the total sum of the sounds or smells near a zombie exceeds it's value
+	then the zombie will be alerted to this *location* and go to investigate.
+
+
+- - - - - - - - 
+
+SLEEPER Zombie Sight Properties (entityclasses.xml)
+
+* SightRange : see above
+
+* SleeperWakeupSightDetectionMin="min,max" : One number is rolled for this individual zombie inside the min,max range.
+* SleeperWakeupSightDetectionMax="min,max" : One number is rolled for this individual zombie inside the min,max range.
+	The two numbers are the "I see you" light value at point blank and "SightRange".
+
+	The zombie's "SleeperWakeupSightDetection" LERPs between these 2 values depending on distance.
+	Your "Player Light Value" is constantly adjusted by light level and stance.
+	If your current number is higher than the zombie's current "SleeperWakeupSightDetection"
+	and it can see you... the zombie wakes up.
+
+* SleeperSenseSightDetectionMin="min,max" :  One number is rolled for this individual zombie inside the min,max range.
+* SleeperSenseSightDetectionMax="min,max" :
+	Similar to above. Determines the "Player Light Value" at which the zombie will
+	stir and groan,	warning you that it might wake up if you get any closer.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Zombies and Sound - More than grunting and groaning!
+
+Each sound is a discrete and local event, defined in sounds.xml.
+A zombie does not hear *you* making the sound. It hears a sound occurring at your *location*.
+
+Sounds can and typically will have a duration.
+Since they do, sounds can stack.
+
+So you have a sound that lasts 10 second with a Noise Volume of 50.
+3 seconds after generating the sound, you do it again. Now for the next 7 seconds you have 2 sounds originating from your location, stacking to a Noise of 100.
+
+
+
+
+??????????????????????????????????????
+So the sound and smell "volumes" of such individual events overlap.
+
+If the total noise of multiple events ends up alerting the zombie, *which* specific sound/smell location is the zombie going after?
+The one with the highest value?
+In most cases it will be the player but with distractions etc...
+??????????????????????????????????????
+
+
+- - - - - - - - 
+
+Sound Properties (sounds.xml)
+
+<SoundDataNode name="44magnum_fire">
+	<Noise range="70" volume="50" time="2" muffled_when_crouched="0.5" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+
+* range :  Distance in meters at which zombies can hear this sound. There is no scaling for range. Sounds have their full noise volume at max range.
+* volume :  The noise has a value of this many "points". A volume 120 sound wakes up a zombie with  90 SleeperNoiseWakeThreshold.
+* time :  The "noise volume" created by this sound will be active for this many seconds. Noise volumes can stack.
+* muffled_when_crouched :  This multiplies both the range and the noise volume of the sound.
+* heat_map_strength :  how much heat the event contributes to the chunk's heat level
+* heat_map_time :  the time in seconds it takes for the heat to dissipate. Dissipation is not modeled, it's instant off after the time.
+
+
+- - - - - - - - 
+
+Item Smell Properties (items.xml)
+
+??????????????????????????????????????
+How does an item GET a smell value?  What is the syntax for that?
+??????????????????????????????????????
+
+- - - - - - - - 
+
+SLEEPER Zombie Sound Properties (entityclasses.xml)
+
+These thresholds are the zombie's ability to hear.
+If the sound is in range and louder than SleeperNoiseXxxxxxThreshold, the zombie hears it and groans... or wakes up.
+
+* SleeperNoiseSenseThreshold="min,max" :  One number is rolled for this individual zombie inside the min,max range.
+	At this sound noise level a sleeping zombie stirs and groans.
+
+* SleeperNoiseWakeThreshold="min,max" :  One number is rolled for this individual zombie inside the min,max range.
+	At this sound noise level a sleeping zombie wakes up.
+
+Keep in mind that sounds have a duration. The sound that made the zombie wake up
+will still be there for it to notice after it woke up.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+SLEEPER Zombie Smell Properties (entityclasses.xml)
+
+* SleeperSmellSenseThreshold="min,max" :  One number is rolled for this individual zombie inside the min,max range.
+	At this player smell level a sleeping zombie stirs and groans.
+
+* SoundSleeperSenseChance=".5" :  Random chance to play "SoundSleeperSense" when "SleeperSmellSenseThreshold" is triggered.
+
+
+* SleeperSmellWakeThreshold="min,max" :  One number is rolled for this individual zombie inside the min,max range.
+	At this player smell level a sleeping zombie wakes up.
+
+If the total sum of the smells near a zombie exceeds it's value, the zombie will be alerted to this "location" and go to investigate.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+Sleeper / Stealth Debug info (F3)
+
+F3 will show sleeper data above sleeper zombies.
+
+It shows 3 things above their head. They are all based on your current distance from the zombie:
+Wake, Groan, Dist
+Wake and Groan are your "Player light levels" that will trigger those actions and are affected by your current distance.
+
+If Wake says 100 and your lighting level is 110, the zombie would see you and start getting up.
+
+F3 also has a panel on it that shows your light level and stealth light level.
+Stealth is your lighting level after being affected by your stance and motion.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+  <SoundDataNode name="Pistol_Fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="25" volume="15" time="2" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+
+  <SoundDataNode name="44magnum_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="55" volume="50" time="2" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+
+
+  <SoundDataNode name="pump_shotgun_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="50" volume="40" time="2" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+
+  <SoundDataNode name="ak47_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="60" volume="60" time="3" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+
+  <SoundDataNode name="hunting_rifle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="60" volume="60" time="3" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+
+  <SoundDataNode name="sniperrifle_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="60" volume="60" time="3" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+
+  <SoundDataNode name="mp5_fire_start"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="10" volume="5" time="3" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.15" heat_map_time="6" />
+
+  <SoundDataNode name="m136_fire"> <AudioSource name="Sounds/AudioSource_WeaponFire"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<Noise range="35" volume="25" time="2" muffled_when_crouched="0.9" prio="1" heat_map_strength="0.3" heat_map_time="120" />
+

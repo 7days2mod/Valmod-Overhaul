@@ -1,0 +1,321 @@
+<windows>
+	
+	<window name="popupMenu" depth="20" pos="200,-200" width="200" height="436" controller="PopupMenu">
+		<rect name="content" depth="0" pos="0,0" borderthickness="3" visible="false">
+			<sprite depth="0" name="sprBackgroundBorder" sprite="ui_game_header_fill" type="sliced" color="[black]" />
+			<sprite depth="1" name="sprBackground" sprite="ui_game_header_fill" type="sliced" pos="3,-3" color="[darkGrey]"/>
+			<grid name="list" rows="10" cols="1" pos="3,-3" width="200" cell_width="390" cell_height="43" repeat_content="true" arrangement="vertical" >
+				<popup_menu_item name="0"/>
+			</grid>	
+		</rect>
+	</window>
+	
+	<window name="toolTip" width="100" height="25" depth="310" controller="ToolTip">
+		<rect>			
+			<sprite depth="0" name="sprBackgroundBorder" sprite="ui_game_header_fill" type="sliced" color="[black]" />
+			<sprite depth="1" name="sprBackground" sprite="ui_game_header_fill" type="sliced" pos="3,-3" color="[lightGrey]"/>
+			<label depth="3" name="lblText" text="" pos="10,-6" font_size="25" overflow="resizefreely"/>
+		</rect>
+	</window>
+	
+	<!--#$-IGS END.-$#-->
+	<window name="windowArchetypePreview" width="315" height="702" pos="360, 305" anchor="CenterCenter" controller="ArchetypePreviewWindow">
+		<texture depth="100" name="playerPreview" material="Materials/Transparent Colored" size="315,702" globalopacity="false"/>
+	</window>
+	
+	<window name="windowArchetypePreview2" width="840" height="702" panel="Center">
+		<panel name="header" pos="0,0" height="43" width="840" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3">
+			<label style="header.name" text="PREVIEW" text_key="xuiPreview" />
+		</panel>
+		<panel pos="0,-46" size="840,702" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="hover, press, scroll, drag" controller="ArchetypePreviewWindow">
+			<texture depth="100" name="playerPreview" material="Materials/Transparent Colored" size="840,702" globalopacity="false"/>
+			<button name="clothesToggle" depth="101" pos="6,-6" sprite="ui_game_symbol_shirt" style="icon32px,press,hover" tooltip="Toggle Clothes On/Off" tooltip_key="lblToggleClothes" />
+			<button name="reloadData" depth="101" pos="800,-6" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Archetype XML Data" tooltip_key="lblReloadArchetypeXML" />
+			<!--<sprite name="resetCamera" depth="101" pos="41,-6" sprite="ui_game_symbol_shirt" style="icon32px,press"/>-->
+		</panel>
+		
+	</window>
+	
+	<window name="windowArchetypeList" width="315" height="526" pos="-332, 336" panel="Left" controller="ArchetypeList">
+		<panel name="header" pos="0,0" height="43" width="315" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3">
+			<label style="header.name" text="ARCHETYPES" text_key="xuiArchetypes" />
+		</panel>
+		<panel name="content" pos="0,-46" width="315" height="43" depth="1" backgroundcolor="32,32,32" bordercolor="[black]" borderthickness="3" controller="Paging">
+			<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+			<rect depth="4" pos="37,-7" >
+				<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+				<label depth="5" text="{pagenumber}" pos="0, -3" width="30" height="28" font_size="26" justify="center"/>
+			</rect>
+			<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+		</panel>
+		<panel name="content" pos="0,-86" width="315" height="400" depth="1" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3">
+			<grid name="archetypeList" rows="10" cols="1" pos="0,0" width="315" height="240" cell_width="315" cell_height="40" repeat_content="true" arrangement="vertical">
+				<archetype_entry/>
+			</grid>
+		</panel>
+		<panel name="buttonContent" depth="0" pos="0,-486"  width="315" height="40" backgroundcolor="[black]" bordercolor="[black]">
+			<sprite depth="5" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+			<rect depth="1" pos="3,-3" width="309" height="34">
+				<sprite depth="1" name="save_button" sprite="ui_game_select_row" color="100,100,100" type="sliced" on_press="true" on_hover="true" />
+				<label depth="2" pos="0,-6" justify="center" text="SAVE" text_key="xuiSave" font_size="26" />
+			</rect>
+		</panel>
+	</window>
+	
+	<window name="windowSliders" width="400" height="708" panel="Right" controller="ArchetypeDnaList">
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<label style="header.name" text="DNA SLIDERS" text_key="xuiDnaSliders" />
+		</panel>
+		<panel name="content" pos="0,-46" width="400" height="43" depth="1" backgroundcolor="32,32,32" bordercolor="[black]" borderthickness="3" controller="Paging">
+			<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+			<rect depth="4" pos="37,-7" >
+				<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+				<label depth="5" text="{pagenumber}" pos="0, -3" width="30" height="28" font_size="26" justify="center"/>
+			</rect>
+			<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+		</panel>
+		<panel name="content" pos="0,-86" height="622" depth="1" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3">
+			<grid name="archetypeList" rows="17" cols="1" pos="10,-6" width="400" height="552" cell_width="400" cell_height="36" repeat_content="true" arrangement="vertical">
+				<slider/>
+			</grid>
+		</panel>
+		<panel name="buttonContent" depth="0" pos="0,-708"  width="200" height="40" backgroundcolor="[black]" bordercolor="[black]">
+			<sprite depth="5" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+			<rect depth="1" pos="3,-3" width="194" height="34">
+				<button depth="1" name="save_button" width="194" height="34" style="press" hoverscale="1" sprite="ui_game_select_row" sound="[start]" defaultcolor="[darkGrey]" hovercolor="[white]" selectedcolor="[lightGrey]" type="sliced" on_hover="true" />
+				<label depth="2" pos="0,-6" justify="center" text="SAVE" font_size="26" />
+			</rect>
+		</panel>
+		<panel name="buttonContent" depth="0" pos="200,-708"  width="200" height="40" backgroundcolor="[black]" bordercolor="[black]">
+			<sprite depth="5" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+			<rect depth="1" pos="3,-3" width="194" height="34">
+				<button depth="1" name="cancel_button" width="194" height="34" style="press" hoverscale="1" sprite="ui_game_select_row" sound="[back]" defaultcolor="64,0,0" hovercolor="[red]" type="sliced" on_hover="true" />
+				<label depth="2" pos="0,-6" justify="center" text="CANCEL" font_size="26" />
+			</rect>
+		</panel>
+	</window>
+	
+	<window name="GamepadCallouts" width="500" height="65" pos="0,0" anchor="LeftTop" controller="XUiC_GamepadCalloutWindow" />
+
+	<window name="windowColorPicker" width="250" height="611" panel="Left">
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<label style="header.name" text="Slots and Layers" />
+		</panel>
+		
+		<panel name="content" depth="1" pos="0,-46">
+			
+			<rect name="slotSelector" controller="SlotSelector" pos="0,-24">
+				<label depth="5" name="slotLabel" pos="6, 21" width="170" height="28" text="Slot:" font_size="28" justify="left"/>
+				<button depth="4" name="back" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+				<rect depth="4" pos="37,-7" >
+					<sprite name="background" style="icon30px" width="170" color="[black]" type="sliced" />
+					<label depth="5" name="currentValue" pos="0, -3" width="170" height="28" text="{val|always}" font_size="26" justify="center"/>
+				</rect>
+				<button depth="4" name="forward" style="icon30px, press" pos="224,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+			</rect>
+			
+			
+			<rect name="layerSelector" controller="LayerSelector" pos="0,-86">
+				<label depth="5" name="slotLabel" pos="6, 21" width="170" height="28" text="Layer:" font_size="28" justify="left"/>
+				<button depth="4" name="back" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+				<rect depth="4" pos="37,-7" >
+					<sprite name="background" style="icon30px" width="170" color="[black]" type="sliced" />
+					<label depth="5" name="currentValue" pos="0, -3" width="170" height="28" text="{val|always}" font_size="26" justify="center"/>
+				</rect>
+				<button depth="4" name="forward" style="icon30px, press" pos="224,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+			</rect>
+			
+			
+			<rect name="overlaySelector" controller="Selector" min="0" max="9" pos="0,-148">
+				<label depth="5" name="slotLabel" pos="6, 21" width="170" height="28" text="Overlay Index:" font_size="28" justify="left"/>
+				<button depth="4" name="back" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+				<rect depth="4" pos="37,-7" >
+					<sprite name="background" style="icon30px" width="170" color="[black]" type="sliced" />
+					<label depth="5" name="currentValue" pos="0, -3" width="170" height="28" text="{val|always}" font_size="26" justify="center"/>
+				</rect>
+				<button depth="4" name="forward" style="icon30px, press" pos="224,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+			</rect>
+			
+			<rect pos="0,-240">
+				<label depth="5" pos="6, 0" width="170" height="28" text="Slot Name:" font_size="28" justify="left"/>
+				<label depth="5" name="slotName" pos="6, -32" width="240" height="28" font_size="28" justify="left"/>
+				
+				<label depth="5"  pos="6, -70" width="170" height="28" text="Overlay Name:" font_size="28" justify="left"/>
+				<label depth="5" name="overlayName" pos="6, -100" width="240" height="28" font_size="28" justify="left"/>
+			</rect>
+			
+			<rect pos="0,-406">
+				<color_picker/>
+			</rect>
+		</panel>
+	</window>
+	
+	<window name="windowRWGPreview" width="1200" height="800" panel="Center">
+		<panel name="header" pos="0,0" height="43" width="100%" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+			<label style="header.name" pos="32,-10" text="RANDOM GEN WORLD PREVIEWER" />
+			
+			<button depth="1" name="close" width="24" height="24" defaultcolor="[white]" hoversprite="ui_game_symbol_x" hovercolor="[red]" pos="6, -12" sprite="ui_game_symbol_x" hoverscale="1.0"/>
+		</panel>
+		<panel pos="0,-46" width="100%" height="100%" depth="2" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" style="hover, scroll, drag" controller="WorldGenerationPreviewWindow">
+			<label depth="106" name="Startup" text="Please press refresh or press Enter on either Seed or Size" pos="0, -336" width="100%" height="50" justify="center" font_size="28" color="[white]"/>
+			<label depth="106" name="Startup2" text="Generation of the data may take up to 2 minutes" pos="0, -366" width="100%" height="50" justify="center" font_size="28" color="[white]"/>
+			
+			<texture depth="105" pos="6,-7" name="worldPreview" material="Materials/Transparent Colored" width="1200" height="800" globalopacity="false"/>
+			
+			<button depth="106" name="reload" pos="220,-6" sprite="server_refresh" style="icon32px,press,hover" tooltip="Reload Data" tooltip_key="lblReloadArchetypeXML" />
+			
+			<rect depth="106">
+				<recipe_search name="seedInput" tooltip="Seed"/>
+				<label depth="108" text="Seed" pos="168, -8" name="TextContent" font_size="28" color="[white]"/>
+			</rect>
+			<rect depth="106" pos="0,-46">
+				<recipe_search name="worldSizeInput" tooltip="Size (1-5)"/>
+				<label depth="108" text="Size (1-5)" pos="168, -8" name="TextContent" font_size="28" color="[white]"/>
+			</rect>
+		</panel>
+	</window>
+	
+	<window name="windowRWGPoiList"  width="397" height="688" controller="RWGPoiList" panel="Left">
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<label style="header.name" text="POIs"/>
+		</panel>
+		
+		<panel name="content" width="100%" height="650" depth="1" pos="0,-43" on_scroll="true" disableautobackground="true">
+			
+			<rect depth="2" name="categorySelector" width="390" height="44" pos="3,-6">
+				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[mediumGrey]" type="sliced" />
+			</rect>
+			
+			<rect depth="3" name="searchControls" width="390" height="44" pos="3,-52">
+				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[darkGrey]" type="sliced" />
+				<button depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites" />
+				
+				<panel pos="104,0" width="200" disableautobackground="true">
+					<sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
+					<recipe_search depth="5" name="searchInput"/>
+				</panel>
+				
+				<panel pos="286,0" width="104" height="43" disableautobackground="true">
+					<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
+					<rect depth="4" pos="37,-7" >
+						<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+						<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
+					</rect>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="84,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
+				</panel>
+			</rect>
+			
+			<grid name="pois" rows="12" cols="1" pos="3,-98" width="390" height="552" cell_width="390" cell_height="46" controller="PoiList" repeat_content="true" arrangement="vertical" >
+				<poi_entry name="0"/>
+			</grid>
+		</panel>
+	</window>
+	
+	<window name="windowRWGLSystem"  width="306" height="688" controller="RWGLSystem" panel="Right">
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<label style="header.name" text="L Systems Town Generation"/>
+		</panel>
+		
+		<panel name="content" width="100%" height="650" depth="1" pos="0,-43" on_scroll="true" disableautobackground="false">
+			<rect height="43" style="scroll" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" >
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="309" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" name="background" width="306" height="45" pos="0,1" color="[darkGrey]" type="sliced" />
+				<label depth="4" name="Name" pos="24,-19" width="40" height="30" text="Axiom:" font_size="28" color="[white]" justify="center" pivot="center"/>
+				<panel depth="10" controller="TextInput" name="axiomInput" pos="49,-5" width="220" height="30" value="{axiom}" active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" character_limit="100" validation="none" backgroundcolor="[black]">
+					<sprite depth="0" name="background" color="[black]" type="sliced"/>
+					<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
+				</panel>
+			</rect>
+			<rect height="43" style="scroll" pos="0, -46" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" >
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="309" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" name="background" width="306" height="45" pos="0,1" color="[darkGrey]" type="sliced" />
+				<label depth="4" name="Name" pos="24,-19" width="40" height="30" text="LenMod:" font_size="28" color="[white]" justify="center" pivot="center"/>
+				<panel depth="10" controller="TextInput" name="lenmod" pos="49,-5" width="220" height="30" value="{lenmod}" active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" character_limit="100" validation="none" backgroundcolor="[black]">
+					<sprite depth="0" name="background" color="[black]" type="sliced"/>
+					<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
+				</panel>
+			</rect>
+			<rect height="43" style="scroll" pos="0, -92" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" sound="[recipe_click]" >
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="309" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" name="background" width="306" height="45" pos="0,1" color="[darkGrey]" type="sliced" />
+				<label depth="4" name="Name" pos="24,-19" width="40" height="30" text="Level:" font_size="28" color="[white]" justify="center" pivot="center"/>
+				<panel depth="10" controller="TextInput" name="level" pos="49,-5" width="220" height="30" value="{level}" active_text_color="[white]" caret_color="[white]" selection_color="[mediumGrey_half_alpha]" character_limit="100" validation="none" backgroundcolor="[black]">
+					<sprite depth="0" name="background" color="[black]" type="sliced"/>
+					<label depth="1" name="text" pos="0,-2" justify="center" pivot="topleft" upper_case="false"/>
+				</panel>
+			</rect>
+			<label style="header.name" text="Rules" pos="12, -138"/>
+			<grid name="rules" rows="10" cols="1" pos="3,-171" width="300" height="552" cell_width="390" cell_height="46" controller="PoiList" repeat_content="true" arrangement="vertical" >
+				<lsystem_rule_entry name="0"/>
+			</grid>
+		</panel>
+	</window>
+<!-- RWG TOOLS -->
+	
+	<window name="messageBox" anchor="CenterCenter" pos="-280,140" width="560" height="279">
+		<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+			<label style="header.name" pos="6,-6" width="550" text="{msgTitle}" />
+		</panel>
+		<panel name="content" pos="0,-46" height="194" depth="1" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" pivot="center">
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="194" color="[black]" type="sliced" fillcenter="false" />	
+			<label depth="3" name="descriptionText" pos="8,-6" width="544" text="{msgText}" font_size="28" overflow="resizeheight" upper_case="false" />
+		</panel>
+		<rect name="btnOk" depth="3" pos="360, -243" width="200" height="36" disableautobackground="true">
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+			<rect depth="3" pos="0,-3" height="31">
+				<button name="clickable" sprite="menu_empty" defaultcolor="[mediumGrey]" hoversprite="ui_game_select_row" hovercolor="[white]" type="sliced" hoverscale="1.0"/>
+				<sprite depth="2" name="windowIcon" width="24" height="24" pos="45,-2" color="[iconColor]" sprite="ui_game_symbol_check"/>
+				<label depth="2" name="btnLabel" pos="0,-2" justify="center" text_key="xuiOk" effect="outline" />
+			</rect>
+		</rect>
+	</window>
+
+	<window name="createWorld" anchor="CenterCenter" pos="-375,400" width="750" height="790">
+		<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3" >
+			<label style="header.name" pos="6,-6" width="550" text_key="xuiCreateWorld" />
+		</panel>
+		<panel name="content" pos="0,-46" height="685" depth="1" backgroundcolor="[darkGrey]" bordercolor="[black]" borderthickness="3" pivot="center">
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />	
+
+			<togglebutton name="toggleSelectWorld" caption_key="xuiCreateWorldLoadWorld" width="225" height="32" pos="10, -10" depth="3" />
+			<rect name="worlds" pos="240,-10" height="614" width="500" controller="WorldList">
+				<sprite depth="8" name="border" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+
+				<rect depth="4" name="searchControls" height="44" pos="0,-0">
+					<sprite depth="8" name="backgroundMain" sprite="menu_empty" color="[black]" type="sliced" fillcenter="false" />
+
+					<sprite depth="4" name="searchIcon" style="icon30px" pos="5,-22" sprite="ui_game_symbol_search" pivot="Left"/>
+					<textfield name="searchInput" depth="5" pos="40,-22" width="250" height="30" pivot="Left" />
+					
+					<panel pos="398,0" width="98" height="43" disableautobackground="true">
+						<button depth="4" name="pageDown" style="icon30px, press" pos="17,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" />
+						<rect depth="4" pos="34,-7" >
+							<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+							<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
+						</rect>
+						<button depth="4" name="pageUp" style="icon30px, press" pos="81,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" />
+					</panel>
+				</rect>
+				
+				<grid name="list" depth="2" rows="19" cols="1" pos="0,-44" height="590" cell_width="500" cell_height="30" repeat_content="true" arrangement="vertical" >
+					<world_list_entry width="500" height="30" />
+				</grid>
+			</rect>
+
+			<togglebutton name="toggleNewWorld" caption_key="xuiCreateWorldNewWorld" width="225" height="32" pos="10, -635" depth="3" />
+			<rect depth="2" width="400" height="32" pos="240,-635">
+				<label width="90" text_key="xuiCreateWorldName" justify="right" />
+				<textfield name="nameInput" depth="5" pos="95,-0" width="200" height="32" />
+				<label width="90" pos="305,0" text_key="xuiCreateWorldSize" justify="right" />
+				<textfield name="sizeInput" depth="5" pos="400,-0" width="70" height="32" validation="integer" />
+			</rect>
+		</panel>
+		
+		<rect pos="0, -735">
+			<simplebutton name="btnBack" depth="3" pos="0, 0" width="200" height="36" font_size="32" caption_key="xuiBack" />
+			<simplebutton name="btnStart" depth="3" pos="550, 0" width="200" height="36" font_size="32" caption_key="xuiStart" />
+		</rect>
+	</window>
+</windows>

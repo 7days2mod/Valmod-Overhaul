@@ -1,5 +1,4 @@
 <styles>
-
 <!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
 
 	<style name="SMXUnitFrameWindow" type="window">
@@ -32,7 +31,7 @@
 
 	<style name="SMXcompass.window.background" type="texture">
 		<style_entry name="depth" value="0" />
-		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\compassbg.png" /> <!-- Online Mac: @http://i.imgur.com/t3XdV7o.png -->
+		<style_entry name="texture" value="@file:Mods\SMX\UITextures\compassbg.png" /> <!-- Online Mac: @http://i.imgur.com/t3XdV7o.png -->
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="492,140" />
 		<style_entry name="pos" value="-60,10" />
@@ -40,7 +39,7 @@
 
 	<style name="SMXcompass.window.indicator" type="texture">
 		<style_entry name="depth" value="9" />
-		<style_entry name="texture" value="@file:Mods\SMX\Textures\Compass\indicator.png" /> <!-- Online Mac: @http://i.imgur.com/te7nHcB.png -->
+		<style_entry name="texture" value="@file:Mods\SMX\UITextures\indicator.png" /> <!-- Online Mac: @http://i.imgur.com/te7nHcB.png -->
 		<style_entry name="type" value="sliced" />
 		<style_entry name="size" value="32,48" />
 		<style_entry name="pos" value="184,10" />
@@ -111,6 +110,7 @@
 		<style_entry name="mediumGrey_half_alpha" 	value="96,96,96,128"/>
 		<style_entry name="darkGrey_half_alpha" 		value="64,64,64,128"/>
 		<style_entry name="black_half_alpha" 				value="0,0,0,128"/>
+		
 		<style_entry name="white_quarter_alpha" 			value="255,255,255,192"/>
 		
 		<style_entry name="iconColor" 						value="255,255,255" />
@@ -120,18 +120,7 @@
 		
 		<style_entry name="disabledLabelColor"				value="160,160,160" />
 
-    <!-- StompyNZ Biome Colours -->
-		<style_entry name="biome_burnt_forest" value="186,0,255"/>
-		<style_entry name="biome_desert" value="255,225,119"/>
-		<style_entry name="biome_forest" value="0,141,0"/>
-		<style_entry name="biome_pine_forest" value="0,64,0"/>
-		<style_entry name="biome_plains" value="0,255,0"/>
-		<style_entry name="biome_radiated" value="255,0,0"/>
-		<style_entry name="biome_snow" value="255,255,255"/>
-		<style_entry name="biome_wasteland" value="255,168,0"/>
-		<style_entry name="biome_wasteland_hub" value="160,160,160"/>
-		<style_entry name="biome_water" value="0,99,255"/>
-
+		
 		<!--NAMED SPRITES-->
 		<style_entry name="default_sprite" value="menu_empty"/>
 		
@@ -570,8 +559,6 @@
 		<style_entry name="anchor" value="CenterTop"/>
 	</style>
 	
-<!-- BEGIN_MOD: Red Eagle LXIX's Custom HUD : A13.4(b6) : v0.04 - inspired by Sirillion's HUD mod: http://steamcommunity.com/app/251570/discussions/5/494631967664775812 -->
-<!-- Only window size/position values were change in this file.  All such changes, defaults can be found tagged R.E. lXIX in comments. -->
 	<style name="compass.window.background.border" type="sprite">
 		<style_entry name="depth" value="0"/>
 		<style_entry name="sprite" value="ui_game_header_fill"/>
@@ -617,6 +604,8 @@
 		<style_entry name="tooltip" value="CHARACTER" />
 		<style_entry name="texture" value="Textures/UI/ui_game_compass" />
 	</style>
+	
+	
 <!-- END_MOD: Red Eagle LXIX's Custom HUD : A13.4(b6) : v0.04 - inspired by Sirillion's HUD mod: http://steamcommunity.com/app/251570/discussions/5/494631967664775812 -->
 	<style name="crafting.info.window" type="window">
 		<style_entry name="valid_color" value="[green]"/>
@@ -643,4 +632,5 @@
 		<style_entry name="pickup_sound" value="[pickup_click]"/>
 		<style_entry name="place_sound" value="[place_click]"/>
 	</style>
+	
 </styles>
