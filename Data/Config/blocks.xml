@@ -85,7 +85,7 @@ tbnsew:
 	<property name="LPHardnessScale" value="4"/>
 	<property name="Map.Color" value="50,120,55"/>
 	<property name="PlaceAltBlockValue" value="grassFromDirt,fertileDirt"/>
-	<property class="RepairItems"> <property name="dirtFragment" value="10"/> </property>
+	<property class="RepairItems"> <property name="dirtFragment" value="7"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="fertileFarmland"/>
 		<property name="Item" value="hoeIron"/>
@@ -112,7 +112,7 @@ tbnsew:
 	<property name="DropScale" value="2"/>
 	<property name="LPHardnessScale" value="2"/>
 	<property name="Map.Color" value="20,50,21"/>
-	<property class="RepairItems"> <property name="dirtFragment" value="10"/> </property>
+	<property class="RepairItems"> <property name="dirtFragment" value="7"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="fertileFarmland"/>
 		<property name="Item" value="hoeIron"/>
@@ -385,7 +385,7 @@ tbnsew:
 	<property name="Texture" value="290,2,2,2,2,2"/>
 	<property name="CanMobsSpawnOn" value="false"/>
 	<property name="DropScale" value="2"/>
-	<property class="RepairItems"> <property name="dirtFragment" value="10"/> </property>
+	<property class="RepairItems"> <property name="dirtFragment" value="7"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="fertilizedFarmland"/>
 		<property name="Item" value="fertilizer"/>
@@ -423,7 +423,7 @@ tbnsew:
 	<property name="LPHardnessScale" value="2"/>
 	<property name="Map.Color" value="55,55,50"/>
 	<property name="PlaceAltBlockValue" value="burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundFromDirt,burntForestGroundWGrass1"/>
-	<property class="RepairItems"> <property name="dirtFragment" value="10"/> </property>
+	<property class="RepairItems"> <property name="dirtFragment" value="7"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="fertileFarmland"/>
 		<property name="Item" value="hoeIron"/>
@@ -451,7 +451,7 @@ tbnsew:
 	<property name="Map.Color" value="35,80,45"/>
 	<!--property class="Map"> <property name="Color" value="44,48,26"/> <property name="Color2" value="44,60,25"/> <property name="ElevMinMax" value="50,80"/> </property-->
 	<property name="PlaceAltBlockValue" value="forestGroundFromDirt,forestGroundWGrass1"/>
-	<property class="RepairItems"> <property name="dirtFragment" value="10"/> </property>
+	<property class="RepairItems"> <property name="dirtFragment" value="7"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="fertileFarmland"/>
 		<property name="Item" value="hoeIron"/>
@@ -571,7 +571,7 @@ tbnsew:
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="438"/>
-	<drop event="Harvest" name="wood" count="8" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="2" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DropScale" value="2"/>
 	<property name="Map.Color" value="110,95,49"/>
@@ -608,7 +608,7 @@ tbnsew:
 	<property name="Texture" value="291"/>
 	<property name="CanMobsSpawnOn" value="false"/>
 	<property name="DropScale" value="2"/>
-	<property class="RepairItems"> <property name="dirtFragment" value="10"/> </property>
+	<property class="RepairItems"> <property name="dirtFragment" value="7"/> </property>
 	<drop event="Harvest" name="dirtFragment" count="10" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="fertilizer" count="1" prob="0.33"/>
 	<drop event="Fall" name="fertileFarmland" count="1" prob="0.25" stick_chance="1"/>
@@ -1150,6 +1150,7 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 	<drop event="Harvest" name="clayLump" count="6"/>
 	<drop event="Harvest" name="rockSmall" count="6"/>
 	<drop event="Destroy" count="0"/>
@@ -1168,9 +1169,9 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="67"/> -->
 	<property name="CreativeMode" value="None"/>
 	<property name="FuelValue" value="150"/>
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" name="wood" count="1,3"/>
+	<drop event="Destroy" name="wood" count="1,2"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -1184,8 +1185,8 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="67"/> -->
 	<property name="FuelValue" value="300"/>
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="wood" value="8"/> </property>
-	<drop event="Harvest" name="wood" count="4"/>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
+	<drop event="Harvest" name="wood" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="10"/>
@@ -1253,7 +1254,7 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="cobblestoneMaster"/>
 		<property name="Item" value="cobblestones"/>
-		<property name="ItemCount" value="9"/>
+		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="6"/>
 	</property>
 	<drop event="Harvest" name="clayLump" count="2"/>
@@ -1382,6 +1383,7 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="CraftingSkillGroup" value="Masonry"/>
@@ -1426,6 +1428,7 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
+	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 	<drop event="Harvest" name="scrapIron" count="17"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -1454,7 +1457,8 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="10"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
-	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<property name="CustomUpgradeSound" value="place_block_concrete"/>
+	<!-- <property name="CustomUpgradeSound" value="place_block_wood"/> -->
 	<property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
 	<drop event="Destroy" name="scrapIron" count="1,5"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".2" stick_chance="1"/>
@@ -1538,7 +1542,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="380"/>
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="120"/> -->
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="scrapIron" value="20"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronMaster"/>
 		<property name="Item" value="scrapIron"/>
@@ -1546,7 +1550,7 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="1,8"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -1559,15 +1563,15 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="119"/> -->
 	<property name="CreativeMode" value="None"/>
 	<property name="FuelValue" value="300"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMetalMaster"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="20"/>
+		<property name="ItemCount" value="12"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="wood" count="4"/>
+	<drop event="Harvest" name="wood" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
@@ -1581,7 +1585,7 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="67"/> -->
 	<property name="FuelValue" value="300"/>
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMaster"/>
 		<property name="Item" value="carpenterKit"/>
@@ -1613,16 +1617,16 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="None"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property name="FuelValue" value="150"/>
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
+	<property class="RepairItems"> <property name="wood" value="2"/> </property>
 	<!-- <property name="CustomPlaceSound" value="place_block_wood"/>  this works but was too annoying -->
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodMaster"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
+	<drop event="Destroy" name="wood" count="1" prob="1"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -2678,7 +2682,7 @@ group desc for stuff like metal siding
 
 <block id="267" name="animalGore">
 	<property name="CreativeMode" value="Dev"/>
-	<!--property name="Class" value="Gore"/-->
+	<property name="Class" value="Gore" />
 	<property name="Material" value="organic"/>
 	<property name="Shape" value="ModelEntity"/> <!-- A ModelEntity does NOT need a texture entry. -->
 	<property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
@@ -2686,6 +2690,7 @@ group desc for stuff like metal siding
 	<property name="Tag" value="Gore"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FallDamage" value="false"/>
+    <property name="LootList" value="1"/>  <!-- dummy loot list, will be overridden by the animal that died -->
 	<!-- WILL NOT WORK WITH GORE ANY MORE
 	<property name="UpgradeRated.ToBlock" value="air"/--> <!-- 1=min, 15=max NOTE: 1 tick is approximately a 1 to 2 minute real-time interval. -->
 	<!-- property name="UpgradeRated.Rate" value="15"/>
@@ -2761,7 +2766,7 @@ group desc for stuff like metal siding
 	<property name="Material" value="MCardboardLoot"/>
 	<property name="Texture" value="276,276,270,270,270,270"/>
 	<property name="LootList" value="22"/>
-	<property class="RepairItems"> <property name="paper" value="10"/> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="paper" value="10"/> <property name="wood" value="4"/> </property>
 	<drop event="Destroy" name="paper" count="2,8"/>
 </block>
 
@@ -2866,6 +2871,7 @@ group desc for stuff like metal siding
 	<property name="Shape" value="New"/>
 	<property name="Model" value="security_gate_centered"/>
 	<property name="Texture" value="446"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property class="RepairItems"> <property name="forgedIron" value="8"/> </property>
 	<drop event="Harvest" name="scrapIron" count="50" prob="1"/>
 	<drop event="Destroy" count="0"/>
@@ -3246,7 +3252,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="14"/>
 	<property name="FuelValue" value="150"/>
-	<property class="RepairItems"> <property name="forgedIron" value="2"/> <property name="wood" value="5"/> </property>
+	<property class="RepairItems"> <property name="forgedIron" value="2"/> <property name="wood" value="3"/> </property>
 	<drop event="Destroy" name="scrapIron" count="5"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
@@ -4024,7 +4030,7 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -4472,7 +4478,6 @@ group desc for stuff like metal siding
 	<property name="LootList" value="67"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="shortMetalPipe" value="2"/> <property name="wood" value="4"/> </property>
-	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="5,10" tool_category="Disassemble"/>
 	<drop event="Destroy" name="shortMetalPipe" count="1" prob="1"/>
@@ -5563,6 +5568,7 @@ kind of free
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="ParticleOnDeath" value="treeGib_small_dust"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 </block>
 
 <block id="560" name="treeMountainPine8m">
@@ -5633,6 +5639,7 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 </block>
 
 <block id="566" name="treeBirch10m">
@@ -5763,6 +5770,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_burnt_small"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="coal" count="3,5" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
 <block id="578" name="treeBurntPine02">
@@ -5774,6 +5782,7 @@ kind of free
 	<property name="BigDecorationRadius" value="4"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="coal" count="8,15" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
 <block id="579" name="treeBurntPine03">
@@ -5785,6 +5794,7 @@ kind of free
 	<property name="BigDecorationRadius" value="4"/>
 	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="coal" count="10,20" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
 <block id="580" name="steelCNRRoundTop">
@@ -5803,6 +5813,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
 <block id="582" name="treeDeadTree02"> <!-- almost a shrub -->
@@ -5813,6 +5824,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_02"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 	<!-- 3 Free -->
 
@@ -5825,6 +5837,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
 	<property name="FallOver" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_winter_small"/>
+	<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
 </block>
 
 <block id="587" name="treeWinterPine01">
@@ -6014,7 +6027,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -6291,15 +6304,15 @@ kind of free
 	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
 	<property name="OpenSound" value="open_door_wood"/>
 	<property name="CloseSound" value="close_door_wood"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="secureReinforcedDoorWooden"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Harvest" name="wood" count="4"/> <!-- harvest amount is 40% of the building cost -->
+	<drop event="Harvest" name="wood" count="2"/> <!-- harvest amount is 40% of the building cost -->
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,Basics"/>
@@ -6422,16 +6435,16 @@ kind of free
 	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
 	<property name="OpenSound" value="open_door_wood"/>
 	<property name="CloseSound" value="close_door_wood"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="metalReinforcedDoorWooden"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="20"/>
+		<property name="ItemCount" value="12"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="secureDoorWooden"/>
-	<drop event="Harvest" name="wood" count="4"/>
+	<drop event="Harvest" name="wood" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
@@ -6457,7 +6470,7 @@ kind of free
 	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
 	<property name="OpenSound" value="open_door_wood"/>
 	<property name="CloseSound" value="close_door_wood"/>
-	<property class="RepairItems"> <property name="scrapIron" value="20"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="ironDoor1_v1"/>
 		<property name="Item" value="forgedIron"/>
@@ -6466,7 +6479,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="secureReinforcedDoorWooden"/>
-	<drop event="Harvest" name="scrapIron" count="8" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="6" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
@@ -6564,11 +6577,11 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Buildings/window02_frame" param1="main_mesh"/>
 	<property name="ModelOffset" value="0,0.5,0"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -6587,7 +6600,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -6680,7 +6693,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -7592,10 +7605,10 @@ kind of free
 	<property name="PlaceEverywhere" value="true"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="100"/>
-		<property name="wood" value="2000"/>
+		<property name="wood" value="800"/>
 	</property>
 	<drop event="Harvest" name="scrapIron" count="400" prob="1"/>
-	<drop event="Harvest" name="wood" count="800" prob="1"/>
+	<drop event="Harvest" name="wood" count="400" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Destroy" name="spring" count="4,12" prob="1" tool_category="Disassemble"/>
 	<drop event="Destroy" name="mechanicalParts" count="4,20" prob="1" tool_category="Disassemble"/>
@@ -7950,7 +7963,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="FuelValue" value="150"/>
-	<property class="RepairItems"> <property name="wood" value="6"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="ladderMetal"/>
 		<property name="Item" value="forgedIron"/>
@@ -7958,7 +7971,7 @@ kind of free
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="ImposterExclude" value="true"/>
-	<drop event="Destroy" name="wood" count="1,3"/>
+	<drop event="Destroy" name="wood" count="1,2"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
@@ -8328,9 +8341,9 @@ kind of free
 	<property name="Texture" value="241"/>
 	<property name="UseGlobalUV" value="Global"/>
 	<property name="Stairs"/>
-	<drop event="Destroy" name="wood" count="2,6"/>
+	<drop event="Destroy" name="wood" count="2,4"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property class="RepairItems"> <property name="wood" value="8"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 </block>
 
 <block id="834" name="concreteStairs50">
@@ -8618,7 +8631,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
 <block id="864" name="treeGreenBrownGrassDiagonal">
@@ -8843,9 +8856,9 @@ kind of free
 	<property name="FuelValue" value="150"/>
 	<property name="ShapeMinBB" value="0.3,0,0.3"/>
 	<property name="DescriptionKey" value="fencesGroupDesc"/>
-	<drop event="Destroy" name="wood" count="1,3"/>
+	<drop event="Destroy" name="wood" count="1,2"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
@@ -8861,8 +8874,8 @@ kind of free
 	<property name="FuelValue" value="150"/>
 	<property name="ShapeMinBB" value="0.3,0,0.3"/>
 	<property name="DescriptionKey" value="fencesGroupDesc"/>
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
-	<drop event="Destroy" name="wood" count="1,3"/>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
+	<drop event="Destroy" name="wood" count="1,2"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -8878,8 +8891,8 @@ kind of free
 	<property name="FuelValue" value="150"/>
 	<property name="ShapeMinBB" value="0.3,0,0.3"/>
 	<property name="DescriptionKey" value="fencesGroupDesc"/>
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
-	<drop event="Destroy" name="wood" count="1,3"/>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
+	<drop event="Destroy" name="wood" count="1,2"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="20"/>
@@ -10120,7 +10133,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug01"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10456,7 +10469,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10521,7 +10534,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="commercialDoor1_v2"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10546,8 +10559,8 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="commercialDoor1_v1"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
-	<drop event="Harvest" name="wood" count="4" prob="1"/>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
+	<drop event="Harvest" name="wood" count="2" prob="1"/>
 	<drop event="Harvest" name="scrapIron" count="0" prob="1"/>
 </block>
 
@@ -10653,11 +10666,11 @@ kind of free
 	<property name="PlaceEverywhere" value="true"/>
 	<property name="OpenSound" value="open_door_wood"/>
 	<property name="CloseSound" value="close_door_wood"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="houseFrontDoor1_v2"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10803,11 +10816,11 @@ kind of free
 	<property name="Model" value="plate_centered"/>
 	<property name="Texture" value="302"/>
 	<property name="IsDecoration" value="true"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug01"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10880,7 +10893,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10898,7 +10911,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10942,7 +10955,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -10994,7 +11007,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -11014,7 +11027,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -11324,15 +11337,15 @@ kind of free
 	<property name="OpenSound" value="open_hatch_wood"/>
 	<property name="CloseSound" value="close_hatch_wood"/>
 	<property name="FuelValue" value="300"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodHatch1_v2"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Harvest" name="wood" count="4"/>
+	<drop event="Harvest" name="wood" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
@@ -11348,7 +11361,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodHatch1_v3"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="20"/>
+		<property name="ItemCount" value="12"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="woodHatch1_v1"/>
@@ -11359,7 +11372,7 @@ kind of free
 	<property name="DescriptionKey" value="doorGroupDesc"/>
 	<property name="Material" value="wood+metal"/>
 	<property name="Model" value="Entities/Doors/woodenHatch1_v3Prefab"/><property name="ModelOffset" value="0,.5,0"/>
-	<property class="RepairItems"> <property name="scrapIron" value="20"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="10"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapHatch_v1"/>
 		<property name="Item" value="scrapIron"/>
@@ -11367,7 +11380,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="wood" count="0"/>
-	<drop event="Harvest" name="scrapIron" count="8" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="6" prob="1"/>
 	<property name="DowngradeBlock" value="woodHatch1_v2"/>
 </block>
 
@@ -11405,7 +11418,7 @@ kind of free
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
 	<property name="FuelValue" value="300"/>
-	<property class="RepairItems"> <property name="wood" value="20"/> </property>
+	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<property name="DowngradeBlock" value="cntStorageGenericInsecure"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Building"/>
@@ -11420,7 +11433,7 @@ kind of free
 	<property name="Material" value="wood+wood"/>
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
-	<property class="RepairItems"> <property name="wood" value="20"/> </property>
+	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<drop event="Destroy" count="0"/>
 </block>
 
@@ -11536,7 +11549,7 @@ kind of free
 	<property name="Texture" value="241"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="67"/>
 	<property name="UseGlobalUV" value="Local"/> <!-- "0,X,0,0,0,0" -->
-	<property class="RepairItems"> <property name="wood" value="20"/> </property>
+	<property class="RepairItems"> <property name="wood" value="6"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="metalCatwalk"/>
 		<property name="Item" value="forgedIron"/>
@@ -11563,7 +11576,7 @@ kind of free
 	<property name="Model" value="wooden_rail"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="FuelValue" value="150"/>
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="metalRailing"/>
 		<property name="ItemCount" value="1"/>
@@ -12000,7 +12013,8 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="427"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Destroy" name="wood" count="1,3"/>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
+	<drop event="Destroy" name="wood" count="1,2"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
@@ -12388,11 +12402,11 @@ kind of free
 	<property name="Model" value="plate_centered"/>
 	<property name="Texture" value="408"/>
 	<property name="IsDecoration" value="true"/>
-	<property class="RepairItems"> <property name="wood" value="10"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug01"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -12700,7 +12714,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -12716,11 +12730,11 @@ kind of free
 	<property name="Model" value="Buildings/window03_wood_broke2" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
-	<property class="RepairItems"> <property name="wood" value="5"/> </property>
+	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -12750,7 +12764,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="plainWoodWindowPlug"/>
 		<property name="Item" value="wood"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="4"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -14632,7 +14646,7 @@ kind of free
 	<property name="AmmoItem" value="9mmBullet"/>
 	<property name="TurnSpeed" value="22.5"/>
 	<property name="MaxDistance" value="30"/>
-	<property name="EntityDamage" value="18"/> <!-- 120 dps, 270 / burst -->
+	<property name="EntityDamage" value="22"/> <!-- 146 dps, 330 / burst -->
 	<property name="BlockDamage" value="1"/>
 	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
 
@@ -14675,7 +14689,7 @@ kind of free
 	<property name="EconomicValue" value="3000"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
-	<property name="Group" value="Science"/>
+	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
 </block>
 
@@ -15774,7 +15788,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="RequiredPower" value="20"/>
 	<property name="EconomicValue" value="444"/>
-	<property name="Group" value="Science"/>
+	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="ActivationDistance" value="6"/>
 	<property class="RepairItems">
 		<property name="forgedSteel" value="16"/>
@@ -15806,7 +15820,7 @@ kind of free
 	<property name="ShowTargeting" value="false"/>
 	<property name="AmmoItem" value="steelDart"/>
 	<property name="RequiredPower" value="10"/>
-	<property name="Group" value="Science"/>
+	<property name="Group" value="Tools/Traps,Science"/>
 	<property class="RepairItems">
 		<property name="forgedSteel" value="16"/>
 		<property name="mechanicalParts" value="3"/>
@@ -16039,7 +16053,7 @@ kind of free
 	<property name="RequiredPower" value="5"/>
 	<property name="Buff" value="shockedBuff"/>
 	<property name="BuffChance" value="1"/>
-	<property name="Group" value="Science"/>
+	<property name="Group" value="Tools/Traps,Science"/>
 	<property class="RepairItems">
 		<property name="forgedIron" value="4"/>
 		<property name="electricParts" value="1"/>
@@ -16124,7 +16138,7 @@ kind of free
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Model" value="LootContainers/trash_can01" param1="main_mesh" />
-	<property name="LootList" value="99" />
+	<property name="LootList" value="115" />
 	<drop event="Destroy" name="scrapIron" count="0" prob="1" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="cntGarbageDisposalEmpty"/>
@@ -16134,7 +16148,7 @@ kind of free
 		</property>
 	<property name="DowngradeBlock" value="cntGarbageDisposalEmpty" />
 </block>
-
+<!--
 	<block id="1713" name="hideBlockConcrete">
 		<property name="MaxDamage" value="6000" />
 		<property name="Material" value="Mconcrete" />
@@ -16270,7 +16284,7 @@ kind of free
 			<property name="IsGrowOnTopEnabled" value="true" />
 			<property name="GrowOnTop" value="AutoWall_Steel" param1="5" param2="steelMaster" />
 		</property>
-	</block>
+	</block> -->
 
 	<block id="1721" name="workstationCombine">
 		<property name="Extends" value="woodTable" />
@@ -16424,7 +16438,7 @@ kind of free
 			<property name="UpgradeHitCount" value="2" />
 		</property>
 		<property class="RepairItems">
-			<property name="wood" value="5" />
+			<property name="wood" value="3" />
 		</property>
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
@@ -16447,7 +16461,7 @@ kind of free
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="commercialDoor3_v1Legacy" />
 			<property name="Item" value="wood" />
-			<property name="ItemCount" value="10" />
+			<property name="ItemCount" value="4" />
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 	</block>

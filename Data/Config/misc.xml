@@ -43,7 +43,7 @@
         <hold_type id="37" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />          <!-- nailgun -->
         <hold_type id="38" newmodel="false" ray_cast="0" holster="0" unholster="0.2" />          <!-- cobblestones -->
         <hold_type id="39" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />          <!-- blunderbuss -->
-        <hold_type id="40" newmodel="false" ray_cast="0.1" holster="0" unholster="0.2" />       <!-- rock small. keep ray_cast at 0.1 for less throwing delay -->
+        <hold_type id="40" newmodel="false" ray_cast="0.4" holster="0" unholster="0.2" />       <!-- rock small -->
         <hold_type id="44" newmodel="false" ray_cast="0" holster="0" unholster="0.2" two_handed="true" />          <!-- magnum -->
         <hold_type id="45" newmodel="false" ray_cast="0" holster="0" unholster="0.2" />          <!-- sack -->
         <hold_type id="46" newmodel="false" ray_cast="0.5" holster="0" unholster="0.2" />         <!-- bear hand -->
@@ -54,7 +54,7 @@
 		<hold_type id="51" newmodel="false" ray_cast="0.31" holster="0" unholster="0.2" two_handed="true" />        <!-- 51 paint brush -->
 		<hold_type id="52" newmodel="false" ray_cast="0.31" holster="0" unholster="0.2" two_handed="true" />        <!-- 52 wire tool -->
 		<hold_type id="53" newmodel="false" ray_cast="0.8" holster="0" unholster="0.2" two_handed="true" />        <!-- 53 compound bow -->
-		<hold_type id="54" newmodel="false" ray_cast="0.1" holster="0" unholster="0.2" two_handed="true" />        <!-- 53 molotov cocktail. keep ray_cast at 0.1 for less throwing delay -->
+		<hold_type id="54" newmodel="false" ray_cast="0.4" holster="0" unholster="0.2" two_handed="true" />        <!-- 53 molotov cocktail -->
     </animation>
     <!--
          Add noisy sounds here

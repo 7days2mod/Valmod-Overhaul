@@ -869,16 +869,7 @@
 			<setvalue skill_level="10" value="500"/>
 		</effect>
 		<effect name="RepairTime">
-			<multiply skill_level="0,1" value="1.0,0.93"/>
-			<multiply skill_level="1,2" value="0.93,0.86"/>
-			<multiply skill_level="2,3" value="0.86,0.79"/>
-			<multiply skill_level="3,4" value="0.79,0.72"/>
-			<multiply skill_level="4,5" value="0.72,0.65"/>
-			<multiply skill_level="5,6" value="0.65,0.58"/>
-			<multiply skill_level="6,7" value="0.58,0.51"/>
-			<multiply skill_level="7,8" value="0.51,0.44"/>
-			<multiply skill_level="8,9" value="0.44,0.37"/>
-			<multiply skill_level="9,10" value="0.37,0.30"/>
+			<multiply skill_level="0,10" value="1,1.2"/>
 		</effect>
 		<effect name="RepairAmount">
 			<add skill_level="0,1" value="1,5"/>
@@ -953,16 +944,7 @@
 			<multiply skill_level="9,10" value="0.37,0.30"/>
 		</effect>
 		<effect name="RepairAmount">
-			<add skill_level="0,1" value="1,5"/>
-			<add skill_level="1,2" value="5,10"/>
-			<add skill_level="2,3" value="10,15"/>
-			<add skill_level="3,4" value="15,20"/>
-			<add skill_level="4,5" value="20,25"/>
-			<add skill_level="5,6" value="25,30"/>
-			<add skill_level="6,7" value="30,35"/>
-			<add skill_level="7,8" value="35,40"/>
-			<add skill_level="8,9" value="40,45"/>
-			<add skill_level="9,10" value="45,50"/>
+			<multiply skill_level="0,10" value="1,1.2"/>
 		</effect>
 		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 40,32,25...6,5,4 -->
 			<multiply skill_level="0,1" value="0.0670,0.0533"/>
@@ -1132,16 +1114,7 @@
 			<multiply skill_level="9,10" value="0.37,0.30"/>
 		</effect>
 		<effect name="RepairAmount">
-			<add skill_level="0,1" value="1,5"/>
-			<add skill_level="1,2" value="5,10"/>
-			<add skill_level="2,3" value="10,15"/>
-			<add skill_level="3,4" value="15,20"/>
-			<add skill_level="4,5" value="20,25"/>
-			<add skill_level="5,6" value="25,30"/>
-			<add skill_level="6,7" value="30,35"/>
-			<add skill_level="7,8" value="35,40"/>
-			<add skill_level="8,9" value="40,45"/>
-			<add skill_level="9,10" value="45,50"/>
+			<multiply skill_level="0,10" value="1,1.2"/>
 		</effect>
 		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 30,24,19...5,4,3 -->
 			<multiply skill_level="0,1" value="0.0503,0.0402"/>
@@ -1271,16 +1244,7 @@
 			<multiply skill_level="9,10" value="0.37,0.30"/>
 		</effect>
 		<effect name="RepairAmount">
-			<add skill_level="0,1" value="1,5"/>
-			<add skill_level="1,2" value="5,10"/>
-			<add skill_level="2,3" value="10,15"/>
-			<add skill_level="3,4" value="15,20"/>
-			<add skill_level="4,5" value="20,25"/>
-			<add skill_level="5,6" value="25,30"/>
-			<add skill_level="6,7" value="30,35"/>
-			<add skill_level="7,8" value="35,40"/>
-			<add skill_level="8,9" value="40,45"/>
-			<add skill_level="9,10" value="45,50"/>
+			<multiply skill_level="0,10" value="1,1.2"/>
 		</effect>
 		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 40,32,25...6,5,4 -->
 			<multiply skill_level="0,1" value="0.0670,0.0533"/>
@@ -1359,11 +1323,7 @@
 			<multiply skill_level="4,5" value="0.44,0.30"/>
 		</effect>
 		<effect name="RepairAmount">
-			<add skill_level="0,1" value="05,10"/>
-			<add skill_level="1,2" value="10,20"/>
-			<add skill_level="2,3" value="20,30"/>
-			<add skill_level="3,4" value="30,40"/>
-			<add skill_level="4,5" value="40,50"/>
+			<multiply skill_level="0,10" value="1,1.2"/>
 		</effect>
 		<effect name="RepairQualityLoss"> <!-- .666 for Fixer.  Loss at no Fixer skill and QL 600 = 40,32,25...6,5,4 -->
 			<multiply skill_level="0,1" value="0.0670,0.0425"/>
@@ -1859,7 +1819,7 @@
 		<recipe name="workstationOven" unlock_level="15"/>
 	</perk>
 
-	<perk name="Security" icon="misc_crafting" description_key="Max this perk to learn how to craft very durable gun safes, advanced doors, drawbridges and hidden walls." title_key="Security Measures" max_level="20" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+	<perk name="Security" icon="misc_crafting" description_key="Max this perk to learn how to craft very durable gun safes, advanced doors and drawbridges." title_key="Security Measures" max_level="20" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
 		<requirement perk_level="20" required_skill_name="Carpentry" required_skill_level="20"/>
 		<requirement perk_level="20" required_skill_name="Mechanical" required_skill_level="20"/>
 		<recipe name="ironDoor1_v1" unlock_level="20"/>
@@ -1872,10 +1832,7 @@
 		<recipe name="vaultDoor01" unlock_level="20"/>
 		<recipe name="vaultHatch_v1" unlock_level="20"/>
 		<recipe name="cntEPSWallSafe" unlock_level="20"/>
-		<recipe name="hiddenWoodDoor" unlock_level="20"/>
-		<recipe name="hiddenConcreteDoor" unlock_level="20"/>
 		<recipe name="jailDoor" unlock_level="20"/>
-		<recipe name="Remote" unlock_level="20"/>
 	</perk>
 
 	<perk name="Skinning Knife" icon="knife" description_key="Learn how to craft a skinning knife. These knives are useful for getting extra hides from skinning animals." title_key="Skinning Knife" max_level="1" skill_point_cost_per_level="10" group="weapons">

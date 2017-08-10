@@ -814,34 +814,6 @@
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
-	<!-- Radiated zombie decap rules -->
-	<property name="HeadDismemberBaseChance" value="-.15"/>
-	<property name="HeadDismemberBonusChance" value="0.08"/>
-	<property name="HeadDismemberThreshold" value="0.38"/>
-	<property name="LowerLegDismemberThreshold" value="0.325"/>
-	<property name="LowerLegDismemberBaseChance" value="-.15"/>
-	<property name="LowerLegDismemberBonusChance" value="0.9"/>
-	<property name="UpperLegDismemberThreshold" value="0.325"/>
-	<property name="UpperLegDismemberBaseChance" value="-.15"/>
-	<property name="UpperLegDismemberBonusChance" value="0.9"/>
-	<property name="LowerArmDismemberThreshold" value="0.255"/>
-	<property name="LowerArmDismemberBaseChance" value="-.15"/>
-	<property name="LowerArmDismemberBonusChance" value="0.9"/>
-	<property name="UpperArmDismemberThreshold" value="0.255"/>
-	<property name="UpperArmDismemberBaseChance" value="-.15"/>
-	<property name="UpperArmDismemberBonusChance" value="0.9"/>
-	<property name="LegCrawlerThreshold" value="0"/>
-	<property name="LegCrippleThreshold" value="0.01"/>
-	<property name="KnockdownProneDamageThreshold" value="0.45"/>
-	<property name="KnockdownProneStunDuration" value="4,6"/>
-	<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
-	<property name="KnockdownKneelDamageThreshold" value="0.38"/>
-	<property name="KnockdownKneelStunDuration" value="5,6"/>
-	<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
-	<property name="LegsExplosionDamageMultiplier" value=".85"/>
-	<property name="ArmsExplosionDamageMultiplier" value=".85"/>
-	<property name="HeadExplosionDamageMultiplier" value=".85"/>
-	<property name="ChestExplosionDamageMultiplier" value=".85"/>
 </entity_class>
 
 <entity_class name="zombieBurnt" extends="zombieTemplateMale">
@@ -1350,10 +1322,9 @@
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="IsEnemyEntity" value="false"/> <!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="ExperienceGain" value="327"/>
-	<property name="CorpseBlock" value="animalGore"/>
-	<property name="CorpseBlockChance" value="1"/>
+	<!--<property name="CorpseBlock" value="animalGore"/>
+	<property name="CorpseBlockChance" value="0"/>-->
 	<property name="DeadBodyHitPoints" value="350"/>
-	<drop event="Harvest" name="rawMeat" count="1"/>
 </entity_class>
 
 <entity_class name="animalStag" extends="animalTemplateTimid">
@@ -1381,12 +1352,11 @@
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="IsEnemyEntity" value="false"/>
 	<property name="ExperienceGain" value="327"/>
-	<property name="CorpseBlock" value="animalGore"/>
-	<property name="CorpseBlockChance" value="1"/>
 	<property name="HasRagdoll" value="true"/>
 	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="6"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="9"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 	<drop event="Harvest" name="animalHide" tool_category="Skinner" count="3" />
 	<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="2"/>
 </entity_class>
@@ -1402,7 +1372,6 @@
 	<property name="SoundHurt" value="Animals/rabbitpain"/>
 	<property name="SoundDeath" value="Animals/rabbitdeath"/>
 	<property name="PanicSpeed" value="1.5"/>
-	<property name="CorpseBlockChance" value="0"/>
 	<property name="ExperienceGain" value="173"/>
 	<property name="SwimOffset" value="2"/>
 	<property name="Faction" value="animals"/>
@@ -1425,7 +1394,6 @@
 	<property name="SoundHurt" value="Animals/Chicken/chickenpain"/>
 	<property name="SoundDeath" value="Animals/Chicken/chickendeath"/>
 	<property name="PanicSpeed" value="1"/>
-	<property name="CorpseBlockChance" value="0"/>
 	<property name="ExperienceGain" value="173"/>
 	<property name="SwimOffset" value="2"/>
 	<property name="Faction" value="animals"/>
@@ -1436,6 +1404,7 @@
 	<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="1"/>
 </entity_class>
 
+<!--
 <entity_class name="animalPig" extends="animalTemplateTimid">
 	<property name="Mesh" value="Animals/Pig/PIG"/>
 	<property name="Prefab" value="NPC"/>
@@ -1452,9 +1421,9 @@
 	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6"/>
-	<drop event="Harvest" name="animalHide" tool_category="Skinner" count="2" />
-	<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="1"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 </entity_class>
+-->
 
 
 
@@ -1500,10 +1469,9 @@
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="ExperienceGain" value="2509"/>
-	<property name="CorpseBlock" value="animalGore"/>
-	<property name="CorpseBlockChance" value="1"/>
+	<!--<property name="CorpseBlock" value="animalGore"/>
+	<property name="CorpseBlockChance" value="0"/>-->
 	<property name="DeadBodyHitPoints" value="350"/>
-	<!-- <drop event="Harvest" name="rawMeat" count="1"/> -->
 </entity_class>
 
 <entity_class name="animalZombieDog" extends="animalTemplateHostile">
@@ -1561,7 +1529,6 @@
 	<property name="SmellAlertThreshold" value="5"/> <!-- for awake zombies -->
 
 	<property name="PhysicsBody" value="zombieDog"/>
-	<property name="CorpseBlockChance" value="0"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="4"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="1"/>
@@ -1623,6 +1590,7 @@
 	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="10"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="4"/>
 	<drop event="Harvest" name="animalHide" tool_category="Skinner" count="5" />
 	<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="3"/>
 </entity_class>
@@ -1633,7 +1601,6 @@
 	<property name="HandItem" value="handAnimalZombieBear"/>
 	<property name="ReplaceMaterial0" value="Materials/UMAFur_ZombieBear"/>
 	<property name="DeadBodyHitPoints" value="600"/>
-	<property name="CorpseBlockChance" value="0"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="3"/>
@@ -1699,6 +1666,7 @@
 	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="10"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="5"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 	<drop event="Harvest" name="animalHide" tool_category="Skinner" count="3" />
 	<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="2"/>
 </entity_class>
@@ -1725,6 +1693,7 @@
 	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="12"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 	<drop event="Harvest" name="animalHide" tool_category="Skinner" count="4" />
 	<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="2"/>
 </entity_class>
@@ -1767,7 +1736,6 @@
 	<property name="SoundGiveUp" value="Animals/Vulture/vulturegiveup"/>
 	<property name="ExperienceGain" value="798"/>
 	<property name="DeadBodyHitPoints" value="175"/>
-	<property name="CorpseBlockChance" value="0"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="3"/>
 	<drop event="Harvest" name="feather" tool_category="Butcher" count="40"/>
 </entity_class>
@@ -1816,10 +1784,8 @@
 	<property name="SoundAttack" value="Animals/Snake/snakeattack"/>
 	<property name="AttackTimeoutDay" value="1.5"/>
 	<property name="AttackTimeoutNight" value="1.1"/>
-	<property name="CorpseBlockChance" value="0"/>
 	<property name="ExperienceGain" value="384"/>
 	<property name="DeadBodyHitPoints" value="150"/>
-	<property name="CorpseBlockChance" value="0"/>
 	<property name="RootMotion" value="false"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property class="MechanimAttackTriggers">
@@ -1883,6 +1849,7 @@
 	<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="5"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>
 	<drop event="Harvest" name="animalHide" tool_category="Skinner" count="3" />
 	<drop event="Harvest" name="rawMeat" tool_category="ButcherBonus" count="2"/>
 </entity_class>
@@ -2001,7 +1968,7 @@
 	<property name="Parent" value="Backpack"/>
 	<property name="TimeStayAfterDeath" value="60"/>
 	<property name="IsEnemyEntity" value="false"/>
-	<property name="LootListOnDeath" value="47"/> <!-- used to determine container X/Y size -->
+	<property name="LootListOnDeath" value="99"/> <!-- used to determine container X/Y size -->
 	<property name="Faction" value="none"/>
 </entity_class>
 

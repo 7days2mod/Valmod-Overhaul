@@ -291,6 +291,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunScope"/>
 		</trader_item_group>
 
+		<trader_item_group name="weaponsCompoundBowParts">
+			<item name="partsCompoundBow_body"/>
+			<item name="partsCompoundBow_grip"/>
+			<item name="partsCompoundBow_parts"/>
+			<item name="partsCompoundBow_string"/>
+		</trader_item_group>
+
 		<trader_item_group name="weaponsMelee">
 			<item name="clubIron"/>
 			<item name="clubBarbed" prob="0.7"/>
@@ -478,12 +485,15 @@ quality_mod: adjusts the price range of all items with a quality level.
 		<trader_item_group name="weaponsMixedParts">
 			<item group="weaponsCommonParts" prob="3"/>
 			<item group="weaponsMilitaryParts" prob="1"/>
+			<item group="weaponsCompoundBowParts" prob="1"/>
 		</trader_item_group>
 
 		<trader_item_group name="weaponsGunsMixed">
 			<item group="weaponsGunsCommon" prob="3"/>
 			<item group="weaponsGunsMilitary" prob="1"/>
+			<item name="compoundBow" prob="0.15"/>
 		</trader_item_group>
+
 		<trader_item_group name="ammo">
 			<item name="9mmBullet" count="40,120"/>
 			<item name="762mmBullet" count="20,80"/>

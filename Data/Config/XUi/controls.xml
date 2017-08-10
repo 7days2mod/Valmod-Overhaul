@@ -459,7 +459,7 @@
 	<waypoint_entry>
 		<rect width="248" height="43" pos="6,-98" controller="MapWaypointListEntry" >
 			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="254" height="49" color="[black]" type="sliced" fillcenter="false" />
-			<sprite depth="1" name="background" pos="-1,1" height="45" width="250" color="[darkGrey]" type="sliced" on_hover="true" style="press" sound="[recipe_click]"/>
+			<sprite depth="1" name="background" pos="-1,1" height="45" width="250" color="[darkGrey]" type="sliced" on_hover="true" style="press,scroll" sound="[recipe_click]" />
 			<sprite depth="4" name="Icon" sprite="ui_game_symbol_pen" style="icon32px" pos="8,-3" foregroundlayer="true"/>
 			<sprite depth="4" name="Tracking" sprite="ui_game_symbol_check" style="icon32px" pos="48,-3" foregroundlayer="true"/>
 			<label depth="4" name="Name" pos="110,-20" width="140" height="30" text="Name" font_size="28" justify="center" pivot="center"/>
