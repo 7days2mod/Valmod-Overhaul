@@ -138,6 +138,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="forgedIron"/>
 	<property name="EconomicValue" value="300"/>
 	<property class="Action0"> <!-- AttackAction -->
+		<property name="Stamina_usage" value="8.5"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.5,0.4"/>
 		<property name="DamageBonus.head" value="6"/>
