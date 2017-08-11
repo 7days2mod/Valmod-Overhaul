@@ -1518,7 +1518,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="tazasStoneaxeDesc"/>
 	<property name="Extends" value="stoneAxe"/>
 	<property name="EconomicValue" value="200"/>
-	<property name="CustomIcon" value="stoneAxe"/>
+	<property name="CustomIcon" value="stoneAxe"/> <property name="CustomIconTint" value="ffb0b0"/>
 	<property class="Action0">
 		<property name="Stamina_usage" value="4.5"/>
 	</property>
