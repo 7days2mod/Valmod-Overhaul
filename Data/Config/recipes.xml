@@ -1303,8 +1303,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="gunPowder" count="10" craft_area="workstationArmory">
-	<ingredient name="coal" count="10"/>
-	<ingredient name="potassiumNitratePowder" count="10"/>
+	<ingredient name="coal" count="20"/>
+	<ingredient name="potassiumNitratePowder" count="20"/>
 </recipe>
 
 <recipe name="gunPumpShotgun" count="1" craft_area="assembly">
@@ -2142,7 +2142,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="stoneShovel" count="1">
-	<ingredient name="rockSmall" count="6"/>
+	<ingredient name="rockSmall" count="5"/>
 	<ingredient name="yuccaFibers" count="3"/>
 	<ingredient name="wood" count="3"/>
 </recipe>
@@ -2223,9 +2223,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="potato" count="1"/>
-	<ingredient name="corn" count="1"/>
-	<ingredient name="mushrooms" count="1"/>
+	<ingredient name="potato" count="5"/>
+	<ingredient name="corn" count="5"/>
+	<ingredient name="mushrooms" count="5"/>
 	<ingredient name="bowlWater" count="1"/>
 </recipe>
 <recipe name="whitePicketFenceSheet" count="1" craft_area="workbench" craft_tool="handSaw">
