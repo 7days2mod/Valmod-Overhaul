@@ -2811,7 +2811,7 @@ Mesh files no longer used:
 	</property>
 	<property name="ThrowableDecoy" value="true"/>
 	<property name="Group" value="Ammo/Weapons"/>
-		<property name="CreativeMode" value="None"/>
+		<property name="CreativeMode" value="Dev"/>
 </item>
 
 <item id="190" name="rockSmall"> <!-- scrap material -->
@@ -6985,7 +6985,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/meat_rabbit"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="Stacknumber" value="100"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
