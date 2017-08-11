@@ -1579,7 +1579,7 @@ Mesh files no longer used:
 	<property name="Extends" value="fireaxeIron"/>
 	<property name="CustomIcon" value="Steel_Fireaxe"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
-	<property name="EconomicValue" value="760"/>
+	<property name="EconomicValue" value="912"/>
 	<property class="Action0">
 		<property name="Stamina_usage" value="15"/>
 		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
