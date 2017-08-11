@@ -1638,7 +1638,7 @@ Mesh files no longer used:
 	<property name="Extends" value="pickaxeIron"/>
 	<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab"/>
 	<property name="HoldType" value="4"/>
-	<property name="EconomicValue" value="760"/>
+	<property name="EconomicValue" value="912"/>
 	<property class="Action0">
 		<property name="Delay" value="1.5"/>
 		<property name="Stamina_usage" value="20.4"/>
