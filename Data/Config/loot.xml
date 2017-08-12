@@ -3002,10 +3002,6 @@
 	<item name="skillbookBlacksmith"/>
 	<item name="recipebookGardenTools"/>
 	</lootgroup>
-	<lootgroup name="IronBow+Ammo" count="all">
-        <item name="ironBow"/>
-		<item name="ironArrow" count="20,30"/>
-	</lootgroup>
 	<lootgroup name="snowZombieQuests">
 		<item group="questChallenge" count="1" prob="0.0105"/>
 		<item group="treasureMaps" count="1" prob="0.0105"/>
@@ -3013,7 +3009,6 @@
 	<lootgroup name="snowZombieHunterWeapons">
 		<item group="weaponsSnowHuntingRifleParts" prob="0.2"/>
 		<item group="weaponsHuntingRifle+ammo" prob="0.2" />
-		<item group="IronBow+Ammo" prob="0.2" />
 		<item group="weaponsCrossbow+ammo" prob="0.2" />
 		<item group="ammo" prob="0.2"/>
 	</lootgroup>

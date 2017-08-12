@@ -8610,7 +8610,7 @@ Mesh files no longer used:
 <item id="1324" name="concreteMix">
 	<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="Material" value="stone"/>
+	<property name="Material" value="Mconcrete"/>
 	<property name="Weight" value="20"/>
 	<property name="HoldType" value="34"/>
 	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
@@ -8857,7 +8857,7 @@ Mesh files no longer used:
 	<property name="Material" value="coal"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="FuelValue" value="30"/>
+	<property name="FuelValue" value="20"/>
 	<property name="DropScale" value="8"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -9461,7 +9461,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="20"/>
+	<property name="EconomicValue" value="22"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="Mechanical"/>
 </item>

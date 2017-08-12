@@ -1498,7 +1498,6 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<property name="HarvestOverdamage" value="true"/>
 	<drop event="Harvest" name="scrapIron" count="17"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -1593,12 +1592,12 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Harvest" name="wood" count="4"/>
+	<drop event="Harvest" name="wood" count="2"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="20"/>
-	<drop event="Destroy" name="nail" count="3,4" prob="0.8"/>
+	<drop event="Destroy" name="nail" count="2,3" prob="0.8"/>
 	<property name="CraftingSkillGroup" value="Carpentry"/>
 </block>
 
@@ -5429,7 +5428,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="2"/>
 	<drop event="Harvest" name="leather" count="2"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="oldCash" count="1,3" prob=".05" tool_category="Disassemble"/>
+	<drop event="Destroy" name="oldCash" count="1,3" prob=".05" tool_category="Butcher"/>
 	<property name="EconomicValue" value="18"/>
 </block>
 
@@ -7155,7 +7154,7 @@ kind of free
 	<drop event="Harvest" name="animalFat" count="1,2" prob="0.33" tool_category="Butcher"/>
 	<drop event="Harvest" name="femur" count="1,2" prob="1" tool_category="Butcher"/>
 	<drop event="Destroy" count="0"/>
-	<property name="DroppedEntityClass" value="EviseratedRemains"/>
+	<property name="DroppedEntityClass" value="EvisceratedRemains"/>
 </block>
 
 <!--
@@ -9673,7 +9672,7 @@ kind of free
 	<property name="Shape" value="New"/>
 	<property name="Model" value="ramp_corner_filler"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="rConcreteCNRRampFiller"/>
-  <property name="UseGlobalUV" value="Global"/>
+	<property name="UseGlobalUV" value="Global"/>
 </block>
 
 <block id="1035" name="pouredConcreteWedgeStairs">
@@ -15102,6 +15101,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="2"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DescriptionKey" value="woodArrowSlitGroupDesc"/>
+	<drop event="Destroy" count="0"/>
 </block>
 
 <block id="1926" name="cntVendingMachineTrader">
@@ -15895,7 +15895,7 @@ kind of free
 	</property>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="20,100" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="20,100"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="250"/>
