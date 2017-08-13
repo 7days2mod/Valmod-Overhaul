@@ -231,6 +231,7 @@
 		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
 			<requirement type="Holding" id="fireaxeIron" />
 			<requirement type="Holding" id="fireaxeSteel" />
+			<requirement type="Holding" id="legendaryFireaxe" />
 		</requirement>
 
 		<reward type="SkillPoints" value="1" />
@@ -696,7 +697,6 @@
 		<objective type="Craft" id="disinfectantBandage" value="5" />
 		<reward type="Skill" id="Science" value="1" />
 		<reward type="Skill" id="Medicine" value="1" />
-		<reward type="Quest" id="challenge_medic2" />
 	</quest>
 	
 	<quest id="challenge_medic2" group_name_key="quest_medic" name="Medic Quest 2/3" subtitle="Medic Challenge 2" description="Medic!!!!!" icon="ui_game_symbol_medical" 

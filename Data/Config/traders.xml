@@ -543,10 +543,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 
 		<trader_item_group name="cannedfood">
 			<item name="canBeef"/>
-			<item name="canCatfood"/>
+			<item name="canPetfood"/>
 			<item name="canChicken"/>
 			<item name="canChili"/>
-			<item name="canDogfood"/>
 			<item name="canHam"/>
 			<item name="canLamb"/>
 			<item name="canMiso"/>
