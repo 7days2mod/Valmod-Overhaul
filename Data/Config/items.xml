@@ -1004,7 +1004,7 @@ Mesh files no longer used:
 		<property name="Zoom_max_in" value="40"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
