@@ -1153,6 +1153,7 @@
 		<recipe name="industrialLight01_player" unlock_level="20"/>
 		<recipe name="ceilingLight07_player" unlock_level="20"/>
 		<recipe name="spotlightPlayer" unlock_level="20"/>
+		<recipe name="streetLightPlayer" unlock_level="20"/>
 		<recipe name="speaker" unlock_level="20"/>
 	</perk>
 

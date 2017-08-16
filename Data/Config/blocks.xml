@@ -16108,7 +16108,26 @@ kind of free
 
 
 	<!-- Valmod Blocks -->
-	
+
+<block id="950" name="streetLightPlayer">
+	<property name="Extends" value="streetLight01"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="streetLight01"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="HandleFace" value="South"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="1"/>
+		<property name="electricParts" value="3"/>
+		<property name="electronicParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/> <!-- HV: mounted fluorescent lamp -->
+	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="Mechanical"/>
+</block>
+
 <block id="1700" name="trapFall">
 	<property name="Extends" value="dirt" />
 	<property name="Material" value="MbarbedWire" />

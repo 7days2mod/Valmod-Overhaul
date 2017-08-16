@@ -6232,3 +6232,4 @@ smallEngineDesc2,items,Part,KgNone,"A common part for a chainsaw, auger or minib
 logCabinBlock,blocks,Block,KgNone,Log Cabin Wood Block,Bloc de bois de cabane en rondins,Holzhüttenblock,,Bloque de cabaña de troncos
 
 compoundBowDesc2,items,Gun,New,A compound bow does more damage and can use flaming arrows in addition to plain ones. Can be re-assembled and repaired if you level high enough in Archery.,,"Ein Compoundbogen verschiesst neben herkömmlichen Pfeilen auch Feuerpfeile. Kann zusammengesetzt und repariert werden, wenn du das Buch „Compoundbogen“ gelesen hast.",,
+streetLightPlayer,blocks,Electricity,New,Street Light,,,,

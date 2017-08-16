@@ -3854,5 +3854,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="steelArrow" count="1"/>
 </recipe>
 
-
+<recipe name="streetLightPlayer" count="1" craft_area="workbench">
+	<ingredient name="headlight" count="1"/>
+	<ingredient name="electricParts" count="8"/>
+	<ingredient name="ductTape" count="2"/>
+	<ingredient name="scrapIron" count="50"/>
+</recipe>
 </recipes>
