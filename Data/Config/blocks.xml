@@ -15895,7 +15895,7 @@ kind of free
 	</property>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="20,100"/>
+	<drop event="Harvest" name="scrapIron" count="20,100"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="250"/>
