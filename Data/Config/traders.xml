@@ -751,7 +751,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="potassiumNitratePowder" count="2,5"/> <!-- 10 -->
 		</trader_item_group>
 		<trader_item_group name="traderGeneral" count="1">
-			<item name="beerBook" count="1" prob="0.3"/>
 			<item name="plantedHop1" count="1,5" prob="0.3"/>
 			<item name="paint" count="1,12"/> <!-- 50 -->
 			<item group="clothes" count="2,4"/>
@@ -800,7 +799,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="stashOnlyItemsLow" count="1">
-			<item name="beerBook" count="1"/>
 			<item name="plantedHop1" count="1,5"/>
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
 			<item name="autoTurret" count="1,2" prob="0.5"/>
@@ -808,7 +806,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 		</trader_item_group>
 
 		<trader_item_group name="stashOnlyItemsHigh" count="1">
-			<item name="beerBook" count="1"/>
 			<item name="plantedHop1" count="2,8"/>
 			<item name="solarCell" count="1,2"/>
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
@@ -949,7 +946,6 @@ workstations
 			<item name="miningHelmet"/>
 			<item group="minibikeParts" count="2,3"/>
 			<item name="nightvisionGoggles" count="1"/>
-			<item name="beerBook" count="1"/>
 			<item name="plantedHop1" count="1,8"/>
 			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,3"/>

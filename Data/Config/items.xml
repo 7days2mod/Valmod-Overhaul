@@ -7684,7 +7684,7 @@ Mesh files no longer used:
 <item id="913" name="beerBook">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="craftSkillScience"/>
+		<property name="Skills_to_gain" value=""/>
 	</property>
 </item>
 
@@ -7775,7 +7775,7 @@ Mesh files no longer used:
 <item id="935" name="nailgunSchematic"> 
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="craftSkillScience"/>
+		<property name="Skills_to_gain" value=""/>
 	</property>
 </item>
 
@@ -7892,14 +7892,14 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CustomIcon" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="craftSkillTools"/>
+		<property name="Skills_to_gain" value=""/>
 	</property>
 </item>
 <item id="971" name="clawHammerSchematic"> <!-- NO LONGER USED -->
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CustomIcon" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Skills_to_gain" value="craftSkillTools"/>
+		<property name="Skills_to_gain" value=""/>
 	</property>
 </item>
 
