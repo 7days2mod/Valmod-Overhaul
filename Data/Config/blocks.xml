@@ -7757,6 +7757,7 @@ kind of free
 	<property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
 	<property name="Texture" value="362"/>
 	<drop event="Harvest" name="goldenrodPlant" count="1"/>
+	<property name="DowngradeBlock" value="plantedGoldenrod1"/> 
 </block>
 
 <block id="765" name="woodFrameWedgeTipCNRFullBottom">
