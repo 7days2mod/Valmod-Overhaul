@@ -774,6 +774,12 @@
 	<item name="gunMP5"/>
 	<item name="9mmBullet" count="5,24"/>
 </lootgroup>
+
+<lootgroup name="weaponsAK47+ammo" count="all">
+    <item name="gunAK47"/>
+    <item name="762mmBullet" count="1,20"/>
+</lootgroup>
+
 <lootgroup name="rifles">
 	<item name="gunBoltRifle" prob="0.65"/>
 	<item name="gunHuntingRifle" prob="0.35"/>
@@ -1014,7 +1020,7 @@
 	<item group="weaponsMP5+ammo" prob="0.15"/>
 	<item group="weaponsSniperRifle+ammo" prob="0.15"/>
 	<item group="weaponsRocketLauncher+ammo" prob="0.05"/>
-	<item group="ak47+ammo" prob="0.05" />
+	<item group="weaponsAK47+ammo" prob="0.05" />
 </lootgroup>
 
 <lootgroup name="specialAmmo">
@@ -2611,8 +2617,9 @@
 <!-- ZombieCheerleader -->
 <lootcontainer id="79" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item group="junk" prob="1"/>
-	<item name="tshirtZUWhite" prob="2"/>
-	<item name="denimShortsPantsRed" prob="2"/>
+	<item name="tshirtZUWhite" prob="1.5"/>
+	<item name="skirtBlue" prob="1.8"/>
+	<item group="skirtsAll" count="1" prob="0.2"/>
 	<item name="runningShoes" prob="1.5"/>
 	<item group="questChallenge" count="1" prob="0.036"/>
 	<item group="treasureMaps" count="1" prob="0.031"/>

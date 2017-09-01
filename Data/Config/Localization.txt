@@ -111,7 +111,7 @@ goDayLengthDesc,UI,Menu,EnChanged KgNone,How long it takes for 24 hours to pass 
 lblCategoryScavenging,UI,Tooltip,EnChanged KgNone,Scavenging/Trading,Glanage,Plünderung,,Carroñar
 itemTooltipFocusedOne,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {1},<{0}> pour récupérer {1},<{0}> Sammle {1},,<{0}> Recoge {1}
 itemTooltipFocusedSeveral,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {2} of {1},<{0}> pour récupérer {1} sur {2},<{0}> Sammle {2} von: {1},,<{0}> Recoge {2} de {1}
-cannotBreatheTooltip,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
+cannotBreatheTooltip,buffs,Buff,EnChanged,You cannot breathe.,,,,
 freshAirDesc,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
 freshAirTooltip,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
 InstantSickDrunk,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,

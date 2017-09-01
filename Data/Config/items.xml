@@ -90,6 +90,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_RefinedPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="EconomicValue" value="100"/>
+	<property name="SellableToTrader" value="true"/>
 	<property name="RepairTools" value="scrapIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
@@ -114,6 +115,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab"/>
 	<property name="RepairTools" value="forgedIron"/>
 	<property name="EconomicValue" value="192"/>
+	<property name="SellableToTrader" value="true"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Stamina_usage" value="6.5"/>
 		<property name="Delay" value="1.15"/>
@@ -137,6 +139,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab"/>
 	<property name="RepairTools" value="forgedIron"/>
 	<property name="EconomicValue" value="300"/>
+	<property name="SellableToTrader" value="true"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Stamina_usage" value="8.5"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
@@ -1135,7 +1138,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
-<item id="77" name="handZombie02">
+<item id="77" name="handZombie02"> <!-- crawler. This hand item is automatically used (hardcoded) if a zombie turns into a crawler. Can be overridden in entityclasses. See zombieBurnt. -->
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="24"/>
@@ -1267,7 +1270,7 @@ Mesh files no longer used:
 <item id="85" name="handZombieHazMat">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="24"/>
+	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="Buff" value="bleeding,infection1,stunned"/>
 		<property name="Buff_chance" value="0.04,0.25,0.5"/>
@@ -1277,7 +1280,7 @@ Mesh files no longer used:
 <item id="86" name="handZombieWorker">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="24"/>
+	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="DamageBlock" value="150"/>
 	</property>
@@ -1286,7 +1289,7 @@ Mesh files no longer used:
 <item id="87" name="handZombieFootballPlayer">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="24"/>
+	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="Buff" value="bleeding,infection,stunned"/>
 		<property name="Buff_chance" value="0.04,0.04,0.6"/>
@@ -1300,6 +1303,19 @@ Mesh files no longer used:
 		<property name="DamageEntity" value="8"/>
 		<property name="Buff" value="bleeding,infection,stunned"/>
 		<property name="Buff_chance" value="0.02,0.2,0.1"/>
+	</property>
+</item>
+
+<item id="89" name="handZombieBurningCrawler">
+	<property name="Extends" value="handMaster"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="24"/>
+	<property class="Action0">
+		<property name="DamageEntity" value="8"/>
+		<property name="DamageBlock" value="2"/>
+		<property name="Delay" value="2.0"/>
+		<property name="Buff" value="sprainedLeg,infection,burningSmall"/>
+		<property name="Buff_chance" value="0.2,0.025,0.5"/>
 	</property>
 </item>
 
@@ -1381,7 +1397,7 @@ Mesh files no longer used:
 <item id="98" name="handZombieHazMatFeral">
 	<property name="Extends" value="handZombieHazMat"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="24"/>
+	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="40"/>
@@ -1391,7 +1407,7 @@ Mesh files no longer used:
 <item id="99" name="handZombieWorkerFeral">
 	<property name="Extends" value="handZombieWorker"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="24"/>
+	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="300"/>
@@ -1401,7 +1417,7 @@ Mesh files no longer used:
 <item id="100" name="handZombieFootballPlayerFeral">
 	<property name="Extends" value="handZombieFootballPlayer"/>
 	<property name="CreativeMode" value="None"/>
-	<property name="HoldType" value="24"/>
+	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="40"/>
@@ -2392,7 +2408,7 @@ Mesh files no longer used:
 	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="588"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
@@ -2709,7 +2725,7 @@ Mesh files no longer used:
 	<property name="Material" value="MDynamite"/>
 	<property name="CustomIcon" value="tnt"/>
 	<property name="HoldType" value="25"/>
-	<property name="Stacknumber" value="20"/> <!-- STK explosives -->
+	<property name="Stacknumber" value="40"/> <!-- STK explosives -->
 	<property name="EconomicValue" value="71"/>
 	<property name="Explosion.BlockDamage" value="900"/>
 	<property name="Explosion.EntityDamage" value="320"/>
@@ -9587,7 +9603,7 @@ Mesh files no longer used:
 
 <item id="1464" name="unit_stone">
 	<property name="Extends" value="unit_iron"/>
-	<property name="CustomIcon" value="cobblestones"/>
+	<property name="CustomIcon" value="rockSmall"/>
 	<property name="Material" value="stone"/>
 	<property name="CreativeMode" value="None"/>
 </item>

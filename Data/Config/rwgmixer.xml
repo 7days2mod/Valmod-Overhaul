@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rwgmixer>
 	<world ruleset="vanilla" />
-	
+
 	<rulesets>
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0" generation_distance="10000" terrain_generator="vanilla" biome_generator="vanilla">
 			<cell_rule name="default" prob="1"/>
 			<!--<cell_rule name="customHubTest" position="0,1" prob="0"/>-->
 		</ruleset>
 	</rulesets>
-	
+
 	<cell_rules>
 		<cell_rule name="default">
 			<cave_count value="4,8"/>
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
 
 			<hub_rule name="townSmall" prob="0.3"/>
@@ -20,163 +20,163 @@
 			<hub_rule name="citySmall" prob="0.1"/>
 			<hub_rule name="cityLarge" prob="0.1"/>
 			<hub_rule name="rural" prob="0.3"/>
-			
+
 			<wilderness_rule name="wildernessDefault"/>
 		</cell_rule>
-		
+
 		<cell_rule name="customHubTest">
 			<cave_count value="1,3"/>
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
-			
+
 			<hub_rule name="customHubTest"/>
-			
+
 			<wilderness_rule name="wildernessDefault"/>
 		</cell_rule>
 	</cell_rules>
-	
+
 	<hub_rules>
 		<hub_rule name="ruralSmall">
 			<hub_type value="rural"/>
 			<width value="168, 250" />
 			<height value="168, 250" />
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
 
 			<prefab_rule name="default"/>
-			
+
 			<street_gen level="10" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
+
 		<hub_rule name="ruralLarge">
 			<hub_type value="rural"/>
 			<width value="250, 300" />
 			<height value="250, 300" />
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
 
 			<prefab_rule name="default"/>
-			
+
 			<street_gen level="15" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
+
 		<hub_rule name="townSmall">
 			<hub_type value="town"/>
 			<width value="300, 400" />
 			<height value="300, 400" />
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
 
 			<prefab_rule name="default"/>
-			
+
 			<street_gen level="15" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
+
 		<hub_rule name="townLarge">
 			<hub_type value="town"/>
 			<width value="400, 600" />
 			<height value="400, 600" />
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
 
 			<prefab_rule name="default"/>
-			
+
 			<street_gen level="20" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
+
 		<hub_rule name="citySmall">
 			<hub_type value="city"/>
 			<width value="600, 800" />
 			<height value="600, 800" />
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
-			
+
 			<prefab_rule name="default"/>
-			
+
 			<street_gen level="20" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
+
 		<hub_rule name="cityLarge">
 			<hub_type value="city"/>
 			<width value="800, 1200" />
 			<height value="800, 1200" />
-			<path_material value="asphalt" /> 
+			<path_material value="asphalt" />
 			<path_radius value="10" />
 			<downtown_zone_size_perc value="0.45"/>
-			
+
 			<prefab_rule name="default"/>
-			
+
 			<street_gen level="25" length_multiplier="4">
-				<axiom value="[FF*L]+[FFJK]+[FF*L]+[FFJK]"/>
-				<rule char="J" replace_with="[KYX*]"/>
-				<rule char="K" replace_with="[F+F-F]"/>
-				<rule char="L" replace_with="[*F]"/>
-				<rule char="Y" replace_with="-FF[YX]*"/>
-				<rule char="X" replace_with="+FF[XY]*"/>
-				<alt_commands chars="J,K,L,Y,X"/>
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]"/>
+
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]"/>
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]"/>
+				<alt_commands chars="T,I,N,K"/>
 			</street_gen>
 		</hub_rule>
-		
-		<hub_rule name="customHubTest"> 
+
+		<hub_rule name="customHubTest">
 			<hub_type value="town"/>
 			<hub_layout name="customHubTest"/>
 
 			<prefab_rule name="town"/>
 		</hub_rule>
 	</hub_rules>
-	
+
 	<wilderness_rules>
 		<wilderness_rule name="wildernessDefault" spawn_min_max="15,20">
-			<path_material value="gravel" /> 
+			<path_material value="gravel" />
 			<path_radius value="2" />
 			<path_adjust_terrain value="false"/>
 			<prefab_rule name="wildernessGroup" prob="1"/>
 		</wilderness_rule>
 	</wilderness_rules>
-	
+
 	<prefab_rules>
 		<prefab_rule name="none"/>
-		
+
 		<prefab_rule name="default">
 			<prefab rule="residentialOldGroup"/>
 			<prefab rule="residentialNewGroup"/>
@@ -186,8 +186,8 @@
 			<prefab rule="ruralGroup"/>
 			<prefab rule="detailFillerGroup"/>
 		</prefab_rule>
-		
-		<prefab_rule name="residentialOldGroup">	
+
+		<prefab_rule name="residentialOldGroup">
 			<prefab name="abandoned_house_01"/>
 			<prefab name="abandoned_house_02"/>
 			<prefab name="abandoned_house_03"/>
@@ -214,12 +214,12 @@
 			<prefab name="houseburnt3"/>
 			<prefab name="houseburnt3b"/>
 			<prefab name="houseburnt4"/>
-			<prefab name="houseburnt5"/>			
+			<prefab name="houseburnt5"/>
 			<prefab name="housewhite1basement"/>
 			<prefab name="housewhitepyramid3"/>
 			<prefab name="housetanpyramid2"/>
 			<prefab name="housewhitepyramid1"/>
-			<prefab name="housewhitepyramid2"/>		
+			<prefab name="housewhitepyramid2"/>
 			<prefab name="housegreen1"/>
 			<prefab name="houseblue1"/>
 			<prefab name="housestucco1"/>
@@ -241,10 +241,10 @@
 			<prefab name="trailer_02" />
 			<prefab name="trailer_03" />
 			<prefab name="trailer_04" />
-			<prefab name="trailer_park_01" />	
+			<prefab name="trailer_park_01" />
 		</prefab_rule>
-				
-		<prefab_rule name="residentialNewGroup">		
+
+		<prefab_rule name="residentialNewGroup">
 			<prefab name="house_new_mansion_01"/>
 			<prefab name="house_new_mansion_02"/>
 			<prefab name="house_new_mansion_03"/>
@@ -268,8 +268,8 @@
 			<prefab name="apartment_brick_6_flr" max_count="1" />
 			<prefab name="funeral_home_01" max_count="1" />
 		</prefab_rule>
-		
-		<prefab_rule name="commercialGroup">	
+
+		<prefab_rule name="commercialGroup">
 			<prefab name="store_gun_sm_01" prob="0.6"/>
 			<prefab name="store_gun_lg_01" prob="0.4"/>
 			<prefab name="store_pharmacy_sm_01" />
@@ -297,7 +297,7 @@
 			<prefab name="store_laundry_01" max_count="1" />
 			<prefab name="store_salon" max_count="1" />
 		</prefab_rule>
-		
+
 		<prefab_rule name="downtownGroup">
 			<prefab name="business_red_brick_01"/>
 			<prefab name="business_red_brick_02"/>
@@ -337,7 +337,7 @@
 			<prefab rule="skyscrapers" min_count="2"/>
 			<prefab name="store_pawn_01" max_count="1" />
 		</prefab_rule>
-		
+
 		<prefab_rule name="skyscrapers">
 			<prefab name="skyscraper_01" max_count="1" prob="50"/>
 			<prefab name="skyscraper_02" max_count="1" prob="50"/>
@@ -345,17 +345,17 @@
 			<prefab name="skyscraper_04" max_count="1" prob="50"/>
 		</prefab_rule>
 
-		<prefab_rule name="industrialGroup">	
+		<prefab_rule name="industrialGroup">
 			<prefab name="utility_waterworks_01" max_count="1"/>
 			<prefab name="utility_electric_co_01" />
 			<prefab name="utility_refinery_01" max_count="1"/>
-			<prefab name="settlement_01" />	
+			<prefab name="settlement_01" />
 			<prefab name="factory_lg_01" max_count="1"/>
 			<prefab name="factory_lg_02" max_count="1"/>
 			<prefab name="installation_red_mesa" max_count="1"/>
 			<prefab name="sawmill_01_snow" max_count="1"/>
-			<prefab name="utility_celltower_01" max_count="1"/>
-			<prefab name="utility_celltower_01" max_count="2"/>			
+			<prefab name="utility_celltower_02" max_count="1"/>
+			<prefab name="utility_celltower_01" max_count="2"/>
 			<prefab name="junkyard_lg_01" />
 			<prefab name="junkyard_med_01" />
 			<prefab name="vacant_lot_med_01"/>
@@ -386,27 +386,27 @@
 			<prefab name="waste_rubble_bldg_07" />
 			<prefab name="waste_rubble_bldg_08" />
 			<prefab name="waste_rubble_bldg_09" />
-			<prefab name="mp_waste_sewer_hole_1" />		
+			<prefab name="mp_waste_sewer_hole_1" />
 		</prefab_rule>
-		
-		<prefab_rule name="ruralGroup">	
+
+		<prefab_rule name="ruralGroup">
 			<prefab name="blueberryfield_sm"/>
 			<prefab name="cornfield_sm"/>
 			<prefab name="cornfield_med"/>
-			<prefab name="potatofield_sm"/>	
+			<prefab name="potatofield_sm"/>
 			<prefab name="barn_01" />
 			<prefab name="barn_02" />
-			<prefab name="barn_03" />			
+			<prefab name="barn_03" />
 			<prefab name="farm_shed1" />
 			<prefab name="farm_shed2" />
 			<prefab name="farm_shed3" />
-			<prefab name="farm_shed4" />	
+			<prefab name="farm_shed4" />
 			<prefab name="oldwest_stables" />
 			<prefab name="pond02"/>
 			<prefab name="pond01"/>
 			<prefab name="water_tower_01" />
-			<prefab name="water_tower_01" />			
-			<prefab name="oldwest_watertower" />	
+			<prefab name="water_tower_02" />
+			<prefab name="oldwest_watertower" />
 			<prefab name="oldwest_church"/>
 			<prefab name="oldwest_hotel_01"/>
 			<prefab name="oldwest_hotel_02"/>
@@ -417,13 +417,13 @@
 			<prefab name="oldwest_md_shop_04"/>
 			<prefab name="oldwest_sm_shop_01"/>
 			<prefab name="oldwest_sm_shop_02"/>
-			<prefab name="oldwest_sm_shop_03"/>	
+			<prefab name="oldwest_sm_shop_03"/>
 			<prefab name="army_camp_01" />
 			<prefab name="army_camp_02" />
-			<prefab name="army_camp_03" />		
+			<prefab name="army_camp_03" />
 		</prefab_rule>
-		
-		<prefab_rule name="wildernessGroup">	
+
+		<prefab_rule name="wildernessGroup">
 			<prefab rule="traderGroup" min_count="1" max_count="1"/>
 			<prefab name="cabin_01" />
 			<prefab name="cabin_02_sm" />
@@ -449,7 +449,7 @@
 			<prefab name="cave_03" />
 			<prefab name="cave_04" />
 		</prefab_rule>
-		
+
 		<prefab_rule name="detailFillerGroup">
 			<prefab name="mailbox1" prob="0.25"/>
 			<prefab name="street_light_01" prob="0.25"/>
@@ -467,7 +467,7 @@
 			<prefab name="tree_burntpine_03"/>
 			<prefab name="water_tower_03" />
 		</prefab_rule>
-		
+
 		<prefab_rule name="traderGroup">
 			<prefab name="settlement_trader_01" />
 			<prefab name="settlement_trader_02" />
@@ -475,10 +475,10 @@
 			<prefab name="settlement_trader_04" />
 			<prefab name="settlement_trader_05" />
 		</prefab_rule>
-				
-		
+
+
 	</prefab_rules>
-	
+
 	<hub_layouts>
 		<hub_layout name="customHubTest">
 			<township_type value="town"/>
@@ -486,7 +486,7 @@
 			<lot min_x_y="0, 8" size="60,60" rotation_to_road="2"/>
 			<lot min_x_y="-32, 12" prefab="oldwest_jail" rotation_to_road="2"/>
 		</hub_layout>
-		
+
 		<hub_layout name="ruralHub01">
 			<township_type value="town"/>
 			<street start_point="-96,0" end_point="96,0"/>
@@ -496,21 +496,21 @@
 			<lot min_x_y="-56, 8" size="48,48" rotation_to_road="1"/>
 			<lot min_x_y="-56, -56" size="48,48" rotation_to_road="3"/>
 		</hub_layout>
-		
+
 		<hub_layout name="ruralHub02">
 			<township_type value="town"/>
-			
+
 			<street start_point="-160,0" end_point="160,0"/>
 			<street start_point="0,-160" end_point="0,160"/>
-			
+
 			<lot min_x_y="7, 7" size="128,128" rotation_to_road="2" align="south_west"/>
 			<lot min_x_y="7, -135" size="128,128" rotation_to_road="0" align="north_west"/>
-			
+
 			<lot min_x_y="-135, 7" size="128,128" rotation_to_road="3" align="south_east"/>
 			<lot min_x_y="-135, -135" size="128,128" rotation_to_road="1" align="north_east"/>
 		</hub_layout>
 	</hub_layouts>
-	
+
 <!--
 	GENERATOR MODULE TYPES
 	    AbsoluteOutput
@@ -546,7 +546,7 @@
         RidgedMultifractal
         Turbulence
         Voronoi
-	
+
 -->
 
 	<terrain_generators>
@@ -563,7 +563,7 @@
 				<property name="sourceModule" value="scaleLandBaseFilter"/>
 				<property name="bounds" value="0.01,0.5"/>
 			</module>
-			
+
 			<module name="fastMountainsBase" type="FastRidgedMultifractal">
 				<property name="frequency" value="0.25"/>
 			</module>
@@ -592,8 +592,8 @@
 				<property name="sourceModule" value="fastWaterScaled"/>
 				<property name="bounds" value="-1,0.25"/>
 			</module>
-			
-			
+
+
 			<module name="fastWaterFilter" type="FastRidgedMultifractal" seed_additive="3">
 				<property name="frequency" value="0.05"/>
 			</module>
@@ -602,28 +602,28 @@
 				<property name="scale" value="1"/>
 				<property name="bias" value="0.25"/>
 			</module>
-			
+
 			<module name="fastLandWater" type="Blend">
 				<property name="controlModule" value="scaleBiasLandFilter"/>
 				<property name="sourceModule1" value="landBase"/>
 				<property name="sourceModule2" value="fastWaterClamped"/>
 			</module>
-			
+
 			<module name="finalLand" type="Blend">
 				<property name="controlModule" value="fastMountainsScaled"/>
 				<property name="sourceModule1" value="fastLandWater"/>
 				<property name="sourceModule2" value="fastMountainsScaled"/>
 			</module>
-			
+
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
 				<property name="sourceModule" value="finalLand"/>
-				<property name="scale" value="255"/>
+				<property name="scale" value="182"/>
 			</module>
 
 			<output module="scaleBiasOutput"/>
 		</terrain_generator>
 	</terrain_generators>
-	
+
 	<biome_generators>
 		<biome_generator name="vanilla">
 			<module name="voronoi" type="Voronoi">
@@ -634,34 +634,34 @@
 				<property name="sourceModule" value="voronoi"/>
 				<property name="bias" value="0.5"/>
 			</module>
-			
+
 			<module name="biomeDither" type="FastTurbulence">
 				<property name="sourceModule" value="biasOutput"/>
 				<property name="frequency" value="0.25"/>
 				<property name="power" value="8"/>
 				<property name="roughness" value="5"/>
 			</module>
-			
+
 			<module name="biomeJiggle" type="FastTurbulence">
 				<property name="sourceModule" value="biomeDither"/>
 				<property name="frequency" value="0.0016"/>
 				<property name="power" value="400"/>
 				<property name="roughness" value="1"/>
 			</module>
-			
+
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="biomeJiggle"/>
 				<property name="bounds" value="0,1"/>
 			</module>
-			
+
 			<output module="clampOutput"/>
 		</biome_generator>
-		
+
 		<!-- Passes back the biome intensity to allow for per biome terrain control  THIS MUST MATCH THE BIOME DISTRIBUTION BUT RETURN 0-1 based on distance from center-->
 	</biome_generators>
-	
+
 	<biome_intensity_generators>
-		<biome_intensity_generator name="vanilla"> 
+		<biome_intensity_generator name="vanilla">
 			<module name="voronoi" type="Voronoi">
 				<property name="frequency" value="0.0008"/>
 				<property name="displacement" value="0.5"/>
@@ -671,68 +671,68 @@
 				<property name="sourceModule" value="voronoi"/>
 				<property name="bias" value="0.5"/>
 			</module>
-			
+
 			<module name="biomeDither" type="FastTurbulence">
 				<property name="sourceModule" value="biasOutput"/>
 				<property name="frequency" value="0.25"/>
 				<property name="power" value="8"/>
 				<property name="roughness" value="5"/>
 			</module>
-			
+
 			<module name="biomeJiggle" type="FastTurbulence">
 				<property name="sourceModule" value="biomeDither"/>
 				<property name="frequency" value="0.0016"/>
 				<property name="power" value="400"/>
 				<property name="roughness" value="1"/>
 			</module>
-			
+
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="biomeJiggle"/>
 				<property name="bounds" value="0,1"/>
 			</module>
-			
+
 			<output module="clampOutput"/>
 		</biome_intensity_generator>
 	</biome_intensity_generators>
-	
+
 	<biome_spawn_rules>
 		<biome_spawn_rule name="pine_forest">
 			<biome_generator range="0,0.1"/>
 			<terrain_generator range="150,175"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="desert">
 			<biome_generator range="0.1,0.3"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="burnt_forest">
 			<biome_generator range="0.3,0.4"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="forest">
 			<biome_generator range="0.4,0.6"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="snow">
 			<biome_generator range="0.6,0.7"/>
 			<terrain_generator range="176,255"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="wasteland">
 			<biome_generator range="0.7,0.8"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="plains">
 			<biome_generator range="0.8,1"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="radiated">
 			<distance_from_center range="10000,20000"/>
 		</biome_spawn_rule>
-		
+
 		<biome_spawn_rule name="water">
 			<terrain_generator range="-31,-1"/>
 		</biome_spawn_rule>
-		
+
 	</biome_spawn_rules>
 </rwgmixer>

@@ -3207,15 +3207,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="charcoalChips" count="1" craft_area="campfire" craft_tool="cookingPot">
 	<ingredient name="wood" count="3"/>
 </recipe>
-    <recipe name="moldyBread" count="2" >
-        <ingredient name="shamSandwich" count="1" />
-    </recipe>
-    <recipe name="moldyBread" count="4" >
-        <ingredient name="moleSandwich" count="1" />
-    </recipe>
-	<recipe name="fuelLog" count="1" craft_area="chemistryStation" craft_time="10">
-	<ingredient name="wood" count="40"/>
-  <ingredient name="tallow" count="1" />
+
+<recipe name="moldyBread" count="2" >
+	<ingredient name="shamSandwich" count="1" />
+</recipe>
+
+<recipe name="moldyBread" count="4" >
+	<ingredient name="moleSandwich" count="1" />
+</recipe>
+
+<recipe name="fuelLog" count="1" craft_area="chemistryStation" craft_time="10">
+	<ingredient name="wood" count="20"/>
+	<ingredient name="tallow" count="1" />
 </recipe>
 
 <recipe name="medicalSplint" count="1" >
