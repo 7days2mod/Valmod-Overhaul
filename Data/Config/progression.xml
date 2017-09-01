@@ -361,6 +361,7 @@
 
 	<perk name="BadMechanic" icon="resource" description_key="badMechanicDesc" title_key="badMechanic" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="tools">
 		<requirement perk_level="1" required_skill_name="Construction Tools" required_skill_level="1"/>
+		<requirement perk_level="1" required_skill_name="Mechanical" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Construction Tools" required_skill_level="10"/>
 		<requirement perk_level="3" required_skill_name="Construction Tools" required_skill_level="20"/>
 		<requirement perk_level="4" required_skill_name="Construction Tools" required_skill_level="40"/>
