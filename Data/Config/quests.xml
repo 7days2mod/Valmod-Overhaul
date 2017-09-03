@@ -694,8 +694,7 @@
 		<objective type="Craft" id="firstAidBandage" value="10" />
 		<objective type="Craft" id="firstAidKit" value="3" />
 		<objective type="Craft" id="disinfectantBandage" value="5" />
-		<reward type="Skill" id="Science" value="1" />
-		<reward type="Skill" id="Medicine" value="1" />
+		<reward type="Skill" id="Medicine" value="3" />
 	</quest>
 	
 	<quest id="challenge_medic2" group_name_key="quest_medic" name="Medic Quest 2/3" subtitle="Medic Challenge 2" description="Medic!!!!!" icon="ui_game_symbol_medical" 
