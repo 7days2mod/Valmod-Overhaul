@@ -5568,7 +5568,7 @@ seedHops,blocks,Block,,Hops Seed,,
 seedSugarCane,blocks,Block,,Sugar Cane Seed,,
 cntSurvivorsBreifcaseUnlocked,blocks,Block Building,,Survivors Briefcase,,
 cntSurvivorsBreifcase,blocks,Block Building,,Survivor's Briefcase (Locked),,
-cntSurvivorsBreifcaseDesc,blocks,Block Building,,Place this on the ground and unlock it with a survivor's combination which can be found on corpses. You can tell it is rigged to destroy the contents inside if you try to break into it any other way.,,
+cntSurvivorsBreifcaseDesc,blocks,Block Building,,Place this on the ground and unlock it with a survivor's combination which can be found from survivor journals. You can tell it is rigged to destroy the contents inside if you try to break into it any other way.,,
 cntSuspiciousStump,blocks,Block,,Suspicious Stump,,
 cntDeadMiner,blocks,Block,,Dead Miner,,
 
