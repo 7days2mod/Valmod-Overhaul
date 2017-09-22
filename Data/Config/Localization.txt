@@ -5840,7 +5840,7 @@ gardenToolsDesc,progression,Skill,,Gardening takes less stamina.,,
 barterTitle,progression,Skill,,Bartering,,
 
 lokiStew,items,Item Food,,Loki's Meat Stew,,
-lokiStewDesc,items,Item Food,,"Crafted with care and consideration, without letting any go to waste, this stew is delicious".,,
+lokiStewDesc,items,Item Food,,"Crafted with care and consideration, without letting any go to waste, this stew is delicious.",,
 lokiWater,items,Item Food,,Loki's Filtered Water,,
 lokiWaterDesc,items,Item Food,,"This water has been filtered for taste and purity. Because even if you boil it water from a toilet still tastes like shit.",,
 coldlokiWater,items,Item Food,,Cold Filtered Water,,
