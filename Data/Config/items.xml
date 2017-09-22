@@ -15707,11 +15707,11 @@ Mesh files no longer used:
 		<property name="Magazine_item_ray_spreads" value="0"/>
 		<property name="Bullet_material" value="metal"/>
 		<property name="Reload_time" value="4.1"/>
-		<property name="Sound_start" value="Weapons/Motorized/Chainsaw/chainsaw_fire_start"/>
+		<property name="Sound_start" value="chainsaw_fire_start"/>
 		<property name="Sound_repeat" value="Weapons/Motorized/Chainsaw/chainsaw_fire_lp"/>
 		<property name="Sound_end" value="Weapons/Motorized/Chainsaw/chainsaw_fire_end"/>
-		<property name="Sound_empty" value="Weapons/Motorized/Chainsaw/chainsaw_empty"/>
-		<property name="Sound_reload" value="Weapons/Motorized/Chainsaw/chainsaw_reload"/>
+		<property name="Sound_empty" value="chainsaw_empty"/>
+		<property name="Sound_reload" value="chainsaw_reload"/>
 		<property name="Horde_meter_rate" value=".275"/>
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
@@ -15726,8 +15726,8 @@ Mesh files no longer used:
 		<property name="ToolCategory.Lumberjack" value="1"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="ActionSkillGroup" value="Mechanical"/>
+	<property name="CraftingSkillGroup" value="Mechanical"/>
 	<property class="Attributes">
 		<property name="FalloffRange" value="2.35,2.35"/>
 		<property name="DegradationRate" value="5,5"/>
