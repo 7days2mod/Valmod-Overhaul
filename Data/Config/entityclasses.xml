@@ -100,6 +100,26 @@
 	<property name="AITask-6" value="ApproachSpot"/>
 	<property name="AITask-7" value="Wander"/>
 
+	<!--Classes for AITarget:
+		<property name="Class" value="EntityDriveableCar"/>
+		<property name="Class" value="EntityAnimalRabbit"/> and chicken
+		<property name="Class" value="EntityAnimalStag"/>
+		<property name="Class" value="EntityBackpack"/>
+		<property name="Class" value="EntityBandit"/>
+		<property name="Class" value="EntityEnemyAnimal"/>
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="Class" value="EntityMinibike"/>
+		<property name="Class" value="EntityNPC"/>
+		<property name="Class" value="EntityPlayer"/>
+		<property name="Class" value="EntitySupplyCrate"/>
+		<property name="Class" value="EntitySupplyPlane"/>
+		<property name="Class" value="EntitySurvivor"/>
+		<property name="Class" value="EntityVulture"/>
+		<property name="Class" value="EntityZombie"/>
+		<property name="Class" value="EntityZombieCop"/>
+		<property name="Class" value="EntityZombieCrawl"/>
+		<property name="Class" value="EntityZombieDog"/>
+	-->
 	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC"/>
 	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
 	<property name="AITarget-3" value="BlockingTargetTask"/>
@@ -928,9 +948,8 @@
 	<property name="AITask-2" value="BreakBlock"/>
 	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
 	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag"/>
-	<property name="AITask-6" value="ApproachSpot"/>
-	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Wander"/>
 	<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
 	<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
 	<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
@@ -1758,8 +1777,6 @@
 	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
 	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
-	<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
-	<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 	<property name="MaxHealth" value="60"/>
 	<property name="HandItem" value="handSnake"/>
 	<property name="Weight" value="70"/>

@@ -35,7 +35,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<wildcard_forge_category />
 </recipe>
 
-<recipe name="clayLump" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="0">
+<recipe name="clayLump" count="1" craft_area="forge" material_based="true" craft_time = "1" craft_exp_gain="3">
 	<ingredient name="unit_clay" count="5"/>
 </recipe>
 

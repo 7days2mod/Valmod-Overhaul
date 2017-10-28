@@ -4340,6 +4340,7 @@ group desc for stuff like metal siding
 <block id="423" name="cntBackpack01">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="cloth"/>
+	<property name="Weight" value="25"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
@@ -4347,8 +4348,6 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/backpack01" param1="main_mesh"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="9"/>
-	<drop event="Harvest" name="cloth" count="2"/>
-	<drop event="Destroy" name="cloth" count="1"/>
 </block>
 
 <block id="424" name="cntBackpack02">
@@ -4380,7 +4379,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="cntBackpack01"/>
 	<property name="Model" value="LootContainers/purse01" param1="main_mesh"/>
 	<property name="LootList" value="48"/>
-	<drop event="Destroy" count="0"/>
+	<property name="Weight" value="10"/>
 </block>
 
 <block id="430" name="barbedFence">

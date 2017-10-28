@@ -8559,6 +8559,7 @@ Mesh files no longer used:
 	<property name="EconomicBundleSize" value="150"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientTime" value="0.5"/>
+	<property name="CraftingSkillGroup" value="Masonry"/>
 </item>
 
 <item id="1320" name="dirtFragment">
