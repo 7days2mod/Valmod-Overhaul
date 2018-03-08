@@ -6219,7 +6219,7 @@ toolHeadHammer,items,Item,KgNone,Tool Head: Hammer,,
 toolHeadHammerDesc,items,Item,KgNone,This is used to craft a claw hammer. Unlocked with level 10 blacksmithing,,
 
 mechanicalKit,items,Item,KgNone,Mechanical Kit,,,
-mechanicalKitDesc,items,Item,KgNone,"The mechanic kits are used to repair machanical items, motorized tools, vehicles and more.",,,,
+mechanicalKitDesc,items,Item,KgNone,"The mechanic kits are used to repair mechanical items, motorized tools, vehicles and more.",,,,
 
 largeStorageGroupDesc2,blocks,Container,KgNone,A very large lockable crate with a handy symbol painted on the sides. Press & hold [activate] to lock it or set a combination. Crafted in the workbench.,Une très grosse caisse verrouillable avec un symbole pratique peint sur les côtés. Maintenez [activate] pour la verrouiller ou définir un code.,Eine sehr große abschließbare Kiste mit einem praktischen Symbol auf der Seite. Zum Verschließen oder Kombination eingeben [activate] gedrückt halten.,,Una gran caja con cerrojo con un símbolo muy útil pintado en los costados. Mantén presionado [activate] para cerrar con llave o para definir una combinación.
 
