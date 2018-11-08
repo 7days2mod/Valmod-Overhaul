@@ -8609,6 +8609,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="70"/>
 	<property name="Group" value="Resources"/>
+	<property name="Weight" value="5"/>
 	<property name="CraftingSkillGroup" value="Masonry"/>
 </item>
 
